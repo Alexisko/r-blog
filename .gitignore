@@ -4,3 +4,14 @@
 # Hugo
 resources/
 public/
+
+/public
+*.Rproj
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.suo
+/content/post/.vs
+/content/post/.vscode
+*.vscode
