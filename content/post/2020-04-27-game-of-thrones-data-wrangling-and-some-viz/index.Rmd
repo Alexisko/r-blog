@@ -28,18 +28,21 @@ The data comes as a json file. Let's tidy it, for the moment I am intersted in s
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(here)
+library(glue)
 
 ```
 
 
 ```{r eval=FALSE}
 library(tidyverse)
+library(glue)
 library(jsonlite)
 library(here)
 library(lubridate)
 library(here)
 
-got <- fromJSON("https://raw.githubusercontent.com/jeffreylancaster/game-of-thrones/master/data/episodes.json")
+got <- fromJSON(glue("https://raw.githubusercontent.com/jeffreylancaster/\\
+                     game-of-thrones/master/data/episodes.json"))
 
 scenes <- got$episodes %>%
   as_tibble() %>% 
@@ -72,14 +75,16 @@ write_csv(scenes, here("static/inputs/got/data_prep.csv"))
 ```
 
 
+# Making a first visualisation
+
 ```{r message=FALSE}
-#Let's load some more packages for visualisation
-library(patchwork)
 #for got themed color palette
 library(gameofthrones)
+#nice based theme
 library(hrbrthemes)
 
 
+#I will use font "cinzel" which is very much in the theme
 extrafont::loadfonts(device = "win")
 
 got <- read_csv(here("static/inputs/got/data_prep.csv"))
@@ -104,16 +109,14 @@ got %>%
   labs(y = NULL,
        x = "Time on screen in minutes",
        title = "Game of Thrones main characters:\nTime on screen per season",
-       subtitle = "Characters that appear at least one hour on screen, colored by season") +
+       subtitle = glue("Characters that appear at \\
+                       least one hour on screen, colored by season")) +
   scale_x_continuous(expand = expansion(mult = c(0.01,0.05))) +
   theme_ipsum(grid = "X") +
   theme(legend.position = "none",
         plot.title = element_text(family = "Cinzel"),
         
         plot.title.position = "plot")
-
-
-
 
 ```
 
