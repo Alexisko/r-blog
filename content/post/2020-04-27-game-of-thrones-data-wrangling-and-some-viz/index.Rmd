@@ -1,0 +1,118 @@
+---
+title: 'Data Exploration - Game of Thrones : data wrangling and first viz'
+author: alexis
+date: '2020-04-27'
+slug: game-of-thrones-data-wrangling-and-some-viz
+categories: []
+tags:
+  - 'ice and fire'
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-04-27T11:39:20+02:00'
+featured: yes
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: yes
+projects: []
+---
+
+I recently stumbled upon a great data source on Game of Thrones, it lead me to spend (lose) some (a lot of) time playing around with it.
+The data comes from here : https://github.com/jeffreylancaster/game-of-thrones with some very neat visualisations already.
+
+I was very excited, first thing to do get the data into tidy format :
+I import the data from github, at the moment I am intersted in scene details : characters involved, location, duration etc...
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+
+```
+
+
+```{r eval=FALSE}
+library(tidyverse)
+library(jsonlite)
+library(here)
+library(lubridate)
+library(here)
+
+got <- fromJSON("https://raw.githubusercontent.com/jeffreylancaster/game-of-thrones/master/data/episodes.json")
+
+scenes <- got$episodes %>%
+  as_tibble() %>% 
+  select(-episodeLink,
+         -episodeAirDate,
+         -episodeDescription,
+         -openingSequenceLocations) %>% 
+  unnest(scenes) %>% 
+  group_by(seasonNum, episodeNum, episodeTitle) %>% 
+  mutate(sceneNum = 1,
+         sceneNum = cumsum(sceneNum)) %>% 
+  unnest(characters) %>% 
+  select(seasonNum,
+         episodeNum,
+         episodeTitle,
+         sceneNum,
+         sceneStart,
+         sceneEnd,
+         location,
+         subLocation,
+         name) %>% 
+  ungroup() %>% 
+  mutate(sceneStart = hms(sceneStart),
+         sceneEnd = hms(sceneEnd),
+         time = seconds(sceneEnd - sceneStart) %>% as.numeric())
+
+
+write_csv(scenes, here("static/inputs/got/data_prep.csv"))
+
+```
+
+
+```{r message=FALSE}
+#Let's load some more packages for visualisation
+library(patchwork)
+#for got themed color palette
+library(gameofthrones)
+library(hrbrthemes)
+
+
+extrafont::loadfonts(device = "win")
+
+got <- read_csv(here("static/inputs/got/data_prep.csv"))
+```
+
+I used hrbrthemes because the default theme is great, I particularly like the font size default which is really convenient. 
+I don't think a legend is needed as colors are in order.
+
+```{r, fig.height=12}
+
+got %>% 
+  group_by(name, seasonNum) %>%
+  summarise(time = sum(time) / 60) %>% 
+  mutate(total = sum(time)) %>% 
+  filter(total > 60) %>% 
+  ggplot(aes(y = fct_reorder(name, total), 
+             x = time, 
+             fill = fct_rev(as_factor(seasonNum)))) +
+  geom_col() +
+  geom_vline(xintercept = 0) +
+  scale_fill_got_d(direction = -1) +
+  labs(y = NULL,
+       x = "Time on screen in minutes",
+       title = "Game of Thrones main characters:\nTime on screen per season",
+       subtitle = "Characters that appear at least one hour on screen, colored by season") +
+  scale_x_continuous(expand = expansion(mult = c(0.01,0.05))) +
+  theme_ipsum(grid = "X") +
+  theme(legend.position = "none",
+        plot.title = element_text(family = "Cinzel"),
+        
+        plot.title.position = "plot")
+
+
+ggsave(here("static/featured.png"), height = 10, width = 7, dpi = 600, type = "cairo")
+
+```
+

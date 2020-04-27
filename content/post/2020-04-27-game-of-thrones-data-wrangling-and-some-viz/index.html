@@ -1,0 +1,95 @@
+---
+title: 'Data Exploration - Game of Thrones : data wrangling and first viz'
+author: alexis
+date: '2020-04-27'
+slug: game-of-thrones-data-wrangling-and-some-viz
+categories: []
+tags:
+  - 'ice and fire'
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-04-27T11:39:20+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>I recently stumbled upon a great data source on Game of Thrones, it lead me to spend (lose) some (a lot) time playing around with it.
+The data comes from here : <a href="https://github.com/jeffreylancaster/game-of-thrones" class="uri">https://github.com/jeffreylancaster/game-of-thrones</a> with some very neat visualisations already.</p>
+<p>I was very excited, first thing to do get the data into tidy format :
+I import the data from github, at the moment I am intersted in scene details : characters involved, location, duration etc…</p>
+<pre class="r"><code>library(tidyverse)
+library(jsonlite)
+library(here)
+library(lubridate)
+library(here)
+
+got &lt;- fromJSON(&quot;https://raw.githubusercontent.com/jeffreylancaster/game-of-thrones/master/data/episodes.json&quot;)
+
+scenes &lt;- got$episodes %&gt;%
+  as_tibble() %&gt;% 
+  select(-episodeLink,
+         -episodeAirDate,
+         -episodeDescription,
+         -openingSequenceLocations) %&gt;% 
+  unnest(scenes) %&gt;% 
+  group_by(seasonNum, episodeNum, episodeTitle) %&gt;% 
+  mutate(sceneNum = 1,
+         sceneNum = cumsum(sceneNum)) %&gt;% 
+  unnest(characters) %&gt;% 
+  select(seasonNum,
+         episodeNum,
+         episodeTitle,
+         sceneNum,
+         sceneStart,
+         sceneEnd,
+         location,
+         subLocation,
+         name) %&gt;% 
+  ungroup() %&gt;% 
+  mutate(sceneStart = hms(sceneStart),
+         sceneEnd = hms(sceneEnd),
+         time = seconds(sceneEnd - sceneStart) %&gt;% as.numeric())
+
+
+write_csv(scenes, here(&quot;static/inputs/got/data_prep.csv&quot;))</code></pre>
+<pre class="r"><code>#Let&#39;s load some more packages for visualisation
+library(patchwork)
+#for got themed color palette
+library(gameofthrones)
+library(hrbrthemes)
+
+
+extrafont::loadfonts(device = &quot;win&quot;)
+
+got &lt;- read_csv(here(&quot;static/inputs/got/data_prep.csv&quot;))</code></pre>
+<p>I used hrbrthemes because the default theme is great, I particularly like the font size default which is really convenient.
+I don’t think a legend is needed as colors are in order.</p>
+<pre class="r"><code>got %&gt;% 
+  group_by(name, seasonNum) %&gt;%
+  summarise(time = sum(time) / 60) %&gt;% 
+  mutate(total = sum(time)) %&gt;% 
+  filter(total &gt; 60) %&gt;% 
+  ggplot(aes(y = fct_reorder(name, total), 
+             x = time, 
+             fill = fct_rev(as_factor(seasonNum)))) +
+  geom_col() +
+  geom_vline(xintercept = 0) +
+  scale_fill_got_d(direction = -1) +
+  labs(y = NULL,
+       x = &quot;Time on screen in minutes&quot;,
+       title = &quot;Game of Thrones main characters:\nTime on screen per season&quot;,
+       subtitle = &quot;Characters that appear at least one hour on screen, colored by season&quot;) +
+  scale_x_continuous(expand = expansion(mult = c(0.01,0.05))) +
+  theme_ipsum(grid = &quot;X&quot;) +
+  theme(legend.position = &quot;none&quot;,
+        plot.title = element_text(family = &quot;Cinzel&quot;),
+        plot.subtitle = element_text(family = &quot;Cinzel&quot;),
+        plot.title.position = &quot;plot&quot;)</code></pre>
+<p><img src="/post/2020-04-27-game-of-thrones-data-wrangling-and-some-viz/index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
