@@ -1,0 +1,159 @@
+---
+title: 'Game of Thrones - Characters profiles : Shiny Rmarkdown '
+author: alexis
+date: '2020-04-28'
+slug: game-of-thrones-character-profile-interactive-rmarkdown
+categories: []
+tags:
+  - ice and fire
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-04-27T15:19:11+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>I had experienced with Shiny App a few times in the past, with the <a href="/post/game-of-thrones-data-wrangling-and-some-viz/">Game of Thrones data</a> I built for the first time a Shiny Rmarkdown document.<!--more--></p>
+<p>You can find the code at the end. I wanted to do some minor modification before publishing it here, but I updated R to version 4.0.0 and for now shinyapps.io do not seem willing to work with that.</p>
+<p><em>It may take a few seconds to load. Only suitable to be seen on large screen</em></p>
+<html>
+<link rel="stylesheet" href="/css/shiny_rmarkdown.css"/>
+</html>
+<iframe id="shinyapp" src="https://alexis-gpx-app.shinyapps.io/shared_screen_shiny/" style="border: none; width: 100%; height: 2800px" frameborder="0">
+</iframe>
+<p><em>The upset plot shows only combination with 20 other characters, it means that combination between n characters include also combination with more characters that are not in those 20. I might change that down the line by including a level “other” but for now I cannot update the document</em></p>
+<pre class="r"><code>---
+title: &#39;Game of Thrones : Characters shared Screen Time&#39;
+author: &quot;Alexis&quot;
+date: &quot;23/04/2020&quot;
+output: html_document
+runtime: shiny
+---
+
+
+# ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+library(hrbrthemes)
+library(glue)
+library(ggupset)
+
+#read data, prepared like in the previous post
+got &lt;- read_csv(here(&quot;inputs/data_prep_scenes.csv&quot;))
+
+
+#20 most recurrent characters to populate input list
+list_characters &lt;- got %&gt;% 
+  group_by(name) %&gt;% 
+  summarise(time = sum(time)) %&gt;% 
+  arrange(desc(time)) %&gt;% 
+  slice(1:20) %&gt;% 
+  pull(name)
+
+# ```
+
+#```{r, echo=FALSE}
+#Choose a character, Arya is choosen by default
+inputPanel(
+  selectInput(&quot;character&quot;, 
+              label = &quot;Choose a character&quot;,
+              choices = list_characters, 
+              selected = &quot;Arya Stark&quot;)
+  )
+
+#We filter for scene where one of the character is the selected one
+with_x &lt;- reactive({  
+  got %&gt;%
+    select(seasonNum, episodeNum, sceneNum, time, name) %&gt;%
+    group_by(seasonNum, episodeNum, sceneNum, time) %&gt;%
+    filter(any(name == input$character)) %&gt;%
+    ungroup()
+})
+
+
+#Plot 1: bar plot throughout the entire show
+renderPlot({
+  with_x() %&gt;%
+    filter(name != input$character) %&gt;%
+    group_by(name) %&gt;%
+    summarise(time = sum(time) / 60) %&gt;%
+    filter(time &gt; 15) %&gt;%
+    ggplot(aes(time, fct_reorder(name, time))) +
+    geom_col(fill = &quot;#636470&quot;) +
+    scale_x_continuous(expand = expansion(mult = c(0.01,0.05))) +
+    labs(y = NULL,
+         x = &quot;time in minutes&quot;,
+         title = glue(&quot;Characters who shared the screen with {input$character}&quot;),
+         subtitle = glue(&quot;Characters that spent at least 15 minutes with {input$character} during the show&quot;)) +
+    theme_ipsum(grid = &quot;X&quot;) +
+    theme(plot.title = element_text(family = &quot;Cinzel&quot;),
+          plot.title.position = &quot;plot&quot;)
+
+  }, res = 100, height = 900)
+
+
+#Plot 2: same as 1 but by season and limited to 10 characters
+renderPlot({with_x() %&gt;%
+             filter(name != input$character) %&gt;%
+             group_by(seasonNum, name) %&gt;%
+             summarise(time = sum(time) / 60) %&gt;%
+             arrange(desc(time)) %&gt;%
+             slice(1:10) %&gt;%
+             ungroup() %&gt;%
+             mutate(name = tidytext::reorder_within(name, time, seasonNum)) %&gt;%
+             ggplot(aes(time, name)) +
+             geom_col(fill = &quot;#636470&quot;) +
+             facet_wrap(~paste0(&quot;Season &quot;,seasonNum), scales = &quot;free_y&quot;) +
+             tidytext::scale_y_reordered() +
+             labs(x = &quot;time in minutes&quot;,
+                  y = NULL,
+                  title = glue(&quot;With whom {input$character} spend most time in each season&quot;),
+                  subtitle = glue(&quot;Ten characters {input$character} spent most time with in each season&quot;)) +
+             theme_ipsum(grid = &quot;X&quot;) +
+             theme(plot.title = element_text(&quot;Cinzel&quot;),
+                   plot.title.position = &quot;plot&quot;)
+  }, res = 100, height = 800)
+
+#upset plot to show combination of people on screen. 
+renderPlot({
+  with_x() %&gt;% 
+    group_by(name) %&gt;%
+    mutate(nb = n()) %&gt;% 
+    ungroup() %&gt;% 
+    nest(nested_data = c(seasonNum, episodeNum, sceneNum, time)) %&gt;% 
+    mutate(rank = rank(desc(nb), ties.method = &quot;min&quot;)) %&gt;% 
+    arrange(rank) %&gt;% 
+    slice(1:21) %&gt;% 
+    unnest(nested_data) %&gt;% 
+    group_by(seasonNum, episodeNum, sceneNum, time) %&gt;% 
+    mutate(nb = n()) %&gt;% 
+    filter(nb &gt; 1) %&gt;% 
+    summarise(name = list(name)) %&gt;% 
+    ggplot(aes(name)) +
+    geom_bar(fill = &quot;#636470&quot;) +
+    scale_x_upset(n_intersections = 50) +
+    scale_y_continuous(expand = c(0,0)) +
+    labs(y = NULL,
+         x = NULL,
+         title = glue(&quot;Combination of characters that appeared on screen with {input$character}&quot;),
+         subtitle = glue(&quot;Combination with {input$character} and the 20 characters \\
+                         he/she appears the most with by number of scenes (limited to 50)&quot;)) +
+    theme_combmatrix(combmatrix.label.text = element_text(&quot;Arial Narrow&quot;)) +
+    theme(plot.title = element_text(&quot;Cinzel&quot;),
+          plot.title.position = &quot;plot&quot;,
+          text = element_text(&quot;Arial Narrow&quot;),
+          panel.background = element_rect(&quot;white&quot;),
+          axis.ticks = element_blank(),
+          panel.grid = element_blank(),
+          panel.grid.major.y = element_line(color = &quot;lightgrey&quot;))
+  }, res = 100, height = 800, width = 1000)
+
+#```</code></pre>

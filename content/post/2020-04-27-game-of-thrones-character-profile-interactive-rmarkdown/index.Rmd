@@ -1,0 +1,168 @@
+---
+title: 'Game of Thrones - Characters profiles : Shiny Rmarkdown '
+author: alexis
+date: '2020-04-28'
+slug: game-of-thrones-character-profile-interactive-rmarkdown
+categories: []
+tags:
+  - ice and fire
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-04-27T15:19:11+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+I had experienced with Shiny App a few times in the past, with the [Game of Thrones data](/post/game-of-thrones-data-wrangling-and-some-viz/) I built for the first time a Shiny Rmarkdown document.<!--more-->
+
+You can find the code at the end. I wanted to do some minor modification before publishing it here, but I updated R to version 4.0.0 and for now shinyapps.io do not seem willing to work with that.
+
+*It may take a few seconds to load. Only suitable to be seen on large screen*
+
+<html>
+    <link rel="stylesheet" href="/css/shiny_rmarkdown.css"/>
+</html>
+
+<iframe id="shinyapp" src="https://alexis-gpx-app.shinyapps.io/shared_screen_shiny/" style="border: none; width: 100%; height: 2800px" frameborder="0"></iframe>
+
+
+*The upset plot shows only combination with 20 other characters, it means that combination between n characters include also combination with more characters that are not in those 20. I might change that down the line by including a level "other" but for now I cannot update the document*
+
+
+```{r, eval=FALSE}
+---
+title: 'Game of Thrones : Characters shared Screen Time'
+author: "Alexis"
+date: "23/04/2020"
+output: html_document
+runtime: shiny
+---
+
+
+# ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+library(hrbrthemes)
+library(glue)
+library(ggupset)
+
+#read data, prepared like in the previous post
+got <- read_csv(here("inputs/data_prep_scenes.csv"))
+
+
+#20 most recurrent characters to populate input list
+list_characters <- got %>% 
+  group_by(name) %>% 
+  summarise(time = sum(time)) %>% 
+  arrange(desc(time)) %>% 
+  slice(1:20) %>% 
+  pull(name)
+
+# ```
+
+#```{r, echo=FALSE}
+#Choose a character, Arya is choosen by default
+inputPanel(
+  selectInput("character", 
+              label = "Choose a character",
+              choices = list_characters, 
+              selected = "Arya Stark")
+  )
+
+#We filter for scene where one of the character is the selected one
+with_x <- reactive({  
+  got %>%
+    select(seasonNum, episodeNum, sceneNum, time, name) %>%
+    group_by(seasonNum, episodeNum, sceneNum, time) %>%
+    filter(any(name == input$character)) %>%
+    ungroup()
+})
+
+
+#Plot 1: bar plot throughout the entire show
+renderPlot({
+  with_x() %>%
+    filter(name != input$character) %>%
+    group_by(name) %>%
+    summarise(time = sum(time) / 60) %>%
+    filter(time > 15) %>%
+    ggplot(aes(time, fct_reorder(name, time))) +
+    geom_col(fill = "#636470") +
+    scale_x_continuous(expand = expansion(mult = c(0.01,0.05))) +
+    labs(y = NULL,
+         x = "time in minutes",
+         title = glue("Characters who shared the screen with {input$character}"),
+         subtitle = glue("Characters that spent at least 15 minutes with {input$character} during the show")) +
+    theme_ipsum(grid = "X") +
+    theme(plot.title = element_text(family = "Cinzel"),
+          plot.title.position = "plot")
+
+  }, res = 100, height = 900)
+
+
+#Plot 2: same as 1 but by season and limited to 10 characters
+renderPlot({with_x() %>%
+             filter(name != input$character) %>%
+             group_by(seasonNum, name) %>%
+             summarise(time = sum(time) / 60) %>%
+             arrange(desc(time)) %>%
+             slice(1:10) %>%
+             ungroup() %>%
+             mutate(name = tidytext::reorder_within(name, time, seasonNum)) %>%
+             ggplot(aes(time, name)) +
+             geom_col(fill = "#636470") +
+             facet_wrap(~paste0("Season ",seasonNum), scales = "free_y") +
+             tidytext::scale_y_reordered() +
+             labs(x = "time in minutes",
+                  y = NULL,
+                  title = glue("With whom {input$character} spend most time in each season"),
+                  subtitle = glue("Ten characters {input$character} spent most time with in each season")) +
+             theme_ipsum(grid = "X") +
+             theme(plot.title = element_text("Cinzel"),
+                   plot.title.position = "plot")
+  }, res = 100, height = 800)
+
+#upset plot to show combination of people on screen. 
+renderPlot({
+  with_x() %>% 
+    group_by(name) %>%
+    mutate(nb = n()) %>% 
+    ungroup() %>% 
+    nest(nested_data = c(seasonNum, episodeNum, sceneNum, time)) %>% 
+    mutate(rank = rank(desc(nb), ties.method = "min")) %>% 
+    arrange(rank) %>% 
+    slice(1:21) %>% 
+    unnest(nested_data) %>% 
+    group_by(seasonNum, episodeNum, sceneNum, time) %>% 
+    mutate(nb = n()) %>% 
+    filter(nb > 1) %>% 
+    summarise(name = list(name)) %>% 
+    ggplot(aes(name)) +
+    geom_bar(fill = "#636470") +
+    scale_x_upset(n_intersections = 50) +
+    scale_y_continuous(expand = c(0,0)) +
+    labs(y = NULL,
+         x = NULL,
+         title = glue("Combination of characters that appeared on screen with {input$character}"),
+         subtitle = glue("Combination with {input$character} and the 20 characters \\
+                         he/she appears the most with by number of scenes (limited to 50)")) +
+    theme_combmatrix(combmatrix.label.text = element_text("Arial Narrow")) +
+    theme(plot.title = element_text("Cinzel"),
+          plot.title.position = "plot",
+          text = element_text("Arial Narrow"),
+          panel.background = element_rect("white"),
+          axis.ticks = element_blank(),
+          panel.grid = element_blank(),
+          panel.grid.major.y = element_line(color = "lightgrey"))
+  }, res = 100, height = 800, width = 1000)
+
+#```
+
+```
+

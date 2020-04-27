@@ -10,17 +10,17 @@ subtitle: ''
 summary: ''
 authors: []
 lastmod: '2020-04-27T11:39:20+02:00'
-featured: no
+featured: yes
 image:
   caption: ''
   focal_point: ''
-  preview_only: no
+  preview_only: yes
 projects: []
 ---
 
 
 
-<p>I recently stumbled upon a great data source on Game of Thrones, it lead me to spend (lose) some (a lot) time playing around with it.
+<p>I recently stumbled upon a great data source on Game of Thrones, it lead me to spend (lose) some (a lot of) time playing around with it. <!--more-->
 The data comes from here : <a href="https://github.com/jeffreylancaster/game-of-thrones" class="uri">https://github.com/jeffreylancaster/game-of-thrones</a> with some very neat visualisations already.</p>
 <p>I was very excited, first thing to do get the data into tidy format :
 I import the data from github, at the moment I am intersted in scene details : characters involved, location, duration etc…</p>
@@ -90,6 +90,6 @@ I don’t think a legend is needed as colors are in order.</p>
   theme_ipsum(grid = &quot;X&quot;) +
   theme(legend.position = &quot;none&quot;,
         plot.title = element_text(family = &quot;Cinzel&quot;),
-        plot.subtitle = element_text(family = &quot;Cinzel&quot;),
+        
         plot.title.position = &quot;plot&quot;)</code></pre>
 <p><img src="/post/2020-04-27-game-of-thrones-data-wrangling-and-some-viz/index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>

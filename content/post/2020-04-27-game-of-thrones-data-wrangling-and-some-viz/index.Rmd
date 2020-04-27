@@ -18,7 +18,7 @@ image:
 projects: []
 ---
 
-I recently stumbled upon a great data source on Game of Thrones, it lead me to spend (lose) some (a lot of) time playing around with it.
+I recently stumbled upon a great data source on Game of Thrones, it lead me to spend (lose) some (a lot of) time playing around with it. <!--more-->
 The data comes from here : https://github.com/jeffreylancaster/game-of-thrones with some very neat visualisations already.
 
 I was very excited, first thing to do get the data into tidy format :
@@ -112,7 +112,7 @@ got %>%
         plot.title.position = "plot")
 
 
-ggsave(here("static/featured.png"), height = 10, width = 7, dpi = 600, type = "cairo")
+
 
 ```
 
