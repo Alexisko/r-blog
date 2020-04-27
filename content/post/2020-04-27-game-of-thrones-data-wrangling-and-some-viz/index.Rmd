@@ -1,5 +1,5 @@
 ---
-title: 'Data Exploration - Game of Thrones : data wrangling and first viz'
+title: 'Game of Thrones : data wrangling and first viz'
 author: alexis
 date: '2020-04-27'
 slug: game-of-thrones-data-wrangling-and-some-viz
@@ -7,7 +7,7 @@ categories: []
 tags:
   - 'ice and fire'
 subtitle: ''
-summary: ''
+summary: 'I recently stumbled upon a great data source on Game of Thrones, it lead me to spend (lose) some (a lot of) time playing around with it.'
 authors: []
 lastmod: '2020-04-27T11:39:20+02:00'
 featured: yes
@@ -18,11 +18,12 @@ image:
 projects: []
 ---
 
-I recently stumbled upon a great data source on Game of Thrones, it lead me to spend (lose) some (a lot of) time playing around with it. <!--more-->
+I recently stumbled upon a great data source on Game of Thrones, it lead me to spend (lose) some (a lot of) time playing around with it.
+
 The data comes from here : https://github.com/jeffreylancaster/game-of-thrones with some very neat visualisations already.
 
-I was very excited, first thing to do get the data into tidy format :
-I import the data from github, at the moment I am intersted in scene details : characters involved, location, duration etc...
+## First let's get the data into a tidy format
+The data comes as a json file. Let's tidy it, for the moment I am intersted in scene details : characters involved, location, duration etc...
 
 ```{r setup, include=FALSE}
 library(tidyverse)

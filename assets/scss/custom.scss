@@ -1,0 +1,52 @@
+.article-container {
+  max-width: 800px;
+  text-align: justify;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: left;
+}
+
+div.Encart {
+margin-left:auto;
+margin-right:auto;
+background:#FFFFFF;
+border:2px solid #000000;
+padding:1em 1em 1em 1em;
+text-align:center;
+}
+
+div.footnotes {
+text-align:left;
+color:grey;
+font-size:0.8em;
+}
+
+section.footnotes p {
+text-align:left;
+color:grey;
+font-size:0.8em;
+}
+
+div.notes {
+color:grey;
+font-size:0.8em;
+font-style:italic;
+}
+
+div.biblio {
+	text-align: left;
+    color: grey;
+    font-size: 0.8em;
+    margin-left: 10px;
+    text-indent: -10px;
+}
+
+section.home-section#projects {
+	padding: 25px 0 25px 0;
+}
+
+section.home-section#skills h3 {
+  text-align: center;
+}
