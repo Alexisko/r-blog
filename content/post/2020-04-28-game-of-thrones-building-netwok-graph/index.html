@@ -94,7 +94,7 @@ time_limit &lt;- 20</code></pre>
 We set ‘directed’ to false, because our data is not directional.</p>
 <p>A tidygraph object can be manipulated in a similar fashion as a dataframe with tidyverse verbs. What we need to do is use <strong>activate</strong> to choose wether we want to modify the nodes ot the edges (nodes are activated by default).</p>
 <p>What we do first is to activate the edges to filter out replicated relationship. We use the function <strong>edge_is_multiple</strong>. This function allows us to keep only one of our mutual relationship (which are redundant since our data is not directional).</p>
-<p>The we activate back the node and use the <strong>group_infomap</strong> function to create clusters of characters.</p>
+<p>The we activate back the nodes tibble and use the <strong>group_infomap</strong> function to create clusters of characters.</p>
 <pre class="r"><code>graph &lt;- tbl_graph(nodes, combination, directed = FALSE) %&gt;% 
   activate(edges) %&gt;% 
   filter(!edge_is_multiple()) %&gt;% 

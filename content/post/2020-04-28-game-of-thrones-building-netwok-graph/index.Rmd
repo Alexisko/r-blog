@@ -136,7 +136,7 @@ A tidygraph object can be manipulated in a similar fashion as a dataframe with t
 
 What we do first is to activate the edges to filter out replicated relationship. We use the function **edge_is_multiple**. This function allows us to keep only one of our mutual relationship (which are redundant since our data is not directional). 
 
-The we activate back the node and use the **group_infomap** function to create clusters of characters.
+The we activate back the nodes tibble and use the **group_infomap** function to create clusters of characters.
 
 ```{r}
 graph <- tbl_graph(nodes, combination, directed = FALSE) %>% 
