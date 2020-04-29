@@ -76,7 +76,7 @@ extrafont::loadfonts(device = &quot;win&quot;)
 
 got &lt;- read_csv(here(&quot;static/inputs/got/data_prep.csv&quot;))</code></pre>
 <p>I used hrbrthemes because the default theme is great, I particularly like the font size default which is really convenient.
-I don’t think a legend is needed as colors are in order.</p>
+I don’t think a legend is needed as colors are in order (and trying to identify the season would anyway give you a headache).</p>
 <pre class="r"><code>got %&gt;% 
   group_by(name, seasonNum) %&gt;%
   summarise(time = sum(time) / 60) %&gt;% 

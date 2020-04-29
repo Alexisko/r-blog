@@ -91,7 +91,7 @@ got <- read_csv(here("static/inputs/got/data_prep.csv"))
 ```
 
 I used hrbrthemes because the default theme is great, I particularly like the font size default which is really convenient. 
-I don't think a legend is needed as colors are in order.
+I don't think a legend is needed as colors are in order (and trying to identify the season would anyway give you a headache).
 
 ```{r, fig.height=12}
 
