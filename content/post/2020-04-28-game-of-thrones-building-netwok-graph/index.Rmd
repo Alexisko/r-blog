@@ -1,0 +1,164 @@
+---
+title: 'Game of Thrones : building network graphs'
+author: ''
+date: '2020-04-28'
+slug: game-of-thrones-building-netwok-graphs
+categories: []
+tags:
+  - ice and fire
+subtitle: ''
+summary: 'Attempting to create network graphs with no previous experience or knowledge'
+authors: []
+lastmod: '2020-04-27T18:48:14+02:00'
+featured: yes
+image:
+  caption: 'Final result'
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Armed with my Game of Thrones data I was keen to visualise relationship between characters. I started doing that on a character by character basis in the [previous post](post/game-of-thrones-character-profile-interactive-rmarkdown/).  
+
+The thing is... I had no experience doing that with R, no knowledge on graphs and layout. I knew that Thomas Lin Pedersen's packages "[ggraph](https://www.data-imaginist.com/2017/ggraph-introduction-layouts/)" and "[tidygraph](https://www.data-imaginist.com/2017/introducing-tidygraph/)" existed but that is about it.  
+
+This was not very frightening because as with most things with R someone, somewhere must have done a really comprehensive and easy to understand introduction to these tools. Well, that is what I thought, but I was surprised to struggle to find the content that would have made the making of these graphs easy. I still think I must have missed it. Finally, finding pieces of information here and there, I managed to get a result that I was quite satisfied with.  
+
+I am going to walk you briefly through how I did it but of course, as my knowledge of graph's theory is very very limited the information that I will provide is also. To sum it up, I got something that worked for this particular case, that may help for other cases but that will not be generalizebale.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+
+## Let's get started 
+We first import the data and set a time limit. After some trial and errors I found that 20 minutes was giving nice results.
+
+The data is the one prepared [here](/post/game-of-thrones-data-wrangling-and-some-viz/).
+
+```{r}
+library(tidyverse)
+library(tidygraph)
+library(ggraph)
+library(here)
+library(gameofthrones)
+
+extrafont::loadfonts(device = "win")
+
+got <- read_csv(here("static/inputs/got/data_prep_scenes.csv"))
+
+time_limit <- 20
+```
+
+
+A tidygraph object is composed of two dataframe : one with the nodes (points) and one with the edges (links).
+First we get the node out of our dataset, it is fairly easy. We keep only the name of the character and the time they appeared on screen. We will use that time as the node size.
+
+```{r}
+nodes <- got %>% 
+  select(seasonNum, episodeNum, sceneNum, time, name) %>% 
+  # we group by name to filter for character that appear 
+  # more than 20 minutes during the show
+  group_by(name) %>%
+  # we divide by 60 because time is in seconds
+  summarise(time = sum(time) / 60) %>%
+  filter(time > time_limit) %>% 
+  ungroup()
+```
+
+
+Next we need to select the edges. Our edge data should be a tibble with a 'from' and a 'to' column. We will also add a time component that can be used as a weighing variable. So we need to do a bit of manipulation.
+
+
+First, let's filter for the characters that spend at least 20 minutes on screen. We also add a scene id, unique to every scene. Finally, we replicate the name column.
+
+```{r}
+scenes_select <- got %>% 
+  #we give an id to every scene in the dataset, we will use it later on
+  nest(names = name) %>% 
+  mutate(id = 1:length(names)) %>% 
+  select(id, time, names) %>% 
+  unnest(names) %>% 
+  # we do the same manipulation to filter for character that appear at least
+  # 20 minutes but with mutate instead of summarise
+  # we could also have used a semi-join with the node dataset
+  group_by(name) %>% 
+  mutate(total = sum(time) / 60) %>% 
+  filter(total > time_limit) %>% 
+  ungroup() %>% 
+  select(-total) %>% 
+  # finaly we add a column name_2 that is exactly the same as name
+  mutate(name_2 = name)
+```
+
+So, why did I replicate the name column ? Well, because it is the only trick I found to transform the dataset into the format we were looking for. I am certain that a more elegant solution must exist and I am very willing to learn it if someone would be kind enough to present it to me.  
+
+The idea is to use the expand (from the tidyr package) function to create all the possible combination in each scene. The main downside of this technic is that we get all the combinations in both direction including 'from' and 'to' the same character. The later ones we can filter right away, we will deal with the other replicate combination later with tidygraphs tool.
+
+```{r}
+combination <- 
+  scenes_select %>% 
+  # creating all possible combination in each scene with expand and scene id
+  group_by(id, time) %>% 
+  expand(name, name_2) %>% 
+  ungroup() %>% 
+  # we keep only the relation between 2 different characters
+  filter(name != name_2) %>% 
+  group_by(name, name_2) %>% 
+  summarise(time = sum(time)) %>% 
+  # we rename our column, including time to avoid confusion with 
+  # the time column in the node dataset
+  rename(from = "name", to = "name_2", edge_time = time) %>% 
+  ungroup()
+```
+
+Nice ! I know have a node and a edge dataframe that I can combine in a tidygraph object.
+We set 'directed' to false, because our data is not directional.  
+
+A tidygraph object can be manipulated in a similar fashion as a dataframe with tidyverse verbs. What we need to do is use **activate** to choose wether we want to modify the nodes ot the edges (nodes are activated by default).  
+
+What we do first is to activate the edges to filter out replicated relationship. We use the function **edge_is_multiple**. This function allows us to keep only one relati
+
+```{r}
+graph <- tbl_graph(nodes, combination, directed = FALSE) %>% 
+  activate(edges) %>% 
+  filter(!edge_is_multiple()) %>% 
+  activate(nodes) %>% 
+  mutate(group = group_infomap(weights = edge_time))
+
+
+graph_plot <- ggraph(graph, layout = "fr", weights = edge_time) +
+  geom_edge_density(aes(fill = edge_time)) +
+  geom_edge_link(alpha = 0.1) +
+  geom_node_point(aes(size = time, color = as_factor(group))) +
+  geom_node_text(aes(label = name), repel = TRUE, size = 4) +
+  labs(title = "Game of Thrones : Social Networking",
+       subtitle = "Node color correspond to cluster of characters") +
+  scale_color_got_d() +
+  theme_graph() +
+  theme(legend.position = "none",
+        plot.title = element_text(family = "Cinzel")) 
+
+
+ggsave(plot = graph_plot, here("static/plots/got/network_graph.png"), 
+       type = "cairo", 
+       dpi = 600,
+       width = 20, 
+       height = 16)
+
+ggsave(plot = graph_plot, here("static/plots/got/network_graph.pdf"), 
+       device = cairo_pdf, 
+       dpi = 600,
+       width = 20, 
+       height = 16)
+
+graph_plot
+
+```
+
+
+
+<img style="position: absolute; left:2vw; width:96vw;" src="/plots/got/network.png">
+
+You can find the pdf version [here](/plots/got/network.pdf) which is a little easier to explore.
+

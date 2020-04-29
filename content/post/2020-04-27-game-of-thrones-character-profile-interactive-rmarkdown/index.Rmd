@@ -1,7 +1,7 @@
 ---
 title: 'Game of Thrones - Characters profiles : Shiny Rmarkdown '
 author: alexis
-date: '2020-04-28'
+date: '2020-04-27'
 slug: game-of-thrones-character-profile-interactive-rmarkdown
 categories: []
 tags:
@@ -14,7 +14,7 @@ featured: no
 image:
   caption: ''
   focal_point: ''
-  preview_only: no
+  preview_only: yes
 projects: []
 ---
 
@@ -52,7 +52,7 @@ library(hrbrthemes)
 library(glue)
 library(ggupset)
 
-#read data, prepared like in the previous post
+#read data, prepared in the previous post
 got <- read_csv(here("inputs/data_prep_scenes.csv"))
 
 
