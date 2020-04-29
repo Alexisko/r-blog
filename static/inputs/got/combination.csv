@@ -1,0 +1,3307 @@
+from,to,edge_time
+Alliser Thorne,Baby Sam,153
+Alliser Thorne,Davos Seaworth,585
+Alliser Thorne,Eddison Tollett,1626
+Alliser Thorne,Ghost,218
+Alliser Thorne,Gilly,164
+Alliser Thorne,Grenn,1280
+Alliser Thorne,Janos Slynt,1559
+Alliser Thorne,Jeor Mormont,494
+Alliser Thorne,Jon Snow,3538
+Alliser Thorne,Locke,208
+Alliser Thorne,Maester Aemon,984
+Alliser Thorne,Mance Rayder,133
+Alliser Thorne,Melisandre,274
+Alliser Thorne,Olly,1833
+Alliser Thorne,Othell Yarwyck,1832
+Alliser Thorne,Pypar,1248
+Alliser Thorne,Rast,715
+Alliser Thorne,Samwell Tarly,2311
+Alliser Thorne,Stannis Baratheon,321
+Alliser Thorne,Tormund Giantsbane,664
+Alliser Thorne,Tyrion Lannister,96
+Alliser Thorne,Wun Wun,61
+Alliser Thorne,Ygritte,44
+Arya Stark,Barristan Selmy,249
+Arya Stark,Benjen Stark,194
+Arya Stark,Beric Dondarrion,1461
+Arya Stark,Bran Stark,2800
+Arya Stark,Brienne of Tarth,1831
+Arya Stark,Catelyn Stark,722
+Arya Stark,Cersei Lannister,1359
+Arya Stark,Daenerys Targaryen,701
+Arya Stark,Davos Seaworth,1401
+Arya Stark,Drogon,49
+Arya Stark,Eddard Stark,2271
+Arya Stark,Eddison Tollett,68
+Arya Stark,Edmure Tully,751
+Arya Stark,Gendry,4552
+Arya Stark,Ghost,199
+Arya Stark,Grand Maester Pycelle,330
+Arya Stark,Gregor Clegane,611
+Arya Stark,Grey Worm,1379
+Arya Stark,Hodor,337
+Arya Stark,Hot Pie,1633
+Arya Stark,Jaime Lannister,923
+Arya Stark,Jaqen H'ghar,2162
+Arya Stark,Joffrey Baratheon,1522
+Arya Stark,Jon Snow,1852
+Arya Stark,Jorah Mormont,255
+Arya Stark,Jory Cassel,760
+Arya Stark,Kevan Lannister,107
+Arya Stark,Lord Varys,1087
+Arya Stark,Lyanna Mormont,255
+Arya Stark,Mace Tyrell,141
+Arya Stark,Maester Luwin,337
+Arya Stark,Melisandre,390
+Arya Stark,Meryn Trant,627
+Arya Stark,Missandei,621
+Arya Stark,Myrcella Baratheon,586
+Arya Stark,Petyr Baelish,1400
+Arya Stark,Podrick Payne,664
+Arya Stark,Qhono,210
+Arya Stark,Renly Baratheon,249
+Arya Stark,Rhaegal,14
+Arya Stark,Rickon Stark,528
+Arya Stark,Robb Stark,406
+Arya Stark,Robert Baratheon,1029
+Arya Stark,Robin Arryn,751
+Arya Stark,Rodrik Cassel,722
+Arya Stark,Samwell Tarly,1147
+Arya Stark,Sandor Clegane,5316
+Arya Stark,Sansa Stark,5473
+Arya Stark,Septa Mordane,576
+Arya Stark,Summer,337
+Arya Stark,The Night King,26
+Arya Stark,The Waif,1214
+Arya Stark,Theon Greyjoy,977
+Arya Stark,Thoros of Myr,1568
+Arya Stark,Tommen Baratheon,586
+Arya Stark,Tormund Giantsbane,392
+Arya Stark,Tyrion Lannister,1379
+Arya Stark,Tywin Lannister,1186
+Arya Stark,Walder Frey,53
+Arya Stark,White Walker,26
+Arya Stark,Yara Greyjoy,751
+Arya Stark,Yohn Royce,1782
+Arya Stark,Yoren,1252
+Baby Sam,Alliser Thorne,153
+Baby Sam,Bran Stark,248
+Baby Sam,Davos Seaworth,50
+Baby Sam,Eddison Tollett,50
+Baby Sam,Gilly,3320
+Baby Sam,Hodor,248
+Baby Sam,Janos Slynt,76
+Baby Sam,Jojen Reed,248
+Baby Sam,Jon Snow,85
+Baby Sam,Lord Varys,134
+Baby Sam,Maester Aemon,393
+Baby Sam,Meera Reed,248
+Baby Sam,Missandei,134
+Baby Sam,Olly,106
+Baby Sam,Pypar,90
+Baby Sam,Samwell Tarly,3123
+Baby Sam,Sansa Stark,134
+Baby Sam,Selyse Baratheon,50
+Baby Sam,Shireen Baratheon,50
+Baby Sam,Summer,248
+Baby Sam,Tormund Giantsbane,9
+Baby Sam,Tyrion Lannister,134
+Baby Sam,White Walker,63
+Baby Sam,Ygritte,26
+Barristan Selmy,Arya Stark,249
+Barristan Selmy,Cersei Lannister,1122
+Barristan Selmy,Daario Naharis,1682
+Barristan Selmy,Daenerys Targaryen,4314
+Barristan Selmy,Drogon,400
+Barristan Selmy,Eddard Stark,932
+Barristan Selmy,Grand Maester Pycelle,1000
+Barristan Selmy,Gregor Clegane,488
+Barristan Selmy,Grey Worm,2341
+Barristan Selmy,Hizdahr zo Loraq,850
+Barristan Selmy,Jaime Lannister,272
+Barristan Selmy,Janos Slynt,578
+Barristan Selmy,Joffrey Baratheon,1361
+Barristan Selmy,Jorah Mormont,3339
+Barristan Selmy,Lancel Lannister,385
+Barristan Selmy,Loras Tyrell,239
+Barristan Selmy,Lord Varys,675
+Barristan Selmy,Meryn Trant,369
+Barristan Selmy,Missandei,3231
+Barristan Selmy,Myrcella Baratheon,488
+Barristan Selmy,Petyr Baelish,1066
+Barristan Selmy,Renly Baratheon,993
+Barristan Selmy,Rhaegal,254
+Barristan Selmy,Robert Baratheon,1168
+Barristan Selmy,Sandor Clegane,1066
+Barristan Selmy,Sansa Stark,857
+Barristan Selmy,Septa Mordane,488
+Barristan Selmy,Tommen Baratheon,488
+Barristan Selmy,Viserion,254
+Benjen Stark,Arya Stark,194
+Benjen Stark,Bran Stark,393
+Benjen Stark,Catelyn Stark,194
+Benjen Stark,Cersei Lannister,194
+Benjen Stark,Eddard Stark,376
+Benjen Stark,Ghost,200
+Benjen Stark,Jaime Lannister,194
+Benjen Stark,Joffrey Baratheon,194
+Benjen Stark,Jon Snow,762
+Benjen Stark,Meera Reed,315
+Benjen Stark,Rast,200
+Benjen Stark,Robb Stark,272
+Benjen Stark,Robert Baratheon,272
+Benjen Stark,Rodrik Cassel,194
+Benjen Stark,Sandor Clegane,78
+Benjen Stark,Sansa Stark,194
+Benjen Stark,Summer,78
+Benjen Stark,Theon Greyjoy,272
+Benjen Stark,Tyrion Lannister,823
+Benjen Stark,Yoren,234
+Beric Dondarrion,Arya Stark,1461
+Beric Dondarrion,Bran Stark,255
+Beric Dondarrion,Brienne of Tarth,255
+Beric Dondarrion,Daenerys Targaryen,506
+Beric Dondarrion,Davos Seaworth,420
+Beric Dondarrion,Drogon,251
+Beric Dondarrion,Eddard Stark,245
+Beric Dondarrion,Eddison Tollett,268
+Beric Dondarrion,Gendry,1648
+Beric Dondarrion,Ghost,68
+Beric Dondarrion,Grand Maester Pycelle,245
+Beric Dondarrion,Grey Worm,323
+Beric Dondarrion,Jaime Lannister,255
+Beric Dondarrion,Jon Snow,2263
+Beric Dondarrion,Jorah Mormont,2227
+Beric Dondarrion,Lord Varys,255
+Beric Dondarrion,Lyanna Mormont,255
+Beric Dondarrion,Melisandre,553
+Beric Dondarrion,Missandei,255
+Beric Dondarrion,Petyr Baelish,245
+Beric Dondarrion,Podrick Payne,78
+Beric Dondarrion,Qhono,187
+Beric Dondarrion,Rhaegal,221
+Beric Dondarrion,Samwell Tarly,327
+Beric Dondarrion,Sandor Clegane,3631
+Beric Dondarrion,Sansa Stark,255
+Beric Dondarrion,The Night King,204
+Beric Dondarrion,Theon Greyjoy,255
+Beric Dondarrion,Thoros of Myr,2819
+Beric Dondarrion,Tormund Giantsbane,2566
+Beric Dondarrion,Tyrion Lannister,255
+Beric Dondarrion,Viserion,151
+Beric Dondarrion,White Walker,185
+Beric Dondarrion,Yohn Royce,255
+Bran Stark,Arya Stark,2800
+Bran Stark,Baby Sam,248
+Bran Stark,Benjen Stark,393
+Bran Stark,Beric Dondarrion,255
+Bran Stark,Brienne of Tarth,2130
+Bran Stark,Bronn,90
+Bran Stark,Catelyn Stark,1161
+Bran Stark,Cersei Lannister,594
+Bran Stark,Daenerys Targaryen,1325
+Bran Stark,Davos Seaworth,2047
+Bran Stark,Drogon,7
+Bran Stark,Eddard Stark,1232
+Bran Stark,Eddison Tollett,143
+Bran Stark,Edmure Tully,751
+Bran Stark,Gendry,1033
+Bran Stark,Ghost,382
+Bran Stark,Gilly,361
+Bran Stark,Grey Worm,1989
+Bran Stark,Hodor,4773
+Bran Stark,Jaime Lannister,1371
+Bran Stark,Joffrey Baratheon,337
+Bran Stark,Jojen Reed,2701
+Bran Stark,Jon Snow,2836
+Bran Stark,Jorah Mormont,633
+Bran Stark,Jory Cassel,703
+Bran Stark,Locke,101
+Bran Stark,Lord Varys,1208
+Bran Stark,Lyanna Mormont,789
+Bran Stark,Maester Luwin,1643
+Bran Stark,Meera Reed,3904
+Bran Stark,Melisandre,7
+Bran Stark,Missandei,1082
+Bran Stark,Myrcella Baratheon,337
+Bran Stark,Osha,2484
+Bran Stark,Petyr Baelish,474
+Bran Stark,Podrick Payne,470
+Bran Stark,Qhono,327
+Bran Stark,Rast,158
+Bran Stark,Rhaegal,17
+Bran Stark,Rickon Stark,2419
+Bran Stark,Robb Stark,1638
+Bran Stark,Robert Baratheon,415
+Bran Stark,Robin Arryn,751
+Bran Stark,Rodrik Cassel,1151
+Bran Stark,Samwell Tarly,1788
+Bran Stark,Sandor Clegane,706
+Bran Stark,Sansa Stark,3557
+Bran Stark,Septa Mordane,191
+Bran Stark,Summer,2524
+Bran Stark,The Night King,340
+Bran Stark,Theon Greyjoy,2779
+Bran Stark,Three-Eyed Raven,1320
+Bran Stark,Tommen Baratheon,337
+Bran Stark,Tormund Giantsbane,392
+Bran Stark,Tyrion Lannister,2371
+Bran Stark,Viserion,3
+Bran Stark,White Walker,249
+Bran Stark,Yara Greyjoy,751
+Bran Stark,Yohn Royce,2246
+Bran Stark,Yoren,103
+Brienne of Tarth,Arya Stark,1831
+Brienne of Tarth,Beric Dondarrion,255
+Brienne of Tarth,Bran Stark,2130
+Brienne of Tarth,Bronn,502
+Brienne of Tarth,Brynden Tully,182
+Brienne of Tarth,Catelyn Stark,1320
+Brienne of Tarth,Cersei Lannister,1018
+Brienne of Tarth,Daenerys Targaryen,2229
+Brienne of Tarth,Davos Seaworth,4757
+Brienne of Tarth,Drogon,72
+Brienne of Tarth,Eddison Tollett,526
+Brienne of Tarth,Edmure Tully,751
+Brienne of Tarth,Euron Greyjoy,679
+Brienne of Tarth,Gendry,1251
+Brienne of Tarth,Ghost,199
+Brienne of Tarth,Gilly,147
+Brienne of Tarth,Gregor Clegane,903
+Brienne of Tarth,Grey Worm,2168
+Brienne of Tarth,Hot Pie,211
+Brienne of Tarth,Jaime Lannister,6610
+Brienne of Tarth,Joffrey Baratheon,115
+Brienne of Tarth,Jon Snow,3622
+Brienne of Tarth,Jorah Mormont,2086
+Brienne of Tarth,Locke,807
+Brienne of Tarth,Loras Tyrell,441
+Brienne of Tarth,Lord Varys,2584
+Brienne of Tarth,Lyanna Mormont,1331
+Brienne of Tarth,Mace Tyrell,45
+Brienne of Tarth,Margaery Tyrell,368
+Brienne of Tarth,Melisandre,415
+Brienne of Tarth,Missandei,2367
+Brienne of Tarth,Olenna Tyrell,77
+Brienne of Tarth,Petyr Baelish,1362
+Brienne of Tarth,Podrick Payne,5021
+Brienne of Tarth,Qhono,1612
+Brienne of Tarth,Qyburn,1092
+Brienne of Tarth,Renly Baratheon,807
+Brienne of Tarth,Rhaegal,72
+Brienne of Tarth,Robb Stark,80
+Brienne of Tarth,Robin Arryn,751
+Brienne of Tarth,Roose Bolton,284
+Brienne of Tarth,Samwell Tarly,1682
+Brienne of Tarth,Sandor Clegane,1615
+Brienne of Tarth,Sansa Stark,4495
+Brienne of Tarth,Stannis Baratheon,284
+Brienne of Tarth,Talisa Maegyr,46
+Brienne of Tarth,Theon Greyjoy,1876
+Brienne of Tarth,Tommen Baratheon,45
+Brienne of Tarth,Tormund Giantsbane,1945
+Brienne of Tarth,Tyrion Lannister,4136
+Brienne of Tarth,Tywin Lannister,7
+Brienne of Tarth,Yara Greyjoy,751
+Brienne of Tarth,Yohn Royce,2437
+Bronn,Bran Stark,90
+Bronn,Brienne of Tarth,502
+Bronn,Brynden Tully,62
+Bronn,Catelyn Stark,1054
+Bronn,Cersei Lannister,238
+Bronn,Daenerys Targaryen,153
+Bronn,Davos Seaworth,447
+Bronn,Drogon,225
+Bronn,Edmure Tully,160
+Bronn,Ellaria Sand,122
+Bronn,Grand Maester Pycelle,313
+Bronn,Jaime Lannister,2647
+Bronn,Janos Slynt,180
+Bronn,Joffrey Baratheon,503
+Bronn,Jon Snow,197
+Bronn,Jorah Mormont,197
+Bronn,Kevan Lannister,198
+Bronn,Lancel Lannister,194
+Bronn,Loras Tyrell,185
+Bronn,Lord Varys,513
+Bronn,Lysa Arryn,602
+Bronn,Margaery Tyrell,185
+Bronn,Meryn Trant,371
+Bronn,Missandei,197
+Bronn,Myrcella Baratheon,504
+Bronn,Oberyn Martell,59
+Bronn,Olenna Tyrell,185
+Bronn,Petyr Baelish,74
+Bronn,Podrick Payne,1077
+Bronn,Qhono,211
+Bronn,Qyburn,124
+Bronn,Robin Arryn,602
+Bronn,Rodrik Cassel,1054
+Bronn,Samwell Tarly,250
+Bronn,Sandor Clegane,725
+Bronn,Sansa Stark,503
+Bronn,Shae,674
+Bronn,Theon Greyjoy,197
+Bronn,Tommen Baratheon,222
+Bronn,Tyene Sand,519
+Bronn,Tyrion Lannister,5675
+Bronn,Tywin Lannister,482
+Bronn,Yoren,184
+Brynden Tully,Brienne of Tarth,182
+Brynden Tully,Bronn,62
+Brynden Tully,Catelyn Stark,1331
+Brynden Tully,Edmure Tully,1402
+Brynden Tully,Jaime Lannister,214
+Brynden Tully,Podrick Payne,182
+Brynden Tully,Robb Stark,1275
+Brynden Tully,Roose Bolton,251
+Brynden Tully,Talisa Maegyr,906
+Brynden Tully,Walder Frey,501
+Catelyn Stark,Arya Stark,722
+Catelyn Stark,Benjen Stark,194
+Catelyn Stark,Bran Stark,1161
+Catelyn Stark,Brienne of Tarth,1320
+Catelyn Stark,Bronn,1054
+Catelyn Stark,Brynden Tully,1331
+Catelyn Stark,Cersei Lannister,700
+Catelyn Stark,Daenerys Targaryen,7
+Catelyn Stark,Davos Seaworth,193
+Catelyn Stark,Drogon,7
+Catelyn Stark,Eddard Stark,1418
+Catelyn Stark,Edmure Tully,1382
+Catelyn Stark,Hodor,337
+Catelyn Stark,Jaime Lannister,1113
+Catelyn Stark,Joffrey Baratheon,531
+Catelyn Stark,Jon Snow,747
+Catelyn Stark,Jory Cassel,436
+Catelyn Stark,Loras Tyrell,441
+Catelyn Stark,Lord Varys,172
+Catelyn Stark,Lysa Arryn,835
+Catelyn Stark,Maester Luwin,845
+Catelyn Stark,Margaery Tyrell,248
+Catelyn Stark,Melisandre,200
+Catelyn Stark,Myrcella Baratheon,337
+Catelyn Stark,Petyr Baelish,472
+Catelyn Stark,Qyburn,105
+Catelyn Stark,Renly Baratheon,699
+Catelyn Stark,Rickon Stark,528
+Catelyn Stark,Robb Stark,3989
+Catelyn Stark,Robert Baratheon,554
+Catelyn Stark,Robin Arryn,835
+Catelyn Stark,Rodrik Cassel,2953
+Catelyn Stark,Roose Bolton,691
+Catelyn Stark,Sandor Clegane,337
+Catelyn Stark,Sansa Stark,773
+Catelyn Stark,Septa Mordane,191
+Catelyn Stark,Stannis Baratheon,193
+Catelyn Stark,Summer,529
+Catelyn Stark,Talisa Maegyr,1622
+Catelyn Stark,The Night King,7
+Catelyn Stark,Theon Greyjoy,1528
+Catelyn Stark,Tommen Baratheon,337
+Catelyn Stark,Tyrion Lannister,1173
+Catelyn Stark,Walder Frey,1023
+Catelyn Stark,Yoren,184
+Cersei Lannister,Arya Stark,1359
+Cersei Lannister,Barristan Selmy,1122
+Cersei Lannister,Benjen Stark,194
+Cersei Lannister,Bran Stark,594
+Cersei Lannister,Brienne of Tarth,1018
+Cersei Lannister,Bronn,238
+Cersei Lannister,Catelyn Stark,700
+Cersei Lannister,Daenerys Targaryen,1162
+Cersei Lannister,Davos Seaworth,903
+Cersei Lannister,Drogon,199
+Cersei Lannister,Eddard Stark,2164
+Cersei Lannister,Ellaria Sand,841
+Cersei Lannister,Euron Greyjoy,1875
+Cersei Lannister,Grand Maester Pycelle,4468
+Cersei Lannister,Gregor Clegane,4951
+Cersei Lannister,Grey Worm,362
+Cersei Lannister,High Sparrow,1221
+Cersei Lannister,Hodor,337
+Cersei Lannister,Jaime Lannister,7293
+Cersei Lannister,Janos Slynt,794
+Cersei Lannister,Joffrey Baratheon,5519
+Cersei Lannister,Jon Snow,1240
+Cersei Lannister,Jorah Mormont,903
+Cersei Lannister,Jory Cassel,686
+Cersei Lannister,Kevan Lannister,724
+Cersei Lannister,Lancel Lannister,389
+Cersei Lannister,Loras Tyrell,2195
+Cersei Lannister,Lord Varys,4514
+Cersei Lannister,Mace Tyrell,3048
+Cersei Lannister,Maester Luwin,337
+Cersei Lannister,Margaery Tyrell,3460
+Cersei Lannister,Meryn Trant,1236
+Cersei Lannister,Missandei,1373
+Cersei Lannister,Myrcella Baratheon,864
+Cersei Lannister,Oberyn Martell,2010
+Cersei Lannister,Olenna Tyrell,1973
+Cersei Lannister,Petyr Baelish,2522
+Cersei Lannister,Podrick Payne,546
+Cersei Lannister,Qhono,903
+Cersei Lannister,Qyburn,4157
+Cersei Lannister,Renly Baratheon,544
+Cersei Lannister,Rhaegal,72
+Cersei Lannister,Rickon Stark,337
+Cersei Lannister,Robb Stark,194
+Cersei Lannister,Robert Baratheon,1995
+Cersei Lannister,Rodrik Cassel,554
+Cersei Lannister,Ros,57
+Cersei Lannister,Sandor Clegane,2503
+Cersei Lannister,Sansa Stark,4400
+Cersei Lannister,Septa Mordane,249
+Cersei Lannister,Septa Unella,928
+Cersei Lannister,Shae,668
+Cersei Lannister,Summer,448
+Cersei Lannister,Theon Greyjoy,1434
+Cersei Lannister,Tommen Baratheon,3879
+Cersei Lannister,Tyene Sand,433
+Cersei Lannister,Tyrion Lannister,7057
+Cersei Lannister,Tywin Lannister,4491
+Cersei Lannister,Yara Greyjoy,156
+Cersei Lannister,Yoren,330
+Daario Naharis,Barristan Selmy,1682
+Daario Naharis,Daenerys Targaryen,4337
+Daario Naharis,Drogon,300
+Daario Naharis,Grey Worm,1487
+Daario Naharis,Hizdahr zo Loraq,1531
+Daario Naharis,Jorah Mormont,2827
+Daario Naharis,Missandei,2891
+Daario Naharis,Rhaegal,113
+Daario Naharis,Tyrion Lannister,1197
+Daario Naharis,Viserion,113
+Daenerys Targaryen,Arya Stark,701
+Daenerys Targaryen,Barristan Selmy,4314
+Daenerys Targaryen,Beric Dondarrion,506
+Daenerys Targaryen,Bran Stark,1325
+Daenerys Targaryen,Brienne of Tarth,2229
+Daenerys Targaryen,Bronn,153
+Daenerys Targaryen,Catelyn Stark,7
+Daenerys Targaryen,Cersei Lannister,1162
+Daenerys Targaryen,Daario Naharis,4337
+Daenerys Targaryen,Davos Seaworth,3445
+Daenerys Targaryen,Doreah,2744
+Daenerys Targaryen,Drogon,5883
+Daenerys Targaryen,Eddard Stark,7
+Daenerys Targaryen,Eddison Tollett,68
+Daenerys Targaryen,Ellaria Sand,201
+Daenerys Targaryen,Euron Greyjoy,1004
+Daenerys Targaryen,Gendry,367
+Daenerys Targaryen,Ghost,199
+Daenerys Targaryen,Gilly,147
+Daenerys Targaryen,Gregor Clegane,1148
+Daenerys Targaryen,Grey Worm,6029
+Daenerys Targaryen,Hizdahr zo Loraq,2047
+Daenerys Targaryen,Irri,2741
+Daenerys Targaryen,Jaime Lannister,1746
+Daenerys Targaryen,Jon Snow,7257
+Daenerys Targaryen,Jorah Mormont,12923
+Daenerys Targaryen,Khal Drogo,3575
+Daenerys Targaryen,Lord Varys,4599
+Daenerys Targaryen,Lyanna Mormont,773
+Daenerys Targaryen,Melisandre,202
+Daenerys Targaryen,Mirri Maz Duur,1401
+Daenerys Targaryen,Missandei,9924
+Daenerys Targaryen,Olenna Tyrell,254
+Daenerys Targaryen,Podrick Payne,459
+Daenerys Targaryen,Qhono,2889
+Daenerys Targaryen,Qotho,1587
+Daenerys Targaryen,Qyburn,1138
+Daenerys Targaryen,Rakharo,2514
+Daenerys Targaryen,Rhaegal,3294
+Daenerys Targaryen,Samwell Tarly,710
+Daenerys Targaryen,Sandor Clegane,1184
+Daenerys Targaryen,Sansa Stark,1690
+Daenerys Targaryen,The Night King,317
+Daenerys Targaryen,Theon Greyjoy,1770
+Daenerys Targaryen,Tormund Giantsbane,765
+Daenerys Targaryen,Tyrion Lannister,9196
+Daenerys Targaryen,Viserion,2702
+Daenerys Targaryen,Viserys Targaryen,1767
+Daenerys Targaryen,White Walker,143
+Daenerys Targaryen,Xaro Xhoan Daxos,1242
+Daenerys Targaryen,Yara Greyjoy,445
+Daenerys Targaryen,Yohn Royce,1173
+Davos Seaworth,Alliser Thorne,585
+Davos Seaworth,Arya Stark,1401
+Davos Seaworth,Baby Sam,50
+Davos Seaworth,Beric Dondarrion,420
+Davos Seaworth,Bran Stark,2047
+Davos Seaworth,Brienne of Tarth,4757
+Davos Seaworth,Bronn,447
+Davos Seaworth,Catelyn Stark,193
+Davos Seaworth,Cersei Lannister,903
+Davos Seaworth,Daenerys Targaryen,3445
+Davos Seaworth,Drogon,139
+Davos Seaworth,Eddison Tollett,1446
+Davos Seaworth,Edmure Tully,751
+Davos Seaworth,Euron Greyjoy,679
+Davos Seaworth,Gendry,2155
+Davos Seaworth,Ghost,871
+Davos Seaworth,Gilly,384
+Davos Seaworth,Gregor Clegane,903
+Davos Seaworth,Grenn,62
+Davos Seaworth,Grey Worm,2309
+Davos Seaworth,Jaime Lannister,2109
+Davos Seaworth,Janos Slynt,184
+Davos Seaworth,Jon Snow,10380
+Davos Seaworth,Jorah Mormont,2532
+Davos Seaworth,Loras Tyrell,193
+Davos Seaworth,Lord Varys,3160
+Davos Seaworth,Lyanna Mormont,2181
+Davos Seaworth,Maester Aemon,62
+Davos Seaworth,Mance Rayder,366
+Davos Seaworth,Melisandre,3432
+Davos Seaworth,Missandei,3731
+Davos Seaworth,Olly,733
+Davos Seaworth,Othell Yarwyck,427
+Davos Seaworth,Petyr Baelish,816
+Davos Seaworth,Podrick Payne,1294
+Davos Seaworth,Qhono,2556
+Davos Seaworth,Qyburn,903
+Davos Seaworth,Ramsay Snow,686
+Davos Seaworth,Renly Baratheon,193
+Davos Seaworth,Rhaegal,123
+Davos Seaworth,Rickon Stark,123
+Davos Seaworth,Robin Arryn,751
+Davos Seaworth,Samwell Tarly,1930
+Davos Seaworth,Sandor Clegane,1448
+Davos Seaworth,Sansa Stark,4032
+Davos Seaworth,Selyse Baratheon,482
+Davos Seaworth,Shireen Baratheon,644
+Davos Seaworth,Stannis Baratheon,3712
+Davos Seaworth,Theon Greyjoy,1765
+Davos Seaworth,Thoros of Myr,141
+Davos Seaworth,Tormund Giantsbane,3696
+Davos Seaworth,Tyrion Lannister,5731
+Davos Seaworth,Viserion,48
+Davos Seaworth,Wun Wun,467
+Davos Seaworth,Yara Greyjoy,751
+Davos Seaworth,Yohn Royce,2663
+Doreah,Daenerys Targaryen,2744
+Doreah,Drogon,515
+Doreah,Irri,2256
+Doreah,Jorah Mormont,2299
+Doreah,Khal Drogo,1400
+Doreah,Mirri Maz Duur,844
+Doreah,Qotho,1003
+Doreah,Rakharo,1455
+Doreah,Rhaegal,292
+Doreah,Viserion,292
+Doreah,Viserys Targaryen,1056
+Doreah,Xaro Xhoan Daxos,97
+Drogon,Arya Stark,49
+Drogon,Barristan Selmy,400
+Drogon,Beric Dondarrion,251
+Drogon,Bran Stark,7
+Drogon,Brienne of Tarth,72
+Drogon,Bronn,225
+Drogon,Catelyn Stark,7
+Drogon,Cersei Lannister,199
+Drogon,Daario Naharis,300
+Drogon,Daenerys Targaryen,5883
+Drogon,Davos Seaworth,139
+Drogon,Doreah,515
+Drogon,Eddard Stark,7
+Drogon,Euron Greyjoy,265
+Drogon,Gregor Clegane,185
+Drogon,Grey Worm,810
+Drogon,Irri,283
+Drogon,Jaime Lannister,196
+Drogon,Jon Snow,1539
+Drogon,Jorah Mormont,2146
+Drogon,Khal Drogo,824
+Drogon,Lord Varys,296
+Drogon,Melisandre,7
+Drogon,Mirri Maz Duur,263
+Drogon,Missandei,899
+Drogon,Qhono,458
+Drogon,Qotho,336
+Drogon,Qyburn,155
+Drogon,Rakharo,556
+Drogon,Rhaegal,3240
+Drogon,Sandor Clegane,254
+Drogon,Sansa Stark,36
+Drogon,The Night King,317
+Drogon,Theon Greyjoy,165
+Drogon,Tormund Giantsbane,256
+Drogon,Tyrion Lannister,1175
+Drogon,Viserion,2622
+Drogon,Viserys Targaryen,471
+Drogon,White Walker,143
+Drogon,Xaro Xhoan Daxos,97
+Drogon,Yara Greyjoy,93
+Eddard Stark,Arya Stark,2271
+Eddard Stark,Barristan Selmy,932
+Eddard Stark,Benjen Stark,376
+Eddard Stark,Beric Dondarrion,245
+Eddard Stark,Bran Stark,1232
+Eddard Stark,Catelyn Stark,1418
+Eddard Stark,Cersei Lannister,2164
+Eddard Stark,Daenerys Targaryen,7
+Eddard Stark,Drogon,7
+Eddard Stark,Gendry,117
+Eddard Stark,Ghost,183
+Eddard Stark,Grand Maester Pycelle,1933
+Eddard Stark,Gregor Clegane,239
+Eddard Stark,Hodor,337
+Eddard Stark,Jaime Lannister,879
+Eddard Stark,Janos Slynt,367
+Eddard Stark,Joffrey Baratheon,2013
+Eddard Stark,Jon Snow,1217
+Eddard Stark,Jory Cassel,1831
+Eddard Stark,Lancel Lannister,153
+Eddard Stark,Loras Tyrell,239
+Eddard Stark,Lord Varys,1847
+Eddard Stark,Maester Luwin,518
+Eddard Stark,Melisandre,7
+Eddard Stark,Meryn Trant,160
+Eddard Stark,Myrcella Baratheon,576
+Eddard Stark,Petyr Baelish,2349
+Eddard Stark,Renly Baratheon,1305
+Eddard Stark,Rickon Stark,528
+Eddard Stark,Robb Stark,829
+Eddard Stark,Robert Baratheon,2387
+Eddard Stark,Rodrik Cassel,1187
+Eddard Stark,Sandor Clegane,1430
+Eddard Stark,Sansa Stark,2029
+Eddard Stark,Septa Mordane,726
+Eddard Stark,Summer,598
+Eddard Stark,The Night King,7
+Eddard Stark,Theon Greyjoy,1166
+Eddard Stark,Three-Eyed Raven,34
+Eddard Stark,Tommen Baratheon,576
+Eddard Stark,Tyrion Lannister,182
+Eddard Stark,White Walker,34
+Eddard Stark,Yoren,493
+Eddison Tollett,Alliser Thorne,1626
+Eddison Tollett,Arya Stark,68
+Eddison Tollett,Baby Sam,50
+Eddison Tollett,Beric Dondarrion,268
+Eddison Tollett,Bran Stark,143
+Eddison Tollett,Brienne of Tarth,526
+Eddison Tollett,Daenerys Targaryen,68
+Eddison Tollett,Davos Seaworth,1446
+Eddison Tollett,Gendry,101
+Eddison Tollett,Ghost,782
+Eddison Tollett,Gilly,161
+Eddison Tollett,Grenn,2436
+Eddison Tollett,Grey Worm,68
+Eddison Tollett,Jaime Lannister,68
+Eddison Tollett,Janos Slynt,1202
+Eddison Tollett,Jeor Mormont,725
+Eddison Tollett,Jon Snow,5131
+Eddison Tollett,Jorah Mormont,68
+Eddison Tollett,Locke,248
+Eddison Tollett,Lord Varys,68
+Eddison Tollett,Lyanna Mormont,68
+Eddison Tollett,Maester Aemon,333
+Eddison Tollett,Mance Rayder,233
+Eddison Tollett,Meera Reed,75
+Eddison Tollett,Melisandre,896
+Eddison Tollett,Missandei,68
+Eddison Tollett,Olly,1451
+Eddison Tollett,Othell Yarwyck,827
+Eddison Tollett,Podrick Payne,342
+Eddison Tollett,Pypar,491
+Eddison Tollett,Rast,472
+Eddison Tollett,Samwell Tarly,2986
+Eddison Tollett,Sandor Clegane,90
+Eddison Tollett,Sansa Stark,493
+Eddison Tollett,Selyse Baratheon,233
+Eddison Tollett,Shireen Baratheon,233
+Eddison Tollett,Stannis Baratheon,527
+Eddison Tollett,The Night King,41
+Eddison Tollett,Theon Greyjoy,68
+Eddison Tollett,Tormund Giantsbane,2629
+Eddison Tollett,Tyrion Lannister,68
+Eddison Tollett,White Walker,76
+Eddison Tollett,Wun Wun,728
+Eddison Tollett,Yohn Royce,68
+Edmure Tully,Arya Stark,751
+Edmure Tully,Bran Stark,751
+Edmure Tully,Brienne of Tarth,751
+Edmure Tully,Bronn,160
+Edmure Tully,Brynden Tully,1402
+Edmure Tully,Catelyn Stark,1382
+Edmure Tully,Davos Seaworth,751
+Edmure Tully,Gendry,751
+Edmure Tully,Grey Worm,751
+Edmure Tully,Jaime Lannister,509
+Edmure Tully,Robb Stark,1475
+Edmure Tully,Robin Arryn,751
+Edmure Tully,Roose Bolton,379
+Edmure Tully,Samwell Tarly,751
+Edmure Tully,Sansa Stark,751
+Edmure Tully,Talisa Maegyr,1106
+Edmure Tully,Tyrion Lannister,751
+Edmure Tully,Walder Frey,651
+Edmure Tully,Yara Greyjoy,751
+Edmure Tully,Yohn Royce,751
+Ellaria Sand,Bronn,122
+Ellaria Sand,Cersei Lannister,841
+Ellaria Sand,Daenerys Targaryen,201
+Ellaria Sand,Euron Greyjoy,238
+Ellaria Sand,Grand Maester Pycelle,302
+Ellaria Sand,Gregor Clegane,728
+Ellaria Sand,Grey Worm,201
+Ellaria Sand,Jaime Lannister,825
+Ellaria Sand,Joffrey Baratheon,21
+Ellaria Sand,Loras Tyrell,30
+Ellaria Sand,Lord Varys,489
+Ellaria Sand,Mace Tyrell,318
+Ellaria Sand,Margaery Tyrell,26
+Ellaria Sand,Missandei,201
+Ellaria Sand,Myrcella Baratheon,278
+Ellaria Sand,Oberyn Martell,950
+Ellaria Sand,Olenna Tyrell,314
+Ellaria Sand,Podrick Payne,15
+Ellaria Sand,Qyburn,433
+Ellaria Sand,Sansa Stark,9
+Ellaria Sand,Theon Greyjoy,295
+Ellaria Sand,Tommen Baratheon,32
+Ellaria Sand,Tyene Sand,1115
+Ellaria Sand,Tyrion Lannister,625
+Ellaria Sand,Tywin Lannister,434
+Ellaria Sand,Yara Greyjoy,533
+Euron Greyjoy,Brienne of Tarth,679
+Euron Greyjoy,Cersei Lannister,1875
+Euron Greyjoy,Daenerys Targaryen,1004
+Euron Greyjoy,Davos Seaworth,679
+Euron Greyjoy,Drogon,265
+Euron Greyjoy,Ellaria Sand,238
+Euron Greyjoy,Gregor Clegane,1704
+Euron Greyjoy,Grey Worm,362
+Euron Greyjoy,Jaime Lannister,1270
+Euron Greyjoy,Jon Snow,679
+Euron Greyjoy,Jorah Mormont,679
+Euron Greyjoy,Lord Varys,1041
+Euron Greyjoy,Missandei,1149
+Euron Greyjoy,Qhono,679
+Euron Greyjoy,Qyburn,1642
+Euron Greyjoy,Rhaegal,72
+Euron Greyjoy,Sandor Clegane,361
+Euron Greyjoy,Theon Greyjoy,986
+Euron Greyjoy,Tyene Sand,249
+Euron Greyjoy,Tyrion Lannister,1121
+Euron Greyjoy,Yara Greyjoy,835
+Gendry,Arya Stark,4552
+Gendry,Beric Dondarrion,1648
+Gendry,Bran Stark,1033
+Gendry,Brienne of Tarth,1251
+Gendry,Daenerys Targaryen,367
+Gendry,Davos Seaworth,2155
+Gendry,Eddard Stark,117
+Gendry,Eddison Tollett,101
+Gendry,Edmure Tully,751
+Gendry,Ghost,169
+Gendry,Gilly,113
+Gendry,Gregor Clegane,224
+Gendry,Grey Worm,1218
+Gendry,Hot Pie,1505
+Gendry,Jaime Lannister,500
+Gendry,Jaqen H'ghar,294
+Gendry,Jon Snow,1512
+Gendry,Jorah Mormont,1237
+Gendry,Lord Varys,282
+Gendry,Lyanna Mormont,68
+Gendry,Melisandre,732
+Gendry,Missandei,282
+Gendry,Podrick Payne,515
+Gendry,Qhono,62
+Gendry,Robin Arryn,751
+Gendry,Samwell Tarly,1287
+Gendry,Sandor Clegane,1888
+Gendry,Sansa Stark,1033
+Gendry,Stannis Baratheon,118
+Gendry,Theon Greyjoy,68
+Gendry,Thoros of Myr,2032
+Gendry,Tormund Giantsbane,1367
+Gendry,Tyrion Lannister,1187
+Gendry,Tywin Lannister,100
+Gendry,White Walker,24
+Gendry,Yara Greyjoy,751
+Gendry,Yohn Royce,920
+Gendry,Yoren,700
+Ghost,Alliser Thorne,218
+Ghost,Arya Stark,199
+Ghost,Benjen Stark,200
+Ghost,Beric Dondarrion,68
+Ghost,Bran Stark,382
+Ghost,Brienne of Tarth,199
+Ghost,Daenerys Targaryen,199
+Ghost,Davos Seaworth,871
+Ghost,Eddard Stark,183
+Ghost,Eddison Tollett,782
+Ghost,Gendry,169
+Ghost,Gilly,137
+Ghost,Grenn,427
+Ghost,Grey Worm,199
+Ghost,Jaime Lannister,199
+Ghost,Janos Slynt,34
+Ghost,Jeor Mormont,194
+Ghost,Jon Snow,2502
+Ghost,Jorah Mormont,153
+Ghost,Jory Cassel,183
+Ghost,Lord Varys,199
+Ghost,Lyanna Mormont,68
+Ghost,Melisandre,321
+Ghost,Missandei,199
+Ghost,Olly,164
+Ghost,Othell Yarwyck,312
+Ghost,Podrick Payne,199
+Ghost,Pypar,149
+Ghost,Rast,396
+Ghost,Robb Stark,183
+Ghost,Rodrik Cassel,183
+Ghost,Samwell Tarly,1057
+Ghost,Sandor Clegane,178
+Ghost,Sansa Stark,199
+Ghost,Summer,207
+Ghost,Theon Greyjoy,251
+Ghost,Tormund Giantsbane,629
+Ghost,Tyrion Lannister,399
+Ghost,White Walker,87
+Ghost,Yohn Royce,199
+Gilly,Alliser Thorne,164
+Gilly,Baby Sam,3320
+Gilly,Bran Stark,361
+Gilly,Brienne of Tarth,147
+Gilly,Daenerys Targaryen,147
+Gilly,Davos Seaworth,384
+Gilly,Eddison Tollett,161
+Gilly,Gendry,113
+Gilly,Ghost,137
+Gilly,Grey Worm,113
+Gilly,Hodor,248
+Gilly,Jaime Lannister,147
+Gilly,Janos Slynt,111
+Gilly,Jeor Mormont,239
+Gilly,Jojen Reed,248
+Gilly,Jon Snow,902
+Gilly,Lord Varys,472
+Gilly,Maester Aemon,393
+Gilly,Mance Rayder,122
+Gilly,Meera Reed,248
+Gilly,Melisandre,111
+Gilly,Missandei,438
+Gilly,Olly,208
+Gilly,Podrick Payne,147
+Gilly,Pypar,90
+Gilly,Samwell Tarly,4879
+Gilly,Sandor Clegane,113
+Gilly,Sansa Stark,472
+Gilly,Selyse Baratheon,151
+Gilly,Shireen Baratheon,290
+Gilly,Stannis Baratheon,123
+Gilly,Summer,248
+Gilly,Tormund Giantsbane,230
+Gilly,Tyrion Lannister,438
+Gilly,White Walker,63
+Gilly,Ygritte,26
+Grand Maester Pycelle,Arya Stark,330
+Grand Maester Pycelle,Barristan Selmy,1000
+Grand Maester Pycelle,Beric Dondarrion,245
+Grand Maester Pycelle,Bronn,313
+Grand Maester Pycelle,Cersei Lannister,4468
+Grand Maester Pycelle,Eddard Stark,1933
+Grand Maester Pycelle,Ellaria Sand,302
+Grand Maester Pycelle,Gregor Clegane,912
+Grand Maester Pycelle,Jaime Lannister,590
+Grand Maester Pycelle,Janos Slynt,729
+Grand Maester Pycelle,Joffrey Baratheon,2347
+Grand Maester Pycelle,Kevan Lannister,540
+Grand Maester Pycelle,Lancel Lannister,15
+Grand Maester Pycelle,Loras Tyrell,1121
+Grand Maester Pycelle,Lord Varys,3461
+Grand Maester Pycelle,Mace Tyrell,1749
+Grand Maester Pycelle,Margaery Tyrell,1033
+Grand Maester Pycelle,Meryn Trant,434
+Grand Maester Pycelle,Myrcella Baratheon,239
+Grand Maester Pycelle,Oberyn Martell,844
+Grand Maester Pycelle,Olenna Tyrell,649
+Grand Maester Pycelle,Petyr Baelish,2679
+Grand Maester Pycelle,Podrick Payne,389
+Grand Maester Pycelle,Qyburn,741
+Grand Maester Pycelle,Renly Baratheon,1164
+Grand Maester Pycelle,Robert Baratheon,749
+Grand Maester Pycelle,Ros,185
+Grand Maester Pycelle,Sandor Clegane,938
+Grand Maester Pycelle,Sansa Stark,1972
+Grand Maester Pycelle,Septa Mordane,239
+Grand Maester Pycelle,Shae,21
+Grand Maester Pycelle,Tommen Baratheon,1065
+Grand Maester Pycelle,Tyrion Lannister,2054
+Grand Maester Pycelle,Tywin Lannister,1758
+Grand Maester Pycelle,Yoren,330
+Gregor Clegane,Arya Stark,611
+Gregor Clegane,Barristan Selmy,488
+Gregor Clegane,Brienne of Tarth,903
+Gregor Clegane,Cersei Lannister,4951
+Gregor Clegane,Daenerys Targaryen,1148
+Gregor Clegane,Davos Seaworth,903
+Gregor Clegane,Drogon,185
+Gregor Clegane,Eddard Stark,239
+Gregor Clegane,Ellaria Sand,728
+Gregor Clegane,Euron Greyjoy,1704
+Gregor Clegane,Gendry,224
+Gregor Clegane,Grand Maester Pycelle,912
+Gregor Clegane,Grey Worm,362
+Gregor Clegane,Hot Pie,224
+Gregor Clegane,Jaime Lannister,2403
+Gregor Clegane,Joffrey Baratheon,488
+Gregor Clegane,Jon Snow,903
+Gregor Clegane,Jorah Mormont,903
+Gregor Clegane,Kevan Lannister,418
+Gregor Clegane,Lancel Lannister,121
+Gregor Clegane,Loras Tyrell,239
+Gregor Clegane,Lord Varys,1532
+Gregor Clegane,Mace Tyrell,574
+Gregor Clegane,Missandei,1373
+Gregor Clegane,Myrcella Baratheon,488
+Gregor Clegane,Oberyn Martell,295
+Gregor Clegane,Olenna Tyrell,246
+Gregor Clegane,Petyr Baelish,488
+Gregor Clegane,Qhono,903
+Gregor Clegane,Qyburn,3261
+Gregor Clegane,Renly Baratheon,488
+Gregor Clegane,Rhaegal,72
+Gregor Clegane,Robert Baratheon,488
+Gregor Clegane,Sandor Clegane,1387
+Gregor Clegane,Sansa Stark,488
+Gregor Clegane,Septa Mordane,488
+Gregor Clegane,Septa Unella,52
+Gregor Clegane,Theon Greyjoy,903
+Gregor Clegane,Tommen Baratheon,684
+Gregor Clegane,Tyene Sand,433
+Gregor Clegane,Tyrion Lannister,2058
+Gregor Clegane,Tywin Lannister,576
+Gregor Clegane,Yara Greyjoy,156
+Grenn,Alliser Thorne,1280
+Grenn,Davos Seaworth,62
+Grenn,Eddison Tollett,2436
+Grenn,Ghost,427
+Grenn,Janos Slynt,608
+Grenn,Jeor Mormont,1342
+Grenn,Jon Snow,3118
+Grenn,Locke,410
+Grenn,Maester Aemon,553
+Grenn,Melisandre,62
+Grenn,Olly,421
+Grenn,Othell Yarwyck,448
+Grenn,Pypar,1880
+Grenn,Rast,1670
+Grenn,Samwell Tarly,2652
+Grenn,Selyse Baratheon,62
+Grenn,Shireen Baratheon,62
+Grenn,Stannis Baratheon,62
+Grenn,Tyrion Lannister,339
+Grenn,White Walker,58
+Grey Worm,Arya Stark,1379
+Grey Worm,Barristan Selmy,2341
+Grey Worm,Beric Dondarrion,323
+Grey Worm,Bran Stark,1989
+Grey Worm,Brienne of Tarth,2168
+Grey Worm,Cersei Lannister,362
+Grey Worm,Daario Naharis,1487
+Grey Worm,Daenerys Targaryen,6029
+Grey Worm,Davos Seaworth,2309
+Grey Worm,Drogon,810
+Grey Worm,Eddison Tollett,68
+Grey Worm,Edmure Tully,751
+Grey Worm,Ellaria Sand,201
+Grey Worm,Euron Greyjoy,362
+Grey Worm,Gendry,1218
+Grey Worm,Ghost,199
+Grey Worm,Gilly,113
+Grey Worm,Gregor Clegane,362
+Grey Worm,Hizdahr zo Loraq,566
+Grey Worm,Jaime Lannister,1003
+Grey Worm,Jon Snow,2195
+Grey Worm,Jorah Mormont,2650
+Grey Worm,Lord Varys,3464
+Grey Worm,Lyanna Mormont,759
+Grey Worm,Melisandre,280
+Grey Worm,Missandei,7248
+Grey Worm,Olenna Tyrell,201
+Grey Worm,Podrick Payne,564
+Grey Worm,Qhono,327
+Grey Worm,Qyburn,352
+Grey Worm,Rhaegal,365
+Grey Worm,Robin Arryn,751
+Grey Worm,Samwell Tarly,1441
+Grey Worm,Sandor Clegane,359
+Grey Worm,Sansa Stark,1953
+Grey Worm,Theon Greyjoy,628
+Grey Worm,Tormund Giantsbane,577
+Grey Worm,Tyrion Lannister,5670
+Grey Worm,Viserion,365
+Grey Worm,Yara Greyjoy,1045
+Grey Worm,Yohn Royce,1876
+High Sparrow,Cersei Lannister,1221
+High Sparrow,Jaime Lannister,434
+High Sparrow,Kevan Lannister,333
+High Sparrow,Lancel Lannister,355
+High Sparrow,Loras Tyrell,572
+High Sparrow,Mace Tyrell,579
+High Sparrow,Margaery Tyrell,1531
+High Sparrow,Meryn Trant,169
+High Sparrow,Myrcella Baratheon,188
+High Sparrow,Olenna Tyrell,689
+High Sparrow,Septa Unella,464
+High Sparrow,Tommen Baratheon,771
+Hizdahr zo Loraq,Barristan Selmy,850
+Hizdahr zo Loraq,Daario Naharis,1531
+Hizdahr zo Loraq,Daenerys Targaryen,2047
+Hizdahr zo Loraq,Grey Worm,566
+Hizdahr zo Loraq,Jorah Mormont,905
+Hizdahr zo Loraq,Missandei,1456
+Hizdahr zo Loraq,Rhaegal,81
+Hizdahr zo Loraq,Tyrion Lannister,790
+Hizdahr zo Loraq,Viserion,81
+Hodor,Arya Stark,337
+Hodor,Baby Sam,248
+Hodor,Bran Stark,4773
+Hodor,Catelyn Stark,337
+Hodor,Cersei Lannister,337
+Hodor,Eddard Stark,337
+Hodor,Gilly,248
+Hodor,Jaime Lannister,337
+Hodor,Joffrey Baratheon,337
+Hodor,Jojen Reed,2257
+Hodor,Jon Snow,377
+Hodor,Jory Cassel,337
+Hodor,Locke,101
+Hodor,Maester Luwin,1019
+Hodor,Meera Reed,2887
+Hodor,Myrcella Baratheon,337
+Hodor,Osha,2050
+Hodor,Rast,30
+Hodor,Rickon Stark,2017
+Hodor,Robb Stark,103
+Hodor,Robert Baratheon,337
+Hodor,Rodrik Cassel,594
+Hodor,Samwell Tarly,248
+Hodor,Sandor Clegane,337
+Hodor,Sansa Stark,337
+Hodor,Summer,1770
+Hodor,Theon Greyjoy,854
+Hodor,Three-Eyed Raven,353
+Hodor,Tommen Baratheon,337
+Hodor,Tyrion Lannister,103
+Hodor,White Walker,42
+Hodor,Yoren,103
+Hot Pie,Arya Stark,1633
+Hot Pie,Brienne of Tarth,211
+Hot Pie,Gendry,1505
+Hot Pie,Gregor Clegane,224
+Hot Pie,Jaqen H'ghar,209
+Hot Pie,Podrick Payne,211
+Hot Pie,Sandor Clegane,52
+Hot Pie,Thoros of Myr,373
+Hot Pie,Tywin Lannister,100
+Hot Pie,Yoren,218
+Irri,Daenerys Targaryen,2741
+Irri,Doreah,2256
+Irri,Drogon,283
+Irri,Jorah Mormont,2401
+Irri,Khal Drogo,1715
+Irri,Mirri Maz Duur,941
+Irri,Qotho,1003
+Irri,Rakharo,1719
+Irri,Rhaegal,283
+Irri,Viserion,283
+Irri,Viserys Targaryen,981
+Irri,Xaro Xhoan Daxos,44
+Jaime Lannister,Arya Stark,923
+Jaime Lannister,Barristan Selmy,272
+Jaime Lannister,Benjen Stark,194
+Jaime Lannister,Beric Dondarrion,255
+Jaime Lannister,Bran Stark,1371
+Jaime Lannister,Brienne of Tarth,6610
+Jaime Lannister,Bronn,2647
+Jaime Lannister,Brynden Tully,214
+Jaime Lannister,Catelyn Stark,1113
+Jaime Lannister,Cersei Lannister,7293
+Jaime Lannister,Daenerys Targaryen,1746
+Jaime Lannister,Davos Seaworth,2109
+Jaime Lannister,Drogon,196
+Jaime Lannister,Eddard Stark,879
+Jaime Lannister,Eddison Tollett,68
+Jaime Lannister,Edmure Tully,509
+Jaime Lannister,Ellaria Sand,825
+Jaime Lannister,Euron Greyjoy,1270
+Jaime Lannister,Gendry,500
+Jaime Lannister,Ghost,199
+Jaime Lannister,Gilly,147
+Jaime Lannister,Grand Maester Pycelle,590
+Jaime Lannister,Gregor Clegane,2403
+Jaime Lannister,Grey Worm,1003
+Jaime Lannister,High Sparrow,434
+Jaime Lannister,Hodor,337
+Jaime Lannister,Joffrey Baratheon,1186
+Jaime Lannister,Jon Snow,2203
+Jaime Lannister,Jorah Mormont,1627
+Jaime Lannister,Jory Cassel,647
+Jaime Lannister,Kevan Lannister,335
+Jaime Lannister,Lancel Lannister,315
+Jaime Lannister,Locke,1016
+Jaime Lannister,Loras Tyrell,845
+Jaime Lannister,Lord Varys,2212
+Jaime Lannister,Lyanna Mormont,583
+Jaime Lannister,Mace Tyrell,1822
+Jaime Lannister,Maester Luwin,337
+Jaime Lannister,Margaery Tyrell,1284
+Jaime Lannister,Meryn Trant,277
+Jaime Lannister,Missandei,1695
+Jaime Lannister,Myrcella Baratheon,1526
+Jaime Lannister,Oberyn Martell,1281
+Jaime Lannister,Olenna Tyrell,958
+Jaime Lannister,Petyr Baelish,193
+Jaime Lannister,Podrick Payne,1542
+Jaime Lannister,Qhono,1103
+Jaime Lannister,Qyburn,2337
+Jaime Lannister,Rhaegal,72
+Jaime Lannister,Rickon Stark,337
+Jaime Lannister,Robb Stark,535
+Jaime Lannister,Robert Baratheon,803
+Jaime Lannister,Rodrik Cassel,654
+Jaime Lannister,Roose Bolton,298
+Jaime Lannister,Ros,130
+Jaime Lannister,Samwell Tarly,780
+Jaime Lannister,Sandor Clegane,1213
+Jaime Lannister,Sansa Stark,1608
+Jaime Lannister,Septa Unella,246
+Jaime Lannister,Shae,379
+Jaime Lannister,Summer,448
+Jaime Lannister,The Night King,10
+Jaime Lannister,Theon Greyjoy,1812
+Jaime Lannister,Tommen Baratheon,1092
+Jaime Lannister,Tormund Giantsbane,1093
+Jaime Lannister,Tyene Sand,365
+Jaime Lannister,Tyrion Lannister,6107
+Jaime Lannister,Tywin Lannister,2269
+Jaime Lannister,Walder Frey,155
+Jaime Lannister,Yara Greyjoy,156
+Jaime Lannister,Yohn Royce,695
+Janos Slynt,Alliser Thorne,1559
+Janos Slynt,Baby Sam,76
+Janos Slynt,Barristan Selmy,578
+Janos Slynt,Bronn,180
+Janos Slynt,Cersei Lannister,794
+Janos Slynt,Davos Seaworth,184
+Janos Slynt,Eddard Stark,367
+Janos Slynt,Eddison Tollett,1202
+Janos Slynt,Ghost,34
+Janos Slynt,Gilly,111
+Janos Slynt,Grand Maester Pycelle,729
+Janos Slynt,Grenn,608
+Janos Slynt,Joffrey Baratheon,578
+Janos Slynt,Jon Snow,1665
+Janos Slynt,Locke,201
+Janos Slynt,Lord Varys,952
+Janos Slynt,Maester Aemon,657
+Janos Slynt,Mance Rayder,133
+Janos Slynt,Melisandre,184
+Janos Slynt,Meryn Trant,369
+Janos Slynt,Olly,1108
+Janos Slynt,Othell Yarwyck,675
+Janos Slynt,Petyr Baelish,952
+Janos Slynt,Podrick Payne,15
+Janos Slynt,Pypar,459
+Janos Slynt,Renly Baratheon,144
+Janos Slynt,Ros,125
+Janos Slynt,Samwell Tarly,1037
+Janos Slynt,Sandor Clegane,578
+Janos Slynt,Sansa Stark,369
+Janos Slynt,Selyse Baratheon,62
+Janos Slynt,Shireen Baratheon,62
+Janos Slynt,Stannis Baratheon,292
+Janos Slynt,Tormund Giantsbane,122
+Janos Slynt,Tyrion Lannister,411
+Janos Slynt,Ygritte,50
+Jaqen H'ghar,Arya Stark,2162
+Jaqen H'ghar,Gendry,294
+Jaqen H'ghar,Hot Pie,209
+Jaqen H'ghar,The Waif,308
+Jeor Mormont,Alliser Thorne,494
+Jeor Mormont,Eddison Tollett,725
+Jeor Mormont,Ghost,194
+Jeor Mormont,Gilly,239
+Jeor Mormont,Grenn,1342
+Jeor Mormont,Jon Snow,1852
+Jeor Mormont,Maester Aemon,453
+Jeor Mormont,Othell Yarwyck,406
+Jeor Mormont,Pypar,617
+Jeor Mormont,Rast,946
+Jeor Mormont,Samwell Tarly,1384
+Jeor Mormont,Tyrion Lannister,219
+Jeor Mormont,White Walker,71
+Joffrey Baratheon,Arya Stark,1522
+Joffrey Baratheon,Barristan Selmy,1361
+Joffrey Baratheon,Benjen Stark,194
+Joffrey Baratheon,Bran Stark,337
+Joffrey Baratheon,Brienne of Tarth,115
+Joffrey Baratheon,Bronn,503
+Joffrey Baratheon,Catelyn Stark,531
+Joffrey Baratheon,Cersei Lannister,5519
+Joffrey Baratheon,Eddard Stark,2013
+Joffrey Baratheon,Ellaria Sand,21
+Joffrey Baratheon,Grand Maester Pycelle,2347
+Joffrey Baratheon,Gregor Clegane,488
+Joffrey Baratheon,Hodor,337
+Joffrey Baratheon,Jaime Lannister,1186
+Joffrey Baratheon,Janos Slynt,578
+Joffrey Baratheon,Jon Snow,337
+Joffrey Baratheon,Jory Cassel,586
+Joffrey Baratheon,Lancel Lannister,336
+Joffrey Baratheon,Loras Tyrell,1241
+Joffrey Baratheon,Lord Varys,2174
+Joffrey Baratheon,Mace Tyrell,797
+Joffrey Baratheon,Maester Luwin,337
+Joffrey Baratheon,Margaery Tyrell,2218
+Joffrey Baratheon,Meryn Trant,1644
+Joffrey Baratheon,Myrcella Baratheon,1047
+Joffrey Baratheon,Oberyn Martell,293
+Joffrey Baratheon,Olenna Tyrell,1075
+Joffrey Baratheon,Petyr Baelish,1795
+Joffrey Baratheon,Podrick Payne,525
+Joffrey Baratheon,Renly Baratheon,783
+Joffrey Baratheon,Rickon Stark,337
+Joffrey Baratheon,Robb Stark,194
+Joffrey Baratheon,Robert Baratheon,1563
+Joffrey Baratheon,Rodrik Cassel,531
+Joffrey Baratheon,Ros,215
+Joffrey Baratheon,Sandor Clegane,3174
+Joffrey Baratheon,Sansa Stark,5092
+Joffrey Baratheon,Septa Mordane,821
+Joffrey Baratheon,Shae,62
+Joffrey Baratheon,Summer,337
+Joffrey Baratheon,Theon Greyjoy,531
+Joffrey Baratheon,Tommen Baratheon,2272
+Joffrey Baratheon,Tyrion Lannister,2519
+Joffrey Baratheon,Tywin Lannister,1964
+Joffrey Baratheon,Yoren,330
+Jojen Reed,Baby Sam,248
+Jojen Reed,Bran Stark,2701
+Jojen Reed,Gilly,248
+Jojen Reed,Hodor,2257
+Jojen Reed,Jon Snow,40
+Jojen Reed,Locke,62
+Jojen Reed,Meera Reed,2498
+Jojen Reed,Osha,972
+Jojen Reed,Rast,158
+Jojen Reed,Rickon Stark,884
+Jojen Reed,Samwell Tarly,248
+Jojen Reed,Summer,958
+Jojen Reed,Three-Eyed Raven,13
+Jon Snow,Alliser Thorne,3538
+Jon Snow,Arya Stark,1852
+Jon Snow,Baby Sam,85
+Jon Snow,Benjen Stark,762
+Jon Snow,Beric Dondarrion,2263
+Jon Snow,Bran Stark,2836
+Jon Snow,Brienne of Tarth,3622
+Jon Snow,Bronn,197
+Jon Snow,Catelyn Stark,747
+Jon Snow,Cersei Lannister,1240
+Jon Snow,Daenerys Targaryen,7257
+Jon Snow,Davos Seaworth,10380
+Jon Snow,Drogon,1539
+Jon Snow,Eddard Stark,1217
+Jon Snow,Eddison Tollett,5131
+Jon Snow,Euron Greyjoy,679
+Jon Snow,Gendry,1512
+Jon Snow,Ghost,2502
+Jon Snow,Gilly,902
+Jon Snow,Gregor Clegane,903
+Jon Snow,Grenn,3118
+Jon Snow,Grey Worm,2195
+Jon Snow,Hodor,377
+Jon Snow,Jaime Lannister,2203
+Jon Snow,Janos Slynt,1665
+Jon Snow,Jeor Mormont,1852
+Jon Snow,Joffrey Baratheon,337
+Jon Snow,Jojen Reed,40
+Jon Snow,Jorah Mormont,4371
+Jon Snow,Jory Cassel,703
+Jon Snow,Locke,484
+Jon Snow,Lord Varys,3471
+Jon Snow,Lyanna Mormont,2187
+Jon Snow,Maester Aemon,1402
+Jon Snow,Maester Luwin,337
+Jon Snow,Mance Rayder,1654
+Jon Snow,Meera Reed,40
+Jon Snow,Melisandre,1983
+Jon Snow,Missandei,3782
+Jon Snow,Myrcella Baratheon,337
+Jon Snow,Olly,2311
+Jon Snow,Othell Yarwyck,1959
+Jon Snow,Petyr Baelish,967
+Jon Snow,Podrick Payne,1275
+Jon Snow,Pypar,2106
+Jon Snow,Qhono,2703
+Jon Snow,Qyburn,903
+Jon Snow,Ramsay Snow,1073
+Jon Snow,Rast,1398
+Jon Snow,Rhaegal,934
+Jon Snow,Rickon Stark,794
+Jon Snow,Robb Stark,649
+Jon Snow,Robert Baratheon,337
+Jon Snow,Rodrik Cassel,894
+Jon Snow,Samwell Tarly,6490
+Jon Snow,Sandor Clegane,3449
+Jon Snow,Sansa Stark,5577
+Jon Snow,Selyse Baratheon,183
+Jon Snow,Septa Mordane,191
+Jon Snow,Shireen Baratheon,183
+Jon Snow,Stannis Baratheon,1235
+Jon Snow,Summer,562
+Jon Snow,The Night King,687
+Jon Snow,Theon Greyjoy,2898
+Jon Snow,Thoros of Myr,1188
+Jon Snow,Three-Eyed Raven,17
+Jon Snow,Tommen Baratheon,337
+Jon Snow,Tormund Giantsbane,9352
+Jon Snow,Tyrion Lannister,6405
+Jon Snow,Viserion,477
+Jon Snow,White Walker,403
+Jon Snow,Wun Wun,1302
+Jon Snow,Ygritte,3834
+Jon Snow,Yohn Royce,1950
+Jorah Mormont,Arya Stark,255
+Jorah Mormont,Barristan Selmy,3339
+Jorah Mormont,Beric Dondarrion,2227
+Jorah Mormont,Bran Stark,633
+Jorah Mormont,Brienne of Tarth,2086
+Jorah Mormont,Bronn,197
+Jorah Mormont,Cersei Lannister,903
+Jorah Mormont,Daario Naharis,2827
+Jorah Mormont,Daenerys Targaryen,12923
+Jorah Mormont,Davos Seaworth,2532
+Jorah Mormont,Doreah,2299
+Jorah Mormont,Drogon,2146
+Jorah Mormont,Eddison Tollett,68
+Jorah Mormont,Euron Greyjoy,679
+Jorah Mormont,Gendry,1237
+Jorah Mormont,Ghost,153
+Jorah Mormont,Gregor Clegane,903
+Jorah Mormont,Grey Worm,2650
+Jorah Mormont,Hizdahr zo Loraq,905
+Jorah Mormont,Irri,2401
+Jorah Mormont,Jaime Lannister,1627
+Jorah Mormont,Jon Snow,4371
+Jorah Mormont,Khal Drogo,2624
+Jorah Mormont,Lord Varys,2289
+Jorah Mormont,Lyanna Mormont,692
+Jorah Mormont,Melisandre,159
+Jorah Mormont,Mirri Maz Duur,1317
+Jorah Mormont,Missandei,5765
+Jorah Mormont,Podrick Payne,497
+Jorah Mormont,Qhono,1658
+Jorah Mormont,Qotho,1360
+Jorah Mormont,Qyburn,903
+Jorah Mormont,Rakharo,2494
+Jorah Mormont,Rhaegal,1572
+Jorah Mormont,Samwell Tarly,1266
+Jorah Mormont,Sandor Clegane,3052
+Jorah Mormont,Sansa Stark,619
+Jorah Mormont,The Night King,204
+Jorah Mormont,Theon Greyjoy,1653
+Jorah Mormont,Thoros of Myr,1213
+Jorah Mormont,Tormund Giantsbane,2358
+Jorah Mormont,Tyrion Lannister,5221
+Jorah Mormont,Viserion,1415
+Jorah Mormont,Viserys Targaryen,1441
+Jorah Mormont,White Walker,185
+Jorah Mormont,Xaro Xhoan Daxos,505
+Jorah Mormont,Yohn Royce,633
+Jory Cassel,Arya Stark,760
+Jory Cassel,Bran Stark,703
+Jory Cassel,Catelyn Stark,436
+Jory Cassel,Cersei Lannister,686
+Jory Cassel,Eddard Stark,1831
+Jory Cassel,Ghost,183
+Jory Cassel,Hodor,337
+Jory Cassel,Jaime Lannister,647
+Jory Cassel,Joffrey Baratheon,586
+Jory Cassel,Jon Snow,703
+Jory Cassel,Lord Varys,154
+Jory Cassel,Maester Luwin,337
+Jory Cassel,Myrcella Baratheon,337
+Jory Cassel,Petyr Baelish,299
+Jory Cassel,Rickon Stark,337
+Jory Cassel,Robb Stark,366
+Jory Cassel,Robert Baratheon,586
+Jory Cassel,Rodrik Cassel,802
+Jory Cassel,Sandor Clegane,337
+Jory Cassel,Sansa Stark,641
+Jory Cassel,Septa Mordane,55
+Jory Cassel,Summer,520
+Jory Cassel,Theon Greyjoy,703
+Jory Cassel,Tommen Baratheon,337
+Jory Cassel,Yoren,104
+Kevan Lannister,Arya Stark,107
+Kevan Lannister,Bronn,198
+Kevan Lannister,Cersei Lannister,724
+Kevan Lannister,Grand Maester Pycelle,540
+Kevan Lannister,Gregor Clegane,418
+Kevan Lannister,High Sparrow,333
+Kevan Lannister,Jaime Lannister,335
+Kevan Lannister,Lancel Lannister,267
+Kevan Lannister,Loras Tyrell,307
+Kevan Lannister,Mace Tyrell,821
+Kevan Lannister,Margaery Tyrell,351
+Kevan Lannister,Olenna Tyrell,285
+Kevan Lannister,Qyburn,392
+Kevan Lannister,Tommen Baratheon,226
+Kevan Lannister,Tyrion Lannister,382
+Kevan Lannister,Tywin Lannister,489
+Khal Drogo,Daenerys Targaryen,3575
+Khal Drogo,Doreah,1400
+Khal Drogo,Drogon,824
+Khal Drogo,Irri,1715
+Khal Drogo,Jorah Mormont,2624
+Khal Drogo,Mirri Maz Duur,1078
+Khal Drogo,Qotho,1587
+Khal Drogo,Rakharo,1616
+Khal Drogo,Rhaegal,824
+Khal Drogo,Viserion,824
+Khal Drogo,Viserys Targaryen,1432
+Lancel Lannister,Barristan Selmy,385
+Lancel Lannister,Bronn,194
+Lancel Lannister,Cersei Lannister,389
+Lancel Lannister,Eddard Stark,153
+Lancel Lannister,Grand Maester Pycelle,15
+Lancel Lannister,Gregor Clegane,121
+Lancel Lannister,High Sparrow,355
+Lancel Lannister,Jaime Lannister,315
+Lancel Lannister,Joffrey Baratheon,336
+Lancel Lannister,Kevan Lannister,267
+Lancel Lannister,Loras Tyrell,300
+Lancel Lannister,Mace Tyrell,294
+Lancel Lannister,Margaery Tyrell,315
+Lancel Lannister,Meryn Trant,172
+Lancel Lannister,Olenna Tyrell,43
+Lancel Lannister,Petyr Baelish,72
+Lancel Lannister,Podrick Payne,84
+Lancel Lannister,Qyburn,121
+Lancel Lannister,Renly Baratheon,113
+Lancel Lannister,Robert Baratheon,538
+Lancel Lannister,Sandor Clegane,307
+Lancel Lannister,Sansa Stark,219
+Lancel Lannister,Septa Unella,72
+Lancel Lannister,Shae,47
+Lancel Lannister,Tommen Baratheon,25
+Lancel Lannister,Tyrion Lannister,573
+Locke,Alliser Thorne,208
+Locke,Bran Stark,101
+Locke,Brienne of Tarth,807
+Locke,Eddison Tollett,248
+Locke,Grenn,410
+Locke,Hodor,101
+Locke,Jaime Lannister,1016
+Locke,Janos Slynt,201
+Locke,Jojen Reed,62
+Locke,Jon Snow,484
+Locke,Meera Reed,62
+Locke,Olly,287
+Locke,Pypar,154
+Locke,Qyburn,175
+Locke,Ramsay Snow,341
+Locke,Rast,24
+Locke,Roose Bolton,453
+Locke,Samwell Tarly,8
+Locke,Theon Greyjoy,295
+Loras Tyrell,Barristan Selmy,239
+Loras Tyrell,Brienne of Tarth,441
+Loras Tyrell,Bronn,185
+Loras Tyrell,Catelyn Stark,441
+Loras Tyrell,Cersei Lannister,2195
+Loras Tyrell,Davos Seaworth,193
+Loras Tyrell,Eddard Stark,239
+Loras Tyrell,Ellaria Sand,30
+Loras Tyrell,Grand Maester Pycelle,1121
+Loras Tyrell,Gregor Clegane,239
+Loras Tyrell,High Sparrow,572
+Loras Tyrell,Jaime Lannister,845
+Loras Tyrell,Joffrey Baratheon,1241
+Loras Tyrell,Kevan Lannister,307
+Loras Tyrell,Lancel Lannister,300
+Loras Tyrell,Lord Varys,730
+Loras Tyrell,Mace Tyrell,1436
+Loras Tyrell,Margaery Tyrell,3169
+Loras Tyrell,Melisandre,193
+Loras Tyrell,Meryn Trant,87
+Loras Tyrell,Myrcella Baratheon,239
+Loras Tyrell,Oberyn Martell,1049
+Loras Tyrell,Olenna Tyrell,807
+Loras Tyrell,Petyr Baelish,697
+Loras Tyrell,Podrick Payne,272
+Loras Tyrell,Renly Baratheon,1191
+Loras Tyrell,Robert Baratheon,239
+Loras Tyrell,Sandor Clegane,239
+Loras Tyrell,Sansa Stark,1240
+Loras Tyrell,Septa Mordane,239
+Loras Tyrell,Shae,399
+Loras Tyrell,Stannis Baratheon,193
+Loras Tyrell,Tommen Baratheon,1026
+Loras Tyrell,Tyrion Lannister,1292
+Loras Tyrell,Tywin Lannister,1363
+Lord Varys,Arya Stark,1087
+Lord Varys,Baby Sam,134
+Lord Varys,Barristan Selmy,675
+Lord Varys,Beric Dondarrion,255
+Lord Varys,Bran Stark,1208
+Lord Varys,Brienne of Tarth,2584
+Lord Varys,Bronn,513
+Lord Varys,Catelyn Stark,172
+Lord Varys,Cersei Lannister,4514
+Lord Varys,Daenerys Targaryen,4599
+Lord Varys,Davos Seaworth,3160
+Lord Varys,Drogon,296
+Lord Varys,Eddard Stark,1847
+Lord Varys,Eddison Tollett,68
+Lord Varys,Ellaria Sand,489
+Lord Varys,Euron Greyjoy,1041
+Lord Varys,Gendry,282
+Lord Varys,Ghost,199
+Lord Varys,Gilly,472
+Lord Varys,Grand Maester Pycelle,3461
+Lord Varys,Gregor Clegane,1532
+Lord Varys,Grey Worm,3464
+Lord Varys,Jaime Lannister,2212
+Lord Varys,Janos Slynt,952
+Lord Varys,Joffrey Baratheon,2174
+Lord Varys,Jon Snow,3471
+Lord Varys,Jorah Mormont,2289
+Lord Varys,Jory Cassel,154
+Lord Varys,Loras Tyrell,730
+Lord Varys,Lyanna Mormont,723
+Lord Varys,Mace Tyrell,941
+Lord Varys,Margaery Tyrell,916
+Lord Varys,Melisandre,306
+Lord Varys,Meryn Trant,407
+Lord Varys,Missandei,4903
+Lord Varys,Oberyn Martell,940
+Lord Varys,Olenna Tyrell,914
+Lord Varys,Petyr Baelish,3065
+Lord Varys,Podrick Payne,1272
+Lord Varys,Qhono,1704
+Lord Varys,Qyburn,1255
+Lord Varys,Renly Baratheon,843
+Lord Varys,Rhaegal,145
+Lord Varys,Robert Baratheon,215
+Lord Varys,Rodrik Cassel,172
+Lord Varys,Ros,256
+Lord Varys,Samwell Tarly,539
+Lord Varys,Sandor Clegane,2246
+Lord Varys,Sansa Stark,3331
+Lord Varys,Shae,364
+Lord Varys,Theon Greyjoy,1862
+Lord Varys,Tommen Baratheon,458
+Lord Varys,Tormund Giantsbane,500
+Lord Varys,Tyene Sand,14
+Lord Varys,Tyrion Lannister,10764
+Lord Varys,Tywin Lannister,1632
+Lord Varys,Viserion,62
+Lord Varys,Yara Greyjoy,201
+Lord Varys,Yohn Royce,1096
+Lord Varys,Yoren,376
+Lyanna Mormont,Arya Stark,255
+Lyanna Mormont,Beric Dondarrion,255
+Lyanna Mormont,Bran Stark,789
+Lyanna Mormont,Brienne of Tarth,1331
+Lyanna Mormont,Daenerys Targaryen,773
+Lyanna Mormont,Davos Seaworth,2181
+Lyanna Mormont,Eddison Tollett,68
+Lyanna Mormont,Gendry,68
+Lyanna Mormont,Ghost,68
+Lyanna Mormont,Grey Worm,759
+Lyanna Mormont,Jaime Lannister,583
+Lyanna Mormont,Jon Snow,2187
+Lyanna Mormont,Jorah Mormont,692
+Lyanna Mormont,Lord Varys,723
+Lyanna Mormont,Missandei,603
+Lyanna Mormont,Petyr Baelish,816
+Lyanna Mormont,Podrick Payne,470
+Lyanna Mormont,Qhono,327
+Lyanna Mormont,Ramsay Snow,277
+Lyanna Mormont,Samwell Tarly,318
+Lyanna Mormont,Sandor Clegane,68
+Lyanna Mormont,Sansa Stark,2118
+Lyanna Mormont,Theon Greyjoy,255
+Lyanna Mormont,Tormund Giantsbane,1111
+Lyanna Mormont,Tyrion Lannister,723
+Lyanna Mormont,Yohn Royce,1605
+Lysa Arryn,Bronn,602
+Lysa Arryn,Catelyn Stark,835
+Lysa Arryn,Petyr Baelish,410
+Lysa Arryn,Robin Arryn,989
+Lysa Arryn,Rodrik Cassel,602
+Lysa Arryn,Sansa Stark,592
+Lysa Arryn,Tyrion Lannister,721
+Mace Tyrell,Arya Stark,141
+Mace Tyrell,Brienne of Tarth,45
+Mace Tyrell,Cersei Lannister,3048
+Mace Tyrell,Ellaria Sand,318
+Mace Tyrell,Grand Maester Pycelle,1749
+Mace Tyrell,Gregor Clegane,574
+Mace Tyrell,High Sparrow,579
+Mace Tyrell,Jaime Lannister,1822
+Mace Tyrell,Joffrey Baratheon,797
+Mace Tyrell,Kevan Lannister,821
+Mace Tyrell,Lancel Lannister,294
+Mace Tyrell,Loras Tyrell,1436
+Mace Tyrell,Lord Varys,941
+Mace Tyrell,Margaery Tyrell,2171
+Mace Tyrell,Meryn Trant,249
+Mace Tyrell,Oberyn Martell,1720
+Mace Tyrell,Olenna Tyrell,974
+Mace Tyrell,Podrick Payne,338
+Mace Tyrell,Qyburn,497
+Mace Tyrell,Sansa Stark,747
+Mace Tyrell,Septa Unella,246
+Mace Tyrell,Shae,400
+Mace Tyrell,Tommen Baratheon,1361
+Mace Tyrell,Tyrion Lannister,2028
+Mace Tyrell,Tywin Lannister,2290
+Maester Aemon,Alliser Thorne,984
+Maester Aemon,Baby Sam,393
+Maester Aemon,Davos Seaworth,62
+Maester Aemon,Eddison Tollett,333
+Maester Aemon,Gilly,393
+Maester Aemon,Grenn,553
+Maester Aemon,Janos Slynt,657
+Maester Aemon,Jeor Mormont,453
+Maester Aemon,Jon Snow,1402
+Maester Aemon,Melisandre,62
+Maester Aemon,Olly,481
+Maester Aemon,Othell Yarwyck,887
+Maester Aemon,Pypar,570
+Maester Aemon,Rast,453
+Maester Aemon,Samwell Tarly,1392
+Maester Aemon,Selyse Baratheon,62
+Maester Aemon,Shireen Baratheon,62
+Maester Aemon,Stannis Baratheon,62
+Maester Aemon,Tyrion Lannister,123
+Maester Luwin,Arya Stark,337
+Maester Luwin,Bran Stark,1643
+Maester Luwin,Catelyn Stark,845
+Maester Luwin,Cersei Lannister,337
+Maester Luwin,Eddard Stark,518
+Maester Luwin,Hodor,1019
+Maester Luwin,Jaime Lannister,337
+Maester Luwin,Joffrey Baratheon,337
+Maester Luwin,Jon Snow,337
+Maester Luwin,Jory Cassel,337
+Maester Luwin,Myrcella Baratheon,337
+Maester Luwin,Osha,803
+Maester Luwin,Rickon Stark,898
+Maester Luwin,Robb Stark,477
+Maester Luwin,Robert Baratheon,337
+Maester Luwin,Rodrik Cassel,703
+Maester Luwin,Sandor Clegane,337
+Maester Luwin,Sansa Stark,337
+Maester Luwin,Summer,529
+Maester Luwin,Theon Greyjoy,1847
+Maester Luwin,Tommen Baratheon,337
+Maester Luwin,Tyrion Lannister,103
+Maester Luwin,Yoren,103
+Mance Rayder,Alliser Thorne,133
+Mance Rayder,Davos Seaworth,366
+Mance Rayder,Eddison Tollett,233
+Mance Rayder,Gilly,122
+Mance Rayder,Janos Slynt,133
+Mance Rayder,Jon Snow,1654
+Mance Rayder,Melisandre,233
+Mance Rayder,Olly,23
+Mance Rayder,Samwell Tarly,244
+Mance Rayder,Selyse Baratheon,101
+Mance Rayder,Shireen Baratheon,101
+Mance Rayder,Stannis Baratheon,401
+Mance Rayder,Tormund Giantsbane,759
+Mance Rayder,Ygritte,330
+Margaery Tyrell,Brienne of Tarth,368
+Margaery Tyrell,Bronn,185
+Margaery Tyrell,Catelyn Stark,248
+Margaery Tyrell,Cersei Lannister,3460
+Margaery Tyrell,Ellaria Sand,26
+Margaery Tyrell,Grand Maester Pycelle,1033
+Margaery Tyrell,High Sparrow,1531
+Margaery Tyrell,Jaime Lannister,1284
+Margaery Tyrell,Joffrey Baratheon,2218
+Margaery Tyrell,Kevan Lannister,351
+Margaery Tyrell,Lancel Lannister,315
+Margaery Tyrell,Loras Tyrell,3169
+Margaery Tyrell,Lord Varys,916
+Margaery Tyrell,Mace Tyrell,2171
+Margaery Tyrell,Meryn Trant,187
+Margaery Tyrell,Oberyn Martell,1045
+Margaery Tyrell,Olenna Tyrell,2318
+Margaery Tyrell,Petyr Baelish,535
+Margaery Tyrell,Podrick Payne,272
+Margaery Tyrell,Renly Baratheon,590
+Margaery Tyrell,Sansa Stark,2055
+Margaery Tyrell,Septa Unella,524
+Margaery Tyrell,Shae,379
+Margaery Tyrell,Tommen Baratheon,2166
+Margaery Tyrell,Tyrion Lannister,1853
+Margaery Tyrell,Tywin Lannister,1994
+Meera Reed,Baby Sam,248
+Meera Reed,Benjen Stark,315
+Meera Reed,Bran Stark,3904
+Meera Reed,Eddison Tollett,75
+Meera Reed,Gilly,248
+Meera Reed,Hodor,2887
+Meera Reed,Jojen Reed,2498
+Meera Reed,Jon Snow,40
+Meera Reed,Locke,62
+Meera Reed,Osha,996
+Meera Reed,Petyr Baelish,22
+Meera Reed,Rast,158
+Meera Reed,Rickon Stark,884
+Meera Reed,Samwell Tarly,248
+Meera Reed,Sansa Stark,34
+Meera Reed,Summer,1175
+Meera Reed,The Night King,45
+Meera Reed,Three-Eyed Raven,353
+Meera Reed,White Walker,42
+Melisandre,Alliser Thorne,274
+Melisandre,Arya Stark,390
+Melisandre,Beric Dondarrion,553
+Melisandre,Bran Stark,7
+Melisandre,Brienne of Tarth,415
+Melisandre,Catelyn Stark,200
+Melisandre,Daenerys Targaryen,202
+Melisandre,Davos Seaworth,3432
+Melisandre,Drogon,7
+Melisandre,Eddard Stark,7
+Melisandre,Eddison Tollett,896
+Melisandre,Gendry,732
+Melisandre,Ghost,321
+Melisandre,Gilly,111
+Melisandre,Grenn,62
+Melisandre,Grey Worm,280
+Melisandre,Janos Slynt,184
+Melisandre,Jon Snow,1983
+Melisandre,Jorah Mormont,159
+Melisandre,Loras Tyrell,193
+Melisandre,Lord Varys,306
+Melisandre,Maester Aemon,62
+Melisandre,Mance Rayder,233
+Melisandre,Missandei,195
+Melisandre,Olly,250
+Melisandre,Othell Yarwyck,152
+Melisandre,Podrick Payne,21
+Melisandre,Renly Baratheon,193
+Melisandre,Samwell Tarly,312
+Melisandre,Sandor Clegane,234
+Melisandre,Sansa Stark,207
+Melisandre,Selyse Baratheon,973
+Melisandre,Shireen Baratheon,422
+Melisandre,Stannis Baratheon,2961
+Melisandre,The Night King,7
+Melisandre,Thoros of Myr,422
+Melisandre,Tormund Giantsbane,883
+Melisandre,Tyrion Lannister,195
+Meryn Trant,Arya Stark,627
+Meryn Trant,Barristan Selmy,369
+Meryn Trant,Bronn,371
+Meryn Trant,Cersei Lannister,1236
+Meryn Trant,Eddard Stark,160
+Meryn Trant,Grand Maester Pycelle,434
+Meryn Trant,High Sparrow,169
+Meryn Trant,Jaime Lannister,277
+Meryn Trant,Janos Slynt,369
+Meryn Trant,Joffrey Baratheon,1644
+Meryn Trant,Lancel Lannister,172
+Meryn Trant,Loras Tyrell,87
+Meryn Trant,Lord Varys,407
+Meryn Trant,Mace Tyrell,249
+Meryn Trant,Margaery Tyrell,187
+Meryn Trant,Myrcella Baratheon,222
+Meryn Trant,Oberyn Martell,48
+Meryn Trant,Olenna Tyrell,74
+Meryn Trant,Petyr Baelish,369
+Meryn Trant,Podrick Payne,65
+Meryn Trant,Qyburn,62
+Meryn Trant,Sandor Clegane,1274
+Meryn Trant,Sansa Stark,1371
+Meryn Trant,Septa Mordane,160
+Meryn Trant,Tommen Baratheon,357
+Meryn Trant,Tyrion Lannister,667
+Meryn Trant,Tywin Lannister,108
+Mirri Maz Duur,Daenerys Targaryen,1401
+Mirri Maz Duur,Doreah,844
+Mirri Maz Duur,Drogon,263
+Mirri Maz Duur,Irri,941
+Mirri Maz Duur,Jorah Mormont,1317
+Mirri Maz Duur,Khal Drogo,1078
+Mirri Maz Duur,Qotho,718
+Mirri Maz Duur,Rakharo,1204
+Mirri Maz Duur,Rhaegal,263
+Mirri Maz Duur,Viserion,263
+Missandei,Arya Stark,621
+Missandei,Baby Sam,134
+Missandei,Barristan Selmy,3231
+Missandei,Beric Dondarrion,255
+Missandei,Bran Stark,1082
+Missandei,Brienne of Tarth,2367
+Missandei,Bronn,197
+Missandei,Cersei Lannister,1373
+Missandei,Daario Naharis,2891
+Missandei,Daenerys Targaryen,9924
+Missandei,Davos Seaworth,3731
+Missandei,Drogon,899
+Missandei,Eddison Tollett,68
+Missandei,Ellaria Sand,201
+Missandei,Euron Greyjoy,1149
+Missandei,Gendry,282
+Missandei,Ghost,199
+Missandei,Gilly,438
+Missandei,Gregor Clegane,1373
+Missandei,Grey Worm,7248
+Missandei,Hizdahr zo Loraq,1456
+Missandei,Jaime Lannister,1695
+Missandei,Jon Snow,3782
+Missandei,Jorah Mormont,5765
+Missandei,Lord Varys,4903
+Missandei,Lyanna Mormont,603
+Missandei,Melisandre,195
+Missandei,Olenna Tyrell,201
+Missandei,Podrick Payne,576
+Missandei,Qhono,2395
+Missandei,Qyburn,1240
+Missandei,Rhaegal,424
+Missandei,Samwell Tarly,505
+Missandei,Sandor Clegane,1292
+Missandei,Sansa Stark,1387
+Missandei,Theon Greyjoy,1942
+Missandei,Tormund Giantsbane,392
+Missandei,Tyrion Lannister,8197
+Missandei,Viserion,352
+Missandei,Yara Greyjoy,201
+Missandei,Yohn Royce,969
+Myranda,Petyr Baelish,62
+Myranda,Ramsay Snow,661
+Myranda,Roose Bolton,177
+Myranda,Sansa Stark,555
+Myranda,Theon Greyjoy,731
+Myrcella Baratheon,Arya Stark,586
+Myrcella Baratheon,Barristan Selmy,488
+Myrcella Baratheon,Bran Stark,337
+Myrcella Baratheon,Bronn,504
+Myrcella Baratheon,Catelyn Stark,337
+Myrcella Baratheon,Cersei Lannister,864
+Myrcella Baratheon,Eddard Stark,576
+Myrcella Baratheon,Ellaria Sand,278
+Myrcella Baratheon,Grand Maester Pycelle,239
+Myrcella Baratheon,Gregor Clegane,488
+Myrcella Baratheon,High Sparrow,188
+Myrcella Baratheon,Hodor,337
+Myrcella Baratheon,Jaime Lannister,1526
+Myrcella Baratheon,Joffrey Baratheon,1047
+Myrcella Baratheon,Jon Snow,337
+Myrcella Baratheon,Jory Cassel,337
+Myrcella Baratheon,Loras Tyrell,239
+Myrcella Baratheon,Maester Luwin,337
+Myrcella Baratheon,Meryn Trant,222
+Myrcella Baratheon,Petyr Baelish,488
+Myrcella Baratheon,Renly Baratheon,488
+Myrcella Baratheon,Rickon Stark,337
+Myrcella Baratheon,Robert Baratheon,825
+Myrcella Baratheon,Rodrik Cassel,337
+Myrcella Baratheon,Sandor Clegane,1104
+Myrcella Baratheon,Sansa Stark,1135
+Myrcella Baratheon,Septa Mordane,488
+Myrcella Baratheon,Summer,337
+Myrcella Baratheon,Theon Greyjoy,337
+Myrcella Baratheon,Tommen Baratheon,1458
+Myrcella Baratheon,Tyene Sand,186
+Myrcella Baratheon,Tyrion Lannister,412
+Oberyn Martell,Bronn,59
+Oberyn Martell,Cersei Lannister,2010
+Oberyn Martell,Ellaria Sand,950
+Oberyn Martell,Grand Maester Pycelle,844
+Oberyn Martell,Gregor Clegane,295
+Oberyn Martell,Jaime Lannister,1281
+Oberyn Martell,Joffrey Baratheon,293
+Oberyn Martell,Loras Tyrell,1049
+Oberyn Martell,Lord Varys,940
+Oberyn Martell,Mace Tyrell,1720
+Oberyn Martell,Margaery Tyrell,1045
+Oberyn Martell,Meryn Trant,48
+Oberyn Martell,Olenna Tyrell,288
+Oberyn Martell,Podrick Payne,287
+Oberyn Martell,Sansa Stark,281
+Oberyn Martell,Shae,379
+Oberyn Martell,Tommen Baratheon,416
+Oberyn Martell,Tyrion Lannister,2085
+Oberyn Martell,Tywin Lannister,2045
+Olenna Tyrell,Brienne of Tarth,77
+Olenna Tyrell,Bronn,185
+Olenna Tyrell,Cersei Lannister,1973
+Olenna Tyrell,Daenerys Targaryen,254
+Olenna Tyrell,Ellaria Sand,314
+Olenna Tyrell,Grand Maester Pycelle,649
+Olenna Tyrell,Gregor Clegane,246
+Olenna Tyrell,Grey Worm,201
+Olenna Tyrell,High Sparrow,689
+Olenna Tyrell,Jaime Lannister,958
+Olenna Tyrell,Joffrey Baratheon,1075
+Olenna Tyrell,Kevan Lannister,285
+Olenna Tyrell,Lancel Lannister,43
+Olenna Tyrell,Loras Tyrell,807
+Olenna Tyrell,Lord Varys,914
+Olenna Tyrell,Mace Tyrell,974
+Olenna Tyrell,Margaery Tyrell,2318
+Olenna Tyrell,Meryn Trant,74
+Olenna Tyrell,Missandei,201
+Olenna Tyrell,Oberyn Martell,288
+Olenna Tyrell,Petyr Baelish,111
+Olenna Tyrell,Podrick Payne,314
+Olenna Tyrell,Sansa Stark,1276
+Olenna Tyrell,Septa Unella,359
+Olenna Tyrell,Theon Greyjoy,201
+Olenna Tyrell,Tommen Baratheon,1067
+Olenna Tyrell,Tyene Sand,97
+Olenna Tyrell,Tyrion Lannister,1334
+Olenna Tyrell,Tywin Lannister,1179
+Olenna Tyrell,Yara Greyjoy,201
+Olly,Alliser Thorne,1833
+Olly,Baby Sam,106
+Olly,Davos Seaworth,733
+Olly,Eddison Tollett,1451
+Olly,Ghost,164
+Olly,Gilly,208
+Olly,Grenn,421
+Olly,Janos Slynt,1108
+Olly,Jon Snow,2311
+Olly,Locke,287
+Olly,Maester Aemon,481
+Olly,Mance Rayder,23
+Olly,Melisandre,250
+Olly,Othell Yarwyck,1136
+Olly,Pypar,271
+Olly,Samwell Tarly,1226
+Olly,Selyse Baratheon,145
+Olly,Shireen Baratheon,145
+Olly,Stannis Baratheon,476
+Olly,Tormund Giantsbane,497
+Olly,Wun Wun,91
+Olly,Ygritte,150
+Osha,Bran Stark,2484
+Osha,Hodor,2050
+Osha,Jojen Reed,972
+Osha,Maester Luwin,803
+Osha,Meera Reed,996
+Osha,Ramsay Snow,278
+Osha,Rickon Stark,1798
+Osha,Robb Stark,207
+Osha,Rodrik Cassel,257
+Osha,Summer,418
+Osha,Theon Greyjoy,930
+Othell Yarwyck,Alliser Thorne,1832
+Othell Yarwyck,Davos Seaworth,427
+Othell Yarwyck,Eddison Tollett,827
+Othell Yarwyck,Ghost,312
+Othell Yarwyck,Grenn,448
+Othell Yarwyck,Janos Slynt,675
+Othell Yarwyck,Jeor Mormont,406
+Othell Yarwyck,Jon Snow,1959
+Othell Yarwyck,Maester Aemon,887
+Othell Yarwyck,Melisandre,152
+Othell Yarwyck,Olly,1136
+Othell Yarwyck,Pypar,527
+Othell Yarwyck,Rast,330
+Othell Yarwyck,Samwell Tarly,1183
+Othell Yarwyck,Stannis Baratheon,91
+Othell Yarwyck,Tormund Giantsbane,320
+Othell Yarwyck,Wun Wun,30
+Petyr Baelish,Arya Stark,1400
+Petyr Baelish,Barristan Selmy,1066
+Petyr Baelish,Beric Dondarrion,245
+Petyr Baelish,Bran Stark,474
+Petyr Baelish,Brienne of Tarth,1362
+Petyr Baelish,Bronn,74
+Petyr Baelish,Catelyn Stark,472
+Petyr Baelish,Cersei Lannister,2522
+Petyr Baelish,Davos Seaworth,816
+Petyr Baelish,Eddard Stark,2349
+Petyr Baelish,Grand Maester Pycelle,2679
+Petyr Baelish,Gregor Clegane,488
+Petyr Baelish,Jaime Lannister,193
+Petyr Baelish,Janos Slynt,952
+Petyr Baelish,Joffrey Baratheon,1795
+Petyr Baelish,Jon Snow,967
+Petyr Baelish,Jory Cassel,299
+Petyr Baelish,Lancel Lannister,72
+Petyr Baelish,Loras Tyrell,697
+Petyr Baelish,Lord Varys,3065
+Petyr Baelish,Lyanna Mormont,816
+Petyr Baelish,Lysa Arryn,410
+Petyr Baelish,Margaery Tyrell,535
+Petyr Baelish,Meera Reed,22
+Petyr Baelish,Meryn Trant,369
+Petyr Baelish,Myranda,62
+Petyr Baelish,Myrcella Baratheon,488
+Petyr Baelish,Olenna Tyrell,111
+Petyr Baelish,Podrick Payne,577
+Petyr Baelish,Ramsay Snow,157
+Petyr Baelish,Renly Baratheon,1491
+Petyr Baelish,Robert Baratheon,703
+Petyr Baelish,Robin Arryn,489
+Petyr Baelish,Rodrik Cassel,172
+Petyr Baelish,Roose Bolton,220
+Petyr Baelish,Ros,659
+Petyr Baelish,Sandor Clegane,1396
+Petyr Baelish,Sansa Stark,6397
+Petyr Baelish,Septa Mordane,488
+Petyr Baelish,Shae,104
+Petyr Baelish,Theon Greyjoy,62
+Petyr Baelish,Tommen Baratheon,488
+Petyr Baelish,Tormund Giantsbane,627
+Petyr Baelish,Tyrion Lannister,827
+Petyr Baelish,Tywin Lannister,485
+Petyr Baelish,Wun Wun,43
+Petyr Baelish,Yohn Royce,1996
+Petyr Baelish,Yoren,330
+Podrick Payne,Arya Stark,664
+Podrick Payne,Beric Dondarrion,78
+Podrick Payne,Bran Stark,470
+Podrick Payne,Brienne of Tarth,5021
+Podrick Payne,Bronn,1077
+Podrick Payne,Brynden Tully,182
+Podrick Payne,Cersei Lannister,546
+Podrick Payne,Daenerys Targaryen,459
+Podrick Payne,Davos Seaworth,1294
+Podrick Payne,Eddison Tollett,342
+Podrick Payne,Ellaria Sand,15
+Podrick Payne,Gendry,515
+Podrick Payne,Ghost,199
+Podrick Payne,Gilly,147
+Podrick Payne,Grand Maester Pycelle,389
+Podrick Payne,Grey Worm,564
+Podrick Payne,Hot Pie,211
+Podrick Payne,Jaime Lannister,1542
+Podrick Payne,Janos Slynt,15
+Podrick Payne,Joffrey Baratheon,525
+Podrick Payne,Jon Snow,1275
+Podrick Payne,Jorah Mormont,497
+Podrick Payne,Lancel Lannister,84
+Podrick Payne,Loras Tyrell,272
+Podrick Payne,Lord Varys,1272
+Podrick Payne,Lyanna Mormont,470
+Podrick Payne,Mace Tyrell,338
+Podrick Payne,Margaery Tyrell,272
+Podrick Payne,Melisandre,21
+Podrick Payne,Meryn Trant,65
+Podrick Payne,Missandei,576
+Podrick Payne,Oberyn Martell,287
+Podrick Payne,Olenna Tyrell,314
+Podrick Payne,Petyr Baelish,577
+Podrick Payne,Qhono,197
+Podrick Payne,Ros,99
+Podrick Payne,Samwell Tarly,604
+Podrick Payne,Sandor Clegane,760
+Podrick Payne,Sansa Stark,2133
+Podrick Payne,Shae,98
+Podrick Payne,Theon Greyjoy,601
+Podrick Payne,Tommen Baratheon,338
+Podrick Payne,Tormund Giantsbane,1602
+Podrick Payne,Tyrion Lannister,3469
+Podrick Payne,Tywin Lannister,338
+Podrick Payne,Yohn Royce,596
+Pypar,Alliser Thorne,1248
+Pypar,Baby Sam,90
+Pypar,Eddison Tollett,491
+Pypar,Ghost,149
+Pypar,Gilly,90
+Pypar,Grenn,1880
+Pypar,Janos Slynt,459
+Pypar,Jeor Mormont,617
+Pypar,Jon Snow,2106
+Pypar,Locke,154
+Pypar,Maester Aemon,570
+Pypar,Olly,271
+Pypar,Othell Yarwyck,527
+Pypar,Rast,1198
+Pypar,Samwell Tarly,1708
+Pypar,Tormund Giantsbane,89
+Pypar,Tyrion Lannister,339
+Pypar,Ygritte,146
+Qhono,Arya Stark,210
+Qhono,Beric Dondarrion,187
+Qhono,Bran Stark,327
+Qhono,Brienne of Tarth,1612
+Qhono,Bronn,211
+Qhono,Cersei Lannister,903
+Qhono,Daenerys Targaryen,2889
+Qhono,Davos Seaworth,2556
+Qhono,Drogon,458
+Qhono,Euron Greyjoy,679
+Qhono,Gendry,62
+Qhono,Gregor Clegane,903
+Qhono,Grey Worm,327
+Qhono,Jaime Lannister,1103
+Qhono,Jon Snow,2703
+Qhono,Jorah Mormont,1658
+Qhono,Lord Varys,1704
+Qhono,Lyanna Mormont,327
+Qhono,Missandei,2395
+Qhono,Podrick Payne,197
+Qhono,Qyburn,903
+Qhono,Rhaegal,108
+Qhono,Samwell Tarly,187
+Qhono,Sandor Clegane,1001
+Qhono,Sansa Stark,327
+Qhono,Theon Greyjoy,1514
+Qhono,Tormund Giantsbane,187
+Qhono,Tyrion Lannister,2947
+Qhono,Viserion,36
+Qhono,Yohn Royce,327
+Qotho,Daenerys Targaryen,1587
+Qotho,Doreah,1003
+Qotho,Drogon,336
+Qotho,Irri,1003
+Qotho,Jorah Mormont,1360
+Qotho,Khal Drogo,1587
+Qotho,Mirri Maz Duur,718
+Qotho,Rakharo,819
+Qotho,Rhaegal,336
+Qotho,Viserion,336
+Qotho,Viserys Targaryen,747
+Qyburn,Brienne of Tarth,1092
+Qyburn,Bronn,124
+Qyburn,Catelyn Stark,105
+Qyburn,Cersei Lannister,4157
+Qyburn,Daenerys Targaryen,1138
+Qyburn,Davos Seaworth,903
+Qyburn,Drogon,155
+Qyburn,Ellaria Sand,433
+Qyburn,Euron Greyjoy,1642
+Qyburn,Grand Maester Pycelle,741
+Qyburn,Gregor Clegane,3261
+Qyburn,Grey Worm,352
+Qyburn,Jaime Lannister,2337
+Qyburn,Jon Snow,903
+Qyburn,Jorah Mormont,903
+Qyburn,Kevan Lannister,392
+Qyburn,Lancel Lannister,121
+Qyburn,Locke,175
+Qyburn,Lord Varys,1255
+Qyburn,Mace Tyrell,497
+Qyburn,Meryn Trant,62
+Qyburn,Missandei,1240
+Qyburn,Qhono,903
+Qyburn,Rhaegal,72
+Qyburn,Robb Stark,105
+Qyburn,Roose Bolton,153
+Qyburn,Sandor Clegane,662
+Qyburn,Septa Unella,25
+Qyburn,Talisa Maegyr,105
+Qyburn,Theon Greyjoy,903
+Qyburn,Tommen Baratheon,206
+Qyburn,Tyene Sand,433
+Qyburn,Tyrion Lannister,1287
+Qyburn,Yara Greyjoy,156
+Rakharo,Daenerys Targaryen,2514
+Rakharo,Doreah,1455
+Rakharo,Drogon,556
+Rakharo,Irri,1719
+Rakharo,Jorah Mormont,2494
+Rakharo,Khal Drogo,1616
+Rakharo,Mirri Maz Duur,1204
+Rakharo,Qotho,819
+Rakharo,Rhaegal,371
+Rakharo,Viserion,371
+Rakharo,Viserys Targaryen,218
+Ramsay Snow,Davos Seaworth,686
+Ramsay Snow,Jon Snow,1073
+Ramsay Snow,Locke,341
+Ramsay Snow,Lyanna Mormont,277
+Ramsay Snow,Myranda,661
+Ramsay Snow,Osha,278
+Ramsay Snow,Petyr Baelish,157
+Ramsay Snow,Rickon Stark,326
+Ramsay Snow,Roose Bolton,1681
+Ramsay Snow,Sansa Stark,1465
+Ramsay Snow,Theon Greyjoy,2911
+Ramsay Snow,Tormund Giantsbane,863
+Ramsay Snow,Wun Wun,477
+Ramsay Snow,Yara Greyjoy,82
+Rast,Alliser Thorne,715
+Rast,Benjen Stark,200
+Rast,Bran Stark,158
+Rast,Eddison Tollett,472
+Rast,Ghost,396
+Rast,Grenn,1670
+Rast,Hodor,30
+Rast,Jeor Mormont,946
+Rast,Jojen Reed,158
+Rast,Jon Snow,1398
+Rast,Locke,24
+Rast,Maester Aemon,453
+Rast,Meera Reed,158
+Rast,Othell Yarwyck,330
+Rast,Pypar,1198
+Rast,Samwell Tarly,1235
+Rast,Tyrion Lannister,539
+Rast,White Walker,58
+Renly Baratheon,Arya Stark,249
+Renly Baratheon,Barristan Selmy,993
+Renly Baratheon,Brienne of Tarth,807
+Renly Baratheon,Catelyn Stark,699
+Renly Baratheon,Cersei Lannister,544
+Renly Baratheon,Davos Seaworth,193
+Renly Baratheon,Eddard Stark,1305
+Renly Baratheon,Grand Maester Pycelle,1164
+Renly Baratheon,Gregor Clegane,488
+Renly Baratheon,Janos Slynt,144
+Renly Baratheon,Joffrey Baratheon,783
+Renly Baratheon,Lancel Lannister,113
+Renly Baratheon,Loras Tyrell,1191
+Renly Baratheon,Lord Varys,843
+Renly Baratheon,Margaery Tyrell,590
+Renly Baratheon,Melisandre,193
+Renly Baratheon,Myrcella Baratheon,488
+Renly Baratheon,Petyr Baelish,1491
+Renly Baratheon,Robert Baratheon,1111
+Renly Baratheon,Sandor Clegane,488
+Renly Baratheon,Sansa Stark,488
+Renly Baratheon,Septa Mordane,488
+Renly Baratheon,Stannis Baratheon,193
+Renly Baratheon,Tommen Baratheon,488
+Rhaegal,Arya Stark,14
+Rhaegal,Barristan Selmy,254
+Rhaegal,Beric Dondarrion,221
+Rhaegal,Bran Stark,17
+Rhaegal,Brienne of Tarth,72
+Rhaegal,Cersei Lannister,72
+Rhaegal,Daario Naharis,113
+Rhaegal,Daenerys Targaryen,3294
+Rhaegal,Davos Seaworth,123
+Rhaegal,Doreah,292
+Rhaegal,Drogon,3240
+Rhaegal,Euron Greyjoy,72
+Rhaegal,Gregor Clegane,72
+Rhaegal,Grey Worm,365
+Rhaegal,Hizdahr zo Loraq,81
+Rhaegal,Irri,283
+Rhaegal,Jaime Lannister,72
+Rhaegal,Jon Snow,934
+Rhaegal,Jorah Mormont,1572
+Rhaegal,Khal Drogo,824
+Rhaegal,Lord Varys,145
+Rhaegal,Mirri Maz Duur,263
+Rhaegal,Missandei,424
+Rhaegal,Qhono,108
+Rhaegal,Qotho,336
+Rhaegal,Qyburn,72
+Rhaegal,Rakharo,371
+Rhaegal,Sandor Clegane,221
+Rhaegal,Sansa Stark,36
+Rhaegal,The Night King,266
+Rhaegal,Theon Greyjoy,168
+Rhaegal,Tormund Giantsbane,226
+Rhaegal,Tyrion Lannister,406
+Rhaegal,Viserion,3220
+Rhaegal,Viserys Targaryen,471
+Rhaegal,White Walker,143
+Rhaegal,Xaro Xhoan Daxos,97
+Rhaegal,Yara Greyjoy,93
+Rickon Stark,Arya Stark,528
+Rickon Stark,Bran Stark,2419
+Rickon Stark,Catelyn Stark,528
+Rickon Stark,Cersei Lannister,337
+Rickon Stark,Davos Seaworth,123
+Rickon Stark,Eddard Stark,528
+Rickon Stark,Hodor,2017
+Rickon Stark,Jaime Lannister,337
+Rickon Stark,Joffrey Baratheon,337
+Rickon Stark,Jojen Reed,884
+Rickon Stark,Jon Snow,794
+Rickon Stark,Jory Cassel,337
+Rickon Stark,Maester Luwin,898
+Rickon Stark,Meera Reed,884
+Rickon Stark,Myrcella Baratheon,337
+Rickon Stark,Osha,1798
+Rickon Stark,Ramsay Snow,326
+Rickon Stark,Robb Stark,313
+Rickon Stark,Robert Baratheon,337
+Rickon Stark,Rodrik Cassel,785
+Rickon Stark,Sandor Clegane,337
+Rickon Stark,Sansa Stark,544
+Rickon Stark,Septa Mordane,191
+Rickon Stark,Summer,644
+Rickon Stark,Theon Greyjoy,836
+Rickon Stark,Tommen Baratheon,337
+Rickon Stark,Tormund Giantsbane,123
+Rickon Stark,Wun Wun,60
+Robb Stark,Arya Stark,406
+Robb Stark,Benjen Stark,272
+Robb Stark,Bran Stark,1638
+Robb Stark,Brienne of Tarth,80
+Robb Stark,Brynden Tully,1275
+Robb Stark,Catelyn Stark,3989
+Robb Stark,Cersei Lannister,194
+Robb Stark,Eddard Stark,829
+Robb Stark,Edmure Tully,1475
+Robb Stark,Ghost,183
+Robb Stark,Hodor,103
+Robb Stark,Jaime Lannister,535
+Robb Stark,Joffrey Baratheon,194
+Robb Stark,Jon Snow,649
+Robb Stark,Jory Cassel,366
+Robb Stark,Maester Luwin,477
+Robb Stark,Osha,207
+Robb Stark,Qyburn,105
+Robb Stark,Rickon Stark,313
+Robb Stark,Robert Baratheon,272
+Robb Stark,Rodrik Cassel,1680
+Robb Stark,Roose Bolton,930
+Robb Stark,Sandor Clegane,99
+Robb Stark,Sansa Stark,385
+Robb Stark,Septa Mordane,191
+Robb Stark,Summer,453
+Robb Stark,Talisa Maegyr,2928
+Robb Stark,The Night King,10
+Robb Stark,Theon Greyjoy,2378
+Robb Stark,Three-Eyed Raven,17
+Robb Stark,Tyrion Lannister,181
+Robb Stark,Walder Frey,812
+Robb Stark,Yoren,103
+Robert Baratheon,Arya Stark,1029
+Robert Baratheon,Barristan Selmy,1168
+Robert Baratheon,Benjen Stark,272
+Robert Baratheon,Bran Stark,415
+Robert Baratheon,Catelyn Stark,554
+Robert Baratheon,Cersei Lannister,1995
+Robert Baratheon,Eddard Stark,2387
+Robert Baratheon,Grand Maester Pycelle,749
+Robert Baratheon,Gregor Clegane,488
+Robert Baratheon,Hodor,337
+Robert Baratheon,Jaime Lannister,803
+Robert Baratheon,Joffrey Baratheon,1563
+Robert Baratheon,Jon Snow,337
+Robert Baratheon,Jory Cassel,586
+Robert Baratheon,Lancel Lannister,538
+Robert Baratheon,Loras Tyrell,239
+Robert Baratheon,Lord Varys,215
+Robert Baratheon,Maester Luwin,337
+Robert Baratheon,Myrcella Baratheon,825
+Robert Baratheon,Petyr Baelish,703
+Robert Baratheon,Renly Baratheon,1111
+Robert Baratheon,Rickon Stark,337
+Robert Baratheon,Robb Stark,272
+Robert Baratheon,Rodrik Cassel,554
+Robert Baratheon,Sandor Clegane,903
+Robert Baratheon,Sansa Stark,1268
+Robert Baratheon,Septa Mordane,488
+Robert Baratheon,Summer,415
+Robert Baratheon,Theon Greyjoy,609
+Robert Baratheon,Tommen Baratheon,825
+Robert Baratheon,Tyrion Lannister,78
+Robin Arryn,Arya Stark,751
+Robin Arryn,Bran Stark,751
+Robin Arryn,Brienne of Tarth,751
+Robin Arryn,Bronn,602
+Robin Arryn,Catelyn Stark,835
+Robin Arryn,Davos Seaworth,751
+Robin Arryn,Edmure Tully,751
+Robin Arryn,Gendry,751
+Robin Arryn,Grey Worm,751
+Robin Arryn,Lysa Arryn,989
+Robin Arryn,Petyr Baelish,489
+Robin Arryn,Rodrik Cassel,602
+Robin Arryn,Samwell Tarly,751
+Robin Arryn,Sansa Stark,1130
+Robin Arryn,Tyrion Lannister,1472
+Robin Arryn,Yara Greyjoy,751
+Robin Arryn,Yohn Royce,1014
+Rodrik Cassel,Arya Stark,722
+Rodrik Cassel,Benjen Stark,194
+Rodrik Cassel,Bran Stark,1151
+Rodrik Cassel,Bronn,1054
+Rodrik Cassel,Catelyn Stark,2953
+Rodrik Cassel,Cersei Lannister,554
+Rodrik Cassel,Eddard Stark,1187
+Rodrik Cassel,Ghost,183
+Rodrik Cassel,Hodor,594
+Rodrik Cassel,Jaime Lannister,654
+Rodrik Cassel,Joffrey Baratheon,531
+Rodrik Cassel,Jon Snow,894
+Rodrik Cassel,Jory Cassel,802
+Rodrik Cassel,Lord Varys,172
+Rodrik Cassel,Lysa Arryn,602
+Rodrik Cassel,Maester Luwin,703
+Rodrik Cassel,Myrcella Baratheon,337
+Rodrik Cassel,Osha,257
+Rodrik Cassel,Petyr Baelish,172
+Rodrik Cassel,Rickon Stark,785
+Rodrik Cassel,Robb Stark,1680
+Rodrik Cassel,Robert Baratheon,554
+Rodrik Cassel,Robin Arryn,602
+Rodrik Cassel,Sandor Clegane,337
+Rodrik Cassel,Sansa Stark,722
+Rodrik Cassel,Septa Mordane,191
+Rodrik Cassel,Summer,520
+Rodrik Cassel,Theon Greyjoy,2202
+Rodrik Cassel,Tommen Baratheon,337
+Rodrik Cassel,Tyrion Lannister,1054
+Rodrik Cassel,Yoren,184
+Roose Bolton,Brienne of Tarth,284
+Roose Bolton,Brynden Tully,251
+Roose Bolton,Catelyn Stark,691
+Roose Bolton,Edmure Tully,379
+Roose Bolton,Jaime Lannister,298
+Roose Bolton,Locke,453
+Roose Bolton,Myranda,177
+Roose Bolton,Petyr Baelish,220
+Roose Bolton,Qyburn,153
+Roose Bolton,Ramsay Snow,1681
+Roose Bolton,Robb Stark,930
+Roose Bolton,Sansa Stark,466
+Roose Bolton,Talisa Maegyr,588
+Roose Bolton,Theon Greyjoy,838
+Roose Bolton,Walder Frey,511
+Ros,Cersei Lannister,57
+Ros,Grand Maester Pycelle,185
+Ros,Jaime Lannister,130
+Ros,Janos Slynt,125
+Ros,Joffrey Baratheon,215
+Ros,Lord Varys,256
+Ros,Petyr Baelish,659
+Ros,Podrick Payne,99
+Ros,Sansa Stark,104
+Ros,Shae,104
+Ros,Theon Greyjoy,197
+Ros,Tyrion Lannister,229
+Samwell Tarly,Alliser Thorne,2311
+Samwell Tarly,Arya Stark,1147
+Samwell Tarly,Baby Sam,3123
+Samwell Tarly,Beric Dondarrion,327
+Samwell Tarly,Bran Stark,1788
+Samwell Tarly,Brienne of Tarth,1682
+Samwell Tarly,Bronn,250
+Samwell Tarly,Daenerys Targaryen,710
+Samwell Tarly,Davos Seaworth,1930
+Samwell Tarly,Eddison Tollett,2986
+Samwell Tarly,Edmure Tully,751
+Samwell Tarly,Gendry,1287
+Samwell Tarly,Ghost,1057
+Samwell Tarly,Gilly,4879
+Samwell Tarly,Grenn,2652
+Samwell Tarly,Grey Worm,1441
+Samwell Tarly,Hodor,248
+Samwell Tarly,Jaime Lannister,780
+Samwell Tarly,Janos Slynt,1037
+Samwell Tarly,Jeor Mormont,1384
+Samwell Tarly,Jojen Reed,248
+Samwell Tarly,Jon Snow,6490
+Samwell Tarly,Jorah Mormont,1266
+Samwell Tarly,Locke,8
+Samwell Tarly,Lord Varys,539
+Samwell Tarly,Lyanna Mormont,318
+Samwell Tarly,Maester Aemon,1392
+Samwell Tarly,Mance Rayder,244
+Samwell Tarly,Meera Reed,248
+Samwell Tarly,Melisandre,312
+Samwell Tarly,Missandei,505
+Samwell Tarly,Olly,1226
+Samwell Tarly,Othell Yarwyck,1183
+Samwell Tarly,Podrick Payne,604
+Samwell Tarly,Pypar,1708
+Samwell Tarly,Qhono,187
+Samwell Tarly,Rast,1235
+Samwell Tarly,Robin Arryn,751
+Samwell Tarly,Sandor Clegane,293
+Samwell Tarly,Sansa Stark,1284
+Samwell Tarly,Selyse Baratheon,213
+Samwell Tarly,Shireen Baratheon,352
+Samwell Tarly,Stannis Baratheon,591
+Samwell Tarly,Summer,248
+Samwell Tarly,Theon Greyjoy,255
+Samwell Tarly,Tormund Giantsbane,1233
+Samwell Tarly,Tyrion Lannister,1529
+Samwell Tarly,White Walker,231
+Samwell Tarly,Wun Wun,30
+Samwell Tarly,Yara Greyjoy,751
+Samwell Tarly,Ygritte,146
+Samwell Tarly,Yohn Royce,1143
+Sandor Clegane,Arya Stark,5316
+Sandor Clegane,Barristan Selmy,1066
+Sandor Clegane,Benjen Stark,78
+Sandor Clegane,Beric Dondarrion,3631
+Sandor Clegane,Bran Stark,706
+Sandor Clegane,Brienne of Tarth,1615
+Sandor Clegane,Bronn,725
+Sandor Clegane,Catelyn Stark,337
+Sandor Clegane,Cersei Lannister,2503
+Sandor Clegane,Daenerys Targaryen,1184
+Sandor Clegane,Davos Seaworth,1448
+Sandor Clegane,Drogon,254
+Sandor Clegane,Eddard Stark,1430
+Sandor Clegane,Eddison Tollett,90
+Sandor Clegane,Euron Greyjoy,361
+Sandor Clegane,Gendry,1888
+Sandor Clegane,Ghost,178
+Sandor Clegane,Gilly,113
+Sandor Clegane,Grand Maester Pycelle,938
+Sandor Clegane,Gregor Clegane,1387
+Sandor Clegane,Grey Worm,359
+Sandor Clegane,Hodor,337
+Sandor Clegane,Hot Pie,52
+Sandor Clegane,Jaime Lannister,1213
+Sandor Clegane,Janos Slynt,578
+Sandor Clegane,Joffrey Baratheon,3174
+Sandor Clegane,Jon Snow,3449
+Sandor Clegane,Jorah Mormont,3052
+Sandor Clegane,Jory Cassel,337
+Sandor Clegane,Lancel Lannister,307
+Sandor Clegane,Loras Tyrell,239
+Sandor Clegane,Lord Varys,2246
+Sandor Clegane,Lyanna Mormont,68
+Sandor Clegane,Maester Luwin,337
+Sandor Clegane,Melisandre,234
+Sandor Clegane,Meryn Trant,1274
+Sandor Clegane,Missandei,1292
+Sandor Clegane,Myrcella Baratheon,1104
+Sandor Clegane,Petyr Baelish,1396
+Sandor Clegane,Podrick Payne,760
+Sandor Clegane,Qhono,1001
+Sandor Clegane,Qyburn,662
+Sandor Clegane,Renly Baratheon,488
+Sandor Clegane,Rhaegal,221
+Sandor Clegane,Rickon Stark,337
+Sandor Clegane,Robb Stark,99
+Sandor Clegane,Robert Baratheon,903
+Sandor Clegane,Rodrik Cassel,337
+Sandor Clegane,Samwell Tarly,293
+Sandor Clegane,Sansa Stark,3348
+Sandor Clegane,Septa Mordane,648
+Sandor Clegane,Shae,38
+Sandor Clegane,Summer,415
+Sandor Clegane,The Night King,204
+Sandor Clegane,Theon Greyjoy,1484
+Sandor Clegane,Thoros of Myr,2492
+Sandor Clegane,Tommen Baratheon,1142
+Sandor Clegane,Tormund Giantsbane,2263
+Sandor Clegane,Tyrion Lannister,2176
+Sandor Clegane,Viserion,151
+Sandor Clegane,White Walker,185
+Sandor Clegane,Yohn Royce,178
+Sandor Clegane,Yoren,376
+Sansa Stark,Arya Stark,5473
+Sansa Stark,Baby Sam,134
+Sansa Stark,Barristan Selmy,857
+Sansa Stark,Benjen Stark,194
+Sansa Stark,Beric Dondarrion,255
+Sansa Stark,Bran Stark,3557
+Sansa Stark,Brienne of Tarth,4495
+Sansa Stark,Bronn,503
+Sansa Stark,Catelyn Stark,773
+Sansa Stark,Cersei Lannister,4400
+Sansa Stark,Daenerys Targaryen,1690
+Sansa Stark,Davos Seaworth,4032
+Sansa Stark,Drogon,36
+Sansa Stark,Eddard Stark,2029
+Sansa Stark,Eddison Tollett,493
+Sansa Stark,Edmure Tully,751
+Sansa Stark,Ellaria Sand,9
+Sansa Stark,Gendry,1033
+Sansa Stark,Ghost,199
+Sansa Stark,Gilly,472
+Sansa Stark,Grand Maester Pycelle,1972
+Sansa Stark,Gregor Clegane,488
+Sansa Stark,Grey Worm,1953
+Sansa Stark,Hodor,337
+Sansa Stark,Jaime Lannister,1608
+Sansa Stark,Janos Slynt,369
+Sansa Stark,Joffrey Baratheon,5092
+Sansa Stark,Jon Snow,5577
+Sansa Stark,Jorah Mormont,619
+Sansa Stark,Jory Cassel,641
+Sansa Stark,Lancel Lannister,219
+Sansa Stark,Loras Tyrell,1240
+Sansa Stark,Lord Varys,3331
+Sansa Stark,Lyanna Mormont,2118
+Sansa Stark,Lysa Arryn,592
+Sansa Stark,Mace Tyrell,747
+Sansa Stark,Maester Luwin,337
+Sansa Stark,Margaery Tyrell,2055
+Sansa Stark,Meera Reed,34
+Sansa Stark,Melisandre,207
+Sansa Stark,Meryn Trant,1371
+Sansa Stark,Missandei,1387
+Sansa Stark,Myranda,555
+Sansa Stark,Myrcella Baratheon,1135
+Sansa Stark,Oberyn Martell,281
+Sansa Stark,Olenna Tyrell,1276
+Sansa Stark,Petyr Baelish,6397
+Sansa Stark,Podrick Payne,2133
+Sansa Stark,Qhono,327
+Sansa Stark,Ramsay Snow,1465
+Sansa Stark,Renly Baratheon,488
+Sansa Stark,Rhaegal,36
+Sansa Stark,Rickon Stark,544
+Sansa Stark,Robb Stark,385
+Sansa Stark,Robert Baratheon,1268
+Sansa Stark,Robin Arryn,1130
+Sansa Stark,Rodrik Cassel,722
+Sansa Stark,Roose Bolton,466
+Sansa Stark,Ros,104
+Sansa Stark,Samwell Tarly,1284
+Sansa Stark,Sandor Clegane,3348
+Sansa Stark,Septa Mordane,1293
+Sansa Stark,Shae,1350
+Sansa Stark,Summer,337
+Sansa Stark,Theon Greyjoy,2914
+Sansa Stark,Tommen Baratheon,2189
+Sansa Stark,Tormund Giantsbane,2160
+Sansa Stark,Tyrion Lannister,5380
+Sansa Stark,Tywin Lannister,1186
+Sansa Stark,Wun Wun,198
+Sansa Stark,Yara Greyjoy,751
+Sansa Stark,Yohn Royce,3564
+Sansa Stark,Yoren,376
+Selyse Baratheon,Baby Sam,50
+Selyse Baratheon,Davos Seaworth,482
+Selyse Baratheon,Eddison Tollett,233
+Selyse Baratheon,Gilly,151
+Selyse Baratheon,Grenn,62
+Selyse Baratheon,Janos Slynt,62
+Selyse Baratheon,Jon Snow,183
+Selyse Baratheon,Maester Aemon,62
+Selyse Baratheon,Mance Rayder,101
+Selyse Baratheon,Melisandre,973
+Selyse Baratheon,Olly,145
+Selyse Baratheon,Samwell Tarly,213
+Selyse Baratheon,Shireen Baratheon,478
+Selyse Baratheon,Stannis Baratheon,989
+Selyse Baratheon,Tormund Giantsbane,101
+Septa Mordane,Arya Stark,576
+Septa Mordane,Barristan Selmy,488
+Septa Mordane,Bran Stark,191
+Septa Mordane,Catelyn Stark,191
+Septa Mordane,Cersei Lannister,249
+Septa Mordane,Eddard Stark,726
+Septa Mordane,Grand Maester Pycelle,239
+Septa Mordane,Gregor Clegane,488
+Septa Mordane,Joffrey Baratheon,821
+Septa Mordane,Jon Snow,191
+Septa Mordane,Jory Cassel,55
+Septa Mordane,Loras Tyrell,239
+Septa Mordane,Meryn Trant,160
+Septa Mordane,Myrcella Baratheon,488
+Septa Mordane,Petyr Baelish,488
+Septa Mordane,Renly Baratheon,488
+Septa Mordane,Rickon Stark,191
+Septa Mordane,Robb Stark,191
+Septa Mordane,Robert Baratheon,488
+Septa Mordane,Rodrik Cassel,191
+Septa Mordane,Sandor Clegane,648
+Septa Mordane,Sansa Stark,1293
+Septa Mordane,Theon Greyjoy,191
+Septa Mordane,Tommen Baratheon,488
+Septa Unella,Cersei Lannister,928
+Septa Unella,Gregor Clegane,52
+Septa Unella,High Sparrow,464
+Septa Unella,Jaime Lannister,246
+Septa Unella,Lancel Lannister,72
+Septa Unella,Mace Tyrell,246
+Septa Unella,Margaery Tyrell,524
+Septa Unella,Olenna Tyrell,359
+Septa Unella,Qyburn,25
+Septa Unella,Tommen Baratheon,109
+Shae,Bronn,674
+Shae,Cersei Lannister,668
+Shae,Grand Maester Pycelle,21
+Shae,Jaime Lannister,379
+Shae,Joffrey Baratheon,62
+Shae,Lancel Lannister,47
+Shae,Loras Tyrell,399
+Shae,Lord Varys,364
+Shae,Mace Tyrell,400
+Shae,Margaery Tyrell,379
+Shae,Oberyn Martell,379
+Shae,Petyr Baelish,104
+Shae,Podrick Payne,98
+Shae,Ros,104
+Shae,Sandor Clegane,38
+Shae,Sansa Stark,1350
+Shae,Tommen Baratheon,157
+Shae,Tyrion Lannister,2996
+Shae,Tywin Lannister,400
+Shireen Baratheon,Baby Sam,50
+Shireen Baratheon,Davos Seaworth,644
+Shireen Baratheon,Eddison Tollett,233
+Shireen Baratheon,Gilly,290
+Shireen Baratheon,Grenn,62
+Shireen Baratheon,Janos Slynt,62
+Shireen Baratheon,Jon Snow,183
+Shireen Baratheon,Maester Aemon,62
+Shireen Baratheon,Mance Rayder,101
+Shireen Baratheon,Melisandre,422
+Shireen Baratheon,Olly,145
+Shireen Baratheon,Samwell Tarly,352
+Shireen Baratheon,Selyse Baratheon,478
+Shireen Baratheon,Stannis Baratheon,828
+Shireen Baratheon,Tormund Giantsbane,101
+Stannis Baratheon,Alliser Thorne,321
+Stannis Baratheon,Brienne of Tarth,284
+Stannis Baratheon,Catelyn Stark,193
+Stannis Baratheon,Davos Seaworth,3712
+Stannis Baratheon,Eddison Tollett,527
+Stannis Baratheon,Gendry,118
+Stannis Baratheon,Gilly,123
+Stannis Baratheon,Grenn,62
+Stannis Baratheon,Janos Slynt,292
+Stannis Baratheon,Jon Snow,1235
+Stannis Baratheon,Loras Tyrell,193
+Stannis Baratheon,Maester Aemon,62
+Stannis Baratheon,Mance Rayder,401
+Stannis Baratheon,Melisandre,2961
+Stannis Baratheon,Olly,476
+Stannis Baratheon,Othell Yarwyck,91
+Stannis Baratheon,Renly Baratheon,193
+Stannis Baratheon,Samwell Tarly,591
+Stannis Baratheon,Selyse Baratheon,989
+Stannis Baratheon,Shireen Baratheon,828
+Stannis Baratheon,Tormund Giantsbane,245
+Summer,Arya Stark,337
+Summer,Baby Sam,248
+Summer,Benjen Stark,78
+Summer,Bran Stark,2524
+Summer,Catelyn Stark,529
+Summer,Cersei Lannister,448
+Summer,Eddard Stark,598
+Summer,Ghost,207
+Summer,Gilly,248
+Summer,Hodor,1770
+Summer,Jaime Lannister,448
+Summer,Joffrey Baratheon,337
+Summer,Jojen Reed,958
+Summer,Jon Snow,562
+Summer,Jory Cassel,520
+Summer,Maester Luwin,529
+Summer,Meera Reed,1175
+Summer,Myrcella Baratheon,337
+Summer,Osha,418
+Summer,Rickon Stark,644
+Summer,Robb Stark,453
+Summer,Robert Baratheon,415
+Summer,Rodrik Cassel,520
+Summer,Samwell Tarly,248
+Summer,Sandor Clegane,415
+Summer,Sansa Stark,337
+Summer,Theon Greyjoy,652
+Summer,Three-Eyed Raven,203
+Summer,Tommen Baratheon,337
+Summer,Tyrion Lannister,78
+Summer,White Walker,42
+Talisa Maegyr,Brienne of Tarth,46
+Talisa Maegyr,Brynden Tully,906
+Talisa Maegyr,Catelyn Stark,1622
+Talisa Maegyr,Edmure Tully,1106
+Talisa Maegyr,Qyburn,105
+Talisa Maegyr,Robb Stark,2928
+Talisa Maegyr,Roose Bolton,588
+Talisa Maegyr,Walder Frey,812
+The Night King,Arya Stark,26
+The Night King,Beric Dondarrion,204
+The Night King,Bran Stark,340
+The Night King,Catelyn Stark,7
+The Night King,Daenerys Targaryen,317
+The Night King,Drogon,317
+The Night King,Eddard Stark,7
+The Night King,Eddison Tollett,41
+The Night King,Jaime Lannister,10
+The Night King,Jon Snow,687
+The Night King,Jorah Mormont,204
+The Night King,Meera Reed,45
+The Night King,Melisandre,7
+The Night King,Rhaegal,266
+The Night King,Robb Stark,10
+The Night King,Sandor Clegane,204
+The Night King,Theon Greyjoy,145
+The Night King,Three-Eyed Raven,63
+The Night King,Tormund Giantsbane,296
+The Night King,Viserion,397
+The Night King,White Walker,576
+The Night King,Wun Wun,92
+The Waif,Arya Stark,1214
+The Waif,Jaqen H'ghar,308
+Theon Greyjoy,Arya Stark,977
+Theon Greyjoy,Benjen Stark,272
+Theon Greyjoy,Beric Dondarrion,255
+Theon Greyjoy,Bran Stark,2779
+Theon Greyjoy,Brienne of Tarth,1876
+Theon Greyjoy,Bronn,197
+Theon Greyjoy,Catelyn Stark,1528
+Theon Greyjoy,Cersei Lannister,1434
+Theon Greyjoy,Daenerys Targaryen,1770
+Theon Greyjoy,Davos Seaworth,1765
+Theon Greyjoy,Drogon,165
+Theon Greyjoy,Eddard Stark,1166
+Theon Greyjoy,Eddison Tollett,68
+Theon Greyjoy,Ellaria Sand,295
+Theon Greyjoy,Euron Greyjoy,986
+Theon Greyjoy,Gendry,68
+Theon Greyjoy,Ghost,251
+Theon Greyjoy,Gregor Clegane,903
+Theon Greyjoy,Grey Worm,628
+Theon Greyjoy,Hodor,854
+Theon Greyjoy,Jaime Lannister,1812
+Theon Greyjoy,Joffrey Baratheon,531
+Theon Greyjoy,Jon Snow,2898
+Theon Greyjoy,Jorah Mormont,1653
+Theon Greyjoy,Jory Cassel,703
+Theon Greyjoy,Locke,295
+Theon Greyjoy,Lord Varys,1862
+Theon Greyjoy,Lyanna Mormont,255
+Theon Greyjoy,Maester Luwin,1847
+Theon Greyjoy,Missandei,1942
+Theon Greyjoy,Myranda,731
+Theon Greyjoy,Myrcella Baratheon,337
+Theon Greyjoy,Olenna Tyrell,201
+Theon Greyjoy,Osha,930
+Theon Greyjoy,Petyr Baelish,62
+Theon Greyjoy,Podrick Payne,601
+Theon Greyjoy,Qhono,1514
+Theon Greyjoy,Qyburn,903
+Theon Greyjoy,Ramsay Snow,2911
+Theon Greyjoy,Rhaegal,168
+Theon Greyjoy,Rickon Stark,836
+Theon Greyjoy,Robb Stark,2378
+Theon Greyjoy,Robert Baratheon,609
+Theon Greyjoy,Rodrik Cassel,2202
+Theon Greyjoy,Roose Bolton,838
+Theon Greyjoy,Ros,197
+Theon Greyjoy,Samwell Tarly,255
+Theon Greyjoy,Sandor Clegane,1484
+Theon Greyjoy,Sansa Stark,2914
+Theon Greyjoy,Septa Mordane,191
+Theon Greyjoy,Summer,652
+Theon Greyjoy,The Night King,145
+Theon Greyjoy,Tommen Baratheon,337
+Theon Greyjoy,Tormund Giantsbane,255
+Theon Greyjoy,Tyene Sand,11
+Theon Greyjoy,Tyrion Lannister,2379
+Theon Greyjoy,Viserion,96
+Theon Greyjoy,White Walker,119
+Theon Greyjoy,Yara Greyjoy,2679
+Theon Greyjoy,Yohn Royce,255
+Theon Greyjoy,Yoren,103
+Thoros of Myr,Arya Stark,1568
+Thoros of Myr,Beric Dondarrion,2819
+Thoros of Myr,Davos Seaworth,141
+Thoros of Myr,Gendry,2032
+Thoros of Myr,Hot Pie,373
+Thoros of Myr,Jon Snow,1188
+Thoros of Myr,Jorah Mormont,1213
+Thoros of Myr,Melisandre,422
+Thoros of Myr,Sandor Clegane,2492
+Thoros of Myr,Tormund Giantsbane,1166
+Thoros of Myr,White Walker,24
+Three-Eyed Raven,Bran Stark,1320
+Three-Eyed Raven,Eddard Stark,34
+Three-Eyed Raven,Hodor,353
+Three-Eyed Raven,Jojen Reed,13
+Three-Eyed Raven,Jon Snow,17
+Three-Eyed Raven,Meera Reed,353
+Three-Eyed Raven,Robb Stark,17
+Three-Eyed Raven,Summer,203
+Three-Eyed Raven,The Night King,63
+Three-Eyed Raven,White Walker,76
+Tommen Baratheon,Arya Stark,586
+Tommen Baratheon,Barristan Selmy,488
+Tommen Baratheon,Bran Stark,337
+Tommen Baratheon,Brienne of Tarth,45
+Tommen Baratheon,Bronn,222
+Tommen Baratheon,Catelyn Stark,337
+Tommen Baratheon,Cersei Lannister,3879
+Tommen Baratheon,Eddard Stark,576
+Tommen Baratheon,Ellaria Sand,32
+Tommen Baratheon,Grand Maester Pycelle,1065
+Tommen Baratheon,Gregor Clegane,684
+Tommen Baratheon,High Sparrow,771
+Tommen Baratheon,Hodor,337
+Tommen Baratheon,Jaime Lannister,1092
+Tommen Baratheon,Joffrey Baratheon,2272
+Tommen Baratheon,Jon Snow,337
+Tommen Baratheon,Jory Cassel,337
+Tommen Baratheon,Kevan Lannister,226
+Tommen Baratheon,Lancel Lannister,25
+Tommen Baratheon,Loras Tyrell,1026
+Tommen Baratheon,Lord Varys,458
+Tommen Baratheon,Mace Tyrell,1361
+Tommen Baratheon,Maester Luwin,337
+Tommen Baratheon,Margaery Tyrell,2166
+Tommen Baratheon,Meryn Trant,357
+Tommen Baratheon,Myrcella Baratheon,1458
+Tommen Baratheon,Oberyn Martell,416
+Tommen Baratheon,Olenna Tyrell,1067
+Tommen Baratheon,Petyr Baelish,488
+Tommen Baratheon,Podrick Payne,338
+Tommen Baratheon,Qyburn,206
+Tommen Baratheon,Renly Baratheon,488
+Tommen Baratheon,Rickon Stark,337
+Tommen Baratheon,Robert Baratheon,825
+Tommen Baratheon,Rodrik Cassel,337
+Tommen Baratheon,Sandor Clegane,1142
+Tommen Baratheon,Sansa Stark,2189
+Tommen Baratheon,Septa Mordane,488
+Tommen Baratheon,Septa Unella,109
+Tommen Baratheon,Shae,157
+Tommen Baratheon,Summer,337
+Tommen Baratheon,Theon Greyjoy,337
+Tommen Baratheon,Tyrion Lannister,1417
+Tommen Baratheon,Tywin Lannister,1322
+Tormund Giantsbane,Alliser Thorne,664
+Tormund Giantsbane,Arya Stark,392
+Tormund Giantsbane,Baby Sam,9
+Tormund Giantsbane,Beric Dondarrion,2566
+Tormund Giantsbane,Bran Stark,392
+Tormund Giantsbane,Brienne of Tarth,1945
+Tormund Giantsbane,Daenerys Targaryen,765
+Tormund Giantsbane,Davos Seaworth,3696
+Tormund Giantsbane,Drogon,256
+Tormund Giantsbane,Eddison Tollett,2629
+Tormund Giantsbane,Gendry,1367
+Tormund Giantsbane,Ghost,629
+Tormund Giantsbane,Gilly,230
+Tormund Giantsbane,Grey Worm,577
+Tormund Giantsbane,Jaime Lannister,1093
+Tormund Giantsbane,Janos Slynt,122
+Tormund Giantsbane,Jon Snow,9352
+Tormund Giantsbane,Jorah Mormont,2358
+Tormund Giantsbane,Lord Varys,500
+Tormund Giantsbane,Lyanna Mormont,1111
+Tormund Giantsbane,Mance Rayder,759
+Tormund Giantsbane,Melisandre,883
+Tormund Giantsbane,Missandei,392
+Tormund Giantsbane,Olly,497
+Tormund Giantsbane,Othell Yarwyck,320
+Tormund Giantsbane,Petyr Baelish,627
+Tormund Giantsbane,Podrick Payne,1602
+Tormund Giantsbane,Pypar,89
+Tormund Giantsbane,Qhono,187
+Tormund Giantsbane,Ramsay Snow,863
+Tormund Giantsbane,Rhaegal,226
+Tormund Giantsbane,Rickon Stark,123
+Tormund Giantsbane,Samwell Tarly,1233
+Tormund Giantsbane,Sandor Clegane,2263
+Tormund Giantsbane,Sansa Stark,2160
+Tormund Giantsbane,Selyse Baratheon,101
+Tormund Giantsbane,Shireen Baratheon,101
+Tormund Giantsbane,Stannis Baratheon,245
+Tormund Giantsbane,The Night King,296
+Tormund Giantsbane,Theon Greyjoy,255
+Tormund Giantsbane,Thoros of Myr,1166
+Tormund Giantsbane,Tyrion Lannister,862
+Tormund Giantsbane,Viserion,151
+Tormund Giantsbane,White Walker,232
+Tormund Giantsbane,Wun Wun,1333
+Tormund Giantsbane,Ygritte,1922
+Tormund Giantsbane,Yohn Royce,971
+Tyene Sand,Bronn,519
+Tyene Sand,Cersei Lannister,433
+Tyene Sand,Ellaria Sand,1115
+Tyene Sand,Euron Greyjoy,249
+Tyene Sand,Gregor Clegane,433
+Tyene Sand,Jaime Lannister,365
+Tyene Sand,Lord Varys,14
+Tyene Sand,Myrcella Baratheon,186
+Tyene Sand,Olenna Tyrell,97
+Tyene Sand,Qyburn,433
+Tyene Sand,Theon Greyjoy,11
+Tyene Sand,Yara Greyjoy,249
+Tyrion Lannister,Alliser Thorne,96
+Tyrion Lannister,Arya Stark,1379
+Tyrion Lannister,Baby Sam,134
+Tyrion Lannister,Benjen Stark,823
+Tyrion Lannister,Beric Dondarrion,255
+Tyrion Lannister,Bran Stark,2371
+Tyrion Lannister,Brienne of Tarth,4136
+Tyrion Lannister,Bronn,5675
+Tyrion Lannister,Catelyn Stark,1173
+Tyrion Lannister,Cersei Lannister,7057
+Tyrion Lannister,Daario Naharis,1197
+Tyrion Lannister,Daenerys Targaryen,9196
+Tyrion Lannister,Davos Seaworth,5731
+Tyrion Lannister,Drogon,1175
+Tyrion Lannister,Eddard Stark,182
+Tyrion Lannister,Eddison Tollett,68
+Tyrion Lannister,Edmure Tully,751
+Tyrion Lannister,Ellaria Sand,625
+Tyrion Lannister,Euron Greyjoy,1121
+Tyrion Lannister,Gendry,1187
+Tyrion Lannister,Ghost,399
+Tyrion Lannister,Gilly,438
+Tyrion Lannister,Grand Maester Pycelle,2054
+Tyrion Lannister,Gregor Clegane,2058
+Tyrion Lannister,Grenn,339
+Tyrion Lannister,Grey Worm,5670
+Tyrion Lannister,Hizdahr zo Loraq,790
+Tyrion Lannister,Hodor,103
+Tyrion Lannister,Jaime Lannister,6107
+Tyrion Lannister,Janos Slynt,411
+Tyrion Lannister,Jeor Mormont,219
+Tyrion Lannister,Joffrey Baratheon,2519
+Tyrion Lannister,Jon Snow,6405
+Tyrion Lannister,Jorah Mormont,5221
+Tyrion Lannister,Kevan Lannister,382
+Tyrion Lannister,Lancel Lannister,573
+Tyrion Lannister,Loras Tyrell,1292
+Tyrion Lannister,Lord Varys,10764
+Tyrion Lannister,Lyanna Mormont,723
+Tyrion Lannister,Lysa Arryn,721
+Tyrion Lannister,Mace Tyrell,2028
+Tyrion Lannister,Maester Aemon,123
+Tyrion Lannister,Maester Luwin,103
+Tyrion Lannister,Margaery Tyrell,1853
+Tyrion Lannister,Melisandre,195
+Tyrion Lannister,Meryn Trant,667
+Tyrion Lannister,Missandei,8197
+Tyrion Lannister,Myrcella Baratheon,412
+Tyrion Lannister,Oberyn Martell,2085
+Tyrion Lannister,Olenna Tyrell,1334
+Tyrion Lannister,Petyr Baelish,827
+Tyrion Lannister,Podrick Payne,3469
+Tyrion Lannister,Pypar,339
+Tyrion Lannister,Qhono,2947
+Tyrion Lannister,Qyburn,1287
+Tyrion Lannister,Rast,539
+Tyrion Lannister,Rhaegal,406
+Tyrion Lannister,Robb Stark,181
+Tyrion Lannister,Robert Baratheon,78
+Tyrion Lannister,Robin Arryn,1472
+Tyrion Lannister,Rodrik Cassel,1054
+Tyrion Lannister,Ros,229
+Tyrion Lannister,Samwell Tarly,1529
+Tyrion Lannister,Sandor Clegane,2176
+Tyrion Lannister,Sansa Stark,5380
+Tyrion Lannister,Shae,2996
+Tyrion Lannister,Summer,78
+Tyrion Lannister,Theon Greyjoy,2379
+Tyrion Lannister,Tommen Baratheon,1417
+Tyrion Lannister,Tormund Giantsbane,862
+Tyrion Lannister,Tywin Lannister,4464
+Tyrion Lannister,Viserion,316
+Tyrion Lannister,Yara Greyjoy,1196
+Tyrion Lannister,Yohn Royce,1874
+Tyrion Lannister,Yoren,521
+Tywin Lannister,Arya Stark,1186
+Tywin Lannister,Brienne of Tarth,7
+Tywin Lannister,Bronn,482
+Tywin Lannister,Cersei Lannister,4491
+Tywin Lannister,Ellaria Sand,434
+Tywin Lannister,Gendry,100
+Tywin Lannister,Grand Maester Pycelle,1758
+Tywin Lannister,Gregor Clegane,576
+Tywin Lannister,Hot Pie,100
+Tywin Lannister,Jaime Lannister,2269
+Tywin Lannister,Joffrey Baratheon,1964
+Tywin Lannister,Kevan Lannister,489
+Tywin Lannister,Loras Tyrell,1363
+Tywin Lannister,Lord Varys,1632
+Tywin Lannister,Mace Tyrell,2290
+Tywin Lannister,Margaery Tyrell,1994
+Tywin Lannister,Meryn Trant,108
+Tywin Lannister,Oberyn Martell,2045
+Tywin Lannister,Olenna Tyrell,1179
+Tywin Lannister,Petyr Baelish,485
+Tywin Lannister,Podrick Payne,338
+Tywin Lannister,Sansa Stark,1186
+Tywin Lannister,Shae,400
+Tywin Lannister,Tommen Baratheon,1322
+Tywin Lannister,Tyrion Lannister,4464
+Viserion,Barristan Selmy,254
+Viserion,Beric Dondarrion,151
+Viserion,Bran Stark,3
+Viserion,Daario Naharis,113
+Viserion,Daenerys Targaryen,2702
+Viserion,Davos Seaworth,48
+Viserion,Doreah,292
+Viserion,Drogon,2622
+Viserion,Grey Worm,365
+Viserion,Hizdahr zo Loraq,81
+Viserion,Irri,283
+Viserion,Jon Snow,477
+Viserion,Jorah Mormont,1415
+Viserion,Khal Drogo,824
+Viserion,Lord Varys,62
+Viserion,Mirri Maz Duur,263
+Viserion,Missandei,352
+Viserion,Qhono,36
+Viserion,Qotho,336
+Viserion,Rakharo,371
+Viserion,Rhaegal,3220
+Viserion,Sandor Clegane,151
+Viserion,The Night King,397
+Viserion,Theon Greyjoy,96
+Viserion,Tormund Giantsbane,151
+Viserion,Tyrion Lannister,316
+Viserion,Viserys Targaryen,471
+Viserion,White Walker,127
+Viserion,Xaro Xhoan Daxos,97
+Viserion,Yara Greyjoy,93
+Viserys Targaryen,Daenerys Targaryen,1767
+Viserys Targaryen,Doreah,1056
+Viserys Targaryen,Drogon,471
+Viserys Targaryen,Irri,981
+Viserys Targaryen,Jorah Mormont,1441
+Viserys Targaryen,Khal Drogo,1432
+Viserys Targaryen,Qotho,747
+Viserys Targaryen,Rakharo,218
+Viserys Targaryen,Rhaegal,471
+Viserys Targaryen,Viserion,471
+Walder Frey,Arya Stark,53
+Walder Frey,Brynden Tully,501
+Walder Frey,Catelyn Stark,1023
+Walder Frey,Edmure Tully,651
+Walder Frey,Jaime Lannister,155
+Walder Frey,Robb Stark,812
+Walder Frey,Roose Bolton,511
+Walder Frey,Talisa Maegyr,812
+White Walker,Arya Stark,26
+White Walker,Baby Sam,63
+White Walker,Beric Dondarrion,185
+White Walker,Bran Stark,249
+White Walker,Daenerys Targaryen,143
+White Walker,Drogon,143
+White Walker,Eddard Stark,34
+White Walker,Eddison Tollett,76
+White Walker,Gendry,24
+White Walker,Ghost,87
+White Walker,Gilly,63
+White Walker,Grenn,58
+White Walker,Hodor,42
+White Walker,Jeor Mormont,71
+White Walker,Jon Snow,403
+White Walker,Jorah Mormont,185
+White Walker,Meera Reed,42
+White Walker,Rast,58
+White Walker,Rhaegal,143
+White Walker,Samwell Tarly,231
+White Walker,Sandor Clegane,185
+White Walker,Summer,42
+White Walker,The Night King,576
+White Walker,Theon Greyjoy,119
+White Walker,Thoros of Myr,24
+White Walker,Three-Eyed Raven,76
+White Walker,Tormund Giantsbane,232
+White Walker,Viserion,127
+Wun Wun,Alliser Thorne,61
+Wun Wun,Davos Seaworth,467
+Wun Wun,Eddison Tollett,728
+Wun Wun,Jon Snow,1302
+Wun Wun,Olly,91
+Wun Wun,Othell Yarwyck,30
+Wun Wun,Petyr Baelish,43
+Wun Wun,Ramsay Snow,477
+Wun Wun,Rickon Stark,60
+Wun Wun,Samwell Tarly,30
+Wun Wun,Sansa Stark,198
+Wun Wun,The Night King,92
+Wun Wun,Tormund Giantsbane,1333
+Xaro Xhoan Daxos,Daenerys Targaryen,1242
+Xaro Xhoan Daxos,Doreah,97
+Xaro Xhoan Daxos,Drogon,97
+Xaro Xhoan Daxos,Irri,44
+Xaro Xhoan Daxos,Jorah Mormont,505
+Xaro Xhoan Daxos,Rhaegal,97
+Xaro Xhoan Daxos,Viserion,97
+Yara Greyjoy,Arya Stark,751
+Yara Greyjoy,Bran Stark,751
+Yara Greyjoy,Brienne of Tarth,751
+Yara Greyjoy,Cersei Lannister,156
+Yara Greyjoy,Daenerys Targaryen,445
+Yara Greyjoy,Davos Seaworth,751
+Yara Greyjoy,Drogon,93
+Yara Greyjoy,Edmure Tully,751
+Yara Greyjoy,Ellaria Sand,533
+Yara Greyjoy,Euron Greyjoy,835
+Yara Greyjoy,Gendry,751
+Yara Greyjoy,Gregor Clegane,156
+Yara Greyjoy,Grey Worm,1045
+Yara Greyjoy,Jaime Lannister,156
+Yara Greyjoy,Lord Varys,201
+Yara Greyjoy,Missandei,201
+Yara Greyjoy,Olenna Tyrell,201
+Yara Greyjoy,Qyburn,156
+Yara Greyjoy,Ramsay Snow,82
+Yara Greyjoy,Rhaegal,93
+Yara Greyjoy,Robin Arryn,751
+Yara Greyjoy,Samwell Tarly,751
+Yara Greyjoy,Sansa Stark,751
+Yara Greyjoy,Theon Greyjoy,2679
+Yara Greyjoy,Tyene Sand,249
+Yara Greyjoy,Tyrion Lannister,1196
+Yara Greyjoy,Viserion,93
+Yara Greyjoy,Yohn Royce,751
+Ygritte,Alliser Thorne,44
+Ygritte,Baby Sam,26
+Ygritte,Gilly,26
+Ygritte,Janos Slynt,50
+Ygritte,Jon Snow,3834
+Ygritte,Mance Rayder,330
+Ygritte,Olly,150
+Ygritte,Pypar,146
+Ygritte,Samwell Tarly,146
+Ygritte,Tormund Giantsbane,1922
+Yohn Royce,Arya Stark,1782
+Yohn Royce,Beric Dondarrion,255
+Yohn Royce,Bran Stark,2246
+Yohn Royce,Brienne of Tarth,2437
+Yohn Royce,Daenerys Targaryen,1173
+Yohn Royce,Davos Seaworth,2663
+Yohn Royce,Eddison Tollett,68
+Yohn Royce,Edmure Tully,751
+Yohn Royce,Gendry,920
+Yohn Royce,Ghost,199
+Yohn Royce,Grey Worm,1876
+Yohn Royce,Jaime Lannister,695
+Yohn Royce,Jon Snow,1950
+Yohn Royce,Jorah Mormont,633
+Yohn Royce,Lord Varys,1096
+Yohn Royce,Lyanna Mormont,1605
+Yohn Royce,Missandei,969
+Yohn Royce,Petyr Baelish,1996
+Yohn Royce,Podrick Payne,596
+Yohn Royce,Qhono,327
+Yohn Royce,Robin Arryn,1014
+Yohn Royce,Samwell Tarly,1143
+Yohn Royce,Sandor Clegane,178
+Yohn Royce,Sansa Stark,3564
+Yohn Royce,Theon Greyjoy,255
+Yohn Royce,Tormund Giantsbane,971
+Yohn Royce,Tyrion Lannister,1874
+Yohn Royce,Yara Greyjoy,751
+Yoren,Arya Stark,1252
+Yoren,Benjen Stark,234
+Yoren,Bran Stark,103
+Yoren,Bronn,184
+Yoren,Catelyn Stark,184
+Yoren,Cersei Lannister,330
+Yoren,Eddard Stark,493
+Yoren,Gendry,700
+Yoren,Grand Maester Pycelle,330
+Yoren,Hodor,103
+Yoren,Hot Pie,218
+Yoren,Joffrey Baratheon,330
+Yoren,Jory Cassel,104
+Yoren,Lord Varys,376
+Yoren,Maester Luwin,103
+Yoren,Petyr Baelish,330
+Yoren,Robb Stark,103
+Yoren,Rodrik Cassel,184
+Yoren,Sandor Clegane,376
+Yoren,Sansa Stark,376
+Yoren,Theon Greyjoy,103
+Yoren,Tyrion Lannister,521

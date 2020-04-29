@@ -20,19 +20,21 @@ projects: []
 
 
 
-<p>Armed with my Game of Thrones data I was keen to visualise relationship between characters. I started doing that on a character by character basis in the <a href="post/game-of-thrones-character-profile-interactive-rmarkdown/">previous post</a>.</p>
-<p>The thing is… I had no experience doing that with R, no knowledge on graphs and layout. I knew that Thomas Lin Pedersen’s packages “<a href="https://www.data-imaginist.com/2017/ggraph-introduction-layouts/">ggraph</a>” and “<a href="https://www.data-imaginist.com/2017/introducing-tidygraph/">tidygraph</a>” existed but that is about it.</p>
-<p>This was not very frightening because as with most things with R someone, somewhere must have done a really comprehensive and easy to understand introduction to these tools. Well, that is what I thought, but I was surprised to struggle to find the content that would have made the making of these graphs easy. I still think I must have missed it. Finally, finding pieces of information here and there, I managed to get a result that I was quite satisfied with.</p>
-<p>I am going to walk you briefly through how I did it but of course, as my knowledge of graph’s theory is very very limited the information that I will provide is also. To sum it up, I got something that worked for this particular case, that may help for other cases but that will not be generalizebale.</p>
+<p>One of the thing I found interesting in the Game of Throne data was to visualise relationship between characters. I started doing that on a character by character basis in the <a href="post/game-of-thrones-character-profile-interactive-rmarkdown/">previous post</a>. The next thing I wanted to try out was to build network graphs.</p>
+<p>The thing is… I had no experience doing that with R, no knowledge on graphs and layout. I knew that Thomas Lin Pedersen’s packages “<a href="https://www.data-imaginist.com/2017/ggraph-introduction-layouts/">ggraph</a>” and “<a href="https://www.data-imaginist.com/2017/introducing-tidygraph/">tidygraph</a>” existed but that was about it.</p>
+<p>This was not very frightening because as with most things with R someone, somewhere must have done a really comprehensive and easy to understand introduction to these tools. Well, that’s what I thought, but I was surprised to struggle to find the content that would have made the making of these graphs easy. I think I must have missed it. Finally, finding pieces of information here and there, I managed to get a result that I was quite satisfied with.</p>
+<p>I am going to walk you briefly through how I did it, but of course, as my knowledge of graph theory is very very limited the information that I will provide is also. To sum it up, I got something that worked for this particular case, that may help for other cases but that will not be fully generalisable.</p>
 <div id="lets-get-started" class="section level2">
 <h2>Let’s get started</h2>
 <p>We first import the data and set a time limit. After some trial and errors I found that 20 minutes was giving nice results.</p>
 <p>The data is the one prepared <a href="/post/game-of-thrones-data-wrangling-and-some-viz/">here</a>.</p>
 <pre class="r"><code>library(tidyverse)
+library(glue)
 library(tidygraph)
+library(gameofthrones)
 library(ggraph)
 library(here)
-library(gameofthrones)
+library(gt)
 
 extrafont::loadfonts(device = &quot;win&quot;)
 
@@ -84,18 +86,16 @@ First we get the node out of our dataset, it is fairly easy. We keep only the na
   # the time column in the node dataset
   rename(from = &quot;name&quot;, to = &quot;name_2&quot;, edge_time = time) %&gt;% 
   ungroup()</code></pre>
-<p>Nice ! I know have a node and a edge dataframe that I can combine in a tidygraph object.
+<p>Nice ! I know have a nodes and a edges dataframe that I can combine in a tidygraph object.
 We set ‘directed’ to false, because our data is not directional.</p>
 <p>A tidygraph object can be manipulated in a similar fashion as a dataframe with tidyverse verbs. What we need to do is use <strong>activate</strong> to choose wether we want to modify the nodes ot the edges (nodes are activated by default).</p>
-<p>What we do first is to activate the edges to filter out replicated relationship. We use the function <strong>edge_is_multiple</strong>. This function allows us to keep only one relati</p>
+<p>What we do first is to activate the edges to filter out replicated relationship. We use the function <strong>edge_is_multiple</strong>. This function allows us to keep only one of our mutual relationship (which are redundant since our data is not directional).</p>
 <pre class="r"><code>graph &lt;- tbl_graph(nodes, combination, directed = FALSE) %&gt;% 
   activate(edges) %&gt;% 
   filter(!edge_is_multiple()) %&gt;% 
   activate(nodes) %&gt;% 
-  mutate(group = group_infomap(weights = edge_time))
-
-
-graph_plot &lt;- ggraph(graph, layout = &quot;fr&quot;, weights = edge_time) +
+  mutate(group = group_infomap(weights = edge_time))</code></pre>
+<pre class="r"><code>graph_plot &lt;- ggraph(graph, layout = &quot;fr&quot;, weights = edge_time) +
   geom_edge_density(aes(fill = edge_time)) +
   geom_edge_link(alpha = 0.1) +
   geom_node_point(aes(size = time, color = as_factor(group))) +
@@ -108,19 +108,888 @@ graph_plot &lt;- ggraph(graph, layout = &quot;fr&quot;, weights = edge_time) +
         plot.title = element_text(family = &quot;Cinzel&quot;)) 
 
 
-ggsave(plot = graph_plot, here(&quot;static/plots/got/network_graph.png&quot;), 
-       type = &quot;cairo&quot;, 
-       dpi = 600,
-       width = 20, 
-       height = 16)
-
-ggsave(plot = graph_plot, here(&quot;static/plots/got/network_graph.pdf&quot;), 
-       device = cairo_pdf, 
-       dpi = 600,
-       width = 20, 
-       height = 16)
+# ggsave(plot = graph_plot, here(&quot;static/plots/got/network_graph.png&quot;), 
+#        type = &quot;cairo&quot;, 
+#        dpi = 600,
+#        width = 20, 
+#        height = 16)
+# 
+# ggsave(plot = graph_plot, here(&quot;static/plots/got/network_graph.pdf&quot;), 
+#        device = cairo_pdf, 
+#        dpi = 600,
+#        width = 20, 
+#        height = 16)
 
 graph_plot</code></pre>
-<p>You can find the pdf version <a href="/plots/got/network.pdf">here</a> which is a little easier to explore.</p>
 <p><img src="/plots/got/network.png"></p>
+<p>What do we see ? Well at first nothing, let’s open the <a href="/plots/got/network.pdf">pdf</a>, or the image in a new tab.<br />
+There are 5 groups, let’s do a little table to sum up some information about them.</p>
+<pre class="r"><code>graph %&gt;% 
+  as_tibble() %&gt;% 
+  group_by(group) %&gt;% 
+  mutate(n = n(),
+         group_time = sum(time)) %&gt;% 
+  # We only keep the character who spent the most time on screen in each group
+  filter(time == max(time)) %&gt;% 
+  ungroup() %&gt;% 
+  arrange(desc(n)) %&gt;% 
+  select(`Group Leader` = name, 
+         Cluster = group, 
+         `Character count` = n, 
+         `Group Time` = group_time) %&gt;% 
+  # First use of gt, and it seems great !
+  gt() %&gt;% 
+  fmt_number(columns = vars(&quot;Group Time&quot;), decimals = 0, pattern = &quot;{x} min.&quot;)</code></pre>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#rugvdiaqvj .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#rugvdiaqvj .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#rugvdiaqvj .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#rugvdiaqvj .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#rugvdiaqvj .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rugvdiaqvj .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#rugvdiaqvj .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#rugvdiaqvj .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#rugvdiaqvj .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#rugvdiaqvj .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#rugvdiaqvj .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#rugvdiaqvj .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#rugvdiaqvj .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#rugvdiaqvj .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#rugvdiaqvj .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#rugvdiaqvj .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#rugvdiaqvj .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#rugvdiaqvj .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#rugvdiaqvj .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rugvdiaqvj .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#rugvdiaqvj .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rugvdiaqvj .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#rugvdiaqvj .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rugvdiaqvj .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#rugvdiaqvj .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#rugvdiaqvj .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#rugvdiaqvj .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#rugvdiaqvj .gt_left {
+  text-align: left;
+}
+
+#rugvdiaqvj .gt_center {
+  text-align: center;
+}
+
+#rugvdiaqvj .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#rugvdiaqvj .gt_font_normal {
+  font-weight: normal;
+}
+
+#rugvdiaqvj .gt_font_bold {
+  font-weight: bold;
+}
+
+#rugvdiaqvj .gt_font_italic {
+  font-style: italic;
+}
+
+#rugvdiaqvj .gt_super {
+  font-size: 65%;
+}
+
+#rugvdiaqvj .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="rugvdiaqvj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Group Leader</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Cluster</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Character count</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Group Time</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_left">Tyrion Lannister</td>
+      <td class="gt_row gt_center">1</td>
+      <td class="gt_row gt_center">56</td>
+      <td class="gt_row gt_right">6,613 min.</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Jon Snow</td>
+      <td class="gt_row gt_center">2</td>
+      <td class="gt_row gt_center">27</td>
+      <td class="gt_row gt_right">2,680 min.</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Daenerys Targaryen</td>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_center">18</td>
+      <td class="gt_row gt_right">2,047 min.</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Bran Stark</td>
+      <td class="gt_row gt_center">4</td>
+      <td class="gt_row gt_center">9</td>
+      <td class="gt_row gt_right">647 min.</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Catelyn Stark</td>
+      <td class="gt_row gt_center">5</td>
+      <td class="gt_row gt_center">7</td>
+      <td class="gt_row gt_right">504 min.</td>
+    </tr>
+  </tbody>
+  
+  
+</table></div>
+<p>We have one large group that I would say encompass most of the characters of Westeros from the Wall to Dorne. Two intermediate groups around two of the most important characters : Jon Snow and Daenerys. Then there is the Bran group, with notably the Three-Eyed-Raven. Finally, there is a group revolving around Catelyn and Robb Stark.</p>
+</div>
+<div id="looking-at-it-season-by-season" class="section level2">
+<h2>Looking at it season by season</h2>
+<p>I have not included the code in the post because it is the same as before using the <strong>purr:map()</strong> functions to loop through the seasons.
+If you want to look at it you can here.</p>
+<pre class="r"><code>graphs_plots &lt;- graphs %&gt;% 
+  map2(1:8,
+       ~.x %&gt;% ggraph(layout = &quot;kk&quot;, weights = edge_time) +
+          geom_edge_density(aes(fill = edge_time)) +
+          geom_edge_link(alpha = 0.1) +
+          geom_node_point(aes(size = time, color = as_factor(group))) +
+          geom_node_text(aes(label = name), repel = TRUE, size = 4) +
+          labs(title = paste0(&quot;Game of Thrones : Season &quot;, .y,&quot; Networking&quot;),
+               subtitle = glue(&quot;Node color correspond to cluster of characters,\\
+                               characters that appear at least 5 minutes during the season&quot;)) +
+          scale_color_got_d() +
+          theme_graph() +
+          theme(legend.position = &quot;none&quot;,
+                plot.title = element_text(family = &quot;Cinzel&quot;)))
+
+graphs_plots %&gt;% 
+  map2(1:8, ~ggsave(plot = .x,
+                    here(paste0(&quot;static/plots/got/graph_season/season_&quot;, .y, &quot;.pdf&quot;)),
+                    device = cairo_pdf,
+                    dpi = 320,
+                    width = 20,
+                    height = 20))
+
+pdftools::pdf_combine(paste0(here(&quot;static/plots/got/graph_season&quot;),
+                             &quot;/&quot;,
+                             list.files(here(&quot;static/plots/got/graph_season&quot;))),
+                      here(&quot;static/plots/got/graph_season/all.pdf&quot;))</code></pre>
+<p><a href="/plots/got/graph_season/all.pdf">Here</a> you can see the graphs, but I must warn you, most of they are quiete painful to look at.
+Instead let’s see what we can learn from the data.</p>
+<pre class="r"><code>graphs %&gt;% 
+  map_dfr(as_tibble) %&gt;% 
+  group_by(seasonNum) %&gt;% 
+  summarise(group = max(group),
+            n = n()) %&gt;% 
+  select(Season = seasonNum, `Character count` = n, `Cluster count` = group) %&gt;% 
+  gt() %&gt;% 
+  tab_header(
+    title = &quot;Number of characters and cluster in each GoT season&quot;,
+    subtitle = &quot;Characters that appear 5 minutes in a season&quot;
+  ) %&gt;% 
+  cols_align(&quot;center&quot;)</code></pre>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#klmpxrpieu .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#klmpxrpieu .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#klmpxrpieu .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#klmpxrpieu .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#klmpxrpieu .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#klmpxrpieu .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#klmpxrpieu .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#klmpxrpieu .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#klmpxrpieu .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#klmpxrpieu .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#klmpxrpieu .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#klmpxrpieu .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#klmpxrpieu .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#klmpxrpieu .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#klmpxrpieu .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#klmpxrpieu .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#klmpxrpieu .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#klmpxrpieu .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#klmpxrpieu .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#klmpxrpieu .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#klmpxrpieu .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#klmpxrpieu .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#klmpxrpieu .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#klmpxrpieu .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#klmpxrpieu .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#klmpxrpieu .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#klmpxrpieu .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#klmpxrpieu .gt_left {
+  text-align: left;
+}
+
+#klmpxrpieu .gt_center {
+  text-align: center;
+}
+
+#klmpxrpieu .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#klmpxrpieu .gt_font_normal {
+  font-weight: normal;
+}
+
+#klmpxrpieu .gt_font_bold {
+  font-weight: bold;
+}
+
+#klmpxrpieu .gt_font_italic {
+  font-style: italic;
+}
+
+#klmpxrpieu .gt_super {
+  font-size: 65%;
+}
+
+#klmpxrpieu .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="klmpxrpieu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="3" class="gt_heading gt_title gt_font_normal" style>Number of characters and cluster in each GoT season</th>
+    </tr>
+    <tr>
+      <th colspan="3" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>Characters that appear 5 minutes in a season</th>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Season</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Character count</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Cluster count</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_center">1</td>
+      <td class="gt_row gt_center">86</td>
+      <td class="gt_row gt_center">6</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">2</td>
+      <td class="gt_row gt_center">80</td>
+      <td class="gt_row gt_center">8</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_center">80</td>
+      <td class="gt_row gt_center">9</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">4</td>
+      <td class="gt_row gt_center">73</td>
+      <td class="gt_row gt_center">9</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">5</td>
+      <td class="gt_row gt_center">73</td>
+      <td class="gt_row gt_center">7</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">6</td>
+      <td class="gt_row gt_center">109</td>
+      <td class="gt_row gt_center">11</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">7</td>
+      <td class="gt_row gt_center">48</td>
+      <td class="gt_row gt_center">3</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_center">44</td>
+      <td class="gt_row gt_center">1</td>
+    </tr>
+  </tbody>
+  
+  
+</table></div>
+<p>Looking at the two last season we can see a dramatic change. The number of cluster and character reduces drastically. On the other hand, during the first 4 seasons we can see the number of cluster increasing with stable or descending number of character. My interpretation is that as characters moved away from the initial situation into adventures they create smaller groups. And then, to summarise the show in the few words : half died, the other half rejoined.</p>
+</div>
+<div id="finally-lets-look-at-who-are-the-cluster-leaders-in-each-season" class="section level2">
+<h2>Finally : let’s look at who are the cluster leaders in each season</h2>
+<pre class="r"><code>library(ggforce)
+
+graphs %&gt;% 
+  map_dfr(as_tibble) %&gt;% 
+  group_by(seasonNum, group) %&gt;% 
+  mutate(time_group = sum(time)) %&gt;% 
+  filter(time == max(time)) %&gt;% 
+  ungroup() %&gt;% 
+  mutate(seasonNum = paste0(&quot;Season &quot;, seasonNum),
+         name = tidytext::reorder_within(name, time_group, seasonNum)) %&gt;% 
+  ggplot(aes(time_group, name)) + 
+  tidytext::scale_y_reordered() +
+  geom_col(fill = &quot;#2B818EFF&quot;) +
+  facet_col(~seasonNum, scales = &quot;free_y&quot;, space = &quot;free&quot;) +
+  scale_x_continuous(expand = expansion(mult = c(0.01, 0.05))) +
+  labs(x = NULL, 
+       y = NULL,
+       title = &quot;Character cluster time on screen in each season&quot;,
+       subtitle = glue(&quot;Presented with group leader, cluster are \\
+                       calculated independently for each season&quot;)) +
+  theme_minimal(base_family = &quot;Open Sans&quot;) +
+  theme(plot.title.position = &quot;plot&quot;, 
+        plot.title = element_text(family = &quot;Cinzel&quot;),
+        panel.grid.major.y = element_blank(),
+        strip.text = element_text(family = &quot;Open Sans SemiBold&quot;,
+                                  hjust = 0))</code></pre>
+<p><img src="/post/2020-04-28-game-of-thrones-building-netwok-graph/index_files/figure-html/fig-1.png" width="100%" /></p>
 </div>

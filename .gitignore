@@ -15,3 +15,7 @@ public/
 /content/post/.vs
 /content/post/.vscode
 *.vscode
+*.RData
+*.rdx
+*.rdb
+index_cache/
