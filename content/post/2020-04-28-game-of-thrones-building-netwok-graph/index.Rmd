@@ -156,9 +156,10 @@ graph_plot
 
 ```
 
-
-
-<img style="position: absolute; left:2vw; width:96vw;" src="/plots/got/network.png">
-
 You can find the pdf version [here](/plots/got/network.pdf) which is a little easier to explore.
+
+
+<img src="/plots/got/network.png">
+
+
 
