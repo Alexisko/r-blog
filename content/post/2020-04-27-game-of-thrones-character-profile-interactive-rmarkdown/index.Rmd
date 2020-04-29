@@ -20,7 +20,7 @@ projects: []
 
 I had experienced with Shiny App a few times in the past, with the [Game of Thrones data](/post/game-of-thrones-data-wrangling-and-some-viz/) I built for the first time a Shiny Rmarkdown document.<!--more-->
 
-You can find the code at the end. I wanted to do some minor modification before publishing it here, but I updated R to version 4.0.0 and for now shinyapps.io do not seem willing to work with that.
+You can find the code at the end. I wanted to do some minor modifications before publishing it here, but I updated R to version 4.0.0 and for now shinyapps.io do not seem willing to work with that. So this is not a totally finished product.
 
 *It may take a few seconds to load. Only suitable to be seen on large screen*
 

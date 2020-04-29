@@ -18,13 +18,13 @@ image:
 projects: []
 ---
 
-One of the thing I found interesting in the Game of Throne data was to visualise relationship between characters. I started doing that on a character by character basis in the [previous post](post/game-of-thrones-character-profile-interactive-rmarkdown/). The next thing I wanted to try out was to build network graphs.
+One of the thing I found interesting in the Game of Thrones data was to visualise relationship between characters. I started doing that on a character by character basis in the [previous post](post/game-of-thrones-character-profile-interactive-rmarkdown/). The next thing I wanted to try out was to build network graphs.
 
 The thing is... I had no experience doing that with R, no knowledge on graphs and layout. I knew that Thomas Lin Pedersen's packages "[ggraph](https://www.data-imaginist.com/2017/ggraph-introduction-layouts/)" and "[tidygraph](https://www.data-imaginist.com/2017/introducing-tidygraph/)" existed but that was about it.  
 
 This was not very frightening because as with most things with R someone, somewhere must have done a really comprehensive and easy to understand introduction to these tools. Well, that's what I thought, but I was surprised to struggle to find the content that would have made the making of these graphs easy. I think I must have missed it. Finally, finding pieces of information here and there, I managed to get a result that I was quite satisfied with.  
 
-I am going to walk you briefly through how I did it, but of course, as my knowledge of graph theory is very very limited the information that I will provide is also. To sum it up, I got something that worked for this particular case, that may help for other cases but that will not be fully generalisable.
+I am going to walk you briefly through how I did it, but of course, as my knowledge of graph theory is very limited the information that I will provide is also. To sum it up, I got something that worked for this particular case, that may help for other cases but that will not be fully generalisable.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(fig.retina = 2,
@@ -47,7 +47,8 @@ extrafont::loadfonts(device = "win")
 
 
 ## Let's get started 
-We first import the data and set a time limit. After some trial and errors I found that 20 minutes was giving nice results.
+### Setting up
+We first load our packages and import the data. Then we set a time limit, the minimum time a character must have appeared on screen to be added to our plots. After some trial and errors I found that 20 minutes was giving nice results.
 
 The data is the one prepared [here](/post/game-of-thrones-data-wrangling-and-some-viz/).
 
@@ -67,14 +68,14 @@ got <- read_csv(here("static/inputs/got/data_prep_scenes.csv"))
 time_limit <- 20
 ```
 
+### Creating a tidygraph
+What we want to do is create a tidygraph object. A tidygraph object is composed of two tibbles : one with the nodes (points) and one with the edges (links).  
 
-A tidygraph object is composed of two dataframe : one with the nodes (points) and one with the edges (links).
-First we get the node out of our dataset, it is fairly easy. We keep only the name of the character and the time they appeared on screen. We will use that time as the node size.
+First, we get the node out of our dataset, it is fairly easy. We keep only the name of the characters and the time they appeared on screen. We will use that time as the node size.
 
 ```{r, eval=FALSE}
 nodes <- got %>% 
-  select(seasonNum, episodeNum, sceneNum, time, name) %>% 
-  # we group by name to filter for character that appear 
+  # we group by name to filter for characters that appear 
   # more than 20 minutes during the show
   group_by(name) %>%
   # we divide by 60 because time is in seconds
@@ -84,9 +85,9 @@ nodes <- got %>%
 ```
 
 
-Next we need to select the edges. Our edge data should be a tibble with a 'from' and a 'to' column. We will also add a time component that can be used as a weighing variable. So we need to do a bit of manipulation.
+Next, we need to build our edges tibble. This tibble should contain a 'from' and a 'to' column, describing the relationships. We will also add a time component that can be used as a weighting variable. So we need to do a bit of manipulation.
 
-First, let's filter for the characters that spend at least 20 minutes on screen. We also add a scene id, unique to every scene. Finally, we replicate the name column.
+First, let's filter for the characters that spend at least 20 minutes on screen. We also add a scene id, unique to every scene. Finally, we duplicate the name column.
 
 ```{r, eval=FALSE}
 scenes_select <- got %>% 
@@ -97,7 +98,7 @@ scenes_select <- got %>%
   unnest(names) %>% 
   # we do the same manipulation to filter for character that appear at least
   # 20 minutes but with mutate instead of summarise
-  # we could also have used a semi-join with the node dataset
+  # (we could also have used a semi-join with the node dataset)
   group_by(name) %>% 
   mutate(total = sum(time) / 60) %>% 
   filter(total > time_limit) %>% 
@@ -107,9 +108,9 @@ scenes_select <- got %>%
   mutate(name_2 = name)
 ```
 
-So, why did I replicate the name column ? Well, because it is the only trick I found to transform the dataset into the format we were looking for. I am certain that a more elegant solution must exist and I am very willing to learn it if someone would be kind enough to present it to me.  
+So, why duplicating the name column ? Well, because it is the only trick I found to transform the dataset into the format we were looking for. I am fairly confident that a more elegant solution must exist, but I have not found it yet.
 
-The idea is to use the expand (from the tidyr package) function to create all the possible combination in each scene. The main downside of this technic is that we get all the combinations in both direction including 'from' and 'to' the same character. The later ones we can filter right away, we will deal with the other replicate combination later with tidygraphs tool.
+The idea is to use the **expand** function (from the tidyr package) to create all the possible combination in each scene. The main downside of this technic is that we get all the combinations in both direction, including 'from' and 'to' the same character. The later ones we can filter right away, we will deal with the other replicate combination later with tidygraph's tools.
 
 ```{r, eval=FALSE}
 combination <- 
@@ -128,12 +129,14 @@ combination <-
   ungroup()
 ```
 
-Nice ! I know have a nodes and a edges dataframe that I can combine in a tidygraph object.
+Nice ! We know have both a "nodes" and a "edges" tibble that can be combined into a tidygraph object.
 We set 'directed' to false, because our data is not directional.  
 
 A tidygraph object can be manipulated in a similar fashion as a dataframe with tidyverse verbs. What we need to do is use **activate** to choose wether we want to modify the nodes ot the edges (nodes are activated by default).  
 
 What we do first is to activate the edges to filter out replicated relationship. We use the function **edge_is_multiple**. This function allows us to keep only one of our mutual relationship (which are redundant since our data is not directional). 
+
+The we activate back the node and use the **group_infomap** function to create clusters of characters.
 
 ```{r}
 graph <- tbl_graph(nodes, combination, directed = FALSE) %>% 
@@ -143,9 +146,10 @@ graph <- tbl_graph(nodes, combination, directed = FALSE) %>%
   mutate(group = group_infomap(weights = edge_time))
 ```
 
-
+### Plotting
 ```{r, eval = FALSE}
 graph_plot <- ggraph(graph, layout = "fr", weights = edge_time) +
+  # a fill density showing the intensity of the network in the background
   geom_edge_density(aes(fill = edge_time)) +
   geom_edge_link(alpha = 0.1) +
   geom_node_point(aes(size = time, color = as_factor(group))) +
@@ -178,6 +182,10 @@ graph_plot
 <img src="/plots/got/network.png">
 
 What do we see ? Well at first nothing, let's open the [pdf](/plots/got/network.pdf), or the image in a new tab.  
+
+We have one large group that I would say encompass most of the characters of Westeros from the Wall to Dorne. Two intermediate groups around two of the most important characters : Jon Snow and Daenerys. Then there is the Bran group, with notably the Three-Eyed-Raven. Finally, there is a group revolving around Catelyn and Robb Stark.  
+
+### Doing a little summary table
 There are 5 groups, let's do a little table to sum up some information about them.
 
 ```{r}
@@ -199,13 +207,10 @@ graph %>%
   fmt_number(columns = vars("Group Time"), decimals = 0, pattern = "{x} min.")
 ```
 
-We have one large group that I would say encompass most of the characters of Westeros from the Wall to Dorne. Two intermediate groups around two of the most important characters : Jon Snow and Daenerys. Then there is the Bran group, with notably the Three-Eyed-Raven. Finally, there is a group revolving around Catelyn and Robb Stark.
-
-
 ## Looking at it season by season
 
-I have not included the code in the post because it is the same as before using the **purr:map()** functions to loop through the seasons.
-If you want to look at it you can here.
+I have not included the code in the post because it is the same as before using the **purr:map()** function to loop through the seasons.
+If you want to take a look at it you can [here](https://github.com/Alexisko/r-blog/blob/master/content/post/2020-04-28-game-of-thrones-building-netwok-graph/season_graph.R).
 
 ```{r, include=FALSE}
 time_limit <- 5
@@ -254,7 +259,7 @@ graphs <- map2(nodes, combination,
 ```
 
 
-```{r, eval = FALSE}
+```{r, eval = FALSE, include=FALSE}
 graphs_plots <- graphs %>% 
   map2(1:8,
        ~.x %>% ggraph(layout = "kk", weights = edge_time) +
@@ -285,39 +290,53 @@ pdftools::pdf_combine(paste0(here("static/plots/got/graph_season"),
 
 ```
 
-
-
-[Here](/plots/got/graph_season/all.pdf) you can see the graphs, but I must warn you, most of they are quiete painful to look at.
-Instead let's see what we can learn from the data.
+First, let's evacuate the question of the graphs. You can see them [here](/plots/got/graph_season/all.pdf). They range from nice to terrible depending on the season. I will not focus on that, instead let's see what we can learn from the data.
 
 
 ```{r}
-graphs %>% 
-  map_dfr(as_tibble) %>% 
-  group_by(seasonNum) %>% 
+graphs %>%
+  map_dfr(as_tibble) %>%
+  group_by(seasonNum) %>%
   summarise(group = max(group),
-            n = n()) %>% 
-  select(Season = seasonNum, `Character count` = n, `Cluster count` = group) %>% 
-  gt() %>% 
+            n = n()) %>%
+  select(
+    Season = seasonNum,
+    `Character count` = n,
+    `Cluster count` = group
+  ) %>%
+  gt() %>%
   tab_header(
     title = "Number of characters and cluster in each GoT season",
-    subtitle = "Characters that appear 5 minutes in a season"
-  ) %>% 
+    subtitle = "Characters appearing at least 5 minutes in a season"
+    ) %>%
   cols_align("center")
   
 ```
 
-Looking at the two last season we can see a dramatic change. The number of cluster and character reduces drastically. On the other hand, during the first 4 seasons we can see the number of cluster increasing with stable or descending number of character. My interpretation is that as characters moved away from the initial situation into adventures they create smaller groups. And then, to summarise the show in the few words : half died, the other half rejoined.
+Looking at the two last season we can see a dramatic change. The number of clusters and characters reduces drastically.  
+On the other hand, during the first 4 seasons we can see the number of cluster increasing with stable or descending number of characters. My interpretation is that as characters moved away from the initial situation into adventures they create smaller groups. And then, to summarise the show in the few words : half died, the other half reunited.
 
 ## Finally : let's look at who are the cluster leaders in each season
 
-```{r fig.height=10, out.width="100%", fig}
+I find this a good resource to look at before taking a look at the network graphs. It give you an overall image that is necessary because the other network plots are messy.
+
+```{r fig.height=12, out.width="100%", fig}
 library(ggforce)
 
 graphs %>% 
   map_dfr(as_tibble) %>% 
   group_by(seasonNum, group) %>% 
-  mutate(time_group = sum(time)) %>% 
+  mutate(time_group = sum(time),
+         n = as.character(n()),
+         n = ifelse(name == "Eddard Stark",
+                    paste0("Number of characters in group: ", n),
+                    n),
+         hjust = ifelse(time_group < 62,
+                        -0.1,
+                        1.1),
+         color = ifelse(time_group < 62,
+                        "black",
+                        "white")) %>% 
   filter(time == max(time)) %>% 
   ungroup() %>% 
   mutate(seasonNum = paste0("Season ", seasonNum),
@@ -325,12 +344,16 @@ graphs %>%
   ggplot(aes(time_group, name)) + 
   tidytext::scale_y_reordered() +
   geom_col(fill = "#2B818EFF") +
+  geom_text(aes(label = n, hjust = hjust, color = color),
+            family = "Open Sans",
+            size = 3) +
   facet_col(~seasonNum, scales = "free_y", space = "free") +
   scale_x_continuous(expand = expansion(mult = c(0.01, 0.05))) +
-  labs(x = NULL, 
+  scale_color_identity() +
+  labs(x = "Time on screen in minutes", 
        y = NULL,
-       title = "Character cluster time on screen in each season",
-       subtitle = glue("Presented with group leader, cluster are \\
+       title = "Character clusters time on screen in each season",
+       subtitle = glue("Presented with group leader, clusters are \\
                        calculated independently for each season")) +
   theme_minimal(base_family = "Open Sans") +
   theme(plot.title.position = "plot", 
@@ -344,4 +367,4 @@ graphs %>%
 
 ```
 
-
+To conclude, I just wanted to do some plots of networks, but finally it's making clusters that gave the most intersting information. I just scratch the surface of what tidygraph could do, and it seems very interesting. 
