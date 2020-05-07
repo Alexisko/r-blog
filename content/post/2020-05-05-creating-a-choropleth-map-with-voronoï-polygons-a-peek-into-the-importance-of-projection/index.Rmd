@@ -1,0 +1,353 @@
+---
+title: 'Creating a choropleth map with Voronoï polygons'
+author: admin
+date: '2020-05-05'
+slug: creating-a-choropleth-map-with-voronoï-polygons-a-peek-into-the-importance-of-projection
+categories:
+  - maps
+tags: []
+subtitle: ''
+summary: 'A peek into the importance of choosing the right projection'
+authors: []
+lastmod: '2020-05-05T15:51:22+02:00'
+featured: yes
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+output:
+  blogdown::html_page:
+    dev: "svg"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.retina = 2,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+In this article I want two things : how to build a choropleth map with Vornoï polygon using sf.
+The map I will be drawing is the area in which each Ligue 1 football team is the nearest in France.
+First, I will use the recommanded legal projection for France, which is Lambert projection (crs : 2154). Then I will show the results using the WGS64 projection which is used to share geospatial data.
+
+## Loading packages
+
+```{r}
+#Usual suspects
+library(tidyverse)
+library(glue)
+library(here)
+#To work with geodata
+library(sf)
+#For geodata of the cities
+library(httr)
+library(jsonlite)
+#For plotting
+library(ggrepel)
+
+#Extra fonts for maps
+extrafont::loadfonts(device = "win")
+```
+
+## theme_map()
+
+I have a theme_map() function which comes from another project. Let's use that !
+
+```{r}
+#theme map function from other project
+theme_map <- function(...) {
+  theme_minimal() +
+    theme(
+      text = element_text(family = "Tahoma", color = "#22211d"),
+      #remove all axes
+      axis.line = element_blank(),
+      axis.text = element_blank(),
+      axis.ticks = element_blank(),
+      axis.title = element_blank(),
+      #remove grid
+      panel.grid = element_blank(),
+      #background colors
+      plot.background = element_rect(color = NA,
+                                     fill = "#f5f5f2"),
+      panel.background = element_rect(color = NA,
+                                      fill = "#f5f5f2"),
+      legend.background = element_rect(color = NA,
+                                       fill = "#f5f5f2"),
+      #borders and margins
+      plot.margin = unit(c(0.5, 0.5, 0.2, 0.5), "cm"),
+      panel.border = element_blank(),
+      panel.spacing = unit(c(-0.1, 0.2, 0.2, 0.2), "cm"),
+      #titles
+      legend.title = element_text(size = 11),
+      legend.text = element_text(size = 9, hjust = 0),
+      plot.title = element_text(size = 15, hjust = 0.5),
+      plot.subtitle = element_text(size = 10, hjust = 0.5,
+                                   margin = margin(b = -0.1,
+                                                   t = -0.1,
+                                                   l = 2,
+                                                   unit = "cm"),
+                                   debug = FALSE),
+      #captions
+      plot.caption = element_text(size = 7,
+                                  hjust = 1,
+                                  margin = margin(t = 0.2,
+                                                  b = 0,
+                                                  unit = "cm"),
+                                  color = "#939184"),
+      ...
+    )
+}
+```
+
+## Getting the geodata
+
+We will be using the national address database, which is a convenient way to get localisation in France.
+I also use a France simplified geojson : that you can get here : [boundaty.now](https://haoliangyu.github.io/boundary.now/).
+
+```{r}
+#clubs
+clubs <- tibble(city =
+                  c(
+                    "Lille", 
+                    "Lens", 
+                    "Paris", 
+                    "Reims",
+                    "Metz",
+                    "Strasbourg",
+                    "Dijon",
+                    "Rennes",
+                    "Angers",
+                    "Lorient",
+                    "Brest",
+                    "Nantes",
+                    "Bordeaux",
+                    "Saint-Étienne",
+                    "Lyon",
+                    "Nice",
+                    "Marseille",
+                    "Montpellier",
+                    "Nîmes"
+                  ))
+
+
+
+get_location <- function(city) {
+  city %>% 
+    paste0("https://api-adresse.data.gouv.fr/search/?q=",.) %>%
+    GET() %>%
+    pluck("content") %>%
+    rawToChar() %>%
+    fromJSON() %>%
+    pluck("features") %>% 
+    flatten() %>%
+    slice(1) %>% 
+    pluck("geometry.coordinates", 1) %>% 
+    set_names(c("LON", "LAT")) %>% 
+    list()
+}
+
+
+clubs_geo <- clubs %>% 
+  rowwise() %>% 
+  mutate(coords = get_location({city})) %>% 
+  unnest_wider(coords) %>% 
+  # I manually add Monaco which is not in France
+  bind_rows(tibble(city = "Monaco", LON = 7.414793, LAT = 43.728353)) %>% 
+  st_as_sf(coords = c("LON", "LAT")) %>% 
+  st_set_crs(4326) %>% 
+  st_transform(2154)
+  
+clubs_geo <- clubs_geo %>% 
+  bind_cols(as_tibble(
+    st_coordinates(clubs_geo)
+  ))
+
+
+
+#France
+france <- st_read(
+  here("static/inputs/ligue 1 voronoi/metropole-version-simplifiee.geojson")
+  ) %>%
+  st_transform(2154) %>%
+  st_cast("POLYGON") %>%
+  mutate(area = st_area(geometry)) %>%
+  filter(as.numeric(area) == max(as.numeric(area)))
+
+
+
+```
+
+
+```{r}
+#make voronoi ploygons
+voronoi <- clubs_geo %>%
+  st_union() %>%
+  st_voronoi() %>%
+  st_cast() %>%
+  st_sf() %>% 
+  st_join(clubs_geo, join = st_contains) %>% 
+  st_intersection(france) %>% 
+  mutate(area = st_area(geometry))
+```
+
+
+```{r, fig.height=7.45}
+#plot description
+description <- glue(
+  "For each club area in which it is the
+  closest club in France"
+  )
+
+
+m1 <- ggplot(voronoi) +
+  geom_sf(aes(fill = as.numeric(area) / 1000000)) +
+  geom_sf(data = clubs_geo) +
+  geom_label_repel(data = clubs_geo,
+                   aes(label = city,
+                       x = X,
+                       y = Y)) +
+  scale_fill_distiller(direction = 1,name = "Surface",
+                       labels = scales::label_comma(big.mark = " ",
+                                                    suffix = " km²"),
+                       breaks = c(10000, 30000, 50000, 70000), 
+                       guide = guide_colorbar(barwidth = 0.5,
+                                              frame.colour = "black")) +
+  annotate("text", x=-Inf, y=Inf, 
+           label = description,
+           hjust = 0, vjust = 1) +
+  theme_map() +
+  theme(legend.position = c(0.1,0.2),
+        plot.title = element_text(hjust = 0),
+        plot.subtitle = element_text(hjust = 0),
+        plot.background = element_rect(color = "black")) +
+  labs(title = "Territorial domination of Ligue 1 clubs",
+       caption = "@_Alexis_69_")
+
+# ggsave(plot = m1, here("static/plots/ligue1_voronoi/map.png"),
+#        dpi = "retina",
+#        width = 7, height = 7.4)
+
+m1
+
+
+```
+
+## What if we did not change the projection
+
+The code is exactly the same, except we don't use **st_transform**, therefore I not include the code but you can see the warning thrown : "st_voronoi does not correctly triangulate longitude/latitude data".  
+And if you look carefully at the map you can tell it is not exactly right.
+
+```{r echo=FALSE, message=FALSE, fig.height=7.15, warning=TRUE}
+
+clubs_geo_bad <- clubs %>% 
+  rowwise() %>% 
+  mutate(coords = get_location({city})) %>% 
+  unnest_wider(coords) %>% 
+  bind_rows(tibble(city = "Monaco", LON = 7.414793, LAT = 43.728353)) %>% 
+  st_as_sf(coords = c("LON", "LAT")) %>% 
+  st_set_crs(4326)
+
+clubs_geo_bad <- clubs_geo_bad %>% 
+  bind_cols(as_tibble(
+    st_coordinates(clubs_geo_bad)
+  ))
+
+#France
+france_bad <- st_read(
+  here("static/inputs/ligue 1 voronoi/metropole-version-simplifiee.geojson")
+  ) %>%
+  st_cast("POLYGON") %>%
+  mutate(area = st_area(geometry)) %>%
+  filter(as.numeric(area) == max(as.numeric(area)))
+
+
+voronoi_bad <- clubs_geo_bad %>%
+  st_union() %>%
+  st_voronoi() %>%
+  st_cast() %>%
+  st_sf() %>% 
+  st_join(clubs_geo_bad, join = st_contains) %>% 
+  st_intersection(france_bad) %>% 
+  mutate(area = st_area(geometry))
+
+ggplot(voronoi_bad) +
+  geom_sf(aes(fill = as.numeric(area) / 1000000)) +
+  geom_sf(data = clubs_geo_bad) +
+  geom_label_repel(data = clubs_geo_bad,
+                   aes(label = city,
+                       x = X,
+                       y = Y)) +
+  scale_fill_distiller(direction = 1,name = "Surface",
+                       labels = scales::label_comma(big.mark = " ",
+                                                    suffix = " km²"),
+                       breaks = c(10000, 30000, 50000, 70000), 
+                       guide = guide_colorbar(barwidth = 0.5,
+                                              frame.colour = "black")) +
+  annotate("text", x=-Inf, y=Inf, 
+           label = glue("At first, the map may seem fine, but if you pay attention 
+                        the line are not where you would want them
+                        to be..."),
+           hjust = 0, vjust = 1) +
+  theme_map() +
+  theme(legend.position = c(0.1,0.2),
+        plot.title = element_text(hjust = 0),
+        plot.subtitle = element_text(hjust = 0),
+        plot.background = element_rect(color = "black")) +
+  labs(title = "Bad Map ! ",
+       caption = "@_Alexis_69_")
+
+```
+
+
+
+## Bonus : Raster map
+
+```{r, fig.height=7.4}
+library(raster)
+
+
+r <- raster(france, ncol = 500, nrow = 500)
+distances <- distanceFromPoints(r, clubs_geo) %>% 
+  mask(france) %>% 
+  as.data.frame(xy = TRUE) %>% 
+  na.omit() %>% 
+  as_tibble() %>% 
+  mutate(distance = layer / 1000) %>% 
+  dplyr::select(-layer) %>% 
+  mutate(bins = case_when(
+           distance < 50 ~ "<50 km",
+           distance <= 100 ~ "50 à 100 km",
+           distance <= 150 ~ "100 à 150 km",
+           distance <= 200 ~ "150 à 200 km",
+           distance >200 ~ ">200 km"),
+         bins = fct_reorder(bins, distance)) 
+ 
+description_2 <- "Distance in kms to the nearest Ligue 1 football club"
+
+ggplot() +
+  geom_raster(data = distances, aes(fill = bins,
+                                    x = x,
+                                    y = y),
+              interpolate = TRUE) +
+  scale_fill_brewer(name = NULL) +
+  geom_sf(data = clubs_geo) +
+  geom_sf(data = france,
+          fill = "transparent") +
+  geom_label_repel(data = clubs_geo,
+                   aes(x = X,
+                       y = Y,
+                       label = city)) +
+  annotate("text", x = -Inf, y = Inf, 
+           label = description_2, 
+           hjust = 0, vjust = 1) +
+  theme_map() +
+  theme(legend.position = c(0.1,0.2),
+        plot.title = element_text(hjust = 0),
+        legend.key = element_rect(color = "black"),
+        plot.background = element_rect(color = "black")) +
+  labs(title = "La diagonale du vide du football français",
+       caption = "@_Alexis_69_")
+
+```
+
