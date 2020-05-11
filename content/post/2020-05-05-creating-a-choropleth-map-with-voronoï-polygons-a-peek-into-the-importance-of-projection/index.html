@@ -7,7 +7,7 @@ categories:
   - maps
 tags: []
 subtitle: ''
-summary: 'A peek into the importance of choosing the right projection'
+summary: 'A peek into the importance of choosing a projected coordinate system'
 authors: []
 lastmod: '2020-05-05T15:51:22+02:00'
 featured: yes
@@ -23,11 +23,15 @@ output:
 
 
 
-<p>In this article I want two things : how to build a choropleth map with Vornoï polygon using sf.
-The map I will be drawing is the area in which each Ligue 1 football team is the nearest in France.
-First, I will use the recommanded legal projection for France, which is Lambert projection (crs : 2154). Then I will show the results using the WGS64 projection which is used to share geospatial data.</p>
-<div id="loading-packages" class="section level2">
-<h2>Loading packages</h2>
+<p>I learned R by giving myself small challenges to overcome. When I started playing around with spatial data, one particular challenge helped me to understand projections better.
+What I wanted to do, is to make a map that showed everywhere in France what is the neareast football club (in Ligue 1) and to color the map based on the total area in which each club is the neareast in France.</p>
+<p>I will first show you how to do this “properly”. Which mean using <strong>st_transform</strong> on the data to convert the coordinates system to a Lambert Projection (Lambert93 which is the official projection for France).</p>
+<p>Then I will show you the first result I got, when I did not projected the data and instead used <strong>st_voronoi</strong> directly on the longitude/lattitude data.</p>
+<p>Finally, a little bonus : a raster map of distance to nearest club everywhere in France.</p>
+<div id="setting-up" class="section level2">
+<h2>Setting up</h2>
+<div id="loading-packages" class="section level3">
+<h3>Loading packages</h3>
 <pre class="r"><code>#Usual suspects
 library(tidyverse)
 library(glue)
@@ -43,9 +47,9 @@ library(ggrepel)
 #Extra fonts for maps
 extrafont::loadfonts(device = &quot;win&quot;)</code></pre>
 </div>
-<div id="theme_map" class="section level2">
-<h2>theme_map()</h2>
-<p>I have a theme_map() function which comes from another project. Let’s use that !</p>
+<div id="theme_map" class="section level3">
+<h3>theme_map()</h3>
+<p>I have a theme_map() function which comes from another project. Let’s use that.</p>
 <pre class="r"><code>#theme map function from other project
 theme_map &lt;- function(...) {
   theme_minimal() +
@@ -90,10 +94,10 @@ theme_map &lt;- function(...) {
     )
 }</code></pre>
 </div>
-<div id="getting-the-geodata" class="section level2">
-<h2>Getting the geodata</h2>
+<div id="getting-the-geodata" class="section level3">
+<h3>Getting the geodata</h3>
 <p>We will be using the national address database, which is a convenient way to get localisation in France.
-I also use a France simplified geojson : that you can get here : <a href="https://haoliangyu.github.io/boundary.now/">boundaty.now</a>.</p>
+I also use a France simplified geojson : that you can get here : <a href="https://haoliangyu.github.io/boundary.now/">boundary.now</a>.</p>
 <pre class="r"><code>#clubs
 clubs &lt;- tibble(city =
                   c(
@@ -167,8 +171,13 @@ france &lt;- st_read(
 ## dimension:      XY
 ## bbox:           xmin: -5.103601 ymin: 41.36705 xmax: 9.559721 ymax: 51.0884
 ## geographic CRS: WGS 84</code></pre>
+</div>
+</div>
+<div id="creating-voronoi-polygons" class="section level2">
+<h2>Creating Voronoi polygons</h2>
 <pre class="r"><code>#make voronoi ploygons
 voronoi &lt;- clubs_geo %&gt;%
+  #to make voronoi polygons you need every point in the same feature
   st_union() %&gt;%
   st_voronoi() %&gt;%
   st_cast() %&gt;%
@@ -176,6 +185,9 @@ voronoi &lt;- clubs_geo %&gt;%
   st_join(clubs_geo, join = st_contains) %&gt;% 
   st_intersection(france) %&gt;% 
   mutate(area = st_area(geometry))</code></pre>
+</div>
+<div id="plotting" class="section level2">
+<h2>Plotting</h2>
 <pre class="r"><code>#plot description
 description &lt;- glue(
   &quot;For each club area in which it is the
@@ -215,8 +227,8 @@ m1</code></pre>
 <p><img src="/post/2020-05-05-creating-a-choropleth-map-with-voronoï-polygons-a-peek-into-the-importance-of-projection/index_files/figure-html/unnamed-chunk-5-1.svg" width="672" /></p>
 </div>
 <div id="what-if-we-did-not-change-the-projection" class="section level2">
-<h2>What if we did not change the projection</h2>
-<p>The code is exactly the same, except we don’t use <strong>st_transform</strong>, therefore I not include the code but you can see the warning thrown : “st_voronoi does not correctly triangulate longitude/latitude data”.<br />
+<h2>What if we did not change the projection ?</h2>
+<p>The code is exactly the same, except we don’t use <strong>st_transform</strong>, therefore did not include it. But you can see the warning thrown : “st_voronoi does not correctly triangulate longitude/latitude data”.<br />
 And if you look carefully at the map you can tell it is not exactly right.</p>
 <pre><code>## Reading layer `metropole-version-simplifiee&#39; from data source `D:\Users\Alexis\Documents\Data\r-blog\static\inputs\ligue 1 voronoi\metropole-version-simplifiee.geojson&#39; using driver `GeoJSON&#39;
 ## Simple feature collection with 1 feature and 0 fields

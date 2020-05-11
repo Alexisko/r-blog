@@ -7,7 +7,7 @@ categories:
   - maps
 tags: []
 subtitle: ''
-summary: 'A peek into the importance of choosing the right projection'
+summary: 'A peek into the importance of choosing a projected coordinate system'
 authors: []
 lastmod: '2020-05-05T15:51:22+02:00'
 featured: yes
@@ -27,11 +27,17 @@ knitr::opts_chunk$set(fig.retina = 2,
                       warning = FALSE)
 ```
 
-In this article I want two things : how to build a choropleth map with Vornoï polygon using sf.
-The map I will be drawing is the area in which each Ligue 1 football team is the nearest in France.
-First, I will use the recommanded legal projection for France, which is Lambert projection (crs : 2154). Then I will show the results using the WGS64 projection which is used to share geospatial data.
+I learned R by giving myself small challenges to overcome. When I started playing around with spatial data, one particular challenge helped me to understand projections better.
+What I wanted to do,  is to make a map that showed everywhere in France what is the neareast football club (in Ligue 1) and to color the map based on the total area in which each club is the neareast in France.
 
-## Loading packages
+I will first show you how to do this "properly". Which mean using **st_transform** on the data to convert the coordinates system to a Lambert Projection (Lambert93 which is the official projection for France).
+
+Then I will show you the first result I got, when I did not projected the data and instead used **st_voronoi** directly on the longitude/lattitude data.
+
+Finally, a little bonus : a raster map of distance to nearest club everywhere in France.
+
+## Setting up
+### Loading packages
 
 ```{r}
 #Usual suspects
@@ -50,9 +56,9 @@ library(ggrepel)
 extrafont::loadfonts(device = "win")
 ```
 
-## theme_map()
+### theme_map() 
 
-I have a theme_map() function which comes from another project. Let's use that !
+I have a theme_map() function which comes from another project. Let's use that.
 
 ```{r}
 #theme map function from other project
@@ -100,12 +106,12 @@ theme_map <- function(...) {
 }
 ```
 
-## Getting the geodata
+### Getting the geodata
 
 We will be using the national address database, which is a convenient way to get localisation in France.
-I also use a France simplified geojson : that you can get here : [boundaty.now](https://haoliangyu.github.io/boundary.now/).
+I also use a France simplified geojson : that you can get here : [boundary.now](https://haoliangyu.github.io/boundary.now/).
 
-```{r}
+```{r, message=FALSE}
 #clubs
 clubs <- tibble(city =
                   c(
@@ -178,10 +184,12 @@ france <- st_read(
 
 ```
 
+## Creating Voronoi polygons
 
 ```{r}
 #make voronoi ploygons
 voronoi <- clubs_geo %>%
+  #to make voronoi polygons you need every point in the same feature
   st_union() %>%
   st_voronoi() %>%
   st_cast() %>%
@@ -191,6 +199,8 @@ voronoi <- clubs_geo %>%
   mutate(area = st_area(geometry))
 ```
 
+
+## Plotting
 
 ```{r, fig.height=7.45}
 #plot description
@@ -233,9 +243,9 @@ m1
 
 ```
 
-## What if we did not change the projection
+## What if we did not change the projection ?
 
-The code is exactly the same, except we don't use **st_transform**, therefore I not include the code but you can see the warning thrown : "st_voronoi does not correctly triangulate longitude/latitude data".  
+The code is exactly the same, except we don't use **st_transform**, therefore did not include it. But you can see the warning thrown : "st_voronoi does not correctly triangulate longitude/latitude data".  
 And if you look carefully at the map you can tell it is not exactly right.
 
 ```{r echo=FALSE, message=FALSE, fig.height=7.15, warning=TRUE}
