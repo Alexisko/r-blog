@@ -1,0 +1,771 @@
+﻿aff nom com,Climat_Velo_num,Commune,Depcom,nb réponses/1000 hab,A,A+,B,C,Catégorie,Commune,D,disparite,E,F,G,podium,LATITUDE,LONGITUDE,Avg. n_tot_valide_net,Avg. note_globale_moy,POPULATION
+,G,Yerres (91),91691,2.081887578,,,,,[20 000-50 000[,Yerres (91),,moyenne,,,G  très défavorable,non classé,48.715721071,2.492730203,56,2.276845238,3890700
+,G,Wimereux (62),62893,17.954378219,,,,,[0-20 000[,Wimereux (62),,moyenne,,,G  très défavorable,non classé,50.779249789,1.613432313,109,2.066850153,917325
+,G,Wattignies (59),59648,3.935105281,,,,,[0-20 000[,Wattignies (59),,faible,,,G  très défavorable,non classé,50.586492816,3.041938036,52,2.075512821,1955475
+,G,Vitry-sur-Seine (94),94081,1.110452267,,,,,[50 000-100 000[,Vitry-sur-Seine (94),,faible,,,G  très défavorable,non classé,48.788282831,2.394126805,95,2.063052632,12521925
+,G,Villemomble (93),93077,1.730391667,,,,,[20 000-50 000[,Villemomble (93),,faible,,,G  très défavorable,non classé,48.884837002,2.508934060,45,1.904740741,4056885
+,G,Villefranche-de-Rouergue (12),12300,4.287876240,,,,,[0-20 000[,Villefranche-de-Rouergue (12),,faible,,,G  très défavorable,non classé,44.349916017,2.031032876,46,2.007753623,1605690
+,G,Villars-les-Dombes (01),01443,12.532411409,,,,,[0-20 000[,Villars-les-Dombes (01),,faible,,,G  très défavorable,non classé,45.992715022,5.045078566,57,2.241871345,624780
+,G,Vigneux-sur-Seine (91),91657,1.855643716,,,,,[20 000-50 000[,Vigneux-sur-Seine (91),,faible,,,G  très défavorable,non classé,48.703744535,2.427932038,53,2.075786164,4219560
+,G,Vias (34),34332,10.333155175,,,,,[0-20 000[,Vias (34),,faible,,,G  très défavorable,non classé,43.313114264,3.398897104,54,2.171111111,757755
+,G,Verneuil-en-Halatte (60),60670,11.607910576,,,,,[0-20 000[,Verneuil-en-Halatte (60),,faible,,,G  très défavorable,non classé,49.272992092,2.534621910,53,2.236540881,628020
+,G,Valserhône (01),01033,8.914795131,,,,,[0-20 000[,Valserhône (01),,faible,,,G  très défavorable,non classé,46.106790175,5.832027365,91,2.000842491,1574910
+,G,Vallauris (06),06155,2.141408070,,,,,[20 000-50 000[,Vallauris (06),,faible,,,G  très défavorable,non classé,43.576647300,7.058366129,55,1.984545455,3593430
+,G,Triel-sur-Seine (78),78624,5.239141457,,,,,[0-20 000[,Triel-sur-Seine (78),,faible,,,G  très défavorable,non classé,48.978028251,2.008770517,61,2.049945355,1597590
+,G,Thiais (94),94073,1.861683790,,,,,[20 000-50 000[,Thiais (94),,faible,,,G  très défavorable,non classé,48.760784193,2.385377295,52,2.273846154,3915810
+,G,Sotteville-lès-Rouen (76),76681,4.725604498,,,,,[20 000-50 000[,Sotteville-lès-Rouen (76),,faible,,,G  très défavorable,non classé,49.410488744,1.095099465,131,2.240508906,3913785
+,G,Soissons (02),02722,5.796388674,,,,,[20 000-50 000[,Soissons (02),,faible,,,G  très défavorable,non classé,49.379174298,3.324717585,155,2.136860215,3842910
+,G,Simiane-Collongue (13),13107,13.486782953,,,,,[0-20 000[,Simiane-Collongue (13),,faible,,,G  très défavorable,non classé,43.411551859,5.437969244,69,2.191449275,750735
+,G,Seysses (31),31547,17.184477068,,,,,[0-20 000[,Seysses (31),,faible,,,G  très défavorable,non classé,43.498891579,1.286905756,141,2.231252955,1186245
+,G,Santes (59),59553,11.615811373,,,,,[0-20 000[,Santes (59),,faible,,,G  très défavorable,non classé,50.590987907,2.961144220,64,2.278177083,778680
+,G,Sanary-sur-Mer (83),83123,4.362636706,,,,,[0-20 000[,Sanary-sur-Mer (83),,faible,,,G  très défavorable,non classé,43.138282853,5.795888142,58,2.002701149,2258955
+,G,Sainte-Adresse (76),76552,8.097165992,,,,,[0-20 000[,Sainte-Adresse (76),,faible,,,G  très défavorable,non classé,49.510129132,0.077977095,58,2.209367816,1000350
+,G,Saint-Raphaël (83),83118,2.299699052,,,,,[20 000-50 000[,Saint-Raphaël (83),,faible,,,G  très défavorable,non classé,43.457462543,6.847342104,75,2.145333333,4754970
+,G,Saint-Quentin (02),02691,1.193909226,,,,,[50 000-100 000[,Saint-Quentin (02),,faible,,,G  très défavorable,non classé,49.847233632,3.277694995,60,2.252,7349805
+,G,Saint-Pierre (974),97416,0.831660112,,,,,[50 000-100 000[,Saint-Pierre (974),,moyenne,,,G  très défavorable,non classé,-21.312324243,55.493615516,65,2.138871795,11362815
+,G,Saint-Paul (974),97415,0.853226143,,,,,[100 000-200 000[,Saint-Paul (974),,faible,,,G  très défavorable,non classé,-21.044531752,55.322333430,82,2.246138211,14240070
+,G,Saint-Ouen-sur-Seine (93),93070,8.698453608,,,,,[20 000-50 000[,Saint-Ouen-sur-Seine (93),,faible,,,G  très défavorable,non classé,48.909806575,2.332570422,408,1.992883987,6704640
+,G,Saint-Michel-sur-Orge (91),91570,2.667874761,,,,,[0-20 000[,Saint-Michel-sur-Orge (91),,faible,,,G  très défavorable,non classé,48.632049600,2.311702778,50,2.1682,2681910
+,G,Saint-Martin-de-Londres (34),34274,22.058823529,,,,,[0-20 000[,Saint-Martin-de-Londres (34),,faible,,,G  très défavorable,non classé,43.792637295,3.707496716,55,2.105151515,367200
+,G,Saint-Mandé (94),94067,3.563415600,,,,,[20 000-50 000[,Saint-Mandé (94),,faible,,,G  très défavorable,non classé,48.842440243,2.419219109,71,1.996525822,3068685
+,G,Saint-Just-Saint-Rambert (42),42279,5.974264706,,,,,[0-20 000[,Saint-Just-Saint-Rambert (42),,faible,,,G  très défavorable,non classé,45.490325093,4.250265096,83,2.287751004,2056320
+,G,Saint-Jean-de-Védas (34),34270,7.443128211,,,,,[0-20 000[,Saint-Jean-de-Védas (34),,faible,,,G  très défavorable,non classé,43.571628232,3.832218480,67,2.186567164,1287765
+,G,Saint-Georges-d'Orques (34),34259,12.163656469,,,,,[0-20 000[,Saint-Georges-d'Orques (34),,faible,,,G  très défavorable,non classé,43.616835365,3.773766298,65,2.136615385,732510
+,G,Saint-Didier-au-Mont-d'Or (69),69194,11.578947368,,,,,[0-20 000[,Saint-Didier-au-Mont-d'Or (69),,moyenne,,,G  très défavorable,non classé,45.814728814,4.798443302,70,2.021095238,897750
+,G,Saint-Denis (974),97411,0.966738778,,,,,[100 000-200 000[,Saint-Denis (974),,faible,,,G  très défavorable,non classé,-20.932970819,55.446867167,134,2.091293532,19969200
+,G,Saint-Cyr-l'École (78),78545,6.027427560,,,,,[0-20 000[,Saint-Cyr-l'École (78),,faible,,,G  très défavorable,non classé,48.806575929,2.065925070,104,1.891666667,2441340
+,G,Saint-Chamond (42),42207,1.980814398,,,,,[20 000-50 000[,Saint-Chamond (42),,faible,,,G  très défavorable,non classé,45.469831952,4.501849895,68,2.060049020,4770765
+,G,Saint-Avold (57),57606,5.697267901,,,,,[0-20 000[,Saint-Avold (57),,faible,,,G  très défavorable,non classé,49.12845245,6.712335913,84,2.191468254,2085210
+,G,Saint-Aunès (34),34240,16.566265060,,,,,[0-20 000[,Saint-Aunès (34),,faible,,,G  très défavorable,non classé,43.634951382,3.965788184,50,2.132533333,448200
+,G,Rosny-sous-Bois (93),93064,3.237101143,,,,,[20 000-50 000[,Rosny-sous-Bois (93),,faible,,,G  très défavorable,non classé,48.874576377,2.486340459,142,2.246032864,6130485
+,G,Romainville (93),93063,2.715956243,,,,,[20 000-50 000[,Romainville (93),,faible,,,G  très défavorable,non classé,48.885211897,2.437678842,67,2.179800995,3578850
+,G,Puteaux (92),92062,3.515292643,,,,,[20 000-50 000[,Puteaux (92),,moyenne,,,G  très défavorable,non classé,48.883709497,2.238341783,143,2.263846154,6029370
+,G,Prades-le-Lez (34),34217,22.748119611,,,,,[0-20 000[,Prades-le-Lez (34),,faible,,,G  très défavorable,non classé,43.707254160,3.864892139,116,2.227586207,735885
+,G,Pontcharra (38),38314,9.269507471,,,,,[0-20 000[,Pontcharra (38),,faible,,,G  très défavorable,non classé,45.419932275,6.020518948,64,2.241510417,975780
+,G,Poissy (78),78498,2.315188715,,,,,[20 000-50 000[,Poissy (78),,faible,,,G  très défavorable,non classé,48.923535937,2.027155528,80,2.214458333,5014710
+,G,Plonéour-Lanvern (29),29174,8.730028002,,,,,[0-20 000[,Plonéour-Lanvern (29),,faible,,,G  très défavorable,non classé,47.908411465,-4.265360480,50,2.0794,819585
+,G,Pézenas (34),34199,6.595822646,,,,,[0-20 000[,Pézenas (34),,faible,,,G  très défavorable,non classé,43.462990168,3.416516521,51,1.964183007,1105245
+,G,Odars (31),31402,59.649122807,,,,,[0-20 000[,Odars (31),,moyenne,,,G  très défavorable,non classé,43.521939452,1.593265864,45,1.956296296,115425
+,G,Noisy-le-Sec (93),93053,2.273927923,,,,,[20 000-50 000[,Noisy-le-Sec (93),,faible,,,G  très défavorable,non classé,48.891322463,2.459136474,87,2.058620690,5877495
+,G,Noisy-le-Grand (93),93051,1.005115588,,,,,[50 000-100 000[,Noisy-le-Grand (93),,faible,,,G  très défavorable,non classé,48.836182540,2.564437368,63,2.287619048,8998965
+,G,Nîmes (30),30189,5.139038814,,,,,[100 000-200 000[,Nîmes (30),,faible,,,G  très défavorable,non classé,43.844938394,4.348067970,748,2.267045455,20385135
+,G,Narbonne (11),11262,5.019218569,,,,,[50 000-100 000[,Narbonne (11),,faible,,,G  très défavorable,non classé,43.165239990,3.020238687,252,2.293571429,7235190
+,G,Montmorency (95),95428,2.563266067,,,,,[20 000-50 000[,Montmorency (95),,faible,,,G  très défavorable,non classé,48.991864336,2.321197978,52,2.250320513,2896695
+,G,Montigny-lès-Metz (57),57480,2.855432230,,,,,[20 000-50 000[,Montigny-lès-Metz (57),,faible,,,G  très défavorable,non classé,49.095319911,6.154525995,57,2.297953216,2931255
+,G,Montereau-Fault-Yonne (77),77305,2.685811683,,,,,[0-20 000[,Montereau-Fault-Yonne (77),,faible,,,G  très défavorable,non classé,48.389883091,2.961554797,47,2.003829787,2613735
+,G,Montélimar (26),26198,8.063682415,,,,,[20 000-50 000[,Montélimar (26),,faible,,,G  très défavorable,non classé,44.554084573,4.748693878,287,2.182508711,5223420
+,G,Montceau-les-Mines (71),71306,2.724067941,,,,,[0-20 000[,Montceau-les-Mines (71),,faible,,,G  très défavorable,non classé,46.676253913,4.354096040,48,2.052222222,2527470
+,G,Miramas (13),13063,2.368380183,,,,,[20 000-50 000[,Miramas (13),,faible,,,G  très défavorable,non classé,43.584213412,5.013843486,59,2.160734463,3477060
+,G,Menton (06),06083,3.054131854,,,,,[20 000-50 000[,Menton (06),,faible,,,G  très défavorable,non classé,43.790823373,7.493656124,80,1.969875,3845610
+,G,Maubeuge (59),59392,2.055325314,,,,,[20 000-50 000[,Maubeuge (59),,faible,,,G  très défavorable,non classé,50.283630719,3.963280530,53,2.140503145,4006665
+,G,Marseille (13),13055,2.149125910,,,,,[200 000 et plus,Marseille (13),,faible,,,G  très défavorable,11ème/ 11 de la catégorie,43.296482,5.36978,1751,1.960316010,116398485
+,G,Marly-le-Roi (78),78372,2.848826407,,,,,[0-20 000[,Marly-le-Roi (78),,faible,,,G  très défavorable,non classé,48.865007453,2.091250043,44,2.283030303,2179845
+,G,Marly (57),57447,6.368792915,,,,,[0-20 000[,Marly (57),,faible,,,G  très défavorable,non classé,49.065850967,6.152314854,60,2.169166667,1356615
+,G,Manosque (04),04112,4.572891897,,,,,[20 000-50 000[,Manosque (04),,faible,,,G  très défavorable,non classé,43.835404083,5.791066542,95,2.235017544,2952180
+,G,Lozanne (69),69121,28.419856006,,,,,[0-20 000[,Lozanne (69),,faible,,,G  très défavorable,non classé,45.853020607,4.685421934,71,2.230610329,356265
+,G,Lompret (59),59356,27.379400261,,,,,[0-20 000[,Lompret (59),,faible,,,G  très défavorable,non classé,50.663168044,2.995161003,59,2.113954802,310635
+,G,Loches (37),37132,16.393442623,,,,,[0-20 000[,Loches (37),,faible,,,G  très défavorable,non classé,47.120146423,0.974151851,100,2.232,848205
+,G,Lisieux (14),14366,2.758484804,,,,,[20 000-50 000[,Lisieux (14),,faible,,,G  très défavorable,non classé,49.146662846,0.238274840,52,2.011923077,2740635
+,G,Levallois-Perret (92),92044,3.214522076,,,,,[50 000-100 000[,Levallois-Perret (92),,faible,,,G  très défavorable,non classé,48.895071672,2.286882681,189,2.052363316,8567370
+,G,Le Mesnil-Esnard (76),76429,9.150162948,,,,,[0-20 000[,Le Mesnil-Esnard (76),,faible,,,G  très défavorable,non classé,49.413523652,1.145130583,68,2.174117647,1077030
+,G,Le Kremlin-Bicêtre (94),94043,2.886288154,,,,,[20 000-50 000[,Le Kremlin-Bicêtre (94),,faible,,,G  très défavorable,non classé,48.809220102,2.356579652,71,2.173615023,3414420
+,G,Le Creusot (71),71153,2.942258183,,,,,[20 000-50 000[,Le Creusot (71),,faible,,,G  très défavorable,non classé,46.806853919,4.426423012,57,2.239064327,2936520
+,G,Le Crès (34),34090,6.480181445,,,,,[0-20 000[,Le Crès (34),,faible,,,G  très défavorable,non classé,43.654097870,3.936088512,57,2.283274854,1249965
+,G,Le Cannet (06),06030,1.033355763,,,,,[20 000-50 000[,Le Cannet (06),,faible,,,G  très défavorable,non classé,43.572976861,7.006420578,41,2.036504065,5617620
+,G,Laxou (54),54304,4.049996509,,,,,[0-20 000[,Laxou (54),,faible,,,G  très défavorable,non classé,48.682206261,6.113586302,57,2.291169591,1933335
+,G,Lavaur (81),81140,9.181118427,,,,,[0-20 000[,Lavaur (81),,moyenne,,,G  très défavorable,non classé,43.689562871,1.794372137,77,2.107532468,1455705
+,G,La Seyne-sur-Mer (83),83126,2.336737852,,,,,[50 000-100 000[,La Seyne-sur-Mer (83),,faible,,,G  très défavorable,non classé,43.088029497,5.870898418,139,2.051438849,8723700
+,G,La Roche-sur-Foron (74),74224,5.680373039,,,,,[0-20 000[,La Roche-sur-Foron (74),,faible,,,G  très défavorable,non classé,46.043148414,6.301076536,65,2.292,1592325
+,G,La Mulatière (69),69142,9.651898734,,,,,[0-20 000[,La Mulatière (69),,faible,,,G  très défavorable,non classé,45.730353219,4.812208407,56,2.042976190,853200
+,G,La Chapelle-Saint-Mesmin (45),45075,6.553849164,,,,,[0-20 000[,La Chapelle-Saint-Mesmin (45),,faible,,,G  très défavorable,non classé,47.888706336,1.828471848,61,2.031912568,1380105
+,G,L'Isle-Jourdain (32),32160,6.759078932,,,,,[0-20 000[,L'Isle-Jourdain (32),,faible,,,G  très défavorable,non classé,43.614492604,1.081278366,55,1.998727273,1178415
+,G,L'Île-Saint-Denis (93),93039,8.476753147,,,,,[0-20 000[,L'Île-Saint-Denis (93),,faible,,,G  très défavorable,non classé,48.939569377,2.325452528,62,2.096075269,1051110
+,G,L'Haÿ-les-Roses (94),94038,2.148193273,,,,,[20 000-50 000[,L'Haÿ-les-Roses (94),,faible,,,G  très défavorable,non classé,48.776320784,2.337729156,62,1.965537634,4210515
+,G,L'Arbresle (69),69010,11.991901573,,,,,[0-20 000[,L'Arbresle (69),,faible,,,G  très défavorable,non classé,45.835666316,4.609372671,72,2.112314815,866835
+,G,Juvisy-sur-Orge (91),91326,3.365767089,,,,,[0-20 000[,Juvisy-sur-Orge (91),,faible,,,G  très défavorable,non classé,48.691878932,2.373936826,51,1.962875817,2206035
+,G,Jouars-Pontchartrain (78),78321,13.240293434,,,,,[0-20 000[,Jouars-Pontchartrain (78),,faible,,,G  très défavorable,non classé,48.790454465,1.907842279,70,2.260428571,754515
+,G,Jarville-la-Malgrange (54),54274,5.848586592,,,,,[0-20 000[,Jarville-la-Malgrange (54),,faible,,,G  très défavorable,non classé,48.667159581,6.204653474,49,2.275170068,1246455
+,G,Istres (13),13047,2.026790914,,,,,[20 000-50 000[,Istres (13),,moyenne,,,G  très défavorable,non classé,43.550268910,4.951181352,80,2.148958333,5794875
+,G,Guéret (23),23096,5.273069680,,,,,[0-20 000[,Guéret (23),,faible,,,G  très défavorable,non classé,46.163212143,1.870786727,65,2.165282051,1792125
+,G,Grasse (06),06069,1.697022318,,,,,[50 000-100 000[,Grasse (06),,moyenne,,,G  très défavorable,non classé,43.655639428,6.931905082,81,2.204938272,6841395
+,G,Gleizé (69),69092,6.423123244,,,,,[0-20 000[,Gleizé (69),,faible,,,G  très défavorable,non classé,45.991035983,4.687922277,44,2.143181818,1008855
+,G,Gardanne (13),13041,2.842162003,,,,,[20 000-50 000[,Gardanne (13),,faible,,,G  très défavorable,non classé,43.452606325,5.479638603,58,2.138965517,2754945
+,G,Gagny (93),93032,1.583733524,,,,,[20 000-50 000[,Gagny (93),,faible,,,G  très défavorable,non classé,48.882076312,2.544948476,60,2.014444444,5284980
+,G,Fresnes (94),94034,2.735628830,,,,,[20 000-50 000[,Fresnes (94),,faible,,,G  très défavorable,non classé,48.757134302,2.326128397,71,2.274460094,3701160
+,G,Francheville (69),69089,7.073819863,,,,,[0-20 000[,Francheville (69),,faible,,,G  très défavorable,non classé,45.737879432,4.755083140,98,2.220714286,1927530
+,G,Firminy (42),42095,3.059903495,,,,,[0-20 000[,Firminy (42),,moyenne,,,G  très défavorable,non classé,45.378814609,4.288794561,43,2.201782946,2294190
+,G,Fillière (74),74282,8.933435015,,,,,[0-20 000[,Fillière (74),,faible,,,G  très défavorable,non classé,45.992373389,6.288375792,78,2.243205128,1239165
+,G,Faches-Thumesnil (59),59220,4.377238361,,,,,[0-20 000[,Faches-Thumesnil (59),,faible,,,G  très défavorable,non classé,50.593618421,3.072295374,73,2.246073059,2374785
+,G,Eaubonne (95),95203,5.444934621,,,,,[20 000-50 000[,Eaubonne (95),,faible,,,G  très défavorable,non classé,48.990994016,2.278009255,131,2.215216285,3396735
+,G,Drémil-Lafage (31),31163,21.853805576,,,,,[0-20 000[,Drémil-Lafage (31),,faible,,,G  très défavorable,non classé,43.591745005,1.603178585,51,1.964509804,358290
+,G,Draveil (91),91201,3.620342225,,,,,[20 000-50 000[,Draveil (91),,moyenne,,,G  très défavorable,non classé,48.677841377,2.421978019,93,1.976200717,3952665
+,G,Deuil-la-Barre (95),95197,2.643369176,,,,,[20 000-50 000[,Deuil-la-Barre (95),,faible,,,G  très défavorable,non classé,48.971269017,2.326162901,56,2.228511905,3013200
+,G,Creil (60),60175,2.321873164,,,,,[20 000-50 000[,Creil (60),,moyenne,,,G  très défavorable,non classé,49.253348714,2.484726694,74,2.009144144,4825845
+,G,Coulogne (62),62244,9.768927297,,,,,[0-20 000[,Coulogne (62),,faible,,,G  très défavorable,non classé,50.916752799,1.886564993,45,2.157703704,718605
+,G,Collonges-sous-Salève (74),74082,12.885295604,,,,,[0-20 000[,Collonges-sous-Salève (74),,faible,,,G  très défavorable,non classé,46.136275582,6.160711258,49,2.166530612,534330
+,G,Chazay-d'Azergues (69),69052,21.791767554,,,,,[0-20 000[,Chazay-d'Azergues (69),,faible,,,G  très défavorable,non classé,45.876309687,4.709209468,86,2.200813953,557550
+,G,Châtillon (92),92020,7.178009190,,,,,[20 000-50 000[,Châtillon (92),,faible,,,G  très défavorable,non classé,48.803409176,2.287991319,254,2.271535433,4965165
+,G,Châtenay-Malabry (92),92019,3.574024715,,,,,[20 000-50 000[,Châtenay-Malabry (92),,moyenne,,,G  très défavorable,non classé,48.768169020,2.262825985,110,2.170636364,4457160
+,G,Chanceaux-sur-Choisille (37),37054,15.986297459,,,,,[0-20 000[,Chanceaux-sur-Choisille (37),,faible,,,G  très défavorable,non classé,47.478119015,0.703218956,50,1.988133333,472905
+,G,Champigny-sur-Marne (94),94017,1.356431423,,,,,[50 000-100 000[,Champigny-sur-Marne (94),,faible,,,G  très défavorable,non classé,48.817254364,2.517098153,100,2.291433333,10450215
+,G,Champagnole (39),39097,6.306760848,,,,,[0-20 000[,Champagnole (39),,moyenne,,,G  très défavorable,non classé,46.744538975,5.898810295,46,2.276594203,1070280
+,G,Chamalières (63),63075,3.934729777,,,,,[0-20 000[,Chamalières (63),,faible,,,G  très défavorable,non classé,45.774796655,3.061268184,60,2.053611111,2333070
+,G,Cébazat (63),63063,9.425981873,,,,,[0-20 000[,Cébazat (63),,moyenne,,,G  très défavorable,non classé,45.831890918,3.108028149,73,2.015570776,1117125
+,G,Castres (81),81065,2.370700082,,,,,[20 000-50 000[,Castres (81),,faible,,,G  très défavorable,non classé,43.615651124,2.237872316,95,2.151649123,5580630
+,G,Carrières-sous-Poissy (78),78123,6.485812286,,,,,[0-20 000[,Carrières-sous-Poissy (78),,faible,,,G  très défavorable,non classé,48.945563899,2.029137065,97,2.168281787,2164725
+,G,Carcassonne (11),11069,2.091731125,,,,,[20 000-50 000[,Carcassonne (11),,faible,,,G  très défavorable,non classé,43.209379844,2.343988554,87,2.241302682,6195825
+,G,Cambrai (59),59122,2.081547692,,,,,[20 000-50 000[,Cambrai (59),,faible,,,G  très défavorable,non classé,50.170277598,3.242210211,64,2.029270833,4410180
+,G,Bourg-de-Péage (26),26057,8.001524100,,,,,[0-20 000[,Bourg-de-Péage (26),,faible,,,G  très défavorable,non classé,45.017159211,5.050965462,78,2.279786325,1417230
+,G,Bouc-Bel-Air (13),13015,6.700283208,,,,,[0-20 000[,Bouc-Bel-Air (13),,faible,,,G  très défavorable,non classé,43.447229662,5.412370561,94,2.128794326,1954395
+,G,Bonsecours (76),76103,9.732735980,,,,,[0-20 000[,Bonsecours (76),,moyenne,,,G  très défavorable,non classé,49.426026931,1.129433867,60,2.181444444,873855
+,G,Biarritz (64),64122,3.228800904,,,,,[20 000-50 000[,Biarritz (64),,moyenne,,,G  très défavorable,non classé,43.469584723,-1.553098575,74,2.287927928,3344895
+,G,Béziers (34),34032,2.300864131,,,,,[50 000-100 000[,Béziers (34),,faible,,,G  très défavorable,non classé,43.347588332,3.230767542,167,1.926886228,10326555
+,G,Beynes (78),78062,8.191306646,,,,,[0-20 000[,Beynes (78),,faible,,,G  très défavorable,non classé,48.854444414,1.869890175,56,1.909166667,1021815
+,G,Beaucaire (30),30032,3.337111195,,,,,[0-20 000[,Beaucaire (30),,faible,,,G  très défavorable,non classé,43.779742951,4.593802969,52,2.060705128,2144070
+,G,Bastia (2B),2B033,1.316112338,,,,,[20 000-50 000[,Bastia (2B),,faible,,,G  très défavorable,non classé,42.686476881,9.425021333,57,2.297543860,6051915
+,G,Bagnols-sur-Cèze (30),30028,3.133245383,,,,,[0-20 000[,Bagnols-sur-Cèze (30),,faible,,,G  très défavorable,non classé,44.162249674,4.624773809,51,2.148169935,2455920
+,G,Bagnolet (93),93006,3.736337274,,,,,[20 000-50 000[,Bagnolet (93),,moyenne,,,G  très défavorable,non classé,48.869083631,2.422740967,129,2.062403101,4841640
+,G,Bagnères-de-Bigorre (65),65059,9.724473258,,,,,[0-20 000[,Bagnères-de-Bigorre (65),,moyenne,,,G  très défavorable,non classé,42.975866886,0.132640694,67,2.278009950,999540
+,G,Auterive (31),31033,6.469115192,,,,,[0-20 000[,Auterive (31),,faible,,,G  très défavorable,non classé,43.359599158,1.477427966,62,2.275430108,1293840
+,G,Aussonne (31),31032,8.595988539,,,,,[0-20 000[,Aussonne (31),,faible,,,G  très défavorable,non classé,43.683603449,1.328870549,56,2.118690476,942300
+,G,Aulnay-sous-Bois (93),93005,0.862252250,,,,,[50 000-100 000[,Aulnay-sous-Bois (93),,faible,,,G  très défavorable,non classé,48.945838437,2.493290417,68,2.270686275,11429370
+,G,Aubervilliers (93),93001,2.428510010,,,,,[50 000-100 000[,Aubervilliers (93),,faible,,,G  très défavorable,non classé,48.912172263,2.384455138,200,1.949633333,11618235
+,G,Aubagne (13),13005,2.914550673,,,,,[20 000-50 000[,Aubagne (13),,faible,,,G  très défavorable,non classé,43.293484376,5.563312735,121,2.076969697,6114150
+,G,Argenteuil (95),95018,1.430278452,,,,,[100 000-200 000[,Argenteuil (95),,faible,,,G  très défavorable,non classé,48.951134463,2.241040950,150,2.081155556,14913180
+,G,Antibes (06),06004,5.880918182,,,,,[50 000-100 000[,Antibes (06),,faible,,,G  très défavorable,non classé,43.587465146,7.106354183,412,2.237419094,9962730
+,G,Ambarès-et-Lagrave (33),33003,3.417422642,,,,,[0-20 000[,Ambarès-et-Lagrave (33),,faible,,,G  très défavorable,non classé,44.944489771,-0.500579134,50,2.2112,2172690
+,G,Ajaccio (2A),2A004,3.894317771,,,,,[50 000-100 000[,Ajaccio (2A),,faible,,,G  très défavorable,non classé,41.934792664,8.701322760,255,2.039202614,9325125
+,F,Yutz (57),57757,3.243971110,,,,,[0-20 000[,Yutz (57),,faible,,F  défavorable,,non classé,49.351784809,6.201719293,48,2.378680556,2205630
+,F,Wavrin (59),59653,14.944939696,,,,,[0-20 000[,Wavrin (59),,faible,,F  défavorable,,non classé,50.572622403,2.933372268,111,2.533243243,1029780
+,F,Wasquehal (59),59646,4.584499566,,,,,[20 000-50 000[,Wasquehal (59),,faible,,F  défavorable,,non classé,50.675098475,3.128580171,90,2.596740741,2797470
+,F,Voiron (38),38563,5.740016824,,,,,[20 000-50 000[,Voiron (38),,faible,,F  défavorable,,non classé,45.379172084,5.582403107,113,2.463038348,2728215
+,F,Vitrolles (13),13117,1.889020071,,,,,[20 000-50 000[,Vitrolles (13),,faible,,F  défavorable,,non classé,43.449783167,5.263577877,62,2.561344086,4573800
+,F,Viroflay (78),78686,5.488337283,,,,,[0-20 000[,Viroflay (78),,faible,,F  défavorable,,non classé,48.802404069,2.171512911,88,2.571022727,2164590
+,F,Villers-lès-Nancy (54),54578,4.427533725,,,,,[0-20 000[,Villers-lès-Nancy (54),,faible,,F  défavorable,,non classé,48.661692332,6.128787336,64,2.38734375,1951425
+,F,Villenave-d'Ornon (33),33550,2.992366412,,,,,[20 000-50 000[,Villenave-d'Ornon (33),,faible,,F  défavorable,,non classé,44.773185218,-0.558212256,95,2.467859649,4421250
+,F,Villejuif (94),94076,1.748440823,,,,,[50 000-100 000[,Villejuif (94),,faible,,F  défavorable,,non classé,48.792854727,2.360061032,93,2.633799283,7489530
+,F,Villefranche-sur-Saône (69),69264,5.044812966,,,,,[20 000-50 000[,Villefranche-sur-Saône (69),,faible,,F  défavorable,,non classé,45.987459667,4.731740073,181,2.412615101,5030910
+,F,Villard-Bonnot (38),38547,16.755843424,,,,,[0-20 000[,Villard-Bonnot (38),,faible,,F  défavorable,,non classé,45.244620573,5.889067254,114,2.404590643,958770
+,F,Vif (38),38545,6.927854754,,,,,[0-20 000[,Vif (38),,moyenne,,F  défavorable,,non classé,45.043099948,5.674250760,54,2.322037037,1130220
+,F,Vierzon (18),18279,3.527403755,,,,,[20 000-50 000[,Vierzon (18),,faible,,F  défavorable,,non classé,47.236883608,2.079075705,88,2.553257576,3559275
+,F,Vienne (38),38544,3.496978339,,,,,[20 000-50 000[,Vienne (38),,faible,,F  défavorable,,non classé,45.520578372,4.881351562,102,2.669869281,3976290
+,F,Vezin-le-Coquet (35),35353,9.557522124,,,,,[0-20 000[,Vezin-le-Coquet (35),,faible,,F  défavorable,,non classé,48.117182925,-1.749564734,52,2.549679487,762750
+,F,Verneuil-sur-Seine (78),78642,3.618739903,,,,,[0-20 000[,Verneuil-sur-Seine (78),,faible,,F  défavorable,,non classé,48.987209337,1.962765322,52,2.355576923,2089125
+,F,Vernaison (69),69260,11.699507389,,,,,[0-20 000[,Vernaison (69),,faible,,F  défavorable,,non classé,45.649389907,4.809305207,55,2.509393939,657720
+,F,Vern-sur-Seiche (35),35352,15.076650196,,,,,[0-20 000[,Vern-sur-Seiche (35),,faible,,F  défavorable,,non classé,48.052524501,-1.605211062,117,2.687692308,1065555
+,F,Venelles (13),13113,7.062485037,,,,,[0-20 000[,Venelles (13),,moyenne,,F  défavorable,,non classé,43.592867390,5.491383816,56,2.5475,1127790
+,F,Vence (06),06157,3.225979891,,,,,[0-20 000[,Vence (06),,faible,,F  défavorable,,non classé,43.738464064,7.101944361,59,2.648022599,2510865
+,F,Velaux (13),13112,5.806671980,,,,,[0-20 000[,Velaux (13),,faible,,F  défavorable,,non classé,43.523985458,5.249964249,49,2.568231293,1185705
+,F,Vaulx-en-Velin (69),69256,1.422768419,,,,,[20 000-50 000[,Vaulx-en-Velin (69),,faible,,F  défavorable,,non classé,45.785882106,4.926377677,64,2.457395833,6547095
+,F,Varois-et-Chaignot (21),21657,35.214914552,,,,,[0-20 000[,Varois-et-Chaignot (21),,faible,,F  défavorable,,non classé,47.355447667,5.125564578,66,2.351060606,260685
+,F,Valenciennes (59),59606,4.189560440,,,,,[20 000-50 000[,Valenciennes (59),,faible,,F  défavorable,,non classé,50.358866616,3.515676648,173,2.552235067,5896800
+,F,Valdoie (90),90099,8.052434457,,,,,[0-20 000[,Valdoie (90),,faible,,F  défavorable,,non classé,47.671238919,6.848608216,43,2.529302326,720900
+,F,Valbonne (06),06152,10.482019893,,,,,[0-20 000[,Valbonne (06),,faible,,F  défavorable,,non classé,43.628288325,7.029544767,134,2.629751244,1764450
+,F,Tullins (38),38517,7.553066806,,,,,[0-20 000[,Tullins (38),,faible,,F  défavorable,,non classé,45.293879173,5.490061586,55,2.374969697,1036665
+,F,Troyes (10),10387,7.404353562,,,,,[50 000-100 000[,Troyes (10),,faible,,F  défavorable,,non classé,48.296709964,4.078279675,431,2.548986852,8186400
+,F,Trélazé (49),49353,5.207610054,,,,,[0-20 000[,Trélazé (49),,faible,,F  défavorable,,non classé,47.451357179,-0.473458788,70,2.531095238,1944270
+,F,Trégastel (22),22353,29.423784226,,,,,[0-20 000[,Trégastel (22),,moyenne,,F  défavorable,,non classé,48.817321796,-3.506403331,66,2.351717172,330345
+,F,Tourcoing (59),59599,1.805572654,,,,,[50 000-100 000[,Tourcoing (59),,faible,,F  défavorable,,non classé,50.725441890,3.158827572,171,2.528713450,13159260
+,F,Toulon (83),83137,2.240116958,,,,,[100 000-200 000[,Toulon (83),,faible,,F  défavorable,,non classé,43.136158973,5.932396342,364,2.309716117,22900590
+,F,Thonon-les-Bains (74),74281,3.728794262,,,,,[20 000-50 000[,Thonon-les-Bains (74),,faible,,F  défavorable,,non classé,46.370425805,6.481943361,125,2.65792,4742820
+,F,Thoiry (01),01419,8.697079094,,,,,[0-20 000[,Thoiry (01),,faible,,F  défavorable,,non classé,46.243547588,5.965062980,50,2.629066667,822690
+,F,Templeuve-en-Pévèle (59),59586,18.887015177,,,,,[0-20 000[,Templeuve-en-Pévèle (59),,faible,,F  défavorable,,non classé,50.532753460,3.173442142,107,2.539221184,800550
+,F,Tassin-la-Demi-Lune (69),69244,5.546609411,,,,,[20 000-50 000[,Tassin-la-Demi-Lune (69),,faible,,F  défavorable,,non classé,45.762868177,4.755405955,118,2.369915254,3018060
+,F,Tarbes (65),65440,5.754253683,,,,,[20 000-50 000[,Tarbes (65),,faible,,F  défavorable,,non classé,43.234785964,0.066009394,224,2.317633929,5442930
+,F,Suresnes (92),92073,2.509255450,,,,,[20 000-50 000[,Suresnes (92),,faible,,F  défavorable,,non classé,48.869847913,2.219655176,117,2.692079772,6563700
+,F,Sucy-en-Brie (94),94071,1.978766315,,,,,[20 000-50 000[,Sucy-en-Brie (94),,faible,,F  défavorable,,non classé,48.765645659,2.533056080,52,2.699871795,3547665
+,F,Sète (34),34301,4.953106010,,,,,[20 000-50 000[,Sète (34),,moyenne,,F  défavorable,,non classé,43.391770583,3.647051483,209,2.402248804,5887215
+,F,Sedan (08),08409,2.730618544,,,,,[0-20 000[,Sedan (08),,faible,,F  défavorable,,non classé,49.697058875,4.929850524,45,2.424370370,2274210
+,F,Savigneux (42),42299,23.018648019,,,,,[0-20 000[,Savigneux (42),,faible,,F  défavorable,,non classé,45.622396347,4.100395727,75,2.681644444,463320
+,F,Sartrouville (78),78586,2.260294788,,,,,[50 000-100 000[,Sartrouville (78),,faible,,F  défavorable,,non classé,48.939608550,2.174586865,116,2.624137931,7107480
+,F,Saran (45),45302,3.541119726,,,,,[0-20 000[,Saran (45),,faible,,F  défavorable,,non classé,47.949831105,1.878096935,57,2.425263158,2211165
+,F,Salon-de-Provence (13),13103,3.488831351,,,,,[20 000-50 000[,Salon-de-Provence (13),,faible,,F  défavorable,,non classé,43.646288524,5.068146496,151,2.648962472,6152490
+,F,Sallanches (74),74256,4.276191674,,,,,[0-20 000[,Sallanches (74),,faible,,F  défavorable,,non classé,45.946815579,6.607110531,64,2.475833333,2146770
+,F,Saint-Pierre-des-Corps (37),37233,7.185175848,,,,,[0-20 000[,Saint-Pierre-des-Corps (37),,faible,,F  défavorable,,non classé,47.388448820,0.738011772,105,2.423174603,2141910
+,F,Saint-Orens-de-Gameville (31),31506,8.420138889,,,,,[0-20 000[,Saint-Orens-de-Gameville (31),,faible,,F  défavorable,,non classé,43.559078767,1.535137106,95,2.421859649,1555200
+,F,Saint-Mathieu-de-Tréviers (34),34276,16.037138637,,,,,[0-20 000[,Saint-Mathieu-de-Tréviers (34),,faible,,F  défavorable,,non classé,43.769207390,3.870020275,72,2.578564815,639765
+,F,Saint-Malo (35),35288,13.824584284,,,,,[20 000-50 000[,Saint-Malo (35),,faible,,F  défavorable,,non classé,48.640044348,-1.980606273,614,2.608811075,6210675
+,F,Saint-Lô (50),50502,8.016454828,,,,,[0-20 000[,Saint-Lô (50),,faible,,F  défavorable,,non classé,49.109962425,-1.077556427,146,2.658401826,2559735
+,F,Saint-Laurent-du-Var (06),06123,2.548437773,,,,,[20 000-50 000[,Saint-Laurent-du-Var (06),,faible,,F  défavorable,,non classé,43.685962577,7.182187918,69,2.492946860,3867075
+,F,Saint-Julien-en-Genevois (74),74243,5.695977216,,,,,[0-20 000[,Saint-Julien-en-Genevois (74),,faible,,F  défavorable,,non classé,46.139365545,6.078811711,75,2.589244444,1896075
+,F,Saint-Jean-de-Luz (64),64483,4.837447535,,,,,[0-20 000[,Saint-Jean-de-Luz (64),,faible,,F  défavorable,,non classé,43.394788687,-1.630990216,66,2.693585859,1897695
+,F,Saint-Jean-d'Illac (33),33422,6.130456106,,,,,[0-20 000[,Saint-Jean-d'Illac (33),,faible,,F  défavorable,,non classé,44.793401070,-0.819193905,49,2.468095238,1101060
+,F,Saint-Girons (09),09261,8.027703447,,,,,[0-20 000[,Saint-Girons (09),,faible,,F  défavorable,,non classé,42.975292304,1.153265955,46,2.493840580,857655
+,F,Saint-Genis-Pouilly (01),01354,12.445341406,,,,,[0-20 000[,Saint-Genis-Pouilly (01),,faible,,F  défavorable,,non classé,46.254539333,6.036290734,146,2.540684932,1605420
+,F,Saint-Genis-Laval (69),69204,3.805987468,,,,,[20 000-50 000[,Saint-Genis-Laval (69),,faible,,F  défavorable,,non classé,45.693677729,4.789190285,81,2.688559671,2908575
+,F,Saint-Fons (69),69199,3.177851988,,,,,[0-20 000[,Saint-Fons (69),,moyenne,,F  défavorable,,non classé,45.701105059,4.850463670,52,2.435128205,2506410
+,F,Saint-Étienne-de-Montluc (44),44158,9.925201381,,,,,[0-20 000[,Saint-Étienne-de-Montluc (44),,faible,,F  défavorable,,non classé,47.265112989,-1.784268797,68,2.626764706,938520
+,F,Saint-Étienne (42),42218,4.723017147,,,,,[100 000-200 000[,Saint-Étienne (42),,moyenne,,F  défavorable,,non classé,45.430123551,4.379139971,774,2.532515073,23209740
+,F,Saint-Dié-des-Vosges (88),88413,6.025926676,,,,,[0-20 000[,Saint-Dié-des-Vosges (88),,moyenne,,F  défavorable,,non classé,48.296709351,6.938093675,113,2.399115044,2665980
+,F,Saint-Denis (93),93066,1.885877472,,,,,[100 000-200 000[,Saint-Denis (93),,faible,,F  défavorable,,non classé,48.929565045,2.359242997,198,2.345151515,15032790
+,F,Saint-Cloud (92),92064,3.345146226,,,,,[20 000-50 000[,Saint-Cloud (92),,moyenne,,F  défavorable,,non classé,48.842874103,2.208645703,97,2.441340206,4076055
+,F,Saint-André-lez-Lille (59),59527,7.158545514,,,,,[0-20 000[,Saint-André-lez-Lille (59),,moyenne,,F  défavorable,,non classé,50.659769297,3.046093879,82,2.681747967,1659555
+,F,Saint-Amand-les-Eaux (59),59526,5.759583824,,,,,[0-20 000[,Saint-Amand-les-Eaux (59),,faible,,F  défavorable,,non classé,50.440100098,3.444607080,91,2.517399267,2179845
+,F,Sainghin-en-Weppes (59),59524,9.574468085,,,,,[0-20 000[,Sainghin-en-Weppes (59),,faible,,F  défavorable,,non classé,50.558335987,2.897402552,48,2.37625,761400
+,F,Sainghin-en-Mélantois (59),59523,23.446222553,,,,,[0-20 000[,Sainghin-en-Mélantois (59),,moyenne,,F  défavorable,,non classé,50.587733214,3.163421657,57,2.328830409,362745
+,F,Roubaix (59),59512,1.472845704,,,,,[50 000-100 000[,Roubaix (59),,faible,,F  défavorable,,non classé,50.687977481,3.182584346,138,2.638309179,13015620
+,F,Roquefort-les-Pins (06),06105,9.559372666,,,,,[0-20 000[,Roquefort-les-Pins (06),,faible,,F  défavorable,,non classé,43.674173254,7.053012727,62,2.608548387,903825
+,F,Romorantin-Lanthenay (41),41194,2.953304358,,,,,[0-20 000[,Romorantin-Lanthenay (41),,moyenne,,F  défavorable,,non classé,47.374522634,1.744563854,50,2.362266667,2422710
+,F,Romans-sur-Isère (26),26281,6.454518163,,,,,[20 000-50 000[,Romans-sur-Isère (26),,faible,,F  défavorable,,non classé,45.054753198,5.037977560,209,2.667081340,4496850
+,F,Rodez (12),12202,3.369981886,,,,,[20 000-50 000[,Rodez (12),,faible,,F  défavorable,,non classé,44.358242625,2.567279389,76,2.326140351,3204765
+,F,Roanne (42),42187,2.681274326,,,,,[20 000-50 000[,Roanne (42),,faible,,F  défavorable,,non classé,46.044911249,4.079704565,91,2.461684982,4682475
+,F,Riom (63),63300,7.146986179,,,,,[0-20 000[,Riom (63),,faible,,F  défavorable,,non classé,45.894266778,3.132464697,134,2.573905473,2568915
+,F,Rillieux-la-Pape (69),69286,2.643466622,,,,,[20 000-50 000[,Rillieux-la-Pape (69),,moyenne,,F  défavorable,,non classé,45.820598811,4.898226398,76,2.610219298,4034475
+,F,Reims (51),51454,4.996914474,,,,,[100 000-200 000[,Reims (51),,faible,,F  défavorable,,non classé,49.251490607,4.040230232,866,2.546816782,24720255
+,F,Reignier-Ésery (74),74220,9.970970592,,,,,[0-20 000[,Reignier-Ésery (74),,moyenne,,F  défavorable,,non classé,46.135347988,6.261261228,74,2.490450450,1069605
+,F,Rambouillet (78),78517,10.228226853,,,,,[20 000-50 000[,Rambouillet (78),,faible,,F  défavorable,,non classé,48.653905195,1.826528719,258,2.519186047,3537270
+,F,Quimper (29),29232,6.986830692,,,,,[50 000-100 000[,Quimper (29),,faible,,F  défavorable,,non classé,47.997142516,-4.091119445,424,2.603003145,8559675
+,F,Privas (07),07186,6.140878989,,,,,[0-20 000[,Privas (07),,faible,,F  défavorable,,non classé,44.722539115,4.594495387,49,2.699115646,1121175
+,F,Pontoise (95),95500,2.085369827,,,,,[20 000-50 000[,Pontoise (95),,faible,,F  défavorable,,non classé,49.051373785,2.094879289,60,2.381555556,4143150
+,F,Pont-l'Abbé (29),29220,8.554319932,,,,,[0-20 000[,Pont-l'Abbé (29),,faible,,F  défavorable,,non classé,47.865488549,-4.219623197,66,2.580959596,1104705
+,F,Pont-à-Mousson (54),54431,7.428492086,,,,,[0-20 000[,Pont-à-Mousson (54),,faible,,F  défavorable,,non classé,48.921982805,6.053926907,101,2.430726073,1944540
+,F,Plougastel-Daoulas (29),29189,4.419806727,,,,,[0-20 000[,Plougastel-Daoulas (29),,faible,,F  défavorable,,non classé,48.360193214,-4.382921050,57,2.549941520,1802115
+,F,Plaisir (78),78490,3.503787879,,,,,[20 000-50 000[,Plaisir (78),,faible,,F  défavorable,,non classé,48.812608230,1.946985157,103,2.551585761,4276800
+,F,Plaisance-du-Touch (31),31424,5.479452055,,,,,[0-20 000[,Plaisance-du-Touch (31),,faible,,F  défavorable,,non classé,43.557591642,1.285858118,93,2.518387097,2463750
+,F,Plabennec (29),29160,6.104129264,,,,,[0-20 000[,Plabennec (29),,faible,,F  défavorable,,non classé,48.493832729,-4.418942146,50,2.334266667,1127925
+,F,Pibrac (31),31417,7.757488960,,,,,[0-20 000[,Pibrac (31),,moyenne,,F  défavorable,,non classé,43.627438536,1.261394753,63,2.654973545,1131165
+,F,Perpignan (66),66136,1.665641026,,,,,[100 000-200 000[,Perpignan (66),,moyenne,,F  défavorable,,non classé,42.696595413,2.899369540,195,2.341555556,16453125
+,F,Périgny (94),94056,22.915101427,,,,,[0-20 000[,Périgny (94),,faible,,F  défavorable,,non classé,48.696835963,2.561679404,59,2.517401130,359370
+,F,Pélissanne (13),13069,7.438582754,,,,,[0-20 000[,Pélissanne (13),,faible,,F  défavorable,,non classé,43.630838564,5.159573273,72,2.350324074,1379295
+,F,Pégomas (06),06090,7.206979391,,,,,[0-20 000[,Pégomas (06),,faible,,F  défavorable,,non classé,43.586555316,6.922248379,56,2.432083333,1067715
+,F,Oloron-Sainte-Marie (64),64422,7.691594848,,,,,[0-20 000[,Oloron-Sainte-Marie (64),,faible,,F  défavorable,,non classé,43.156087119,-0.587546244,80,2.413583333,1456785
+,F,Nouméa (98),98818,3.162340132,,,,,[50 000-100 000[,Nouméa (98),,faible,,F  défavorable,,non classé,-22.3501,166.8988,308,2.570822511,13490010
+,F,Nogent-sur-Vernisson (45),45229,23.237495077,,,,,[0-20 000[,Nogent-sur-Vernisson (45),,faible,,F  défavorable,,non classé,47.838698904,2.729398980,56,2.387916667,342765
+,F,Nogent-sur-Marne (94),94052,2.598053025,,,,,[20 000-50 000[,Nogent-sur-Marne (94),,faible,,F  défavorable,,non classé,48.836663471,2.481667415,74,2.612072072,4312845
+,F,Nice (06),06088,1.754042908,,,,,[200 000 et plus,Nice (06),,faible,,F  défavorable,,10ème/ 11 de la catégorie,43.711999266,7.238268895,576,2.368553241,46255995
+,F,Neuilly-sur-Seine (92),92051,3.796632552,,,,,[50 000-100 000[,Neuilly-sur-Seine (92),,moyenne,,F  défavorable,,non classé,48.885371969,2.266425847,221,2.437948718,8178300
+,F,Nemours (77),77333,4.327361069,,,,,[0-20 000[,Nemours (77),,faible,,F  défavorable,,non classé,48.259606791,2.711079931,54,2.329012346,1778220
+,F,Nanterre (92),92050,2.493157080,,,,,[50 000-100 000[,Nanterre (92),,faible,,F  défavorable,,non classé,48.896070128,2.206713464,222,2.677087087,12724830
+,F,Nancy (54),54395,13.165442864,,,,,[100 000-200 000[,Nancy (54),,faible,,F  défavorable,,non classé,48.690199550,6.175882544,1326,2.647963801,14119920
+,F,Moulins (03),03190,4.231887014,,,,,[0-20 000[,Moulins (03),,faible,,F  défavorable,,non classé,46.562464106,3.326620402,79,2.641898734,2647755
+,F,Mougins (06),06085,3.780122854,,,,,[0-20 000[,Mougins (06),,faible,,F  défavorable,,non classé,43.596141056,7.001294449,71,2.649295775,2571345
+,F,Morlaix (29),29151,6.453365940,,,,,[0-20 000[,Morlaix (29),,faible,,F  défavorable,,non classé,48.599674661,-3.820520200,88,2.406363636,1987335
+,F,Montrouge (92),92049,5.109102752,,,,,[20 000-50 000[,Montrouge (92),,faible,,F  défavorable,,non classé,48.815303216,2.316489214,241,2.473679115,6632280
+,F,Montpellier (34),34172,13.206066481,,,,,[200 000 et plus,Montpellier (34),,faible,,F  défavorable,,9ème/ 11 de la catégorie,43.613440914,3.868516579,3574,2.480731207,38017755
+,F,Montluçon (03),03185,2.572827621,,,,,[20 000-50 000[,Montluçon (03),,faible,,F  défavorable,,non classé,46.338588350,2.603904998,84,2.610039683,4879845
+,F,Montgeron (91),91421,2.294343401,,,,,[20 000-50 000[,Montgeron (91),,faible,,F  défavorable,,non classé,48.695153180,2.462498818,53,2.680566038,3236220
+,F,Montferrier-sur-Lez (34),34169,19.733185103,,,,,[0-20 000[,Montferrier-sur-Lez (34),,faible,,F  défavorable,,non classé,43.669078352,3.864085429,69,2.381932367,485730
+,F,Montbrison (42),42147,6.358789903,,,,,[0-20 000[,Montbrison (42),,faible,,F  défavorable,,non classé,45.600836551,4.071398207,91,2.668315018,2101815
+,F,Montauban (82),82121,5.145258421,,,,,[50 000-100 000[,Montauban (82),,faible,,F  défavorable,,non classé,44.022259458,1.364086365,300,2.651188889,8159940
+,F,Montargis (45),45208,5.203206300,,,,,[0-20 000[,Montargis (45),,faible,,F  défavorable,,non classé,47.998842768,2.735889220,69,2.553429952,1919970
+,F,Mont-de-Marsan (40),40192,2.610005019,,,,,[20 000-50 000[,Mont-de-Marsan (40),,faible,,F  défavorable,,non classé,43.899361404,-0.490722577,74,2.609684685,4034475
+,F,Moirans (38),38239,7.833872171,,,,,[0-20 000[,Moirans (38),,faible,,F  défavorable,,non classé,45.318948689,5.562120820,60,2.455555556,1085670
+,F,Millau (12),12145,4.684684685,,,,,[20 000-50 000[,Millau (12),,faible,,F  défavorable,,non classé,44.097625220,3.117053841,100,2.6493,2997000
+,F,Melun (77),77288,2.982996918,,,,,[20 000-50 000[,Melun (77),,faible,,F  défavorable,,non classé,48.544472355,2.657958219,116,2.395890805,5430780
+,F,Mayenne (53),53147,7.368339409,,,,,[0-20 000[,Mayenne (53),,faible,,F  défavorable,,non classé,48.307460945,-0.614799951,92,2.491413043,1740555
+,F,Marquette-lez-Lille (59),59386,5.851880276,,,,,[0-20 000[,Marquette-lez-Lille (59),,faible,,F  défavorable,,non classé,50.67409511,3.058863286,60,2.385611111,1407240
+,F,Mandelieu-la-Napoule (06),06079,2.435943703,,,,,[20 000-50 000[,Mandelieu-la-Napoule (06),,faible,,F  défavorable,,non classé,43.538051047,6.918089365,50,2.622266667,2992680
+,F,Maisons-Laffitte (78),78358,6.774605880,,,,,[20 000-50 000[,Maisons-Laffitte (78),,faible,,F  défavorable,,non classé,48.952336900,2.151615949,152,2.537236842,3168450
+,F,Mâcon (71),71270,6.880665330,,,,,[20 000-50 000[,Mâcon (71),,faible,,F  défavorable,,non classé,46.320551176,4.818425296,222,2.656381381,4512645
+,F,Lons-le-Saunier (39),39300,9.790370882,,,,,[0-20 000[,Lons-le-Saunier (39),,faible,,F  défavorable,,non classé,46.674479628,5.557332129,162,2.494279835,2344140
+,F,Lons (64),64348,8.053899171,,,,,[0-20 000[,Lons (64),,faible,,F  défavorable,,non classé,43.321211316,-0.401734391,100,2.651933333,1743255
+,F,Locmiquélic (56),56118,15.962671906,,,,,[0-20 000[,Locmiquélic (56),,faible,,F  défavorable,,non classé,47.730308759,-3.328429979,65,2.645282051,549720
+,F,Limoges (87),87085,2.095582693,,,,,[100 000-200 000[,Limoges (87),,faible,,F  défavorable,,non classé,45.854254959,1.248757902,267,2.556754057,17909100
+,F,Libourne (33),33243,3.456591640,,,,,[20 000-50 000[,Libourne (33),,faible,,F  défavorable,,non classé,44.913076787,-0.234709332,83,2.547108434,3358800
+,F,Lesquin (59),59343,7.330637007,,,,,[0-20 000[,Lesquin (59),,faible,,F  défavorable,,non classé,50.589228567,3.111919347,55,2.601636364,1068120
+,F,Les Ulis (91),91692,2.050828374,,,,,[20 000-50 000[,Les Ulis (91),,moyenne,,F  défavorable,,non classé,48.680321482,2.18518955,48,2.403888889,3357180
+,F,Les Matelles (34),34153,25.310173697,,,,,[0-20 000[,Les Matelles (34),,faible,,F  défavorable,,non classé,43.727915550,3.806821820,51,2.590457516,272025
+,F,Les Lilas (93),93045,2.652981342,,,,,[20 000-50 000[,Les Lilas (93),,faible,,F  défavorable,,non classé,48.881920894,2.419667821,59,2.303446328,3104055
+,F,Lens (62),62498,1.955097918,,,,,[20 000-50 000[,Lens (62),,moyenne,,F  défavorable,,non classé,50.437426415,2.821058513,57,2.562923977,4143015
+,F,Léguevin (31),31291,7.172018096,,,,,[0-20 000[,Léguevin (31),,faible,,F  défavorable,,non classé,43.591959780,1.229026463,63,2.401164021,1223505
+,F,Le Puy-en-Velay (43),43157,4.289824745,,,,,[0-20 000[,Le Puy-en-Velay (43),,faible,,F  défavorable,,non classé,45.027636666,3.895352291,79,2.487805907,2580525
+,F,Le Pré-Saint-Gervais (93),93061,5.624296963,,,,,[0-20 000[,Le Pré-Saint-Gervais (93),,moyenne,,F  défavorable,,non classé,48.884673488,2.405422330,94,2.431489362,2400300
+,F,Le Pradet (83),83098,12.167148699,,,,,[0-20 000[,Le Pradet (83),,faible,,F  défavorable,,non classé,43.099405984,6.028440155,112,2.534345238,1353645
+,F,Le Plessis-Robinson (92),92060,2.721510266,,,,,[20 000-50 000[,Le Plessis-Robinson (92),,faible,,F  défavorable,,non classé,48.780438364,2.260642860,79,2.587594937,3918780
+,F,Le Petit-Quevilly (76),76498,2.846299810,,,,,[20 000-50 000[,Le Petit-Quevilly (76),,faible,,F  défavorable,,non classé,49.423813472,1.060332890,61,2.620054645,2988090
+,F,Le Perreux-sur-Marne (94),94058,2.164309645,,,,,[20 000-50 000[,Le Perreux-sur-Marne (94),,faible,,F  défavorable,,non classé,48.842395238,2.504068486,71,2.560704225,4553415
+,F,Le Palais (56),56152,30.528375734,,,,,[0-20 000[,Le Palais (56),,faible,,F  défavorable,,non classé,47.342690968,-3.171029520,74,2.538783784,344925
+,F,Le Mesnil-le-Roi (78),78396,8.922880816,,,,,[0-20 000[,Le Mesnil-le-Roi (78),,faible,,F  défavorable,,non classé,48.925799952,2.122173239,53,2.687484277,847260
+,F,Le Chesnay-Rocquencourt (78),78158,7.035463019,,,,,[20 000-50 000[,Le Chesnay-Rocquencourt (78),,faible,,F  défavorable,,non classé,48.827239774,2.130149082,186,2.457688172,3780135
+,F,Le Bouscat (33),33069,2.765092798,,,,,[20 000-50 000[,Le Bouscat (33),,faible,,F  défavorable,,non classé,44.866129832,-0.602121559,64,2.69015625,3222315
+,F,Larmor-Plage (56),56107,16.019417476,,,,,[0-20 000[,Larmor-Plage (56),,faible,,F  défavorable,,non classé,47.715922926,-3.391113732,126,2.549285714,1112400
+,F,Labarthe-sur-Lèze (31),31248,9.763617677,,,,,[0-20 000[,Labarthe-sur-Lèze (31),,faible,,F  défavorable,,non classé,43.458546159,1.400829770,53,2.358490566,788130
+,F,La Garenne-Colombes (92),92035,2.598468271,,,,,[20 000-50 000[,La Garenne-Colombes (92),,faible,,F  défavorable,,non classé,48.906757711,2.244646041,74,2.586036036,3948480
+,F,La Garde (83),83062,2.100174354,,,,,[20 000-50 000[,La Garde (83),,faible,,F  défavorable,,non classé,43.126327938,6.018981647,49,2.688843537,3406860
+,F,La Ferté-Saint-Aubin (45),45146,11.497362370,,,,,[0-20 000[,La Ferté-Saint-Aubin (45),,moyenne,,F  défavorable,,non classé,47.711975083,1.927146661,80,2.34425,998055
+,F,La Ferté-Bernard (72),72132,10.736889693,,,,,[0-20 000[,La Ferté-Bernard (72),,faible,,F  défavorable,,non classé,48.184256057,0.634694806,89,2.579775281,1194480
+,F,La Crau (83),83047,3.236607143,,,,,[0-20 000[,La Crau (83),,faible,,F  défavorable,,non classé,43.163520742,6.092683516,56,2.63125,2419200
+,F,La Colle-sur-Loup (06),06044,7.119247394,,,,,[0-20 000[,La Colle-sur-Loup (06),,faible,,F  défavorable,,non classé,43.687170139,7.097736438,52,2.689230769,1061910
+,F,La Ciotat (13),13028,3.053780467,,,,,[20 000-50 000[,La Ciotat (13),,faible,,F  défavorable,,non classé,43.192641086,5.613189558,97,2.478213058,4774410
+,F,La Chapelle-en-Serval (60),60142,21.150033047,,,,,[0-20 000[,La Chapelle-en-Serval (60),,moyenne,,F  défavorable,,non classé,49.121291739,2.526593907,57,2.314152047,408510
+,F,La Chapelle-des-Fougeretz (35),35059,21.25,,,,,[0-20 000[,La Chapelle-des-Fougeretz (35),,faible,,F  défavorable,,non classé,48.176893730,-1.740671858,98,2.341836735,648000
+,F,La Bouëxière (35),35031,14.318181818,,,,,[0-20 000[,La Bouëxière (35),,faible,,F  défavorable,,non classé,48.174373325,-1.436463571,59,2.671920904,594000
+,F,L'Isle-sur-la-Sorgue (84),84054,4.691205279,,,,,[0-20 000[,L'Isle-sur-la-Sorgue (84),,faible,,F  défavorable,,non classé,43.913397592,5.056642775,85,2.450588235,2618730
+,F,Juvignac (34),34123,4.694403535,,,,,[0-20 000[,Juvignac (34),,faible,,F  défavorable,,non classé,43.623764640,3.795793752,48,2.663263889,1466640
+,F,Joué-lès-Tours (37),37122,1.813091588,,,,,[20 000-50 000[,Joué-lès-Tours (37),,faible,,F  défavorable,,non classé,47.333556074,0.654546300,63,2.681693122,5063175
+,F,Jarrie (38),38200,16.336368506,,,,,[0-20 000[,Jarrie (38),,faible,,F  défavorable,,non classé,45.111102744,5.746740980,60,2.492388889,504090
+,F,Ivry-sur-Seine (94),94041,2.929028649,,,,,[50 000-100 000[,Ivry-sur-Seine (94),,faible,,F  défavorable,,non classé,48.812806381,2.387780236,172,2.561182171,8204085
+,F,Hyères (83),83069,1.882665137,,,,,[50 000-100 000[,Hyères (83),,faible,,F  défavorable,,non classé,43.101871353,6.188985085,102,2.505196078,7529220
+,F,Herblay-sur-Seine (95),95306,2.855570082,,,,,[20 000-50 000[,Herblay-sur-Seine (95),,faible,,F  défavorable,,non classé,49.000700276,2.149676808,77,2.614805195,3923910
+,F,Hem (59),59299,4.018187586,,,,,[0-20 000[,Hem (59),,faible,,F  défavorable,,non classé,50.654804946,3.193056326,75,2.610311111,2553390
+,F,Hazebrouck (59),59295,2.766889555,,,,,[20 000-50 000[,Hazebrouck (59),,faible,,F  défavorable,,non classé,50.726296711,2.538643015,58,2.329942529,2927475
+,F,Guérande (44),44069,11.367848758,,,,,[0-20 000[,Guérande (44),,faible,,F  défavorable,,non classé,47.331332091,-2.417036588,175,2.46,2185110
+,F,Granville (50),50218,5.271317829,,,,,[0-20 000[,Granville (50),,faible,,F  défavorable,,non classé,48.832707837,-1.566708664,65,2.688512821,1741500
+,F,Gouvieux (60),60282,6.003056101,,,,,[0-20 000[,Gouvieux (60),,faible,,F  défavorable,,non classé,49.189581627,2.420263250,51,2.355490196,1236870
+,F,Givors (69),69091,2.899751450,,,,,[0-20 000[,Givors (69),,faible,,F  défavorable,,non classé,45.581662697,4.757261630,54,2.301543210,2607120
+,F,Gien (45),45155,4.607314999,,,,,[0-20 000[,Gien (45),,faible,,F  défavorable,,non classé,47.71227944,2.665495502,58,2.323850575,1904580
+,F,Gentilly (94),94037,3.267973856,,,,,[0-20 000[,Gentilly (94),,faible,,F  défavorable,,non classé,48.813204439,2.344206597,52,2.392564103,2354670
+,F,Garches (92),92033,2.434467531,,,,,[0-20 000[,Garches (92),,faible,,F  défavorable,,non classé,48.845011355,2.186650078,43,2.475038760,2384505
+,F,Fréjus (83),83061,1.504664460,,,,,[50 000-100 000[,Fréjus (83),,faible,,F  défavorable,,non classé,43.471955811,6.763615974,74,2.331621622,7177680
+,F,Fournes-en-Weppes (59),59250,26.173285199,,,,,[0-20 000[,Fournes-en-Weppes (59),,faible,,F  défavorable,,non classé,50.591727736,2.893620719,58,2.640402299,299160
+,F,Fouras (17),17168,19.278299555,,,,,[0-20 000[,Fouras (17),,moyenne,,F  défavorable,,non classé,45.983075341,-1.077005218,74,2.472522523,546210
+,F,Forbach (57),57227,2.774309890,,,,,[20 000-50 000[,Forbach (57),,moyenne,,F  défavorable,,non classé,49.191265037,6.892757985,57,2.356023392,2919645
+,F,Fontaine (38),38169,6.425416090,,,,,[20 000-50 000[,Fontaine (38),,faible,,F  défavorable,,non classé,45.193050249,5.677630665,138,2.612681159,3025485
+,F,Foix (09),09122,12.899199001,,,,,[0-20 000[,Foix (09),,faible,,F  défavorable,,non classé,42.965850227,1.610374959,117,2.699259259,1297755
+,F,Figeac (46),46102,5.593409946,,,,,[0-20 000[,Figeac (46),,faible,,F  défavorable,,non classé,44.605531463,2.025403038,54,2.577654321,1327455
+,F,Ferney-Voltaire (01),01160,11.829407492,,,,,[0-20 000[,Ferney-Voltaire (01),,moyenne,,F  défavorable,,non classé,46.251978924,6.108264038,109,2.376146789,1300995
+,F,Évry-Courcouronnes (91),91228,1.024458958,,,,,[50 000-100 000[,Évry-Courcouronnes (91),,faible,,F  défavorable,,non classé,48.629483166,2.440082445,56,2.584642857,7379505
+,F,Évreux (27),27229,4.233215403,,,,,[20 000-50 000[,Évreux (27),,faible,,F  défavorable,,non classé,49.02015421,1.141644125,200,2.535166667,6601365
+,F,Escalquens (31),31169,7.930456001,,,,,[0-20 000[,Escalquens (31),,faible,,F  défavorable,,non classé,43.520912593,1.552432270,50,2.6004,885195
+,F,Ermont (95),95219,2.026655675,,,,,[20 000-50 000[,Ermont (95),,faible,,F  défavorable,,non classé,48.98824217,2.256624437,57,2.445438596,3930120
+,F,Épernay (51),51230,5.025125628,,,,,[20 000-50 000[,Épernay (51),,faible,,F  défavorable,,non classé,49.037000689,3.931446262,110,2.524909091,3116340
+,F,Écully (69),69081,4.420622203,,,,,[0-20 000[,Écully (69),,faible,,F  défavorable,,non classé,45.782149947,4.772168118,77,2.520909091,2443095
+,F,Dinan (22),22050,7.101673464,,,,,[0-20 000[,Dinan (22),,moyenne,,F  défavorable,,non classé,48.455770995,-2.048161497,91,2.450183150,1919970
+,F,Digne-les-Bains (04),04070,3.706907204,,,,,[0-20 000[,Digne-les-Bains (04),,faible,,F  défavorable,,non classé,44.090872355,6.235903235,58,2.685114943,2185110
+,F,Dieppe (76),76217,4.694994258,,,,,[20 000-50 000[,Dieppe (76),,faible,,F  défavorable,,non classé,49.922250395,1.086811684,131,2.625725191,3996810
+,F,Dammarie-les-Lys (77),77152,2.329724544,,,,,[20 000-50 000[,Dammarie-les-Lys (77),,faible,,F  défavorable,,non classé,48.513833865,2.628543743,49,2.666598639,2955285
+,F,Culoz (01),01138,15.067147068,,,,,[0-20 000[,Culoz (01),,moyenne,,F  défavorable,,non classé,45.855996684,5.783983089,44,2.586742424,412155
+,F,Cugnaux (31),31157,9.228518373,,,,,[0-20 000[,Cugnaux (31),,faible,,F  défavorable,,non classé,43.544921124,1.342862238,158,2.596286920,2399085
+,F,Crozon (29),29042,8.356545961,,,,,[0-20 000[,Crozon (29),,faible,,F  défavorable,,non classé,48.244971538,-4.491703478,60,2.482777778,1017765
+,F,Croix (59),59163,3.478914955,,,,,[20 000-50 000[,Croix (59),,faible,,F  défavorable,,non classé,50.674068999,3.154640417,70,2.405523810,2871585
+,F,Créteil (94),94028,0.984428137,,,,,[50 000-100 000[,Créteil (94),,faible,,F  défavorable,,non classé,48.783740184,2.454635304,85,2.454901961,12067920
+,F,Craponne (69),69069,7.259365478,,,,,[0-20 000[,Craponne (69),,faible,,F  défavorable,,non classé,45.746285346,4.726723580,77,2.328225108,1506330
+,F,Courbevoie (92),92026,3.169358786,,,,,[50 000-100 000[,Courbevoie (92),,faible,,F  défavorable,,non classé,48.898450477,2.255705873,248,2.691317204,11032200
+,F,Coublevie (38),38133,13.710368466,,,,,[0-20 000[,Coublevie (38),,faible,,F  défavorable,,non classé,45.356770750,5.617934640,62,2.497043011,630180
+,F,Cornebarrieu (31),31150,15.795123447,,,,,[0-20 000[,Cornebarrieu (31),,faible,,F  défavorable,,non classé,43.648626573,1.322429646,95,2.322491228,880335
+,F,Conflans-Sainte-Honorine (78),78172,2.146650096,,,,,[20 000-50 000[,Conflans-Sainte-Honorine (78),,moyenne,,F  défavorable,,non classé,49.000100782,2.099071905,73,2.543789954,4779540
+,F,Concarneau (29),29039,5.512968602,,,,,[0-20 000[,Concarneau (29),,faible,,F  défavorable,,non classé,47.896626000,-3.907168718,98,2.582721088,2571210
+,F,Colombes (92),92025,3.221347578,,,,,[50 000-100 000[,Colombes (92),,faible,,F  défavorable,,non classé,48.922517915,2.246751606,267,2.610137328,11524680
+,F,Cognac (16),16102,12.565501016,,,,,[0-20 000[,Cognac (16),,faible,,F  défavorable,,non classé,45.696232655,-0.335079418,221,2.398717949,2524770
+,F,Cluny (71),71137,11.782032401,,,,,[0-20 000[,Cluny (71),,moyenne,,F  défavorable,,non classé,46.430362858,4.670332763,52,2.472628205,641655
+,F,Clichy (92),92024,4.818917979,,,,,[50 000-100 000[,Clichy (92),,faible,,F  défavorable,,non classé,48.903535914,2.305752305,284,2.587112676,8152245
+,F,Clamart (92),92023,4.854553762,,,,,[50 000-100 000[,Clamart (92),,moyenne,,F  défavorable,,non classé,48.796430679,2.254746529,211,2.639984202,7091280
+,F,Claix (38),38111,7.597459210,,,,,[0-20 000[,Claix (38),,faible,,F  défavorable,,non classé,45.122417090,5.657073369,53,2.407547170,1083915
+,F,Ciboure (64),64189,8.257900588,,,,,[0-20 000[,Ciboure (64),,faible,,F  défavorable,,non classé,43.374989249,-1.661337536,49,2.437482993,850095
+,F,Cholet (49),49099,5.361331397,,,,,[50 000-100 000[,Cholet (49),,faible,,F  défavorable,,non classé,47.045440299,-0.877886190,278,2.492913669,7251930
+,F,Choisy-le-Roi (94),94022,1.327334083,,,,,[20 000-50 000[,Choisy-le-Roi (94),,faible,,F  défavorable,,non classé,48.764315118,2.417425182,55,2.454,6000750
+,F,Chenôve (21),21166,3.767569917,,,,,[0-20 000[,Chenôve (21),,faible,,F  défavorable,,non classé,47.292613672,5.004883535,47,2.358297872,1863270
+,F,Chelles (77),77108,1.254705144,,,,,[50 000-100 000[,Chelles (77),,faible,,F  défavorable,,non classé,48.883962967,2.596864486,64,2.581927083,7316460
+,F,Châteauroux (36),36044,2.608419525,,,,,[20 000-50 000[,Châteauroux (36),,faible,,F  défavorable,,non classé,46.802961783,1.693998120,113,2.433569322,5951880
+,F,Châteaurenard (13),13027,7.707253886,,,,,[0-20 000[,Châteaurenard (13),,faible,,F  défavorable,,non classé,43.882470758,4.839900046,112,2.539404762,2084400
+,F,Châteaubourg (35),35068,7.581175797,,,,,[0-20 000[,Châteaubourg (35),,faible,,F  défavorable,,non classé,48.120001247,-1.404020964,49,2.358367347,943785
+,F,Charnay-lès-Mâcon (71),71105,8.078871697,,,,,[0-20 000[,Charnay-lès-Mâcon (71),,faible,,F  défavorable,,non classé,46.304185274,4.786938135,55,2.510666667,985905
+,F,Charenton-le-Pont (94),94018,1.836065574,,,,,[20 000-50 000[,Charenton-le-Pont (94),,faible,,F  défavorable,,non classé,48.822808498,2.407609155,55,2.516363636,4117500
+,F,Chalon-sur-Saône (71),71076,8.449588523,,,,,[20 000-50 000[,Chalon-sur-Saône (71),,faible,,F  défavorable,,non classé,46.790028879,4.851915550,355,2.581183099,6135210
+,F,Cénac (33),33118,24.725274725,,,,,[0-20 000[,Cénac (33),,faible,,F  défavorable,,non classé,44.782694672,-0.456684448,45,2.535925926,245700
+,F,Cavaillon (84),84035,2.529065378,,,,,[20 000-50 000[,Cavaillon (84),,faible,,F  défavorable,,non classé,43.850836183,5.036063009,63,2.481957672,3576420
+,F,Castelnau-le-Lez (34),34057,10.749337903,,,,,[0-20 000[,Castelnau-le-Lez (34),,faible,,F  défavorable,,non classé,43.638021881,3.912654160,200,2.3162,2599695
+,F,Castanet-Tolosan (31),31113,9.488544318,,,,,[0-20 000[,Castanet-Tolosan (31),,faible,,F  défavorable,,non classé,43.513616669,1.503837570,118,2.353954802,1750005
+,F,Carpentras (84),84031,2.066260419,,,,,[20 000-50 000[,Carpentras (84),,faible,,F  défavorable,,non classé,44.059380256,5.061348448,55,2.376848485,3854790
+,F,Cannes (06),06029,1.861042184,,,,,[50 000-100 000[,Cannes (06),,faible,,F  défavorable,,non classé,43.552620284,7.004275927,128,2.504635417,10010520
+,F,Caluire-et-Cuire (69),69034,5.196318304,,,,,[20 000-50 000[,Caluire-et-Cuire (69),,faible,,F  défavorable,,non classé,45.797405365,4.851248571,195,2.398786325,5793525
+,F,Calais (62),62193,4.227906853,,,,,[50 000-100 000[,Calais (62),,faible,,F  défavorable,,non classé,50.950207275,1.875755661,303,2.463828383,10122030
+,F,Cahors (46),46042,3.504251482,,,,,[0-20 000[,Cahors (46),,faible,,F  défavorable,,non classé,44.450737092,1.440758378,66,2.572828283,2619675
+,F,Cabriès (13),13019,6.695508859,,,,,[0-20 000[,Cabriès (13),,faible,,F  défavorable,,non classé,43.449642192,5.349766640,62,2.415161290,1310580
+,F,Brunstatt-Didenheim (68),68056,7.133757962,,,,,[0-20 000[,Brunstatt-Didenheim (68),,faible,,F  défavorable,,non classé,47.715130037,7.326545961,53,2.521823899,1059750
+,F,Brunoy (91),91114,2.456342353,,,,,[20 000-50 000[,Brunoy (91),,faible,,F  défavorable,,non classé,48.696439629,2.503947533,58,2.678160920,3517425
+,F,Brive-la-Gaillarde (19),19031,8.658837546,,,,,[20 000-50 000[,Brive-la-Gaillarde (19),,faible,,F  défavorable,,non classé,45.143583066,1.519368361,351,2.536087369,6345540
+,F,Brignais (69),69027,5.947625388,,,,,[0-20 000[,Brignais (69),,faible,,F  défavorable,,non classé,45.678117475,4.752687880,66,2.699090909,1520775
+,F,Bressuire (79),79049,4.461767270,,,,,[0-20 000[,Bressuire (79),,faible,,F  défavorable,,non classé,46.854575568,-0.479375922,82,2.430121951,2632365
+,F,Boulogne-sur-Mer (62),62160,2.783844105,,,,,[20 000-50 000[,Boulogne-sur-Mer (62),,faible,,F  défavorable,,non classé,50.727133266,1.607563348,114,2.532807018,5625315
+,F,Boulogne-Billancourt (92),92012,3.251285052,,,,,[100 000-200 000[,Boulogne-Billancourt (92),,moyenne,,F  défavorable,,non classé,48.836584314,2.239135991,378,2.567892416,16152075
+,F,Bonchamp-lès-Laval (53),53034,17.652992603,,,,,[0-20 000[,Bonchamp-lès-Laval (53),,faible,,F  défavorable,,non classé,48.067608658,-0.698304871,97,2.537835052,802980
+,F,Bois-Colombes (92),92009,4.766444233,,,,,[20 000-50 000[,Bois-Colombes (92),,faible,,F  défavorable,,non classé,48.915336843,2.267385526,131,2.400585242,3823605
+,F,Bischheim (67),67043,3.841676368,,,,,[0-20 000[,Bischheim (67),,faible,,F  défavorable,,non classé,48.621531606,7.758642825,62,2.587634409,2319300
+,F,Biot (06),06018,7.343941248,,,,,[0-20 000[,Biot (06),,faible,,F  défavorable,,non classé,43.627655814,7.083186129,68,2.526078431,1323540
+,F,Bezons (95),95063,3.589177250,,,,,[20 000-50 000[,Bezons (95),,faible,,F  défavorable,,non classé,48.925981013,2.211333878,96,2.511909722,3911760
+,F,Beynost (01),01043,15.360983103,,,,,[0-20 000[,Beynost (01),,faible,,F  défavorable,,non classé,45.839032545,4.997380022,70,2.591666667,615195
+,F,Béthune (62),62119,7.385055189,,,,,[20 000-50 000[,Béthune (62),,faible,,F  défavorable,,non classé,50.528892258,2.642423793,180,2.534351852,3400110
+,F,Belley (01),01034,13.796123946,,,,,[0-20 000[,Belley (01),,faible,,F  défavorable,,non classé,45.749469781,5.684123655,122,2.602431694,1232955
+,F,Beauvais (60),60057,4.551945734,,,,,[50 000-100 000[,Beauvais (60),,moyenne,,F  défavorable,,non classé,49.436552332,2.086161237,245,2.609238095,7562700
+,F,Beaune (21),21054,2.125300314,,,,,[20 000-50 000[,Beaune (21),,faible,,F  défavorable,,non classé,47.025518937,4.837679860,41,2.303089431,2921940
+,F,Bayonne (64),64102,4.902251478,,,,,[50 000-100 000[,Bayonne (64),,faible,,F  défavorable,,non classé,43.492225402,-1.466076744,237,2.610872011,6829515
+,F,Bar-le-Duc (55),55029,4.664608107,,,,,[0-20 000[,Bar-le-Duc (55),,faible,,F  défavorable,,non classé,48.764228046,5.163464922,64,2.501302083,2054835
+,F,Baisieux (59),59044,14.315789474,,,,,[0-20 000[,Baisieux (59),,faible,,F  défavorable,,non classé,50.611171887,3.241219074,67,2.676666667,641250
+,F,Bailly (78),78043,18.295870361,,,,,[0-20 000[,Bailly (78),,faible,,F  défavorable,,non classé,48.836689690,2.080678096,66,2.569494949,516510
+,F,Bailleul (59),59043,6.704914633,,,,,[0-20 000[,Bailleul (59),,faible,,F  défavorable,,non classé,50.727425280,2.737991208,94,2.444078014,1953045
+,F,Bagneux (92),92007,2.137665669,,,,,[20 000-50 000[,Bagneux (92),,faible,,F  défavorable,,non classé,48.798322987,2.309899952,81,2.530493827,5368005
+,F,Baden (56),56008,12.568555759,,,,,[0-20 000[,Baden (56),,moyenne,,F  défavorable,,non classé,47.614993273,-2.903837715,51,2.495424837,590760
+,F,Autun (71),71014,5.690215785,,,,,[0-20 000[,Autun (71),,faible,,F  défavorable,,non classé,46.945536773,4.310600695,75,2.667866667,1826820
+,F,Auray (56),56007,10.024145753,,,,,[0-20 000[,Auray (56),,faible,,F  défavorable,,non classé,47.667705737,-2.990411122,134,2.464651741,1845045
+,F,Auch (32),32013,5.597187529,,,,,[20 000-50 000[,Auch (32),,faible,,F  défavorable,,non classé,43.653430041,0.575190250,120,2.646972222,2918430
+,F,Aubière (63),63014,6.578301424,,,,,[0-20 000[,Aubière (63),,faible,,F  défavorable,,non classé,45.751055839,3.126134119,67,2.477014925,1374975
+,F,Aubenas (07),07019,4.348182788,,,,,[0-20 000[,Aubenas (07),,faible,,F  défavorable,,non classé,44.610212708,4.396389814,52,2.432307692,1645515
+,F,Asnières-sur-Seine (92),92004,2.535679806,,,,,[50 000-100 000[,Asnières-sur-Seine (92),,faible,,F  défavorable,,non classé,48.915353012,2.288038466,212,2.632232704,11606355
+,F,Arles (13),13004,7.037856859,,,,,[50 000-100 000[,Arles (13),,faible,,F  défavorable,,non classé,43.546869238,4.662156426,355,2.304272300,7135695
+,F,Annonay (07),07010,5.588942308,,,,,[0-20 000[,Annonay (07),,moyenne,,F  défavorable,,non classé,45.246090239,4.650269473,90,2.512888889,2246400
+,F,Angoulême (16),16015,3.505425063,,,,,[20 000-50 000[,Angoulême (16),,faible,,F  défavorable,,non classé,45.647258515,0.145144907,141,2.627683215,5661225
+,F,Anglet (64),64024,3.284794248,,,,,[20 000-50 000[,Anglet (64),,faible,,F  défavorable,,non classé,43.491784659,-1.516233734,120,2.535027778,5219505
+,F,Andrésy (78),78015,4.023522129,,,,,[0-20 000[,Andrésy (78),,faible,,F  défavorable,,non classé,48.981545438,2.050257469,49,2.597551020,1744740
+,F,Amiens (80),80021,7.364210684,,,,,[100 000-200 000[,Amiens (80),,faible,,F  défavorable,,non classé,49.900953219,2.290074455,936,2.495612536,18056925
+,F,Alfortville (94),94002,3.714168528,,,,,[20 000-50 000[,Alfortville (94),,moyenne,,F  défavorable,,non classé,48.796084386,2.421245932,157,2.536900212,5924610
+,F,Aix-en-Provence (13),13001,5.810944995,,,,,[100 000-200 000[,Aix-en-Provence (13),,faible,,F  défavorable,,non classé,43.536070838,5.398574446,792,2.396763468,19305810
+,F,Achères (78),78005,3.265619747,,,,,[20 000-50 000[,Achères (78),,faible,,F  défavorable,,non classé,48.971799089,2.090038718,64,2.423020833,2811105
+,F,Abbeville (80),80001,2.711893590,,,,,[20 000-50 000[,Abbeville (80),,faible,,F  défavorable,,non classé,50.108358294,1.832091702,62,2.430376344,3136185
+,E,Weyersheim (67),67529,24.287856072,,,,,[0-20 000[,Weyersheim (67),,moyenne,E  plutôt défavorable,,,non classé,48.716532823,7.830889918,78,2.793376068,450225
+,E,Vitré (35),35360,9.058376202,,,,,[0-20 000[,Vitré (35),,faible,E  plutôt défavorable,,,non classé,48.114081506,-1.193707207,159,2.710062893,2414340
+,E,Villeurbanne (69),69266,6.817922547,,,,,[100 000-200 000[,Villeurbanne (69),,faible,E  plutôt défavorable,,,non classé,45.770770418,4.888458174,989,3.026103809,20117565
+,E,Villeneuve-Tolosane (31),31588,5.395112663,,,,,[0-20 000[,Villeneuve-Tolosane (31),,moyenne,E  plutôt défavorable,,,non classé,43.526670718,1.346488076,49,3.005578231,1276155
+,E,Villeneuve-d'Ascq (59),59009,4.955258347,,,,,[50 000-100 000[,Villeneuve-d'Ascq (59),,faible,E  plutôt défavorable,,,non classé,50.632437239,3.153525722,299,3.087056856,8418330
+,E,Ville-d'Avray (92),92077,5.213311322,,,,,[0-20 000[,Ville-d'Avray (92),,moyenne,E  plutôt défavorable,,,non classé,48.821589559,2.177613115,55,2.879272727,1553715
+,E,Village-Neuf (68),68349,14.847984916,,,,,[0-20 000[,Village-Neuf (68),,faible,E  plutôt défavorable,,,non classé,47.609920071,7.568360215,62,2.941451613,572805
+,E,Vertou (44),44215,2.798863492,,,,,[20 000-50 000[,Vertou (44),,faible,E  plutôt défavorable,,,non classé,47.160373262,-1.470522917,64,2.762135417,3183435
+,E,Verrières-le-Buisson (91),91645,7.127121939,,,,,[0-20 000[,Verrières-le-Buisson (91),,faible,E  plutôt défavorable,,,non classé,48.75044312,2.251712972,107,2.929563863,2083590
+,E,Verdun (55),55545,2.958745045,,,,,[0-20 000[,Verdun (55),,forte,E  plutôt défavorable,,,non classé,49.145483190,5.361418213,50,2.908133333,2418255
+,E,Vénissieux (69),69259,1.085543919,,,,,[50 000-100 000[,Vénissieux (69),,faible,E  plutôt défavorable,,,non classé,45.703772883,4.881376682,69,2.754347826,8829675
+,E,Vendôme (41),41269,8.029721956,,,,,[0-20 000[,Vendôme (41),,faible,E  plutôt défavorable,,,non classé,47.801302669,1.061060572,128,2.826536458,2252880
+,E,Vélizy-Villacoublay (78),78640,3.253241623,,,,,[20 000-50 000[,Vélizy-Villacoublay (78),,faible,E  plutôt défavorable,,,non classé,48.783985823,2.197074855,67,2.920099502,2904795
+,E,Vanves (92),92075,3.339797457,,,,,[20 000-50 000[,Vanves (92),,moyenne,E  plutôt défavorable,,,non classé,48.821522709,2.287394908,92,2.979166667,3759210
+,E,Vannes (56),56260,6.182118832,,,,,[50 000-100 000[,Vannes (56),,faible,E  plutôt défavorable,,,non classé,47.659749377,-2.757143295,315,2.905407407,7184430
+,E,Vandoeuvre-lès-Nancy (54),54547,2.385527798,,,,,[20 000-50 000[,Vandoeuvre-lès-Nancy (54),,moyenne,E  plutôt défavorable,,,non classé,48.657999936,6.165312293,70,2.785571429,4074570
+,E,Tours (37),37261,7.952257167,,,,,[100 000-200 000[,Tours (37),,faible,E  plutôt défavorable,,,non classé,47.398638228,0.696526376,1055,3.032587678,18436275
+,E,Toulouse (31),31555,9.923481085,,,,,[200 000 et plus,Toulouse (31),,moyenne,E  plutôt défavorable,,,8ème / 11de la catégorie,43.596381430,1.431672934,4531,2.883019937,64184130
+,E,Tonnay-Charente (17),17449,7.759699625,,,,,[0-20 000[,Tonnay-Charente (17),,faible,E  plutôt défavorable,,,non classé,45.963376645,-0.874412067,59,2.936949153,1078650
+,E,Thouaré-sur-Loire (44),44204,7.056657803,,,,,[0-20 000[,Thouaré-sur-Loire (44),,faible,E  plutôt défavorable,,,non classé,47.276325687,-1.431621982,64,2.71125,1320030
+,E,Thorigné-Fouillard (35),35334,7.359050445,,,,,[0-20 000[,Thorigné-Fouillard (35),,faible,E  plutôt défavorable,,,non classé,48.156608290,-1.584098676,59,2.914067797,1137375
+,E,Thionville (57),57672,2.956684571,,,,,[20 000-50 000[,Thionville (57),,faible,E  plutôt défavorable,,,non classé,49.375971620,6.129283142,119,2.893781513,5479110
+,E,Talence (33),33522,4.869825810,,,,,[20 000-50 000[,Talence (33),,faible,E  plutôt défavorable,,,non classé,44.806081751,-0.591124593,201,3.048325041,5766120
+,E,Sèvres (92),92072,3.674762408,,,,,[20 000-50 000[,Sèvres (92),,faible,E  plutôt défavorable,,,non classé,48.821476509,2.210522974,79,2.751940928,3196125
+,E,Sèvremoine (49),49301,3.309839960,,,,,[20 000-50 000[,Sèvremoine (49),,faible,E  plutôt défavorable,,,non classé,47.125656039,-0.998341815,80,2.884791667,3466935
+,E,Schiltigheim (67),67447,9.745056741,,,,,[20 000-50 000[,Schiltigheim (67),,faible,E  plutôt défavorable,,,non classé,48.611866026,7.744081993,302,2.888918322,4294485
+,E,Saverne (67),67437,9.864586136,,,,,[0-20 000[,Saverne (67),,faible,E  plutôt défavorable,,,non classé,48.740225007,7.342062382,108,2.911604938,1505385
+,E,Sautron (44),44194,5.938092230,,,,,[0-20 000[,Sautron (44),,faible,E  plutôt défavorable,,,non classé,47.273226935,-1.680472659,45,3.099555556,1068525
+,E,Saumur (49),49328,2.654377880,,,,,[20 000-50 000[,Saumur (49),,faible,E  plutôt défavorable,,,non classé,47.267385352,-0.083041059,71,3.098544601,3661875
+,E,Saujon (17),17421,9.745231797,,,,,[0-20 000[,Saujon (17),,moyenne,E  plutôt défavorable,,,non classé,45.675441719,-0.936728981,66,3.090404040,969705
+,E,Sassenage (38),38474,5.979599015,,,,,[0-20 000[,Sassenage (38),,moyenne,E  plutôt défavorable,,,non classé,45.213096264,5.652421073,65,3.091794872,1535220
+,E,Saintes (17),17415,10.609347269,,,,,[20 000-50 000[,Saintes (17),,faible,E  plutôt défavorable,,,non classé,45.742230016,-0.649623036,255,2.922392157,3422925
+,E,Sainte-Foy-lès-Lyon (69),69202,6.592407365,,,,,[20 000-50 000[,Sainte-Foy-lès-Lyon (69),,faible,E  plutôt défavorable,,,non classé,45.735978140,4.793431739,142,2.752699531,2969325
+,E,Saint-Sulpice-la-Pointe (81),81271,14.439220954,,,,,[0-20 000[,Saint-Sulpice-la-Pointe (81),,moyenne,E  plutôt défavorable,,,non classé,43.758988516,1.686599978,122,2.938387978,1206090
+,E,Saint-Sébastien-sur-Loire (44),44190,6.921702888,,,,,[20 000-50 000[,Saint-Sébastien-sur-Loire (44),,faible,E  plutôt défavorable,,,non classé,47.203102479,-1.499204274,184,2.975289855,3627720
+,E,Saint-Rémy-lès-Chevreuse (78),78575,7.948717949,,,,,[0-20 000[,Saint-Rémy-lès-Chevreuse (78),,faible,E  plutôt défavorable,,,non classé,48.703873758,2.078989250,61,3.063114754,1053000
+,E,Saint-Rémy-de-Provence (13),13100,10.195588847,,,,,[0-20 000[,Saint-Rémy-de-Provence (13),,faible,E  plutôt défavorable,,,non classé,43.783424902,4.853666653,96,3.062048611,1297620
+,E,Saint-Priest (69),69290,1.919553268,,,,,[20 000-50 000[,Saint-Priest (69),,faible,E  plutôt défavorable,,,non classé,45.701466556,4.948820717,87,2.810651341,6188940
+,E,Saint-Omer (62),62765,5.054351589,,,,,[0-20 000[,Saint-Omer (62),,faible,E  plutôt défavorable,,,non classé,50.767978172,2.263348815,71,2.767370892,1949805
+,E,Saint-Maur-des-Fossés (94),94068,3.912248141,,,,,[50 000-100 000[,Saint-Maur-des-Fossés (94),,forte,E  plutôt défavorable,,,non classé,48.799067780,2.493864505,269,2.915600991,10110555
+,E,Saint-Louis (68),68297,5.813390175,,,,,[20 000-50 000[,Saint-Louis (68),,moyenne,E  plutôt défavorable,,,non classé,47.601655337,7.540618727,120,3.096194444,2786670
+,E,Saint-Jean-du-Gard (30),30269,20.626735422,,,,,[0-20 000[,Saint-Jean-du-Gard (30),,faible,E  plutôt défavorable,,,non classé,44.107175038,3.877859060,52,2.752051282,340335
+,E,Saint-Jean-de-Braye (45),45284,3.140950137,,,,,[20 000-50 000[,Saint-Jean-de-Braye (45),,faible,E  plutôt défavorable,,,non classé,47.917849762,1.972415702,63,2.861798942,2750760
+,E,Saint-Gély-du-Fesc (34),34255,8.253515386,,,,,[0-20 000[,Saint-Gély-du-Fesc (34),,faible,E  plutôt défavorable,,,non classé,43.689652367,3.809695775,79,3.010970464,1324890
+,E,Saint-Évarzec (29),29247,14.124293785,,,,,[0-20 000[,Saint-Évarzec (29),,moyenne,E  plutôt défavorable,,,non classé,47.954169430,-4.009840480,46,2.974855072,477900
+,E,Saint-Brieuc (22),22278,11.266917043,,,,,[20 000-50 000[,Saint-Brieuc (22),,faible,E  plutôt défavorable,,,non classé,48.514980605,-2.761545528,485,2.894591065,6074865
+,E,Saint-Avertin (37),37208,4.870563117,,,,,[0-20 000[,Saint-Avertin (37),,faible,E  plutôt défavorable,,,non classé,47.357156112,0.737544440,65,2.774153846,2023380
+,E,Saint-Aubin-du-Cormier (35),35253,16.027325276,,,,,[0-20 000[,Saint-Aubin-du-Cormier (35),,faible,E  plutôt défavorable,,,non classé,48.258549965,-1.421364624,61,2.943879781,513810
+,E,Rueil-Malmaison (92),92063,5.626958245,,,,,[50 000-100 000[,Rueil-Malmaison (92),,faible,E  plutôt défavorable,,,non classé,48.869189737,2.177340631,429,2.936324786,10556325
+,E,Royan (17),17306,11.757021555,,,,,[0-20 000[,Royan (17),,faible,E  plutôt défavorable,,,non classé,45.634657424,-1.017914034,209,2.838803828,2480220
+,E,Rouen (76),76540,7.183268705,,,,,[100 000-200 000[,Rouen (76),,faible,E  plutôt défavorable,,,non classé,49.441346010,1.092567843,759,2.873315766,14865795
+,E,Ronchin (59),59507,7.706826046,,,,,[0-20 000[,Ronchin (59),,faible,E  plutôt défavorable,,,non classé,50.604473895,3.091685855,144,3.023263889,2574990
+,E,Rochefort (17),17299,13.432028943,,,,,[20 000-50 000[,Rochefort (17),,faible,E  plutôt défavorable,,,non classé,45.943234454,-0.972356446,314,3.013885350,3246345
+,E,Riedisheim (68),68271,5.044341388,,,,,[0-20 000[,Riedisheim (68),,faible,E  plutôt défavorable,,,non classé,47.739693150,7.365820561,60,3.077111111,1659285
+,E,Redon (35),35236,11.362357971,,,,,[0-20 000[,Redon (35),,faible,E  plutôt défavorable,,,non classé,47.660973433,-2.080085687,99,2.940808081,1200015
+,E,Prévessin-Moëns (01),01313,9.886121887,,,,,[0-20 000[,Prévessin-Moëns (01),,moyenne,E  plutôt défavorable,,,non classé,46.258272280,6.072232519,77,2.858658009,1078785
+,E,Pont-Sainte-Maxence (60),60509,5.613472334,,,,,[0-20 000[,Pont-Sainte-Maxence (60),,faible,E  plutôt défavorable,,,non classé,49.304971173,2.607980856,66,3.089494949,1683450
+,E,Poitiers (86),86194,7.435113289,,,,,[50 000-100 000[,Poitiers (86),,moyenne,E  plutôt défavorable,,,non classé,46.583920773,0.359947653,630,2.780428571,11874735
+,E,Ploufragan (22),22215,6.229163011,,,,,[0-20 000[,Ploufragan (22),,faible,E  plutôt défavorable,,,non classé,48.487748297,-2.808516309,65,2.930512821,1538730
+,E,Pertuis (84),84089,3.426868637,,,,,[20 000-50 000[,Pertuis (84),,faible,E  plutôt défavorable,,,non classé,43.687235746,5.520524803,67,3.006218905,2718225
+,E,Périgueux (24),24322,2.106178122,,,,,[20 000-50 000[,Périgueux (24),,faible,E  plutôt défavorable,,,non classé,45.191870487,0.711825550,58,2.948735632,4038120
+,E,Pau (64),64445,8.388240929,,,,,[50 000-100 000[,Pau (64),,faible,E  plutôt défavorable,,,non classé,43.320018977,-0.350337918,625,2.923216,10428885
+,E,Pantin (93),93055,3.397058292,,,,,[50 000-100 000[,Pantin (93),,faible,E  plutôt défavorable,,,non classé,48.898309388,2.408721475,182,2.763827839,7471170
+,E,Palaiseau (91),91477,5.978898007,,,,,[20 000-50 000[,Palaiseau (91),,faible,E  plutôt défavorable,,,non classé,48.714676588,2.228814881,199,3.010284757,4606200
+,E,Pacé (35),35210,4.505270316,,,,,[0-20 000[,Pacé (35),,faible,E  plutôt défavorable,,,non classé,48.152548244,-1.777166438,51,2.882352941,1588140
+,E,Oyonnax (01),01283,4.122523161,,,,,[20 000-50 000[,Oyonnax (01),,faible,E  plutôt défavorable,,,non classé,46.260543586,5.653443209,92,3.073695652,3045465
+,E,Oullins (69),69149,8.675316838,,,,,[20 000-50 000[,Oullins (69),,faible,E  plutôt défavorable,,,non classé,45.714966554,4.802994538,224,3.002589286,3579120
+,E,Ouistreham (14),14488,5.813315784,,,,,[0-20 000[,Ouistreham (14),,moyenne,E  plutôt défavorable,,,non classé,49.274528011,-0.257718318,51,2.958692810,1230795
+,E,Orsay (91),91471,6.115841228,,,,,[0-20 000[,Orsay (91),,faible,E  plutôt défavorable,,,non classé,48.700409395,2.187370512,101,2.800264026,2251530
+,E,Orléans (45),45234,7.527312645,,,,,[100 000-200 000[,Orléans (45),,faible,E  plutôt défavorable,,,non classé,47.882863421,1.916103575,839,2.967679778,15495570
+,E,Noyal-sur-Vilaine (35),35207,17.416300304,,,,,[0-20 000[,Noyal-sur-Vilaine (35),,faible,E  plutôt défavorable,,,non classé,48.091404462,-1.505488665,100,2.805,798390
+,E,Niort (79),79191,11.117701890,,,,,[50 000-100 000[,Niort (79),,faible,E  plutôt défavorable,,,non classé,46.328260242,-0.465353019,624,2.949941239,7965675
+,E,Nevers (58),58194,7.100947796,,,,,[20 000-50 000[,Nevers (58),,faible,E  plutôt défavorable,,,non classé,46.988119491,3.156891310,224,2.908377976,4486725
+,E,Muret (31),31395,3.649779823,,,,,[20 000-50 000[,Muret (31),,faible,E  plutôt défavorable,,,non classé,43.449107778,1.307846794,85,2.771372549,3402945
+,E,Mulhouse (68),68224,2.981678731,,,,,[100 000-200 000[,Mulhouse (68),,faible,E  plutôt défavorable,,,non classé,47.749163303,7.325700475,315,2.992878307,14714865
+,E,Mouvaux (59),59421,5.027765271,,,,,[0-20 000[,Mouvaux (59),,faible,E  plutôt défavorable,,,non classé,50.704101635,3.135932151,65,2.729692308,1799010
+,E,Moret-Loing-et-Orvanne (77),77316,7.063167188,,,,,[0-20 000[,Moret-Loing-et-Orvanne (77),,faible,E  plutôt défavorable,,,non classé,48.365092921,2.811725858,85,2.766078431,1681965
+,E,Montgermont (35),35189,16.990291262,,,,,[0-20 000[,Montgermont (35),,moyenne,E  plutôt défavorable,,,non classé,48.153837677,-1.717294778,54,2.962901235,444960
+,E,Montesson (78),78418,6.349414152,,,,,[0-20 000[,Montesson (78),,faible,E  plutôt défavorable,,,non classé,48.917226394,2.139926791,93,2.894086022,2062395
+,E,Montélier (26),26197,13.490311504,,,,,[0-20 000[,Montélier (26),,faible,E  plutôt défavorable,,,non classé,44.942642350,5.020965706,55,2.822666667,550395
+,E,Montech (82),82125,12.386850881,,,,,[0-20 000[,Montech (82),,moyenne,E  plutôt défavorable,,,non classé,43.952412412,1.237646756,71,2.925821596,850095
+,E,Montbéliard (25),25388,5.414163769,,,,,[20 000-50 000[,Montbéliard (25),,faible,E  plutôt défavorable,,,non classé,47.515516982,6.791481474,135,2.991728395,3416040
+,E,Mont-Saint-Aignan (76),76451,3.167229730,,,,,[0-20 000[,Mont-Saint-Aignan (76),,moyenne,E  plutôt défavorable,,,non classé,49.467657717,1.081697209,58,2.723620690,2557440
+,E,Mons-en-Baroeul (59),59410,3.692160153,,,,,[20 000-50 000[,Mons-en-Baroeul (59),,faible,E  plutôt défavorable,,,non classé,50.643247870,3.108767788,76,2.977412281,2815425
+,E,Meyzieu (69),69282,3.818644684,,,,,[20 000-50 000[,Meyzieu (69),,faible,E  plutôt défavorable,,,non classé,45.777089969,5.006326793,123,2.865609756,4454460
+,E,Meudon (92),92048,2.934168726,,,,,[20 000-50 000[,Meudon (92),,faible,E  plutôt défavorable,,,non classé,48.803727580,2.226962878,128,2.7025,6119280
+,E,Mauguio (34),34154,4.510045100,,,,,[0-20 000[,Mauguio (34),,faible,E  plutôt défavorable,,,non classé,43.592827947,4.004256933,75,2.978933333,2304855
+,E,Martigues (13),13056,2.500871205,,,,,[20 000-50 000[,Martigues (13),,faible,E  plutôt défavorable,,,non classé,43.379892049,5.049454023,117,2.702279202,6585705
+,E,Martignas-sur-Jalle (33),33273,10.134209806,,,,,[0-20 000[,Martignas-sur-Jalle (33),,faible,E  plutôt défavorable,,,non classé,44.845026722,-0.795499118,71,2.831220657,985770
+,E,Marcoussis (91),91363,14.870345336,,,,,[0-20 000[,Marcoussis (91),,faible,E  plutôt défavorable,,,non classé,48.646332189,2.206213937,115,2.923884058,1098495
+,E,Lunéville (54),54329,7.917699020,,,,,[0-20 000[,Lunéville (54),,faible,E  plutôt défavorable,,,non classé,48.592024466,6.498103247,142,2.794859155,2506410
+,E,Louviers (27),27375,2.858992340,,,,,[0-20 000[,Louviers (27),,faible,E  plutôt défavorable,,,non classé,49.220609916,1.153400302,50,2.7512,2502630
+,E,Lormont (33),33249,2.193831462,,,,,[20 000-50 000[,Lormont (33),,faible,E  plutôt défavorable,,,non classé,44.876597257,-0.519774925,48,2.708055556,3138345
+,E,Loos (59),59360,2.989672042,,,,,[20 000-50 000[,Loos (59),,faible,E  plutôt défavorable,,,non classé,50.608350368,3.020660965,63,2.805449735,2980260
+,E,Logonna-Daoulas (29),29137,29.245283019,,,,,[0-20 000[,Logonna-Daoulas (29),,moyenne,E  plutôt défavorable,,,non classé,48.328658748,-4.288951015,60,2.874777778,286200
+,E,Lognes (77),77258,5.071790842,,,,,[0-20 000[,Lognes (77),,faible,E  plutôt défavorable,,,non classé,48.833280602,2.633463632,68,3.048431373,1889865
+,E,Lingolsheim (67),67267,2.746513006,,,,,[0-20 000[,Lingolsheim (67),,faible,E  plutôt défavorable,,,non classé,48.554487585,7.680938407,49,2.811360544,2506815
+,E,Lille (59),59350,11.439511272,,,,,[200 000 et plus,Lille (59),,faible,E  plutôt défavorable,,,7ème / 11de la catégorie,50.631718317,3.047832723,2595,3.031352601,31379400
+,E,Liffré (35),35152,11.031366295,,,,,[0-20 000[,Liffré (35),,faible,E  plutôt défavorable,,,non classé,48.204097581,-1.514209078,81,2.960617284,1015740
+,E,Léognan (33),33238,6.808014005,,,,,[0-20 000[,Léognan (33),,faible,E  plutôt défavorable,,,non classé,44.719146044,-0.614707684,66,2.717575758,1388070
+,E,Le Vésinet (78),78650,5.670841902,,,,,[0-20 000[,Le Vésinet (78),,moyenne,E  plutôt défavorable,,,non classé,48.893864059,2.130393120,91,2.935384615,2166345
+,E,Le Touvet (38),38511,21.498771499,,,,,[0-20 000[,Le Touvet (38),,faible,E  plutôt défavorable,,,non classé,45.351495957,5.946157941,68,2.718725490,439560
+,E,Le Relecq-Kerhuon (29),29235,9.095679552,,,,,[0-20 000[,Le Relecq-Kerhuon (29),,faible,E  plutôt défavorable,,,non classé,48.403174987,-4.401467373,102,2.960228758,1543590
+,E,Le Mans (72),72181,6.357043450,,,,,[100 000-200 000[,Le Mans (72),,faible,E  plutôt défavorable,,,non classé,47.988525672,0.200030494,876,2.980319635,19303785
+,E,Laval (53),53130,12.062555565,,,,,[20 000-50 000[,Laval (53),,faible,E  plutôt défavorable,,,non classé,48.060856547,-0.766005687,581,2.805811819,6681420
+,E,Lattes (34),34129,3.775394019,,,,,[0-20 000[,Lattes (34),,faible,E  plutôt défavorable,,,non classé,43.563859406,3.902262229,61,3.034918033,2252745
+,E,Lanton (33),33229,18.141263941,,,,,[0-20 000[,Lanton (33),,faible,E  plutôt défavorable,,,non classé,44.774474425,-0.976985580,113,2.786696165,907875
+,E,Lannion (22),22113,8.017749987,,,,,[0-20 000[,Lannion (22),,faible,E  plutôt défavorable,,,non classé,48.743349671,-3.461597997,151,2.884988962,2677185
+,E,Landerneau (29),29103,5.556958828,,,,,[0-20 000[,Landerneau (29),,faible,E  plutôt défavorable,,,non classé,48.450752897,-4.264345382,83,2.964096386,2137860
+,E,Landéda (29),29101,17.701601573,,,,,[0-20 000[,Landéda (29),,faible,E  plutôt défavorable,,,non classé,48.588944936,-4.576968080,62,3.064086022,480465
+,E,Lambersart (59),59328,8.183069013,,,,,[20 000-50 000[,Lambersart (59),,faible,E  plutôt défavorable,,,non classé,50.652205301,3.024911743,217,2.859047619,3728430
+,E,La Riche (37),37195,7.521697203,,,,,[0-20 000[,La Riche (37),,faible,E  plutôt défavorable,,,non classé,47.381269267,0.637590445,74,2.832297297,1399950
+,E,La Ravoire (73),73213,8.488564018,,,,,[0-20 000[,La Ravoire (73),,faible,E  plutôt défavorable,,,non classé,45.556132820,5.960260805,70,2.951095238,1145070
+,E,La Madeleine (59),59368,4.987531172,,,,,[20 000-50 000[,La Madeleine (59),,faible,E  plutôt défavorable,,,non classé,50.654888314,3.069637225,103,3.000226537,2869155
+,E,L'Isle-d'Abeau (38),38193,3.421674754,,,,,[0-20 000[,L'Isle-d'Abeau (38),,moyenne,E  plutôt défavorable,,,non classé,45.618173316,5.222904239,55,2.973757576,2169990
+,E,Jouy-en-Josas (78),78322,8.356545961,,,,,[0-20 000[,Jouy-en-Josas (78),,faible,E  plutôt défavorable,,,non classé,48.766163543,2.162663960,66,2.798333333,1114695
+,E,Issy-les-Moulineaux (92),92040,2.441698955,,,,,[50 000-100 000[,Issy-les-Moulineaux (92),,faible,E  plutôt défavorable,,,non classé,48.82347434,2.264498233,163,2.807893661,9233325
+,E,Issoire (63),63178,9.207475106,,,,,[0-20 000[,Issoire (63),,faible,E  plutôt défavorable,,,non classé,45.545557789,3.244993246,130,2.786641026,1979370
+,E,Igny (91),91312,7.557436518,,,,,[0-20 000[,Igny (91),,faible,E  plutôt défavorable,,,non classé,48.736225061,2.224420217,72,2.938101852,1339740
+,E,Ifs (14),14341,11.981645139,,,,,[0-20 000[,Ifs (14),,faible,E  plutôt défavorable,,,non classé,49.140577909,-0.342694064,134,2.890447761,1588680
+,E,Houilles (78),78311,7.321152450,,,,,[20 000-50 000[,Houilles (78),,faible,E  plutôt défavorable,,,non classé,48.926578136,2.187464026,225,2.851259259,4278015
+,E,Hérouville-Saint-Clair (14),14327,2.643055372,,,,,[20 000-50 000[,Hérouville-Saint-Clair (14),,faible,E  plutôt défavorable,,,non classé,49.207356062,-0.331022626,58,2.899425287,3064635
+,E,Hennebont (56),56083,5.441741357,,,,,[0-20 000[,Hennebont (56),,faible,E  plutôt défavorable,,,non classé,47.807556604,-3.269715599,80,2.811041667,2108700
+,E,Hendaye (64),64260,5.301524188,,,,,[0-20 000[,Hendaye (64),,faible,E  plutôt défavorable,,,non classé,43.365637369,-1.76396662,82,2.916260163,2240865
+,E,Gosné (35),35121,43.129388164,,,,,[0-20 000[,Gosné (35),,faible,E  plutôt défavorable,,,non classé,48.250352390,-1.458608536,85,2.786588235,269190
+,E,Givry (71),71221,23.293607801,,,,,[0-20 000[,Givry (71),,faible,E  plutôt défavorable,,,non classé,46.770212273,4.754414970,82,2.791422764,498420
+,E,Gilly-sur-Isère (73),73124,21.688355022,,,,,[0-20 000[,Gilly-sur-Isère (73),,faible,E  plutôt défavorable,,,non classé,45.653102038,6.349853357,61,2.747103825,404595
+,E,Gennevilliers (92),92036,1.629048507,,,,,[20 000-50 000[,Gennevilliers (92),,moyenne,E  plutôt défavorable,,,non classé,48.934519055,2.293849880,76,3.050307018,6298155
+,E,Genas (69),69277,8.713561470,,,,,[0-20 000[,Genas (69),,faible,E  plutôt défavorable,,,non classé,45.729720993,5.015903442,105,2.853841270,1704240
+,E,Gap (05),05061,4.852346526,,,,,[20 000-50 000[,Gap (05),,faible,E  plutôt défavorable,,,non classé,44.579860060,6.064860521,189,2.714814815,5508675
+,E,Frontignan (34),34108,3.685449136,,,,,[20 000-50 000[,Frontignan (34),,moyenne,E  plutôt défavorable,,,non classé,43.448245887,3.749235224,80,2.88425,3040335
+,E,Fos-sur-Mer (13),13039,3.651973347,,,,,[0-20 000[,Fos-sur-Mer (13),,moyenne,E  plutôt défavorable,,,non classé,43.455681211,4.904521339,56,2.858214286,2107080
+,E,Fontenay-sous-Bois (94),94033,2.246181491,,,,,[50 000-100 000[,Fontenay-sous-Bois (94),,faible,E  plutôt défavorable,,,non classé,48.851104638,2.473954098,113,2.935634218,7212240
+,E,Fontenay-aux-Roses (92),92032,6.966040552,,,,,[20 000-50 000[,Fontenay-aux-Roses (92),,faible,E  plutôt défavorable,,,non classé,48.789730131,2.287234936,163,2.785930470,3255795
+,E,Fontainebleau (77),77186,10.531964849,,,,,[0-20 000[,Fontainebleau (77),,faible,E  plutôt défavorable,,,non classé,48.406685651,2.680313964,155,3.094645161,2012445
+,E,Fondettes (37),37109,5.066921606,,,,,[0-20 000[,Fondettes (37),,faible,E  plutôt défavorable,,,non classé,47.411101248,0.603284318,52,2.874615385,1412100
+,E,Fleury-les-Aubrais (45),45147,2.574738950,,,,,[20 000-50 000[,Fleury-les-Aubrais (45),,faible,E  plutôt défavorable,,,non classé,47.938926619,1.919891156,52,2.747435897,2831355
+,E,Epagny Metz-Tessy (74),74112,7.081038552,,,,,[0-20 000[,Epagny Metz-Tessy (74),,faible,E  plutôt défavorable,,,non classé,45.944037040,6.082269774,54,3.005740741,1029510
+,E,Échirolles (38),38151,2.426439827,,,,,[20 000-50 000[,Échirolles (38),,faible,E  plutôt défavorable,,,non classé,45.147164718,5.715356002,83,2.961445783,4840425
+,E,Dreux (28),28134,1.936920941,,,,,[20 000-50 000[,Dreux (28),,moyenne,E  plutôt défavorable,,,non classé,48.748520321,1.359318541,59,3.004971751,4181895
+,E,Douarnenez (29),29046,10.595178838,,,,,[0-20 000[,Douarnenez (29),,faible,E  plutôt défavorable,,,non classé,48.080652656,-4.327842201,145,2.750528736,1898505
+,E,Dole (39),39198,5.131684974,,,,,[20 000-50 000[,Dole (39),,moyenne,E  plutôt défavorable,,,non classé,47.075545254,5.500624461,102,3.089117647,3183165
+,E,Dinard (35),35093,12.853470437,,,,,[0-20 000[,Dinard (35),,faible,E  plutôt défavorable,,,non classé,48.624180595,-2.061982861,129,3.012351421,1365390
+,E,Dieulefit (26),26114,18.904197373,,,,,[0-20 000[,Dieulefit (26),,faible,E  plutôt défavorable,,,non classé,44.531032991,5.065283756,59,2.788361582,421335
+,E,Die (26),26113,17.666303162,,,,,[0-20 000[,Die (26),,faible,E  plutôt défavorable,,,non classé,44.748221765,5.376407748,80,3.000625,618975
+,E,Decize (58),58095,11.596303678,,,,,[0-20 000[,Decize (58),,faible,E  plutôt défavorable,,,non classé,46.808859277,3.466307476,61,2.924644809,745065
+,E,Décines-Charpieu (69),69275,2.262037270,,,,,[20 000-50 000[,Décines-Charpieu (69),,faible,E  plutôt défavorable,,,non classé,45.771727745,4.961427046,62,2.756935484,3759885
+,E,Cysoing (59),59168,11.523941983,,,,,[0-20 000[,Cysoing (59),,faible,E  plutôt défavorable,,,non classé,50.563912304,3.213987042,56,2.780595238,679455
+,E,Crest (26),26108,26.014319809,,,,,[0-20 000[,Crest (26),,faible,E  plutôt défavorable,,,non classé,44.733566591,5.022175841,207,2.950563607,1131300
+,E,Couëron (44),44047,6.507177033,,,,,[20 000-50 000[,Couëron (44),,faible,E  plutôt défavorable,,,non classé,47.230998503,-1.729290026,132,2.820959596,2821500
+,E,Cordemais (44),44045,13.813651138,,,,,[0-20 000[,Cordemais (44),,faible,E  plutôt défavorable,,,non classé,47.296803607,-1.835710810,48,2.767083333,498420
+,E,Compiègne (60),60159,5.638630831,,,,,[20 000-50 000[,Compiègne (60),,moyenne,E  plutôt défavorable,,,non classé,49.399060148,2.853172494,215,2.854961240,5434830
+,E,Clisson (44),44043,17.910447761,,,,,[0-20 000[,Clisson (44),,faible,E  plutôt défavorable,,,non classé,47.097896998,-1.270425981,120,2.797305556,949725
+,E,Clermont-Ferrand (63),63113,7.421891426,,,,,[100 000-200 000[,Clermont-Ferrand (63),,faible,E  plutôt défavorable,,,non classé,45.785649299,3.115545429,1016,2.715285433,19262610
+,E,Chinon (37),37072,6.939371804,,,,,[0-20 000[,Chinon (37),,faible,E  plutôt défavorable,,,non classé,47.172300160,0.245084665,56,2.735059524,1108890
+,E,Chevigny-Saint-Sauveur (21),21171,7.567849687,,,,,[0-20 000[,Chevigny-Saint-Sauveur (21),,faible,E  plutôt défavorable,,,non classé,47.299900727,5.136569679,85,2.833019608,1551960
+,E,Chéreng (59),59146,25.761124122,,,,,[0-20 000[,Chéreng (59),,faible,E  plutôt défavorable,,,non classé,50.610889077,3.209721546,75,3.057733333,403515
+,E,Chaville (92),92022,5.166814290,,,,,[20 000-50 000[,Chaville (92),,faible,E  plutôt défavorable,,,non classé,48.807608356,2.192340611,103,2.775631068,2743470
+,E,Chatou (78),78146,4.625168626,,,,,[20 000-50 000[,Chatou (78),,faible,E  plutôt défavorable,,,non classé,48.896557464,2.153934583,143,2.959953380,4203090
+,E,Chartres (28),28085,6.451279934,,,,,[20 000-50 000[,Chartres (28),,moyenne,E  plutôt défavorable,,,non classé,48.447146488,1.505706106,242,3.088292011,5231520
+,E,Charleville-Mézières (08),08105,4.262885052,,,,,[20 000-50 000[,Charleville-Mézières (08),,faible,E  plutôt défavorable,,,non classé,49.775296580,4.717246560,197,2.852521151,6302070
+,E,Chaponost (69),69043,15.389996502,,,,,[0-20 000[,Chaponost (69),,faible,E  plutôt défavorable,,,non classé,45.708862332,4.745479037,127,3.037060367,1157895
+,E,Chantepie (35),35055,11.561807496,,,,,[0-20 000[,Chantepie (35),,faible,E  plutôt défavorable,,,non classé,48.081713472,-1.603825309,120,2.713861111,1401165
+,E,Chambray-lès-Tours (37),37050,5.282299965,,,,,[0-20 000[,Chambray-lès-Tours (37),,moyenne,E  plutôt défavorable,,,non classé,47.331265207,0.716803612,58,3.040862069,1558980
+,E,Challes-les-Eaux (73),73064,15.012815818,,,,,[0-20 000[,Challes-les-Eaux (73),,faible,E  plutôt défavorable,,,non classé,45.549346465,5.983575591,80,2.888375,737370
+,E,Cenon (33),33119,2.339037301,,,,,[20 000-50 000[,Cenon (33),,faible,E  plutôt défavorable,,,non classé,44.854832567,-0.521018807,56,2.787559524,3289815
+,E,Castelginest (31),31116,5.196587901,,,,,[0-20 000[,Castelginest (31),,faible,E  plutôt défavorable,,,non classé,43.697413274,1.435587836,51,2.737320261,1376865
+,E,Carrières-sur-Seine (78),78124,11.914893617,,,,,[0-20 000[,Carrières-sur-Seine (78),,faible,E  plutôt défavorable,,,non classé,48.911933506,2.178382353,174,2.844693487,2062125
+,E,Cagnes-sur-Mer (06),06027,1.783495651,,,,,[20 000-50 000[,Cagnes-sur-Mer (06),,faible,E  plutôt défavorable,,,non classé,43.671516208,7.152757034,86,2.715775194,6736770
+,E,Cachan (94),94016,3.608315678,,,,,[20 000-50 000[,Cachan (94),,faible,E  plutôt défavorable,,,non classé,48.791612165,2.331533132,108,3.073055556,4078080
+,E,Buxerolles (86),86041,5.495603517,,,,,[0-20 000[,Buxerolles (86),,faible,E  plutôt défavorable,,,non classé,46.605409551,0.369205480,52,2.892051282,1351080
+,E,Buc (78),78117,20.930634838,,,,,[0-20 000[,Buc (78),,moyenne,E  plutôt défavorable,,,non classé,48.771833888,2.123942867,119,3.036582633,780435
+,E,Bruges (33),33075,4.213561013,,,,,[0-20 000[,Bruges (33),,faible,E  plutôt défavorable,,,non classé,44.888946944,-0.600427664,74,3.013693694,2434995
+,E,Bron (69),69029,3.433999026,,,,,[20 000-50 000[,Bron (69),,faible,E  plutôt défavorable,,,non classé,45.734485690,4.911681595,138,2.980410628,5543100
+,E,Briançon (05),05023,5.857740586,,,,,[0-20 000[,Briançon (05),,faible,E  plutôt défavorable,,,non classé,44.899498604,6.649475240,67,2.719552239,1613250
+,E,Brest (29),29019,5.181495888,,,,,[100 000-200 000[,Brest (29),,faible,E  plutôt défavorable,,,non classé,48.400499783,-4.502790785,692,2.960467245,18811170
+,E,Bourgoin-Jallieu (38),38053,7.377671694,,,,,[20 000-50 000[,Bourgoin-Jallieu (38),,faible,E  plutôt défavorable,,,non classé,45.602202795,5.273937621,199,2.824271357,3732885
+,E,Bourges (18),18033,3.844100374,,,,,[50 000-100 000[,Bourges (18),,faible,E  plutôt défavorable,,,non classé,47.074957201,2.404171376,241,2.749211618,8849925
+,E,Bourg-lès-Valence (26),26058,3.536208786,,,,,[20 000-50 000[,Bourg-lès-Valence (26),,moyenne,E  plutôt défavorable,,,non classé,44.965109419,4.894116364,65,2.751589744,2710530
+,E,Bourg-la-Reine (92),92014,4.773269690,,,,,[20 000-50 000[,Bourg-la-Reine (92),,moyenne,E  plutôt défavorable,,,non classé,48.779907363,2.316430108,89,3.033220974,2771685
+,E,Bouguenais (44),44020,2.992283059,,,,,[0-20 000[,Bouguenais (44),,faible,E  plutôt défavorable,,,non classé,47.170906168,-1.617397529,56,2.853154762,2571615
+,E,Bono (56),56262,26.842778014,,,,,[0-20 000[,Bono (56),,faible,E  plutôt défavorable,,,non classé,47.636901768,-2.939501151,57,2.860584795,316845
+,E,Bondues (59),59090,5.275731634,,,,,[0-20 000[,Bondues (59),,moyenne,E  plutôt défavorable,,,non classé,50.709665623,3.095290830,52,3.057371795,1356210
+,E,Bois-le-Roi (77),77037,11.579675078,,,,,[0-20 000[,Bois-le-Roi (77),,moyenne,E  plutôt défavorable,,,non classé,48.476036197,2.701595291,66,2.839040404,781110
+,E,Bois-Guillaume (76),76108,4.202919923,,,,,[0-20 000[,Bois-Guillaume (76),,faible,E  plutôt défavorable,,,non classé,49.471761571,1.120226374,57,2.850994152,1830870
+,E,Betton (35),35024,6.861522010,,,,,[0-20 000[,Betton (35),,faible,E  plutôt défavorable,,,non classé,48.181236042,-1.645895527,75,3.0828,1514970
+,E,Besançon (25),25056,6.250751292,,,,,[100 000-200 000[,Besançon (25),,faible,E  plutôt défavorable,,,non classé,47.255387225,6.019486965,701,3.006814075,15722910
+,E,Bayeux (14),14047,13.308687616,,,,,[0-20 000[,Bayeux (14),,faible,E  plutôt défavorable,,,non classé,49.277655919,-0.704625495,167,3.099820359,1825875
+,E,Balma (31),31044,5.916798829,,,,,[0-20 000[,Balma (31),,faible,E  plutôt défavorable,,,non classé,43.611525873,1.504591383,91,2.838827839,2213190
+,E,Aytré (17),17028,9.074201700,,,,,[0-20 000[,Aytré (17),,faible,E  plutôt défavorable,,,non classé,46.134271716,-1.114549133,77,2.851991342,1175310
+,E,Avignon (84),84007,7.577561757,,,,,[50 000-100 000[,Avignon (84),,faible,E  plutôt défavorable,,,non classé,43.935244834,4.840715725,672,2.833273810,12471030
+,E,Aurillac (15),15014,5.895045080,,,,,[20 000-50 000[,Aurillac (15),,faible,E  plutôt défavorable,,,non classé,44.924523369,2.441624538,145,2.995747126,3503790
+,E,Armentières (59),59017,4.197481511,,,,,[20 000-50 000[,Armentières (59),,faible,E  plutôt défavorable,,,non classé,50.691379754,2.879715533,100,2.960833333,3377025
+,E,Arcueil (94),94003,4.033940743,,,,,[20 000-50 000[,Arcueil (94),,faible,E  plutôt défavorable,,,non classé,48.805880360,2.333510250,81,2.988888889,2911545
+,E,Apt (84),84003,4.867634500,,,,,[0-20 000[,Apt (84),,faible,E  plutôt défavorable,,,non classé,43.879393265,5.389217578,52,3.006153846,1580850
+,E,Antony (92),92002,6.831699084,,,,,[50 000-100 000[,Antony (92),,faible,E  plutôt défavorable,,,non classé,48.750341260,2.299326810,416,2.987323718,8398350
+,E,Annemasse (74),74012,4.566079735,,,,,[20 000-50 000[,Annemasse (74),,faible,E  plutôt défavorable,,,non classé,46.190973099,6.242507043,151,2.972626932,4730535
+,E,Alès (30),30007,3.477608206,,,,,[20 000-50 000[,Alès (30),,faible,E  plutôt défavorable,,,non classé,44.125009913,4.088285013,134,2.727611940,5395950
+,E,Alençon (61),61001,4.362968349,,,,,[20 000-50 000[,Alençon (61),,faible,E  plutôt défavorable,,,non classé,48.431819308,0.091540692,113,3.041209440,3527415
+,E,Albertville (73),73011,8.081868276,,,,,[0-20 000[,Albertville (73),,faible,E  plutôt défavorable,,,non classé,45.668398728,6.404603386,152,3.089100877,2572425
+,D,Voisins-le-Bretonneux (78),78688,5.427529140,,,,,[0-20 000[,Voisins-le-Bretonneux (78),D  moyen,faible,,,,non classé,48.758677648,2.048506918,60,3.396222222,1517265
+,D,Vincennes (94),94080,4.372856197,,,,,[20 000-50 000[,Vincennes (94),D  moyen,moyenne,,,,non classé,48.847373205,2.437986507,212,3.230566038,6730155
+,D,Villefontaine (38),38553,2.251648528,,,,,[0-20 000[,Villefontaine (38),D  moyen,moyenne,,,,non classé,45.613628945,5.155476734,42,3.265476190,2518155
+,D,Vichy (03),03310,4.101218062,,,,,[20 000-50 000[,Vichy (03),D  moyen,faible,,,,non classé,46.130005138,3.424420812,95,3.264912281,3291705
+,D,Valence (26),26362,11.620276262,,,,,[50 000-100 000[,Valence (26),D  moyen,faible,,,,non classé,44.922981167,4.914440131,674,3.191913947,8434395
+,D,Tournon-sur-Rhône (07),07324,5.862810240,,,,,[0-20 000[,Tournon-sur-Rhône (07),D  moyen,faible,,,,non classé,45.053573439,4.814934743,60,3.168611111,1381590
+,D,Tournefeuille (31),31557,9.683764563,,,,,[20 000-50 000[,Tournefeuille (31),D  moyen,faible,,,,non classé,43.578191860,1.335006978,253,3.397536232,3568860
+,D,Sucé-sur-Erdre (44),44201,9.916642713,,,,,[0-20 000[,Sucé-sur-Erdre (44),D  moyen,faible,,,,non classé,47.353654740,-1.519456897,63,3.439259259,939330
+,D,Six-Fours-les-Plages (83),83129,2.887218045,,,,,[20 000-50 000[,Six-Fours-les-Plages (83),D  moyen,moyenne,,,,non classé,43.086818602,5.829244649,94,3.253936170,4488750
+,D,Seyssins (38),38486,8.433079434,,,,,[0-20 000[,Seyssins (38),D  moyen,faible,,,,non classé,45.154859791,5.675453982,56,3.371130952,992520
+,D,Seyssinet-Pariset (38),38485,5.675653117,,,,,[0-20 000[,Seyssinet-Pariset (38),D  moyen,moyenne,,,,non classé,45.173119346,5.669715569,68,3.172303922,1617435
+,D,Senlis (60),60612,6.031528444,,,,,[0-20 000[,Senlis (60),D  moyen,moyenne,,,,non classé,49.211845590,2.585706260,83,3.229236948,1969650
+,D,Sainte-Savine (10),10362,7.086690613,,,,,[0-20 000[,Sainte-Savine (10),D  moyen,faible,,,,non classé,48.296340900,4.023330221,66,3.100454545,1390635
+,D,Sainte-Luce-sur-Loire (44),44172,6.099560569,,,,,[0-20 000[,Sainte-Luce-sur-Loire (44),D  moyen,faible,,,,non classé,47.253623133,-1.472898715,88,3.194621212,2058345
+,D,Saint-Palais-sur-Mer (17),17380,14.399588583,,,,,[0-20 000[,Saint-Palais-sur-Mer (17),D  moyen,moyenne,,,,non classé,45.657975406,-1.101151187,55,3.276666667,525015
+,D,Saint-Nazaire (44),44184,5.909436452,,,,,[50 000-100 000[,Saint-Nazaire (44),D  moyen,faible,,,,non classé,47.280285703,-2.253799272,402,3.447271973,9412065
+,D,Saint-Médard-en-Jalles (33),33449,3.198087608,,,,,[20 000-50 000[,Saint-Médard-en-Jalles (33),D  moyen,moyenne,,,,non classé,44.883262082,-0.784239884,96,3.121840278,4179060
+,D,Saint-Martin-le-Vinoux (38),38423,10.074691680,,,,,[0-20 000[,Saint-Martin-le-Vinoux (38),D  moyen,moyenne,,,,non classé,45.219425939,5.715117622,58,3.110459770,777195
+,D,Saint-Martin-d'Hères (38),38421,4.917947922,,,,,[20 000-50 000[,Saint-Martin-d'Hères (38),D  moyen,moyenne,,,,non classé,45.176201255,5.764763607,188,3.307695035,5215590
+,D,Saint-Jacques-de-la-Lande (35),35281,8.206239839,,,,,[0-20 000[,Saint-Jacques-de-la-Lande (35),D  moyen,moyenne,,,,non classé,48.075562588,-1.724053813,101,3.409207921,1743795
+,D,Saint-Herblain (44),44162,3.433255370,,,,,[20 000-50 000[,Saint-Herblain (44),D  moyen,faible,,,,non classé,47.224376241,-1.634348187,156,3.122435897,6291405
+,D,Saint-Germain-en-Laye (78),78551,2.050922915,,,,,[20 000-50 000[,Saint-Germain-en-Laye (78),D  moyen,faible,,,,non classé,48.940704139,2.098709294,80,3.442375,5397570
+,D,Saint-Cyr-sur-Loire (37),37214,7.866522870,,,,,[0-20 000[,Saint-Cyr-sur-Loire (37),D  moyen,faible,,,,non classé,47.418565064,0.657856617,117,3.258490028,2128005
+,D,Rognonas (13),13083,13.012521483,,,,,[0-20 000[,Rognonas (13),D  moyen,moyenne,,,,non classé,43.900083317,4.798579775,53,3.163836478,549855
+,D,Rezé (44),44143,7.728894174,,,,,[20 000-50 000[,Rezé (44),D  moyen,faible,,,,non classé,47.176233890,-1.549663999,305,3.179672131,5449680
+,D,Rennes (35),35238,11.693824329,,,,,[200 000 et plus,Rennes (35),D  moyen,faible,,,,3ème/ 11 de la catégorie,48.111979122,-1.681864491,2448,3.464030501,29196180
+,D,Ramonville-Saint-Agne (31),31446,7.635206787,,,,,[0-20 000[,Ramonville-Saint-Agne (31),D  moyen,faible,,,,non classé,43.544183791,1.477823728,105,3.115809524,1909575
+,D,Quéven (56),56185,8.400420021,,,,,[0-20 000[,Quéven (56),D  moyen,faible,,,,non classé,47.784186600,-3.419577171,72,3.132731481,1157085
+,D,Quetigny (21),21515,6.356152964,,,,,[0-20 000[,Quetigny (21),D  moyen,faible,,,,non classé,47.319563540,5.115753102,59,3.405423729,1295595
+,D,Pornichet (44),44132,4.870738104,,,,,[0-20 000[,Pornichet (44),D  moyen,faible,,,,non classé,47.261579167,-2.314156508,49,3.292040816,1441260
+,D,Plouzané (29),29212,7.286688083,,,,,[0-20 000[,Plouzané (29),D  moyen,faible,,,,non classé,48.377435993,-4.599238919,89,3.352471910,1723005
+,D,Plouguerneau (29),29195,7.787448465,,,,,[0-20 000[,Plouguerneau (29),D  moyen,faible,,,,non classé,48.603067219,-4.489619258,47,3.398865248,884115
+,D,Ploemeur (56),56162,3.740717995,,,,,[0-20 000[,Ploemeur (56),D  moyen,moyenne,,,,non classé,47.732558499,-3.441788157,63,3.427566138,2417985
+,D,Plobannalec-Lesconil (29),29165,20.538038762,,,,,[0-20 000[,Plobannalec-Lesconil (29),D  moyen,faible,,,,non classé,47.821782531,-4.228186048,68,3.454901961,466695
+,D,Pleurtuit (35),35228,14.918693122,,,,,[0-20 000[,Pleurtuit (35),D  moyen,moyenne,,,,non classé,48.582725678,-2.059914447,96,3.109131944,904905
+,D,Pessac (33),33318,3.588806803,,,,,[50 000-100 000[,Pessac (33),D  moyen,faible,,,,non classé,44.791599052,-0.676303166,218,3.245749235,8350965
+,D,Périgny (17),17274,6.400193213,,,,,[0-20 000[,Périgny (17),D  moyen,moyenne,,,,non classé,46.157455135,-1.088860849,53,3.248364780,1117935
+,D,Paris (75),75056,3.419124176,,,,,[200 000 et plus,Paris (75),D  moyen,faible,,,,4ème/ 11 de la catégorie,48.8534,2.3488,7241,3.237194678,295694145
+,D,Orvault (44),44114,4.820485134,,,,,[20 000-50 000[,Orvault (44),D  moyen,faible,,,,non classé,47.273981548,-1.623238985,119,3.250896359,3500685
+,D,Olivet (45),45232,4.739776952,,,,,[20 000-50 000[,Olivet (45),D  moyen,moyenne,,,,non classé,47.854699750,1.888238848,100,3.436133333,2905200
+,D,Montreuil (93),93048,4.086640468,,,,,[100 000-200 000[,Montreuil (93),D  moyen,faible,,,,non classé,48.863317505,2.448162119,429,3.146433566,14634270
+,D,Montlouis-sur-Loire (37),37156,5.645464810,,,,,[0-20 000[,Montlouis-sur-Loire (37),D  moyen,moyenne,,,,non classé,47.382492137,0.841267944,60,3.266722222,1434780
+,D,Montbonnot-Saint-Martin (38),38249,10.568295115,,,,,[0-20 000[,Montbonnot-Saint-Martin (38),D  moyen,faible,,,,non classé,45.221467807,5.816015528,49,3.112857143,677025
+,D,Mondeville (14),14437,6.829069412,,,,,[0-20 000[,Mondeville (14),D  moyen,moyenne,,,,non classé,49.169364938,-0.310691187,66,3.294797980,1324485
+,D,Molsheim (67),67300,11.630411372,,,,,[0-20 000[,Molsheim (67),D  moyen,faible,,,,non classé,48.544719616,7.499500130,107,3.288816199,1253610
+,D,Metz (57),57463,5.428789550,,,,,[100 000-200 000[,Metz (57),D  moyen,faible,,,,non classé,49.108113328,6.195524542,625,3.111216000,15915150
+,D,Mérignac (33),33281,4.124180497,,,,,[50 000-100 000[,Mérignac (33),D  moyen,faible,,,,non classé,44.832295329,-0.681733085,277,3.314404332,9492795
+,D,Massy (91),91377,5.067702908,,,,,[20 000-50 000[,Massy (91),D  moyen,forte,,,,non classé,48.727789643,2.275131319,239,3.419065551,6739740
+,D,Marolles-en-Brie (94),94048,14.209225700,,,,,[0-20 000[,Marolles-en-Brie (94),D  moyen,faible,,,,non classé,48.739478062,2.554913385,67,3.102288557,655560
+,D,Marcq-en-Baroeul (59),59378,6.416698879,,,,,[20 000-50 000[,Marcq-en-Baroeul (59),D  moyen,moyenne,,,,non classé,50.675334856,3.100935838,242,3.488044077,5238675
+,D,Malakoff (92),92046,10.509458513,,,,,[20 000-50 000[,Malakoff (92),D  moyen,faible,,,,non classé,48.816969598,2.296935995,307,3.245439739,4046355
+,D,Maisons-Alfort (94),94046,2.224673986,,,,,[50 000-100 000[,Maisons-Alfort (94),D  moyen,moyenne,,,,non classé,48.806392327,2.438182489,121,3.109779614,7464015
+,D,Lyon (69),69123,11.068557965,,,,,[200 000 et plus,Lyon (69),D  moyen,faible,,,,6ème/ 11 de la catégorie,45.764043,4.835659,5562,3.190790483,69618825
+,D,Loctudy (29),29135,19.007652431,,,,,[0-20 000[,Loctudy (29),D  moyen,moyenne,,,,non classé,47.823982472,-4.187388183,77,3.461515152,546885
+,D,Les Sables-d'Olonne (85),85194,7.869036746,,,,,[0-20 000[,Les Sables-d'Olonne (85),D  moyen,faible,,,,non classé,46.500761280,-1.792551287,110,3.440121212,1921455
+,D,Les Ponts-de-Cé (49),49246,4.642744728,,,,,[0-20 000[,Les Ponts-de-Cé (49),D  moyen,faible,,,,non classé,47.427253611,-0.512677372,54,3.318086420,1715580
+,D,Le Rheu (35),35240,14.700735037,,,,,[0-20 000[,Le Rheu (35),D  moyen,faible,,,,non classé,48.097397419,-1.781499892,114,3.447865497,1157085
+,D,Le Havre (76),76351,5.776275007,,,,,[100 000-200 000[,Le Havre (76),D  moyen,faible,,,,non classé,49.498452502,0.140153719,957,3.128261930,22997520
+,D,Le Haillan (33),33200,5.787249678,,,,,[0-20 000[,Le Haillan (33),D  moyen,faible,,,,non classé,44.869083790,-0.684443512,61,3.312568306,1469610
+,D,Lauterbourg (67),67261,21.824530773,,,,,[0-20 000[,Lauterbourg (67),D  moyen,moyenne,,,,non classé,48.963711635,8.186377258,49,3.496258503,309285
+,D,Lanester (56),56098,3.526943167,,,,,[20 000-50 000[,Lanester (56),D  moyen,moyenne,,,,non classé,47.769192428,-3.326483180,78,3.251666667,3023865
+,D,Lamorlaye (60),60346,6.391567616,,,,,[0-20 000[,Lamorlaye (60),D  moyen,moyenne,,,,non classé,49.160277177,2.419724194,51,3.377385621,1203930
+,D,Labège (31),31254,16.516881224,,,,,[0-20 000[,Labège (31),D  moyen,moyenne,,,,non classé,43.539137717,1.520620711,68,3.451862745,555795
+,D,La Tronche (38),38516,12.642986153,,,,,[0-20 000[,La Tronche (38),D  moyen,faible,,,,non classé,45.210440926,5.743433270,83,3.396987952,896940
+,D,La Roche-sur-Yon (85),85191,5.079920359,,,,,[50 000-100 000[,La Roche-sur-Yon (85),D  moyen,faible,,,,non classé,46.667526164,-1.407795409,264,3.232714646,7255035
+,D,La Mézière (35),35177,9.890789203,,,,,[0-20 000[,La Mézière (35),D  moyen,faible,,,,non classé,48.213066667,-1.750572153,45,3.356518519,655155
+,D,La Chapelle-sur-Erdre (44),44035,2.946040934,,,,,[0-20 000[,La Chapelle-sur-Erdre (44),D  moyen,faible,,,,non classé,47.303562962,-1.560785967,53,3.233647799,2611980
+,D,La Baule-Escoublac (44),44055,5.046910385,,,,,[0-20 000[,La Baule-Escoublac (44),D  moyen,faible,,,,non classé,47.290972018,-2.353829175,75,3.187866667,2086425
+,D,Kingersheim (68),68166,7.451904798,,,,,[0-20 000[,Kingersheim (68),D  moyen,faible,,,,non classé,47.788976517,7.322993352,97,3.355979381,1775385
+,D,Joinville-le-Pont (94),94042,4.249893753,,,,,[0-20 000[,Joinville-le-Pont (94),D  moyen,moyenne,,,,non classé,48.819368322,2.470449778,74,3.216756757,2541240
+,D,Huningue (68),68149,7.902398447,,,,,[0-20 000[,Huningue (68),D  moyen,moyenne,,,,non classé,47.588875386,7.581242517,55,3.190787879,973755
+,D,Hoenheim (67),67204,4.735948530,,,,,[0-20 000[,Hoenheim (67),D  moyen,faible,,,,non classé,48.624206841,7.753656666,52,3.331602564,1510785
+,D,Haguenau (67),67180,1.538015090,,,,,[20 000-50 000[,Haguenau (67),D  moyen,faible,,,,non classé,48.841704770,7.830104050,51,3.473202614,4652100
+,D,Guyancourt (78),78297,3.699136868,,,,,[20 000-50 000[,Guyancourt (78),D  moyen,moyenne,,,,non classé,48.773078389,2.076052077,102,3.429542484,3831975
+,D,Guilherand-Granges (07),07102,6.063897185,,,,,[0-20 000[,Guilherand-Granges (07),D  moyen,moyenne,,,,non classé,44.930131831,4.866296039,66,3.368838384,1491615
+,D,Gradignan (33),33192,3.090404100,,,,,[20 000-50 000[,Gradignan (33),D  moyen,moyenne,,,,non classé,44.770941120,-0.616137682,79,3.296751055,3451005
+,D,Grabels (34),34116,8.815360464,,,,,[0-20 000[,Grabels (34),D  moyen,faible,,,,non classé,43.650707680,3.794232620,70,3.263142857,1117935
+,D,Gif-sur-Yvette (91),91272,5.829789267,,,,,[20 000-50 000[,Gif-sur-Yvette (91),D  moyen,moyenne,,,,non classé,48.698827363,2.127883650,119,3.265966387,2825145
+,D,Gières (38),38179,12.573852447,,,,,[0-20 000[,Gières (38),D  moyen,faible,,,,non classé,45.182327219,5.791715660,81,3.218559671,891135
+,D,Fougères (35),35115,4.456769337,,,,,[20 000-50 000[,Fougères (35),D  moyen,moyenne,,,,non classé,48.352469711,-1.194311772,86,3.144844961,2726190
+,D,Floirac (33),33167,5.238039809,,,,,[0-20 000[,Floirac (33),D  moyen,faible,,,,non classé,44.833809465,-0.520646896,88,3.138674242,2319570
+,D,Épinal (88),88160,4.404588377,,,,,[20 000-50 000[,Épinal (88),D  moyen,moyenne,,,,non classé,48.163120266,6.479892869,132,3.447222222,4260330
+,D,Douai (59),59178,2.521622917,,,,,[20 000-50 000[,Douai (59),D  moyen,faible,,,,non classé,50.382319533,3.091456831,96,3.299652778,5353695
+,D,Divonne-les-Bains (01),01143,7.501320655,,,,,[0-20 000[,Divonne-les-Bains (01),D  moyen,moyenne,,,,non classé,46.375633349,6.115864761,66,3.291262626,1277775
+,D,Dijon (21),21231,7.234508995,,,,,[100 000-200 000[,Dijon (21),D  moyen,moyenne,,,,non classé,47.322943797,5.037888059,1093,3.200396462,20937150
+,D,Coye-la-Forêt (60),60172,21.627188465,,,,,[0-20 000[,Coye-la-Forêt (60),D  moyen,faible,,,,non classé,49.144987403,2.470458568,80,3.177791667,524340
+,D,Colomiers (31),31149,5.966525468,,,,,[20 000-50 000[,Colomiers (31),D  moyen,faible,,,,non classé,43.611551508,1.327002184,226,3.121342183,5226660
+,D,Colmar (68),68066,3.762571711,,,,,[50 000-100 000[,Colmar (68),D  moyen,faible,,,,non classé,48.109940579,7.384686903,258,3.146576227,9436365
+,D,Cognin (73),73087,9.928385417,,,,,[0-20 000[,Cognin (73),D  moyen,faible,,,,non classé,45.559481019,5.891808158,59,3.442429379,829440
+,D,Clapiers (34),34077,22.108532797,,,,,[0-20 000[,Clapiers (34),D  moyen,faible,,,,non classé,43.662019227,3.886897482,121,3.197079890,738855
+,D,Cherbourg-en-Cotentin (50),50129,1.660922124,,,,,[50 000-100 000[,Cherbourg-en-Cotentin (50),D  moyen,moyenne,,,,non classé,49.633412156,-1.633901602,133,3.124786967,10810260
+,D,Chavagne (35),35076,15.093374265,,,,,[0-20 000[,Chavagne (35),D  moyen,faible,,,,non classé,48.056157400,-1.786492420,59,3.130338983,527715
+,D,Chaumont (52),52121,10.327714937,,,,,[20 000-50 000[,Chaumont (52),D  moyen,faible,,,,non classé,48.098014421,5.140700446,220,3.167606061,3019545
+,D,Châtellerault (86),86066,4.523193062,,,,,[20 000-50 000[,Châtellerault (86),D  moyen,faible,,,,non classé,46.815670018,0.552598977,140,3.131880952,4327695
+,D,Châteaubriant (44),44036,15.269107474,,,,,[0-20 000[,Châteaubriant (44),D  moyen,moyenne,,,,non classé,47.722158352,-1.386648099,167,3.291936128,1600290
+,D,Château-Gontier-sur-Mayenne (53),53062,5.505208774,,,,,[0-20 000[,Château-Gontier-sur-Mayenne (53),D  moyen,faible,,,,non classé,47.829006712,-0.738721768,63,3.370317460,1593945
+,D,Chassieu (69),69271,7.719366816,,,,,[0-20 000[,Chassieu (69),D  moyen,faible,,,,non classé,45.737614897,4.961729143,75,3.281866667,1381590
+,D,Chantilly (60),60141,10.288256558,,,,,[0-20 000[,Chantilly (60),D  moyen,faible,,,,non classé,49.176264165,2.481034819,108,3.170524691,1456515
+,D,Châlons-en-Champagne (51),51108,6.647398844,,,,,[20 000-50 000[,Châlons-en-Champagne (51),D  moyen,faible,,,,non classé,48.964089212,4.378835397,286,3.216410256,6072300
+,D,Cestas (33),33122,5.541982003,,,,,[0-20 000[,Cestas (33),D  moyen,faible,,,,non classé,44.723741097,-0.726825410,90,3.320592593,2265435
+,D,Cesson-Sévigné (35),35051,11.455874734,,,,,[0-20 000[,Cesson-Sévigné (35),D  moyen,faible,,,,non classé,48.120226803,-1.597144473,196,3.422976190,2345085
+,D,Cergy (95),95127,1.676590411,,,,,[50 000-100 000[,Cergy (95),D  moyen,moyenne,,,,non classé,49.040113157,2.050821237,105,3.201301587,8615700
+,D,Carquefou (44),44026,6.345439538,,,,,[0-20 000[,Carquefou (44),D  moyen,faible,,,,non classé,47.301719183,-1.472772001,121,3.324022039,2616840
+,D,Carbonne (31),31107,13.732833958,,,,,[0-20 000[,Carbonne (31),D  moyen,faible,,,,non classé,43.301449468,1.218499661,74,3.265405405,756945
+,D,Caen (14),14118,10.872555810,,,,,[100 000-200 000[,Caen (14),D  moyen,faible,,,,3ème de la catégorie,49.184793674,-0.369801713,1115,3.252442451,14229405
+,D,Bures-sur-Yvette (91),91122,10.014453851,,,,,[0-20 000[,Bures-sur-Yvette (91),D  moyen,faible,,,,non classé,48.692997992,2.158386861,94,3.101666667,1307610
+,D,Bruz (35),35047,7.571570686,,,,,[0-20 000[,Bruz (35),D  moyen,moyenne,,,,non classé,48.026175531,-1.748174809,128,3.179895833,2442690
+,D,Brax (31),31088,21.536252692,,,,,[0-20 000[,Brax (31),D  moyen,faible,,,,non classé,43.615694204,1.231948869,60,3.163277778,376110
+,D,Bordeaux (33),33063,10.661006189,,,,,[200 000 et plus,Bordeaux (33),D  moyen,faible,,,,5ème / 11de la catégorie,44.857244535,-0.573696781,2619,3.236401935,34025400
+,D,Bonneville (74),74042,4.397330192,,,,,[0-20 000[,Bonneville (74),D  moyen,faible,,,,non classé,46.073900397,6.408685322,54,3.406851852,1719225
+,D,Blois (41),41018,5.647120625,,,,,[20 000-50 000[,Blois (41),D  moyen,faible,,,,non classé,47.581701394,1.306255516,252,3.120330688,6167745
+,D,Blagnac (31),31069,7.493412385,,,,,[20 000-50 000[,Blagnac (31),D  moyen,faible,,,,non classé,43.642186786,1.378869411,180,3.230759259,3278880
+,D,Billère (64),64129,4.859611231,,,,,[0-20 000[,Billère (64),D  moyen,faible,,,,non classé,43.304525994,-0.393492580,62,3.265967742,1750140
+,D,Basse-Goulaine (44),44009,9.473328070,,,,,[0-20 000[,Basse-Goulaine (44),D  moyen,faible,,,,non classé,47.212013734,-1.462468526,84,3.425436508,1197045
+,D,Avranches (50),50025,15.934706568,,,,,[0-20 000[,Avranches (50),D  moyen,faible,,,,non classé,48.688474672,-1.357323382,121,3.217438017,1042065
+,D,Avon (77),77014,7.142346975,,,,,[0-20 000[,Avon (77),D  moyen,faible,,,,non classé,48.412969910,2.733518740,96,3.493888889,1890135
+,D,Arras (62),62041,3.326566054,,,,,[20 000-50 000[,Arras (62),D  moyen,faible,,,,non classé,50.289896500,2.765873167,133,3.112305764,5519205
+,D,Annecy (74),74010,15.353704744,,,,,[100 000-200 000[,Annecy (74),D  moyen,faible,,,,non classé,45.890643257,6.125517736,1882,3.152899398,17066565
+,D,Angoulins (17),17010,14.690721649,,,,,[0-20 000[,Angoulins (17),D  moyen,faible,,,,non classé,46.106704274,-1.106178409,56,3.103928571,523800
+,D,Angers (49),49007,13.099339412,,,,,[100 000-200 000[,Angers (49),D  moyen,moyenne,,,,2ème de la catégorie,47.476837416,-0.556125995,1660,3.377066265,20415915
+,D,Amboise (37),37003,5.015280934,,,,,[0-20 000[,Amboise (37),D  moyen,moyenne,,,,non classé,47.391723765,1.000239947,63,3.147407407,1722735
+,D,Albi (81),81004,4.365208877,,,,,[20 000-50 000[,Albi (81),D  moyen,moyenne,,,,non classé,43.925821362,2.146863286,210,3.156492063,6618240
+,D,Aix-les-Bains (73),73008,3.355817309,,,,,[20 000-50 000[,Aix-les-Bains (73),D  moyen,faible,,,,non classé,45.697854168,5.903886270,95,3.324385965,4022865
+,D,Agen (47),47001,4.140725074,,,,,[20 000-50 000[,Agen (47),D  moyen,faible,,,,non classé,44.202813910,0.625583929,131,3.151577608,4531815
+,C,Villeneuve-Loubet (06),06161,3.748636859,,,,C  plutôt favorable,[0-20 000[,Villeneuve-Loubet (06),,moyenne,,,,non classé,43.649256073,7.107284349,53,3.755723270,1980720
+,C,Versailles (78),78646,6.280317765,,,,C  plutôt favorable,[50 000-100 000[,Versailles (78),,moyenne,,,,3ème de la catégorie,48.802566967,2.117892972,513,3.642378168,11521710
+,C,Toussus-le-Noble (78),78620,41.350210970,,,,C  plutôt favorable,[0-20 000[,Toussus-le-Noble (78),,faible,,,,non classé,48.746627225,2.117905634,48,3.507083333,159975
+,C,Sélestat (67),67462,3.764902740,,,,C  plutôt favorable,[0-20 000[,Sélestat (67),,moyenne,,,,non classé,48.248113628,7.462248965,69,3.533091787,2581740
+,C,Saint-Grégoire (35),35278,12.078563176,,,,C  plutôt favorable,[0-20 000[,Saint-Grégoire (35),,faible,,,,non classé,48.158884047,-1.685719435,110,3.597545455,1285335
+,C,Saint-Égrève (38),38382,7.420450258,,,,C  plutôt favorable,[0-20 000[,Saint-Égrève (38),,faible,,,,non classé,45.232661775,5.684101492,116,3.500316092,2146770
+,C,Portet-sur-Garonne (31),31433,12.965630788,,,,C  plutôt favorable,[0-20 000[,Portet-sur-Garonne (31),,moyenne,,,,non classé,43.529395272,1.402519557,119,3.717787115,1311930
+,C,Obernai (67),67348,9.586414681,,,,C  plutôt favorable,[0-20 000[,Obernai (67),,faible,,,,non classé,48.459346732,7.480064347,99,3.605151515,1478655
+,C,Neufchâtel-Hardelot (62),62604,18.143009605,,,,C  plutôt favorable,[0-20 000[,Neufchâtel-Hardelot (62),,faible,,,,non classé,50.617132838,1.617293389,66,3.791363636,505980
+,C,Nantes (44),44109,12.595616478,,,,C  plutôt favorable,[200 000 et plus,Nantes (44),,faible,,,,2ème / 11de la catégorie,47.231635677,-1.548310086,3737,3.547874409,41403690
+,C,Mouans-Sartoux (06),06084,9.826230865,,,,C  plutôt favorable,[0-20 000[,Mouans-Sartoux (06),,faible,,,,non classé,43.618530402,6.964944267,90,3.690592593,1305180
+,C,Montmorot (39),39362,22.148760331,,,,C  plutôt favorable,[0-20 000[,Montmorot (39),,faible,,,,non classé,46.686884331,5.519611779,62,3.743118280,408375
+,C,Montigny-le-Bretonneux (78),78423,3.668222882,,,,C  plutôt favorable,[20 000-50 000[,Montigny-le-Bretonneux (78),,faible,,,,non classé,48.779658781,2.029521945,116,3.607672414,4453110
+,C,Meylan (38),38229,8.705813614,,,,C  plutôt favorable,[0-20 000[,Meylan (38),,faible,,,,non classé,45.212356723,5.783549103,146,3.818698630,2310525
+,C,Melesse (35),35173,10.400252127,,,,C  plutôt favorable,[0-20 000[,Melesse (35),,moyenne,,,,non classé,48.219306981,-1.689502206,63,3.779470899,856710
+,C,Lorient (56),56121,6.582393407,,,,C  plutôt favorable,[50 000-100 000[,Lorient (56),,faible,,,,non classé,47.750048695,-3.378232009,358,3.593054004,7731990
+,C,Les Loges-en-Josas (78),78343,39.566049777,,,,C  plutôt favorable,[0-20 000[,Les Loges-en-Josas (78),,faible,,,,non classé,48.762438514,2.139117237,58,3.862183908,211545
+,C,La Motte-Servolex (73),73179,5.479452055,,,,C  plutôt favorable,[0-20 000[,La Motte-Servolex (73),,faible,,,,non classé,45.601171177,5.854096538,62,3.705376344,1576800
+,C,L'Union (31),31561,6.432246998,,,,C  plutôt favorable,[0-20 000[,L'Union (31),,moyenne,,,,non classé,43.654247043,1.483948473,70,3.691190476,1574100
+,C,Jacou (34),34120,9.579955785,,,,C  plutôt favorable,[0-20 000[,Jacou (34),,faible,,,,non classé,43.662984694,3.911961078,61,3.546338798,915975
+,C,Illkirch-Graffenstaden (67),67218,3.353579014,,,,C  plutôt favorable,[20 000-50 000[,Illkirch-Graffenstaden (67),,faible,,,,1er de la catégorie,48.520049896,7.731295881,85,3.700823529,3622995
+,C,Forcalquier (04),04088,8.860249698,,,,C  plutôt favorable,[0-20 000[,Forcalquier (04),,faible,,,,non classé,43.959908237,5.788282757,42,3.593253968,670410
+,C,Eybens (38),38158,7.314021750,,,,C  plutôt favorable,[0-20 000[,Eybens (38),,faible,,,,non classé,45.151809329,5.748474942,73,3.797625571,1402785
+,C,Essey-lès-Nancy (54),54184,7.123161765,,,,C  plutôt favorable,[0-20 000[,Essey-lès-Nancy (54),,moyenne,,,,non classé,48.707564977,6.232842878,61,3.641420765,1175040
+,C,Dunkerque (59),59183,2.042947292,,,,C  plutôt favorable,[50 000-100 000[,Dunkerque (59),,faible,,,,non classé,51.030722908,2.337524141,176,3.508958333,11894580
+,C,Crolles (38),38140,11.451301832,,,,C  plutôt favorable,[0-20 000[,Crolles (38),,faible,,,,non classé,45.282029329,5.888839856,85,3.743843137,1119960
+,C,Condrieu (69),69064,16.249677586,,,,C  plutôt favorable,[0-20 000[,Condrieu (69),,faible,,,,non classé,45.474308382,4.756710752,63,3.602010582,523395
+,C,Chambéry (73),73065,19.667810013,,,,C  plutôt favorable,[50 000-100 000[,Chambéry (73),,faible,,,,2ème de la catégorie,45.583182552,5.909033924,1102,3.757598306,7989705
+,C,Bourg-en-Bresse (01),01053,8.364559410,,,,C  plutôt favorable,[20 000-50 000[,Bourg-en-Bresse (01),,moyenne,,,,2ème de la catégorie,46.205152038,5.246021255,333,3.664044044,5584275
+,C,Bouaye (44),44018,7.349081365,,,,C  plutôt favorable,[0-20 000[,Bouaye (44),,moyenne,,,,non classé,47.147339688,-1.672543706,55,3.554666667,1028700
+,C,Blanquefort (33),33056,3.330131284,,,,C  plutôt favorable,[0-20 000[,Blanquefort (33),,moyenne,,,,non classé,44.923149274,-0.612268950,48,3.726111111,2108025
+,C,Belfort (90),90010,3.634655831,,,,C  plutôt favorable,[20 000-50 000[,Belfort (90),,faible,,,,3ème de la catégorie,47.647153941,6.845412062,170,3.629392157,6611355
+,C,Bègles (33),33039,6.386894237,,,,C  plutôt favorable,[20 000-50 000[,Bègles (33),,moyenne,,,,non classé,44.801600905,-0.547755768,172,3.528914729,3741255
+,C,Acigné (35),35001,15.199398044,,,,C  plutôt favorable,[0-20 000[,Acigné (35),,faible,,,,non classé,48.146400862,-1.518797621,98,3.575816327,897075
+,B,Strasbourg (67),67482,9.918219447,,,B  favorable,,[200 000 et plus,Strasbourg (67),,moyenne,,,,1er / 11 de la catégorie,48.571267985,7.767526795,2664,4.021775526,37703340
+,B,Séné (56),56243,15.644206057,,,B  favorable,,[0-20 000[,Séné (56),,faible,,,,2ème de la catégorie,47.622878689,-2.724426095,123,4.227669377,1208115
+,B,Sceaux (92),92071,6.263155193,,,B  favorable,,[0-20 000[,Sceaux (92),,moyenne,,,,non classé,48.776816369,2.295294145,119,3.973361345,2629665
+,B,Oberhausbergen (67),67343,10.031580903,,,B  favorable,,[0-20 000[,Oberhausbergen (67),,faible,,,,non classé,48.607300295,7.683099132,51,3.901111111,726705
+,B,Marseillan (34),34150,23.928984948,,,B  favorable,,[0-20 000[,Marseillan (34),,faible,,,,3ème de la catégorie,43.360577601,3.547189638,155,4.192107527,1049355
+,B,La Rochelle (17),17300,11.025139960,,,B  favorable,,[50 000-100 000[,La Rochelle (17),,faible,,,,1er de la catégorie,46.162064397,-1.174657028,781,4.037511737,10224360
+,B,La Flèche (72),72154,9.562751434,,,B  favorable,,[0-20 000[,La Flèche (72),,moyenne,,,,non classé,47.689389379,-0.064695485,141,3.940614657,2047005
+,B,Grenoble (38),38185,21.696801113,,,B  favorable,,[100 000-200 000[,Grenoble (38),,moyenne,,,,1er de la catégorie,45.182121517,5.721330518,3258,4.124577450,21354300
+,A,Saint-Lunaire (35),35287,39.723661485,A  très favorable,,,,[0-20 000[,Saint-Lunaire (35),,faible,,,,1er de la catégorie,48.620460045,-2.096559888,77,4.469567100,312660

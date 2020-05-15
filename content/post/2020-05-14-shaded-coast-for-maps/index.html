@@ -1,0 +1,155 @@
+---
+title: 'Creating beautiful maps : shaded coastline'
+author: admin
+date: '2020-05-14'
+slug: shaded-coast-for-maps
+categories:
+  - maps
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-05-14T17:13:12+02:00'
+featured: yes
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>I recently tried to replicate a map published in Le Monde, a french newspaper. I will show you how I did it in a serie of 2 articles.
+The maps will be in French, but I don’t think these tutorials will be challenging for english speaker, and this first one will certainly not be.</p>
+<p>Here is the original version :
+<img src="img/original.png" /></p>
+<p>Below is the reproduction using ggplot2 :
+<img src="img/final.svg" /></p>
+<p>I am very fond of the way they draw coastal lines, and this will be the subject of this article.</p>
+<div id="loading-data" class="section level3">
+<h3>Loading data</h3>
+<p>We will be using two geospatials datasets :</p>
+<ul>
+<li>France boundaries : that you can find <a href="https://github.com/gregoiredavid/france-geojson">here</a></li>
+<li>World country boundaries : that I downlaoded <a href="http://www.naturalearthdata.com/downloads/50m-cultural-vectors/">here</a></li>
+</ul>
+<p>We will be using France legal projection (Lambert-93) so we start by transforming our two dataset in that projection.</p>
+<pre class="r"><code>library(tidyverse)
+library(sf)
+library(here)
+
+land &lt;- st_read(here(&quot;static/inputs/info_fub/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp&quot;)) %&gt;% 
+  st_transform(2154)</code></pre>
+<pre><code>## Reading layer `ne_10m_admin_0_countries&#39; from data source `D:\Users\Alexis\Documents\Data\r-blog\static\inputs\info_fub\ne_10m_admin_0_countries\ne_10m_admin_0_countries.shp&#39; using driver `ESRI Shapefile&#39;
+## Simple feature collection with 255 features and 94 fields
+## geometry type:  MULTIPOLYGON
+## dimension:      XY
+## bbox:           xmin: -180 ymin: -90 xmax: 180 ymax: 83.6341
+## geographic CRS: WGS 84</code></pre>
+<pre class="r"><code>#france
+france &lt;- st_read(here(&quot;static/inputs/info_fub/departements-version-simplifiee.geojson&quot;)) %&gt;% 
+  st_transform(2154) %&gt;% 
+  st_union()</code></pre>
+<pre><code>## Reading layer `departements-version-simplifiee&#39; from data source `D:\Users\Alexis\Documents\Data\r-blog\static\inputs\info_fub\departements-version-simplifiee.geojson&#39; using driver `GeoJSON&#39;
+## Simple feature collection with 96 features and 2 fields
+## geometry type:  MULTIPOLYGON
+## dimension:      XY
+## bbox:           xmin: -5.103601 ymin: 41.36705 xmax: 9.559721 ymax: 51.0884
+## geographic CRS: WGS 84</code></pre>
+</div>
+<div id="finding-out-the-map-area" class="section level3">
+<h3>Finding out the map area</h3>
+<p>We will be using France map and through trial and error figuring out the right map area.
+We extract the bbox from France and then adjust it until it seems right.
+We need some room in the west, nort and south. In east Corsica already give us some room to work with.</p>
+<pre class="r"><code>bbox &lt;- france %&gt;% 
+  st_bbox() + c(-100000, -180000, 12000, 180000)
+bbox &lt;- bbox %&gt;% 
+  st_as_sfc()
+
+ggplot() +
+  geom_sf(data = bbox) +
+  geom_sf(data = france)</code></pre>
+<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-2-1.png" width="480" /></p>
+</div>
+<div id="filtering-world-map" class="section level3">
+<h3>Filtering world map</h3>
+<p>Next we want to take our world map, and filter it to keep only area we care about. In the process we transform the sf object in sfc objects using <strong>st_geometry()</strong>.</p>
+<p>The first operation is to remove Sardinia, it is very close to Corsica and we don’t need it. To do so we only keep the largest polygon of Italy.</p>
+<pre class="r"><code>italy &lt;- land %&gt;% 
+  filter(SOVEREIGNT == &quot;Italy&quot;) %&gt;% 
+  st_cast(&quot;POLYGON&quot;) %&gt;% 
+  filter(st_area(geometry) == max(st_area(geometry))) %&gt;% 
+  st_geometry()</code></pre>
+<p>We want countries that will appear in our final map and that have a coast. We also add Andorra, to avoid a hole between France and Spain.</p>
+<pre class="r"><code>land &lt;- land %&gt;% 
+  filter(SOVEREIGNT %in% c(&quot;France&quot;, &quot;Belgium&quot;, &quot;United Kingdom&quot;,
+                          &quot;Netherlands&quot;, &quot;Spain&quot;, &quot;Andorra&quot;)) %&gt;% 
+  st_geometry() %&gt;% 
+  c(italy)</code></pre>
+</div>
+<div id="extracting-coastlines" class="section level3">
+<h3>Extracting coastlines</h3>
+<p>Really simple operations using <strong>st_cast()</strong> to transform polygons to lines. Then we only keep the coastlines that are within the bounding box we have defined.</p>
+<pre class="r"><code>coast &lt;- c(italy, land) %&gt;% 
+  st_union() %&gt;% 
+  st_cast(&quot;MULTILINESTRING&quot;) %&gt;% 
+  st_intersection(bbox)
+
+ggplot() +
+  geom_sf(data = coast)</code></pre>
+<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-5-1.png" width="480" /></p>
+</div>
+<div id="creating-our-coastal-area" class="section level2">
+<h2>Creating our coastal area</h2>
+<p>We use <strong>st_buffer</strong> to create an area around the coastline.
+The we intersect that area with our land data to remove the part of the data which is in the sea.</p>
+<pre class="r"><code>coast_buffer &lt;- coast %&gt;% 
+  st_buffer(dist = 30000) %&gt;% 
+  st_intersection(land)
+
+
+ggplot() +
+  geom_sf(data = coast_buffer)</code></pre>
+<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-6-1.png" width="480" /></p>
+</div>
+<div id="creating-a-grid" class="section level2">
+<h2>Creating a grid</h2>
+<p>Grid creation with *<strong>st_make_grid</strong>.</p>
+<pre class="r"><code>coast_grid &lt;- coast_buffer %&gt;% 
+  st_make_grid(n = c(200,200)) %&gt;% 
+  st_intersection(coast_buffer)</code></pre>
+<pre class="r"><code>ggplot() +
+  geom_sf(data = coast_grid)</code></pre>
+<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-9-1.png" width="480" /></p>
+<div id="calculate-distances" class="section level3">
+<h3>Calculate distances</h3>
+<p>We calculate the distance between the center of each square of our grid and the coastline. We then bind the vector to coast_grid.</p>
+<pre class="r"><code>distance &lt;- st_distance(coast, st_centroid(coast_grid)) %&gt;% 
+  as.vector()
+
+coast_plot &lt;- coast_grid %&gt;% 
+  st_as_sf() %&gt;% 
+  bind_cols(dist = distance)</code></pre>
+</div>
+<div id="plotting" class="section level3">
+<h3>Plotting</h3>
+<p>We use the alpha aesthetic to create the gradient.</p>
+<pre class="r"><code>ggplot() +
+  geom_sf(data = coast_plot,
+          aes(alpha = -dist),
+          fill = &quot;grey&quot;,
+          color = NA) +
+  scale_alpha(range = c(0.01,0.2)) +
+  coord_sf(expand = FALSE) +
+  theme_void() +
+  theme(legend.position = &quot;none&quot;)</code></pre>
+<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-11-1.png" width="480" /></p>
+</div>
+<div id="saving" class="section level3">
+<h3>Saving</h3>
+<p>We can save our spatial object in a file for later use.</p>
+<pre class="r"><code>st_write(coast_plot, here(&quot;static/inputs/info_fub/shaded_coast.geojson&quot;))</code></pre>
+</div>
+</div>
