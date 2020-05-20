@@ -16,6 +16,9 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+output:
+  blogdown::html_page:
+    dev: "svg"
 ---
 
 
@@ -37,9 +40,12 @@ The maps will be in French, but I don’t think these tutorials will be challeng
 <p>We will be using France legal projection (Lambert-93) so we start by transforming our two dataset in that projection.</p>
 <pre class="r"><code>library(tidyverse)
 library(sf)
+library(raster)
+library(stars)
 library(here)
 
 land &lt;- st_read(here(&quot;static/inputs/info_fub/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp&quot;)) %&gt;% 
+  filter(CONTINENT == &quot;Europe&quot;) %&gt;% 
   st_transform(2154)</code></pre>
 <pre><code>## Reading layer `ne_10m_admin_0_countries&#39; from data source `D:\Users\Alexis\Documents\Data\r-blog\static\inputs\info_fub\ne_10m_admin_0_countries\ne_10m_admin_0_countries.shp&#39; using driver `ESRI Shapefile&#39;
 ## Simple feature collection with 255 features and 94 fields
@@ -71,7 +77,7 @@ bbox &lt;- bbox %&gt;%
 ggplot() +
   geom_sf(data = bbox) +
   geom_sf(data = france)</code></pre>
-<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-2-1.png" width="480" /></p>
+<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-2-1.svg" width="480" /></p>
 </div>
 <div id="filtering-world-map" class="section level3">
 <h3>Filtering world map</h3>
@@ -83,23 +89,22 @@ ggplot() +
   filter(st_area(geometry) == max(st_area(geometry))) %&gt;% 
   st_geometry()</code></pre>
 <p>We want countries that will appear in our final map and that have a coast. We also add Andorra, to avoid a hole between France and Spain.</p>
-<pre class="r"><code>land &lt;- land %&gt;% 
-  filter(SOVEREIGNT %in% c(&quot;France&quot;, &quot;Belgium&quot;, &quot;United Kingdom&quot;,
-                          &quot;Netherlands&quot;, &quot;Spain&quot;, &quot;Andorra&quot;)) %&gt;% 
+<pre class="r"><code>land_no_sardinia &lt;- land %&gt;% 
+  filter(SOVEREIGNT != &quot;Italy&quot;) %&gt;% 
   st_geometry() %&gt;% 
   c(italy)</code></pre>
 </div>
 <div id="extracting-coastlines" class="section level3">
 <h3>Extracting coastlines</h3>
 <p>Really simple operations using <strong>st_cast()</strong> to transform polygons to lines. Then we only keep the coastlines that are within the bounding box we have defined.</p>
-<pre class="r"><code>coast &lt;- c(italy, land) %&gt;% 
+<pre class="r"><code>coast &lt;- land_no_sardinia %&gt;% 
   st_union() %&gt;% 
   st_cast(&quot;MULTILINESTRING&quot;) %&gt;% 
   st_intersection(bbox)
 
 ggplot() +
   geom_sf(data = coast)</code></pre>
-<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-5-1.png" width="480" /></p>
+<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-5-1.svg" width="480" /></p>
 </div>
 <div id="creating-our-coastal-area" class="section level2">
 <h2>Creating our coastal area</h2>
@@ -107,49 +112,48 @@ ggplot() +
 The we intersect that area with our land data to remove the part of the data which is in the sea.</p>
 <pre class="r"><code>coast_buffer &lt;- coast %&gt;% 
   st_buffer(dist = 30000) %&gt;% 
-  st_intersection(land)
+  st_intersection(land) %&gt;% 
+  st_as_sf()
 
 
 ggplot() +
   geom_sf(data = coast_buffer)</code></pre>
-<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-6-1.png" width="480" /></p>
+<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-6-1.svg" width="480" /></p>
 </div>
-<div id="creating-a-grid" class="section level2">
-<h2>Creating a grid</h2>
-<p>Grid creation with *<strong>st_make_grid</strong>.</p>
-<pre class="r"><code>coast_grid &lt;- coast_buffer %&gt;% 
-  st_make_grid(n = c(200,200)) %&gt;% 
-  st_intersection(coast_buffer)</code></pre>
-<pre class="r"><code>ggplot() +
-  geom_sf(data = coast_grid)</code></pre>
-<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-9-1.png" width="480" /></p>
-<div id="calculate-distances" class="section level3">
-<h3>Calculate distances</h3>
-<p>We calculate the distance between the center of each square of our grid and the coastline. We then bind the vector to coast_grid.</p>
-<pre class="r"><code>distance &lt;- st_distance(coast, st_centroid(coast_grid)) %&gt;% 
-  as.vector()
+<div id="creating-a-raster" class="section level2">
+<h2>Creating a raster</h2>
+<pre class="r"><code>coast_raster &lt;- raster(st_as_sf(coast_buffer), 
+                        nrows = 1000,
+                        ncols = 1000) %&gt;% 
+  distanceFromPoints(st_cast(coast, &quot;POINT&quot;) %&gt;% 
+                       st_coordinates())
 
-coast_plot &lt;- coast_grid %&gt;% 
-  st_as_sf() %&gt;% 
-  bind_cols(dist = distance)</code></pre>
-</div>
+
+plot(coast_raster)</code></pre>
+<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-7-1.svg" width="480" /></p>
+<pre class="r"><code>plot(mask(coast_raster, coast_buffer))</code></pre>
+<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-7-2.svg" width="480" /></p>
 <div id="plotting" class="section level3">
 <h3>Plotting</h3>
-<p>We use the alpha aesthetic to create the gradient.</p>
-<pre class="r"><code>ggplot() +
-  geom_sf(data = coast_plot,
-          aes(alpha = -dist),
-          fill = &quot;grey&quot;,
-          color = NA) +
-  scale_alpha(range = c(0.01,0.2)) +
-  coord_sf(expand = FALSE) +
+<pre class="r"><code>coast_stars &lt;- coast_raster %&gt;% 
+  mask(st_as_sf(coast_buffer)) %&gt;% 
+  crop(st_as_sf(bbox)) %&gt;% 
+  st_as_stars()
+
+ggplot() +
+  geom_stars(data = coast_stars,
+             interpolate = TRUE) +
+  scale_fill_gradient(low = &quot;lightgrey&quot;, high = &quot;white&quot;, na.value = NA) +
+  coord_sf(expand = FALSE,
+           crs = 2154) +
   theme_void() +
   theme(legend.position = &quot;none&quot;)</code></pre>
-<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-11-1.png" width="480" /></p>
+<p><img src="/post/2020-05-14-shaded-coast-for-maps/index_files/figure-html/unnamed-chunk-8-1.svg" width="480" /></p>
 </div>
 <div id="saving" class="section level3">
 <h3>Saving</h3>
 <p>We can save our spatial object in a file for later use.</p>
-<pre class="r"><code>st_write(coast_plot, here(&quot;static/inputs/info_fub/shaded_coast.geojson&quot;))</code></pre>
+<pre class="r"><code>write_stars(coast_stars,
+            &quot;static/inputs/info_fub/shaded_coast_raster&quot;)</code></pre>
 </div>
 </div>

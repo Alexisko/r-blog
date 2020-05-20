@@ -1,0 +1,415 @@
+---
+title: 'Creating beautiful maps : inset maps / mapping (2/2)'
+author: Alexis
+date: '2020-05-20'
+slug: creating-beautiful-maps-inset-maps-mapping-2-2
+categories:
+  - maps
+tags: []
+subtitle: ''
+summary: 'Code to produce the map. Unlike the previous post on styling the coastline, this one is not a tutorial. This is the code and the code only.'
+authors: []
+lastmod: '2020-05-20T15:51:08+02:00'
+featured: yes
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+output:
+  blogdown::html_page:
+    dev: "svg"
+---
+
+
+
+<p>Unlike the previous post on styling the coastline, this one is not a tutorial. This is the code and the code only.</p>
+<pre class="r"><code>library(tidyverse)
+library(glue)
+library(sf)
+library(stars)
+library(ggrepel)
+library(ggtext)
+
+extrafont::loadfonts(device = &quot;win&quot;)</code></pre>
+<pre class="r"><code>coast &lt;- read_stars(&quot;static/inputs/info_fub/shaded_coast_raster&quot;)
+
+france &lt;- st_read(&quot;static/inputs/info_fub/departements-version-simplifiee.geojson&quot;) %&gt;% 
+  st_transform(2154)
+
+#communes france geo
+communes &lt;- st_read(&quot;static/inputs/info_fub/communes-version-simplifiee.geojson&quot;) %&gt;% 
+  st_transform(2154) %&gt;% 
+  st_centroid()
+
+#communes pop
+communes_pop &lt;- read_csv2(&quot;static/inputs/info_fub/pop_communes.csv&quot;) %&gt;% 
+  janitor::clean_names() %&gt;% 
+  mutate(depcom = paste0(code_departement, code_commune),
+         #change the code of Paris, Lyon, Marseille districts
+         depcom = case_when(
+           depcom %in% as.character(69381:69389) ~ &quot;69123&quot;,
+           depcom %in% as.character(75101:75120) ~ &quot;75056&quot;,
+           depcom %in% as.character(13201:13216) ~ &quot;13055&quot;,
+           TRUE ~ depcom
+         ),
+         population_totale = as.numeric(str_remove_all(population_totale, &quot; &quot;))) %&gt;% 
+  group_by(depcom) %&gt;% 
+  summarise(pop_municipale = sum(population_totale))
+
+#feeling of safety
+secu &lt;- read_csv(&quot;static/inputs/info_fub/C_notes_data.csv&quot;) %&gt;% 
+  janitor::clean_names() %&gt;% 
+  filter(avg_n_tot_valide_net &gt;= 50)</code></pre>
+<pre class="r"><code>#inner join communes and safety feeling + join population
+fub &lt;- communes %&gt;% 
+  inner_join(secu, by = c(&quot;code&quot; = &quot;depcom&quot;)) %&gt;% 
+  left_join(communes_pop, by = c(&quot;code&quot; = &quot;depcom&quot;)) %&gt;% 
+  dplyr::select(code, nom, note = avg_note_globale_moy, pop_municipale) %&gt;% 
+  mutate(city_size = cut(pop_municipale,
+                         breaks = c(-Inf, 20000, 50000, 100000, 200000, Inf),
+                         labels = c(&quot;Moins de 20 000&quot;,
+                                    &quot;Entre 20 000 et 50 000&quot;,
+                                    &quot;Entre 50 000 et 100 000&quot;,
+                                    &quot;Entre 100 000 et 200 000&quot;,
+                                    &quot;Plus de 200 000&quot;)),
+         city_size_int = cut(pop_municipale,
+                             breaks = c(-Inf, 20000, 50000, 100000, 200000, Inf),
+                             labels = c(2,
+                                        4,
+                                        6,
+                                        10,
+                                        16)),
+         city_size_int = as.numeric(as.character(city_size_int)),
+         secu = cut(note,
+                    breaks = c(1.8, 2.5, 2.9, 3.3, 4.5),
+                    labels = c(&quot;De 1,8 à 2,5&quot;,
+                               &quot;De 2,5 à 2,9&quot;,
+                               &quot;De 2,9 à 3,3&quot;,
+                               &quot;De 3,3 à 4,5&quot;)))
+
+fub &lt;- fub %&gt;% bind_cols(as_tibble(st_coordinates(fub)))</code></pre>
+<div id="count-plot" class="section level2">
+<h2>Count plot</h2>
+<pre class="r"><code>font &lt;- &quot;IBM Plex Sans Light&quot;
+
+
+palette_secu &lt;- c(&quot;#ea5460&quot;, &quot;#e99a9e&quot;, &quot;#9ad2ac&quot;, &quot;#6eb083&quot;)
+
+
+count_plot &lt;- ggplotGrob(
+  fub %&gt;% 
+    group_by(secu) %&gt;% 
+    summarise(count = n()) %&gt;% 
+    ggplot(aes(count, fct_rev(secu), fill = secu)) +
+    geom_col(width = 0.15) +
+    geom_text(aes(label = secu),
+              x = 0,
+              hjust = 0,
+              nudge_y = 0.3,
+              family = font,
+              size = 3.5) +
+    geom_text(aes(label = count),
+              hjust = 0,
+              nudge_x = 2,
+              family = &quot;IBM Plex Sans SemiBold&quot;,
+              size = 3.8) +
+    scale_x_continuous(expand = expansion(c(0,0.07))) +
+    scale_fill_manual(values = palette_secu) +
+    coord_cartesian(clip = &quot;off&quot;) +
+    labs(title = &quot;Nombre de villes par ressenti général&quot;) +
+    theme_void(base_family = font, base_size = 7) +
+    theme(legend.position = &quot;none&quot;,
+          plot.title = element_text(face = &quot;bold&quot;))
+)</code></pre>
+</div>
+<div id="paris-area" class="section level1">
+<h1>Paris area</h1>
+<pre class="r"><code>paris &lt;- france %&gt;% 
+  filter(code == &quot;75&quot;) %&gt;% 
+  st_centroid() %&gt;% 
+  st_buffer(dist = 20000)
+
+idf_fub &lt;- fub %&gt;% 
+  st_intersection(paris)
+
+idf_geo &lt;- france %&gt;% 
+  st_intersection(paris)
+
+my_pal &lt;- function(range = c(1, 6)) {
+  force(range)
+  function(x) scales::rescale(x, to = range, from = c(0, 1))
+}
+
+city_labeller &lt;- function(city) {
+  fct_recode(city, 
+             &quot;Saint-\nÉtienne&quot; = &quot;Saint-Étienne&quot;,
+             &quot;Le Havre&quot; = &quot;Havre&quot;,
+             &quot;Clermont-\nFerrand&quot; = &quot;Clermont-Ferrand&quot;,
+             &quot;La Rochelle&quot; = &quot;Rochelle&quot;,
+             &quot;Le Mans&quot; = &quot;Mans&quot;,
+             &quot;Boulogne-\nBillancourt&quot; = &quot;Boulogne-Billancourt&quot;,
+             &quot;Asnières-\nsur-Seine&quot; = &quot;Asnières-sur-Seine&quot;,
+             &quot;Vitry-sur-\nSeine&quot; = &quot;Vitry-sur-Seine&quot;)
+}
+
+idf_nudges &lt;- tribble(
+  ~x_nudge, ~y_nudge, ~nom,
+  0, 0, &quot;Paris&quot;,
+  0, -3000, &quot;Versailles&quot;,
+  -8000, 2000, &quot;Boulogne-Billancourt&quot;,
+  2000, 4000, &quot;Saint-Denis&quot;,
+  -1000, 3900, &quot;Argenteuil&quot;,
+  10000, 0, &quot;Montreuil&quot;,
+  0, 0, &quot;Naterre&quot;,
+  -550, -8200, &quot;Vitry-sur-Seine&quot;,
+  2000, -3000, &quot;Créteil&quot;,
+  -10000, 0, &quot;Asnières-sur-Seine&quot;,
+)
+
+idf_fub_labels &lt;- idf_fub %&gt;% 
+  inner_join(idf_nudges) %&gt;% 
+  mutate(label = city_labeller(nom))
+
+
+idf_grob &lt;- 
+  ggplotGrob(
+    ggplot() +
+      geom_sf(data = paris,
+              fill = &quot;lightgrey&quot;,
+              alpha = 0.4,
+              color = &quot;black&quot;) +
+      geom_point(data = idf_fub,
+                 aes(x = X,
+                     y = Y,
+                     size = city_size_int,
+                     fill = secu,
+                     group = rev(city_size)),
+                 shape = 21,
+                 color = &quot;grey30&quot;) +
+      geom_text_repel(data = idf_fub_labels,
+                      aes(x = X,
+                          y = Y,
+                          label = label,
+                          point.size = city_size_int),
+                      bg.color = &quot;white&quot;,
+                      color = &quot;black&quot;,
+                      nudge_x = idf_fub_labels$x_nudge,
+                      nudge_y = idf_fub_labels$y_nudge,
+                      segment.curvature = 1e-20,
+                      min.segment.length = 0,
+                      force = 0,
+                      family = font,
+                      lineheight = 0.8,
+                      size = 3.3,
+                      show.legend = FALSE) +
+      continuous_scale(
+        aesthetics = c(&quot;size&quot;, &quot;point.size&quot;), 
+        scale_name = &quot;size&quot;,
+        palette = my_pal(c(2,12))
+      ) +
+      scale_fill_manual(values = palette_secu) +
+      theme_void() +
+      theme(legend.position = &quot;none&quot;)
+  )</code></pre>
+<pre class="r"><code>nudges &lt;- tribble(
+  ~x_nudge, ~y_nudge, ~nom,
+  0, 50000, &quot;Havre&quot;,
+  70000,   0, &quot;Reims&quot;,
+  0, 40000, &quot;Dijon&quot;,
+  0, 50000, &quot;Nîmes&quot;,
+  -60000, 0, &quot;Lyon&quot;,
+  -100000,   -30000, &quot;Nantes&quot;,
+  50000, -50000, &quot;Toulon&quot;,
+  -70000, 0, &quot;Rennes&quot;,
+  0, -50000, &quot;Marseille&quot;,
+  -30000, -50000, &quot;Toulouse&quot;,
+  0, 40000, &quot;Angers&quot;,
+  60000, 0, &quot;Nice&quot;,
+  0, 50000, &quot;Bordeaux&quot;,
+  0, -50000, &quot;Montpellier&quot;,
+  80000, 0, &quot;Grenoble&quot;,
+  0, 50000, &quot;Lille&quot;,
+  80000,   0, &quot;Strasbourg&quot;,
+  -60000,   0, &quot;Saint-Étienne&quot;,
+  -60000, 0, &quot;Brest&quot;,
+  -10000, 45000, &quot;Caen&quot;,
+  30000, 40000, &quot;Rouen&quot;,
+  0, 35000, &quot;Metz&quot;,
+  65000, 0, &quot;Mulhouse&quot;,
+  65000, 0, &quot;Besançon&quot;,
+  0, 60000, &quot;Clermont-Ferrand&quot;,
+  -70000, 0, &quot;Bayonne&quot;,
+  0, -50000, &quot;Perpignan&quot;,
+  -70000, 0, &quot;Rochelle&quot;,
+  -20000, 40000, &quot;Bastia&quot;,
+  -30000, 30000, &quot;Ajaccio&quot;,
+  0, 40000, &quot;Mans&quot;,
+  0, 40000, &quot;Tours&quot;,
+  0, -30000, &quot;Poitiers&quot;,
+  -10000, 30000, &quot;Limoges&quot;,
+  0, 40000, &quot;Orléans&quot;,
+  0, 40000, &quot;Troyes&quot;,
+  0, 60000, &quot;Paris&quot;,
+)
+
+description &lt;- glue(&quot;*En 2019, La FUB (Fédération française des usagers de la bicyclette) \\
+                    a publié la deuxième édition de son baromètre des villes \\
+                    cyclables. Décliné en 5 thèmes et 26 critères, il a \\
+                    recueilli près de 185 000 réponses. Seules les villes comptant \\
+                    plus de 50 répondants sont représentées.&quot;)
+
+sources_credits &lt;- glue(&quot;Cette infographie est très largement inspirée d&#39;un travail \\
+                        paru dans *Le Monde* le 10 mai 2019.&lt;br&gt;Les auteures originaux \\
+                        sont Camille Bressange et Véronique Malécot.&lt;br&gt;\\
+                        Sources : Insee 2017, FUB 2019&lt;br&gt;\\
+                        La reproduction est réalisée entièrement dans R.&lt;br&gt;\\
+                        Alexis Konarski&quot;)
+
+fub_labels &lt;- fub %&gt;% 
+  inner_join(nudges) %&gt;% 
+  mutate(label = city_labeller(nom))</code></pre>
+<pre class="r"><code>library(ggnewscale)
+
+map &lt;- ggplot() +
+  geom_stars(data = coast,
+             interpolate = TRUE,
+             show.legend = FALSE) +
+  scale_fill_gradient(low = &quot;lightgrey&quot;,
+                      high = &quot;white&quot;, 
+                      na.value = NA) +
+  new_scale_fill() +
+  # geom_sf(data = st_as_sfc(st_bbox(coast)),
+  #         fill = NA) +
+  geom_sf(data = france,
+          fill = &quot;lightgrey&quot;,
+          alpha = 0.4,
+          color = &quot;grey70&quot;,
+          size = 0.1) +
+  geom_point(data = fub,
+          aes(x = X,
+              y = Y,
+              size = city_size_int,
+              fill = secu,
+              group = rev(city_size)),
+          shape = 21,
+          color = &quot;grey30&quot;) +
+  geom_text_repel(data = fub_labels,
+                  aes(x = X,
+                      y = Y,
+                      label = label,
+                      point.size = city_size_int),
+                  bg.color = &quot;white&quot;,
+                  color = &quot;black&quot;,
+                  nudge_x = fub_labels$x_nudge,
+                  nudge_y = fub_labels$y_nudge,
+                  segment.curvature = 1e-20,
+                  min.segment.length = 0,
+                  force = 0,
+                  family = font,
+                  lineheight = 0.8,
+                  size = 3.5,
+                  show.legend = FALSE) +
+  shadowtext::geom_shadowtext(data = fub_labels,
+            aes(x = X,
+                y = Y,
+                label = &quot;+&quot;),
+            bg.color = &quot;white&quot;,
+            bg.radius = 0.001,
+            size = 4,
+            color = &quot;black&quot;,
+            family = &quot;IBM Plex Sans SemiBold&quot;,
+            show.legend = FALSE) +
+  geom_sf(data = paris,
+          fill = NA,
+          color = &quot;black&quot;,
+          size = 1) +
+  annotate(&quot;text&quot;, x = 11947.21, y = 7180000,
+           label = toupper(&quot;Baromètre vélo dans les villes :\nmétéo variable&quot;),
+           family = &quot;IBM Plex Sans&quot;,
+           fontface = &quot;bold&quot;,
+           hjust = 0,
+           vjust = 0,
+           size = 4.3) +
+  annotate(&quot;text&quot;, 
+           label = str_wrap(description, 60),
+           x = 1185000, 
+           y = 6070000,
+           hjust = 1,
+           vjust = 1,
+           family = &quot;IBM Plex Sans Condensed&quot;,
+           size = 3,
+           color = &quot;grey40&quot;) +
+  annotate(&quot;richtext&quot;,
+           label = sources_credits,
+           fill = NA,
+           label.padding = grid::unit(rep(0, 4), &quot;pt&quot;),
+           label.color = NA,
+           x = 11947.21,
+           y = 5878000,
+           vjust = 0,
+           hjust = 0,
+           family = &quot;IBM Plex Sans ExtraLight&quot;,
+           size = 3,
+           color = &quot;grey40&quot;) +
+  annotate(&quot;segment&quot;,
+           x = 11947.21,
+           xend = 689000,
+           y = 5980000,
+           yend = 5980000) +
+  annotation_custom(idf_grob, 
+                    xmin = 800000,
+                    xmax = 1200000,
+                    ymin = 6915000,
+                    ymax = 7285000) +
+  annotation_custom(count_plot,
+                    xmin = 11947.21,
+                    xmax = 420000,
+                    ymin = 5980000,
+                    ymax = 6230000) +
+  ggspatial::annotation_scale(
+    width_hint = 0.1,
+    style = &quot;ticks&quot;,
+    pad_y = unit(0.32, &quot;npc&quot;),
+    text_family = font
+  ) +
+  coord_sf(clip = &quot;off&quot;, expand = 0) +
+  scale_alpha(range = c(0.001,0.2)) +
+  scale_fill_manual(values = palette_secu,
+                    name = glue(&quot;**Ressenti général en circulant&lt;br&gt;
+                                à vélo** (note moyenne sur 6 attribuée&lt;br&gt;
+                                par les répondants du sondage de la FUB* en&lt;br&gt;
+                                2019)&quot;)) +
+  continuous_scale(aesthetics = c(&quot;size&quot;, &quot;point.size&quot;), 
+    scale_name = &quot;size&quot;,
+    palette = my_pal(c(2,12)),
+    name = glue(&quot;**Taille des villes**&lt;br&gt;
+                Nombre d&#39;habitants&quot;),
+    labels = c(&quot;Moins de 20 000&quot;,
+               &quot;Entre 20 000\net 50 000&quot;,
+               &quot;Entre 50 000\net 100 000&quot;,
+               &quot;Entre 100 000\net 200 000&quot;,
+               &quot;Plus de 200 000&quot;)) +
+  guides(fill = guide_legend(order = 1,
+                             override.aes = list(size = 6)),
+         size = guide_legend(order = 2,
+                             keyheight = 1.5)) +
+  theme_void(base_family = &quot;IBM Plex Sans&quot;) +
+  theme(legend.position = c(0.008, 0.97),
+        legend.justification = c(&quot;left&quot;, &quot;top&quot;),
+        legend.title = element_textbox_simple(size = 9),
+        legend.margin = margin(t = 70))</code></pre>
+<p><img src="final.svg" /></p>
+<pre class="r"><code>ggsave(&quot;static/plots/info_fub/final.svg&quot;,
+       plot = map,
+       width = 9,
+       height = 10.16,
+       dpi = 320)
+
+ggsave(&quot;static/plots/info_fub/final.png&quot;,
+       plot = map,
+       width = 22,
+       height = 24.83,
+       dpi = 500,
+       units = &quot;cm&quot;)</code></pre>
+</div>

@@ -16,6 +16,9 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+output:
+  blogdown::html_page:
+    dev: "svg"
 ---
 
 ```{r setup, include=FALSE}
@@ -50,9 +53,12 @@ We will be using France legal projection (Lambert-93) so we start by transformin
 ```{r}
 library(tidyverse)
 library(sf)
+library(raster)
+library(stars)
 library(here)
 
 land <- st_read(here("static/inputs/info_fub/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp")) %>% 
+  filter(CONTINENT == "Europe") %>% 
   st_transform(2154)
 
 #france
@@ -99,13 +105,10 @@ italy <- land %>%
 We want countries that will appear in our final map and that have a coast. We also add Andorra, to avoid a hole between France and Spain.  
 
 ```{r}
-land <- land %>% 
-  filter(SOVEREIGNT %in% c("France", "Belgium", "United Kingdom",
-                          "Netherlands", "Spain", "Andorra")) %>% 
+land_no_sardinia <- land %>% 
+  filter(SOVEREIGNT != "Italy") %>% 
   st_geometry() %>% 
   c(italy)
-
-
 
 ```
 
@@ -115,7 +118,7 @@ land <- land %>%
 Really simple operations using **st_cast()** to transform polygons to lines. Then we only keep the coastlines that are within the bounding box we have defined.
 
 ```{r}
-coast <- c(italy, land) %>% 
+coast <- land_no_sardinia %>% 
   st_union() %>% 
   st_cast("MULTILINESTRING") %>% 
   st_intersection(bbox)
@@ -132,72 +135,57 @@ The we intersect that area with our land data to remove the part of the data whi
 ```{r}
 coast_buffer <- coast %>% 
   st_buffer(dist = 30000) %>% 
-  st_intersection(land)
+  st_intersection(land) %>% 
+  st_as_sf()
 
 
 ggplot() +
   geom_sf(data = coast_buffer)
 ```
 
-## Creating a grid
-
-Grid creation with ***st_make_grid**.
-
-
-```{r eval=FALSE}
-coast_grid <- coast_buffer %>% 
-  st_make_grid(n = c(200,200)) %>% 
-  st_intersection(coast_buffer)
-```
-
-
-```{r include=FALSE}
-coast_grid <- st_read(here("static/inputs/info_fub/coast_grid.geojson"))
-```
-
-
+## Creating a raster
 
 ```{r}
-ggplot() +
-  geom_sf(data = coast_grid)
+coast_raster <- raster(st_as_sf(coast_buffer), 
+                        nrows = 1000,
+                        ncols = 1000) %>% 
+  distanceFromPoints(st_cast(coast, "POINT") %>% 
+                       st_coordinates())
+
+
+plot(coast_raster)
+
+plot(mask(coast_raster, coast_buffer))
 ```
 
-
-### Calculate distances
-
-We calculate the distance between the center of each square of our grid and the coastline. We then bind the vector to coast_grid.
-
-```{r}
-distance <- st_distance(coast, st_centroid(coast_grid)) %>% 
-  as.vector()
-
-coast_plot <- coast_grid %>% 
-  st_as_sf() %>% 
-  bind_cols(dist = distance)
-```
 
 ### Plotting
 
-We use the alpha aesthetic to create the gradient.
 
 ```{r}
+coast_stars <- coast_raster %>% 
+  mask(st_as_sf(coast_buffer)) %>% 
+  crop(st_as_sf(bbox)) %>% 
+  st_as_stars()
+
 ggplot() +
-  geom_sf(data = coast_plot,
-          aes(alpha = -dist),
-          fill = "grey",
-          color = NA) +
-  scale_alpha(range = c(0.01,0.2)) +
-  coord_sf(expand = FALSE) +
+  geom_stars(data = coast_stars,
+             interpolate = TRUE) +
+  scale_fill_gradient(low = "lightgrey", high = "white", na.value = NA) +
+  coord_sf(expand = FALSE,
+           crs = 2154) +
   theme_void() +
   theme(legend.position = "none")
 ```
+
 
 ### Saving
 
 We can save our spatial object in a file for later use.
 
 ```{r eval=FALSE}
-st_write(coast_plot, here("static/inputs/info_fub/shaded_coast.geojson"))
+write_stars(coast_stars,
+            "static/inputs/info_fub/shaded_coast_raster")
 
 ```
 
