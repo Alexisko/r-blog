@@ -1,0 +1,368 @@
+---
+title: Text analysis Star Wars
+author: admin
+date: '2020-05-28'
+slug: text-analysis-star-wars
+categories:
+  - text analysis
+tags: []
+subtitle: ''
+summary: 'Quick text analysis of Star Wars original triology movies scripts'
+authors: []
+lastmod: '2020-05-28T17:42:06+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      cache = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      fig.retina = 3,
+                      fig.height = 5,
+                      fig.width = 10.5,
+                      fig.align = "center")
+```
+
+
+Data source : [Kaggle](https://www.kaggle.com/xvivancos/star-wars-movie-scripts)
+
+```{r}
+library(tidyverse)
+library(tidytext)
+library(here)
+
+episode <- c(4, 5, 6)
+
+sw_list <- list.files(here("static/inputs/star wars/"), pattern = "SW") %>% 
+  map2_dfr(episode,
+           ~read_delim(here(paste0("static/inputs/star wars/", .x)), 
+                      delim = " ",
+                      skip = 1,
+                      col_names = c("line", "character", "dialogue"),
+                      escape_backslash = TRUE,
+                      escape_double = FALSE) %>% 
+             mutate(episode = .y))
+
+movies_names <- tribble(
+  ~episode, ~episode_long, ~episode_name, ~name,
+  4, "Episode IV", "Episode IV: A New Hope", "A New Hope",
+  5, "Episode V", "Episode V: The Empire Strikes Back", "The Empire Strikes Back",
+  6, "Episode VI", "Episode VI: Return of the Jedi", "Return of the Jedi"
+  )
+
+sw_list <- sw_list %>% 
+  left_join(movies_names)
+
+```
+
+
+```{r}
+
+extrafont::loadfonts(device = "win")
+library(hrbrthemes)
+theme_set(theme_ipsum_ps(base_family = "IBM Plex Sans",
+                         plot_title_family = "IBM Plex Sans SemiBold",
+                         subtitle_family = "IBM Plex Sans Light",
+                         strip_text_family = "IBM Plex Sans Medium",
+                         caption_family = "IBM Plex Sans Thin"))
+
+
+sw_pal <- c(
+  "#D4C07B",
+  "#605770",
+  "#9E7682",
+  "#F7C4A5",
+  "#4D4861",
+  "#439A86")
+
+```
+
+### Exploring lines of dialogue
+
+```{r fig.height=8, fig.width=7}
+sw_list %>% 
+  count(character, sort = TRUE) %>% 
+  slice(1:15) %>% 
+  ggplot(aes(n, fct_reorder(str_to_sentence(character), n))) +
+  geom_col(width = 0.5,
+           fill = "#605770") +
+  geom_vline(xintercept = 0) +
+  labs(title = "Luke and Han are speaking the most",
+       subtitle = "And 3-PO has more lines than the Princess !",
+       x = "Number of lines",
+       y = NULL) +
+  scale_x_continuous(expand = expansion(0.01)) +
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.position = "none")
+```
+
+
+```{r}
+library(gt)
+sw_list %>% 
+  count(episode_name, sort = TRUE) %>% 
+  rename("Episode" = episode_name,
+         "Lines" = n) %>% 
+  gt() %>% 
+  tab_header("The number of lines decreases a lot !") %>% 
+  tab_style(cell_text(font = "IBM Plex Sans"),
+            locations = cells_body()) %>% 
+  tab_style(cell_text(font = "IBM Plex Sans",
+                           weight = "bold"),
+            locations = cells_title(groups = "title"))
+```
+
+
+```{r}
+sw_list %>% 
+  group_by(episode_name) %>% 
+  count(character, sort = TRUE) %>% 
+  slice(1:5) %>% 
+  ungroup() %>% 
+  mutate(character = str_to_sentence(character),
+         character = reorder_within(character, n, episode_name)) %>% 
+  ggplot(aes(n, character, fill = episode_name)) +
+  geom_col(width = 0.5) +
+  geom_vline(xintercept = 0) +
+  scale_y_reordered() +
+  scale_x_continuous(expand = expansion(0.01)) +
+  scale_fill_manual(values = sw_pal) +
+  facet_wrap(~episode_name, scales = "free_y") +
+  labs(title = "It is mostly the nice guys speaking",
+       x = "Number of lines",
+       y = NULL) +
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.position = "none")
+```
+
+
+### Exploring words
+
+```{r}
+sw_tokens <- sw_list %>% 
+  unnest_tokens("word", dialogue) %>% 
+  anti_join(stop_words)
+```
+
+```{r fig.height=8, fig.width=7}
+
+sw_tokens %>% 
+  count(word,sort = TRUE) %>% 
+  filter(n >= 30) %>% 
+  mutate(word = str_to_sentence(word)) %>% 
+  ggplot(aes(n, fct_reorder(word, n))) +
+  geom_col(fill = "#d4c07b",
+           width = 0.5) +
+  geom_vline(xintercept = 0) +
+  scale_x_continuous(expand = expansion(mult = 0.01)) +
+  labs(title = "Most frequent words in Star Wars original triology...",
+       subtitle = "...the story of Luke",
+       y = NULL,
+       x = NULL) +
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.minor.x = element_blank())
+
+```
+
+
+```{r}
+
+episode_words <- sw_tokens %>% 
+  group_by(episode, episode_name, word) %>% 
+  summarise(n = n()) %>% 
+  ungroup() %>% 
+  bind_tf_idf(word, episode_name, n)
+
+
+episode_words %>% 
+  group_by(episode_name) %>% 
+  arrange(desc(tf_idf)) %>% 
+  slice(1:10) %>% 
+  ungroup() %>% 
+  mutate(word = str_to_sentence(word),
+         word = reorder_within(word, tf_idf, episode_name)) %>% 
+  ggplot(aes(tf_idf, word, fill = episode_name)) +
+  geom_col(width = 0.5) +
+  geom_vline(xintercept = 0) +
+  scale_y_reordered() +
+  facet_wrap(~episode_name, scales = "free_y") +
+  scale_fill_manual(values = sw_pal) +
+  labs(title = "Which words are the most unique to each episode?",
+       x = "Inverse document frequency",
+       y = NULL) +
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        legend.position = "none")
+
+```
+
+
+```{r fig.width=10.5, fig.height=8}
+
+character_words <- sw_tokens %>% 
+  group_by(character, word) %>% 
+  summarise(n = n()) %>% 
+  ungroup() %>% 
+  bind_tf_idf(word, character, n)
+
+
+character_words %>% 
+  add_count(character, wt = n, name = "total_n") %>% 
+  filter(total_n > 500) %>% 
+  arrange(desc(tf_idf)) %>% 
+  group_by(character) %>% 
+  slice(1:10) %>% 
+  ungroup() %>% 
+  mutate(word = str_to_sentence(word),
+         word = reorder_within(word, tf_idf, character)) %>% 
+  ggplot(aes(tf_idf, word, fill = character)) +
+  geom_col(width = 0.5) + 
+  geom_vline(xintercept = 0) +
+  scale_y_reordered() +
+  facet_wrap(~character, scales = "free_y") +
+  scale_fill_manual(values = sw_pal) +
+  labs(title = "Which words are the most unique to each character?",
+       subtitle = "Where is R2?",
+       x = "Inverse document frequency",
+       y = NULL) +
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        legend.position = "none")
+
+
+```
+
+
+
+```{r fig.height=7, fig.width=6}
+
+sw_tokens %>% 
+  semi_join(sw_list %>% 
+              count(character) %>% 
+              filter(n > 35)) %>% 
+  group_by(character, line) %>% 
+  summarise(n = n()) %>% 
+  summarise(mean = mean(n)) %>% 
+  ggplot(aes(mean, fct_reorder(str_to_sentence(character), mean))) +
+  geom_col(width = 0.5,
+           fill = "#D4C07B") +
+    geom_vline(xintercept = 0) +
+  labs(title = "Yoda sentences not only are not in order\nbut are the longest !",
+       subtitle = "Red Leader knows how to keep it short...",
+       x = "Average number of word per line",
+       y = NULL) +
+  scale_x_continuous(expand = expansion(0.01)) +
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.position = "none")
+            
+  
+
+```
+
+
+```{r}
+library(widyr)
+
+word_cor <- sw_tokens %>% 
+  group_by(word) %>% 
+  filter(n() > 20) %>% 
+  pairwise_cor(word,
+                 line,
+                 sort = TRUE)
+
+
+word_cor %>% 
+  filter(item1 %in% c("force",
+                      "jedi",
+                      "father",
+                      "skywalker")) %>% 
+  group_by(item1) %>% 
+  top_n(6) %>% 
+  ungroup() %>% 
+  mutate(item1 = str_to_sentence(item1),
+         item2 = str_to_sentence(item2),
+         item2 = reorder_within(item2, correlation, item1)) %>% 
+  ggplot(aes(correlation, item2)) +
+  geom_col(width = 0.6) +
+  geom_vline(xintercept = 0) +
+  scale_y_reordered() +
+  scale_x_continuous(expand = expansion(0.01)) +
+  facet_wrap(~item1, scales = "free_y") +
+  
+  labs(title = "Correlation of selected words in dialogue lines",
+       subtitle = "I am your Father !",
+       x = "Correlation",
+       y = NULL) +
+  
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.position = "none")
+
+
+
+
+word_cor %>% 
+  filter(item1 %in% c("luke",
+                      "vader",
+                      "han",
+                      "leia")) %>% 
+  group_by(item1) %>% 
+  top_n(6) %>% 
+  ungroup() %>% 
+  mutate(item1 = str_to_sentence(item1),
+         item2 = str_to_sentence(item2),
+         item2 = reorder_within(item2, correlation, item1)) %>% 
+  ggplot(aes(correlation, item2)) +
+  geom_col(width = 0.6) +
+  geom_vline(xintercept = 0) +
+  scale_y_reordered() +
+  scale_x_continuous(expand = expansion(0.01)) +
+  facet_wrap(~item1, scales = "free_y") +
+  
+  labs(title = "Correlation of selected words in dialogue lines",
+       subtitle = "Vader is always a lord, Leia often a princess and Luke sometimes a Master",
+       x = "Correlation",
+       y = NULL) +
+  
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.position = "none")
+
+
+word_cor %>% 
+  filter(item1 %in% c("chewie",
+                      "artoo")) %>% 
+  group_by(item1) %>% 
+  top_n(6) %>% 
+  ungroup() %>% 
+  mutate(item1 = str_to_sentence(item1),
+         item2 = str_to_sentence(item2),
+         item2 = reorder_within(item2, correlation, item1)) %>% 
+  ggplot(aes(correlation, item2)) +
+  geom_col(width = 0.6) +
+  geom_vline(xintercept = 0) +
+  scale_y_reordered() +
+  scale_x_continuous(expand = expansion(0.01)) +
+  facet_wrap(~item1, scales = "free_y") +
+  
+  labs(title = "Correlation of selected words in dialogue lines",
+       subtitle = "Chewie and R2 are being bossed around",
+       x = "Correlation",
+       y = NULL) +
+  
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.position = "none")
+
+```
+
